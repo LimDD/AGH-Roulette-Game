@@ -5,6 +5,12 @@ using UnityEngine;
 public class BackButtonScript : MonoBehaviour
 {
     // Start is called before the first frame update
+
+    public void onButtonClick()
+    {
+        Debug.Log("The back button was clicked");
+    }
+
     void Start()
     {
         
