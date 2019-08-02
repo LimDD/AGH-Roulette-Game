@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class ButtonTest : MonoBehaviour
 {
     public Button button;
+    public int coins;
+
 
     void Start()
     {
@@ -16,6 +18,17 @@ public class ButtonTest : MonoBehaviour
     public void TaskOnClick()
     {
         Debug.Log("You have clicked the button!");
+
+        if (coins > 0)
+        {
+            coins--;
+            Debug.Log("You have "+coins+" coins left.");
+        }
+
+        else
+        {
+            Debug.Log("Error, You are out of coins");
+        }
     }
 }
 

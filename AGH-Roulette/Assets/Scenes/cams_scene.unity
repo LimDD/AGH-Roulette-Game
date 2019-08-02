@@ -232,6 +232,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   button: {fileID: 0}
+  coins: 5
 --- !u!114 &541462411
 MonoBehaviour:
   m_ObjectHideFlags: 0
