@@ -3,19 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ButtonTest : MonoBehaviour
+public class BettingScript : MonoBehaviour
 {
     public Button button;
+    public Text bal;
     public int coins;
-
 
     void Start()
     {
-        Button btn = button.GetComponent<Button>();
-        btn.onClick.AddListener(TaskOnClick);
+        coins = 5;
+        //Not sure how to fix the error that appears.
+        bal = GameObject.Find("Canvas/Text").GetComponent<Text>();
+        bal.text = "Balance = "+ coins.ToString();
     }
 
-    public void TaskOnClick()
+    public void OnClick()
     {
         Debug.Log("You have clicked the button!");
 
@@ -23,6 +25,8 @@ public class ButtonTest : MonoBehaviour
         {
             coins--;
             Debug.Log("You have "+coins+" coins left.");
+
+            bal.text = "Balance = " + coins.ToString();
         }
 
         else
