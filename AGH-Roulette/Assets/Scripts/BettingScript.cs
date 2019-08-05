@@ -8,19 +8,18 @@ public class BettingScript : MonoBehaviour
     public Button button;
     public Text bal;
     public int coins;
+    public AudioScript aS;
 
     void Start()
     {
         coins = 5;
-        //Not sure how to fix the error that appears.
         bal = GameObject.Find("Canvas/Text").GetComponent<Text>();
         bal.text = "Balance = "+ coins.ToString();
+        aS = FindObjectOfType<AudioScript>();
     }
 
     public void OnClick()
     {
-        Debug.Log("You have clicked the button!");
-
         if (coins > 0)
         {
             coins--;
@@ -32,6 +31,7 @@ public class BettingScript : MonoBehaviour
         else
         {
             Debug.Log("Error, You are out of coins");
+            aS.NoCoins();
         }
     }
 }
