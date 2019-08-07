@@ -5,62 +5,38 @@ using UnityEngine.UI;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
-    /*
+   
     public Text betText;
-    public int amountToBet = 20;
-    public int increaseBet = 10;
-    public int decreaseBet = 10;
-          
-    void Update()
-    {
-        betText.text = "" + amountToBet + "";
-
-    }
-
-    public void ClickToIncrease()
-    {
-        amountToBet += increaseBet;
-    }
-
-    public void ClickToDecrease()
-    {
-        amountToBet -= decreaseBet;
-    }
-    */
-
-
-    public Text betText;
-    public int amountToBet = 10;
+    public int amountToChange = 10;
     public int maxbet = 300;
-
-    public void TextToString(Text betText)
-    {
-        //betText.GetComponent<UnityEngine.UI.Text>().text
-    }
+    public int minbet = 10;
+    public Button increaseBet;
+    public Button decreaseBet;
+    
 
     public void Increment()
     {
-        if(amountToBet < maxbet)
-        {
-            amountToBet += 10;
-            UpdateText(amountToBet);
-        }
+        int bettingAmount = ConvertText();
 
     }
 
     public void Decrement()
-    {
-        if (amountToBet > 1)
-        {
-            amountToBet -= 10;
-            UpdateText(amountToBet);
-        }
-        
+    {    
+        int bettingAmount = ConvertText();
+
     }
 
-    public void UpdateText(int bettingAmount)
+    private int ConvertText()
     {
-        betText.text = bettingAmount.ToString();
+        int amountBetting = 0;
+        amountBetting = int.Parse(betText.text);
+        
+        return amountBetting;
+    }
+
+    void Update()
+    {
+        //on button press: call the increase/decrease functions
     }
 
 }
