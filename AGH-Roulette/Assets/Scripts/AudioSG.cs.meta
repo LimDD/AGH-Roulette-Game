@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f0730345253583b439d0644c8fd3facd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - startGameButton: {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
+  - tutorialButton: {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
+  - source: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
