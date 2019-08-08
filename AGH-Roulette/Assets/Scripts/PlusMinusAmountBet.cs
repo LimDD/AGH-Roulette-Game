@@ -10,31 +10,29 @@ public class PlusMinusAmountBet : MonoBehaviour
     public int amountToChange = 10;
     public int maxbet = 300;
     public int minbet = 10;
-    //public Button increaseBet;
-    //public Button decreaseBet;
     
-
+    //Increases the text display
     public void Increment()
     {
-        int bettingAmount = ConvertText(betText);
+        int bettingAmount = TextToInt(betText);
 
         bettingAmount += amountToChange;
 
-        ConvertInt(bettingAmount);
+        IntToText(bettingAmount);
 
     }
 
     public void Decrement()
     {    
-        int bettingAmount = ConvertText(betText);
+        int bettingAmount = TextToInt(betText);
 
         bettingAmount -= amountToChange;
 
-        ConvertInt(bettingAmount);
+        IntToText(bettingAmount);
 
     }
 
-    private int ConvertText(Text textToConvert)
+    private int TextToInt(Text textToConvert)
     {
         int amountBetting = 0;
         amountBetting = int.Parse(textToConvert.text);
@@ -42,7 +40,7 @@ public class PlusMinusAmountBet : MonoBehaviour
         return amountBetting;
     }
 
-    private Text ConvertInt(int intToConvert)
+    private Text IntToText(int intToConvert)
     {
         Text convertedInt = betText;
 
