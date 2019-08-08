@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//This class stores all the sounds used when interacting with the button.
 public class AudioScript : MonoBehaviour
 {
     public AudioClip buttonPress;
