@@ -423,8 +423,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   betText: {fileID: 1041157012}
-  amountToBet: 10
+  amountToChange: 10
   maxbet: 300
+  minbet: 10
 --- !u!1 &515317133
 GameObject:
   m_ObjectHideFlags: 0
@@ -793,8 +794,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   betText: {fileID: 1041157012}
-  amountToBet: 10
+  amountToChange: 10
   maxbet: 300
+  minbet: 10
 --- !u!114 &804981270
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -900,6 +902,7 @@ GameObject:
   - component: {fileID: 1041157013}
   - component: {fileID: 1041157012}
   - component: {fileID: 1041157014}
+  - component: {fileID: 1041157015}
   m_Layer: 5
   m_Name: Number Bet Text
   m_TagString: Untagged
@@ -959,7 +962,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Null
+  m_Text: 100
 --- !u!222 &1041157013
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -987,6 +990,22 @@ MonoBehaviour:
   minus: {fileID: 0}
   tooLong: {fileID: 0}
   point: {fileID: 0}
+--- !u!114 &1041157015
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041157010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01bddd20eb411fd459d624cfe5d3afec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  betText: {fileID: 1041157012}
+  amountToChange: 10
+  maxbet: 300
+  minbet: 10
 --- !u!1 &1143535000
 GameObject:
   m_ObjectHideFlags: 0
