@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 141571763}
   - component: {fileID: 141571762}
   - component: {fileID: 141571761}
+  - component: {fileID: 141571764}
   m_Layer: 5
   m_Name: Confirm Bet Button
   m_TagString: Untagged
@@ -297,7 +298,7 @@ RectTransform:
   m_Children:
   - {fileID: 1810708072}
   m_Father: {fileID: 1219740257}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -346,7 +347,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 141571762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 141571764}
+        m_MethodName: DeductCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &141571762
@@ -386,6 +398,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 141571759}
   m_CullTransparentMesh: 0
+--- !u!114 &141571764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141571759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c5ffbc4a19354e40b89a003c8755b25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  betText: {fileID: 886322301}
+  playerCoinsText: {fileID: 1286803883}
 --- !u!1 &396547331
 GameObject:
   m_ObjectHideFlags: 0
@@ -500,7 +526,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219740257}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -658,7 +684,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219740257}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -697,7 +723,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219740257}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: -359.42, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -990,11 +1016,11 @@ RectTransform:
   m_Children:
   - {fileID: 52696393}
   - {fileID: 2127401577}
-  - {fileID: 141571760}
   - {fileID: 886322300}
   - {fileID: 957999581}
   - {fileID: 1494929849}
   - {fileID: 1050117512}
+  - {fileID: 141571760}
   - {fileID: 1286803882}
   m_Father: {fileID: 1442831600}
   m_RootOrder: 1
@@ -1191,7 +1217,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 500
+  m_Text: 'COINS: 500'
 --- !u!222 &1286803884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1429,7 +1455,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1219740257}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -359.42, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

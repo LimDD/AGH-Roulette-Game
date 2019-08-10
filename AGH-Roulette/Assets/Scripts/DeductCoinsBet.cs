@@ -6,16 +6,17 @@ using UnityEngine.UI;
 public class DeductCoinsBet : MonoBehaviour
 {
 
-    public Text betText;
+    //public Text betText;
     public Text playerCoinsText;
-    
+    int tempBet = 20; 
 
     public void DeductCoins()
     {
         int amountBet = 0;
         int playerCoins = 0;
 
-        amountBet = TextToInt(betText);
+        //amountBet = TextToInt(betText);
+        amountBet = tempBet;
         playerCoins = TextToInt(playerCoinsText);
 
         playerCoins = playerCoins - amountBet;
@@ -29,6 +30,7 @@ public class DeductCoinsBet : MonoBehaviour
         int number = 0;
         number = int.Parse(textToConvert.text);
 
+        //textToConvert.text.ToString();
         return number;
     }
 
