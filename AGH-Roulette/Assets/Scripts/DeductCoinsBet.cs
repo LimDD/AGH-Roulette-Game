@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class DeductCoinsBet : MonoBehaviour
 {
 
-    //public Text betText;
+    public Text betText;
     public Text playerCoinsText;
-    int tempBet = 20; 
+    //int tempBet = 20; 
 
     public void DeductCoins()
     {
@@ -16,25 +17,35 @@ public class DeductCoinsBet : MonoBehaviour
         int playerCoins = 0;
 
         //amountBet = TextToInt(betText);
-        amountBet = tempBet;
+        amountBet = TextToInt(betText);
         playerCoins = TextToInt(playerCoinsText);
+        
+        if (playerCoins >= amountBet)
+        {
+            playerCoins = playerCoins - amountBet;
+        }
+        
 
-        playerCoins = playerCoins - amountBet;
-
-        IntToText(playerCoins);
-        ResetAmountToBet();
+        IntToTextCoinsText(playerCoins);
+        int resetBet = 10;
+        IntToText(resetBet);
     }
 
     private int TextToInt(Text textToConvert)
     {
         int number = 0;
-        number = int.Parse(textToConvert.text);
+        //number = int.Parse(textToConvert.text);
 
-        //textToConvert.text.ToString();
+        string textToString = Regex.Replace(textToConvert.text.ToString(), "[^0-9]", "");
+
+        number = int.Parse(textToString);
+
         return number;
     }
 
-    private Text IntToText(int intToConvert)
+
+
+    private Text IntToTextCoinsText(int intToConvert)
     {
         Text convertedInt = playerCoinsText;
 
@@ -44,20 +55,26 @@ public class DeductCoinsBet : MonoBehaviour
         return convertedInt;
     }
 
-    private int ResetAmountToBet()
+    private Text IntToText(int intToConvert)
     {
-        int setMinBet = 10;
+        Text convertedInt = betText;
 
-        return setMinBet;
+        string text = intToConvert.ToString();
+        convertedInt.text = text;
+
+        return convertedInt;
+
     }
 
 
     // Update is called once per frame
     void Update()
     {
+        /*
         if(Input.GetButtonDown("Confirm Bet Button"))
         {
             DeductCoins();
         }
+        */
     }
 }

@@ -2,42 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Text.RegularExpressions;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
    
     public Text betText;
+    public Text playerCoinsText;
     public int amountToChange = 10;
-    public int maxbet = 300;
-    public int minbet = 10;
+    public int minBet = 10;
     
     //Increases the text display
     public void Increment()
     {
-        int bettingAmount = TextToInt(betText);
+        int bettingAmount = 0; 
+        int maxBet = 0;
 
-        bettingAmount += amountToChange;
+        bettingAmount = TextToInt(betText);
+        maxBet = TextToInt(playerCoinsText);
 
-        IntToText(bettingAmount);
+        if (bettingAmount < maxBet)
+        {
+            bettingAmount += amountToChange;
+            IntToText(bettingAmount);
+        }
+        
 
     }
 
     public void Decrement()
     {    
         int bettingAmount = TextToInt(betText);
-
-        bettingAmount -= amountToChange;
-
-        IntToText(bettingAmount);
+        
+        if(bettingAmount > minBet)
+        {
+            bettingAmount -= amountToChange;
+            IntToText(bettingAmount);
+        }
+        
 
     }
 
     private int TextToInt(Text textToConvert)
     {
-        int amountBetting = 0;
-        amountBetting = int.Parse(textToConvert.text);
-        
-        return amountBetting;
+        int number = 0;
+
+        string textToString = Regex.Replace(textToConvert.text.ToString(), "[^0-9]", "");
+
+        number = int.Parse(textToString);
+
+        return number;
     }
 
     private Text IntToText(int intToConvert)
