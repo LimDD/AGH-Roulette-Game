@@ -21,7 +21,7 @@ public class PlusMinusAmountBet : MonoBehaviour
         bettingAmount = TextToInt(betText);
         maxBet = TextToInt(playerCoinsText);
 
-        if (bettingAmount < maxBet)
+        if (bettingAmount <= maxBet)
         {
             bettingAmount += amountToChange;
             IntToText(bettingAmount);
