@@ -53,7 +53,7 @@ public class PlusMinusAmountBet : MonoBehaviour
     void Update()
     {
         //on button press: call the increase/decrease functions
-        if(Input.GetButtonDown("Increase Bet Button"))
+       /* if(Input.GetButtonDown("Increase Bet Button"))
         {
             Increment();
         }
@@ -62,6 +62,7 @@ public class PlusMinusAmountBet : MonoBehaviour
         {
             Decrement();
         }
+        */
     }
 
 }
