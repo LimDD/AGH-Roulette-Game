@@ -13,10 +13,6 @@ public class FakeScores : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rounds = 5;
-        aWon = 100;
-        aLost = 245;
-        betNum = 13;
 
     }
 }

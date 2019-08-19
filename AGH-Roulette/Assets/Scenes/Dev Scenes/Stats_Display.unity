@@ -1367,10 +1367,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5cc3df86869e2674eab747882da4be8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rounds: 0
-  aWon: 0
-  aLost: 0
-  betNum: 0
+  rounds: 20
+  aWon: 2000
+  aLost: 100
+  betNum: 50
   profit: 0
 --- !u!1 &2114479749
 GameObject:
