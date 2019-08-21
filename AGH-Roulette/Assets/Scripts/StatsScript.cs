@@ -12,6 +12,7 @@ public class StatsScript : MonoBehaviour
     public Text amountLost;
     public Text betsMade;
     public Text profit;
+    public Text checkWinnings;
     public int calcProfit;
 
     // Start is called before the first frame update
@@ -25,6 +26,8 @@ public class StatsScript : MonoBehaviour
         amountLost = GameObject.Find("AL").GetComponent<Text>();
         betsMade = GameObject.Find("BM").GetComponent<Text>();
         profit = GameObject.Find("Pt").GetComponent<Text>();
+        checkWinnings = GameObject.Find("Profit").GetComponent<Text>();
+
 
         calcProfit = fS.aWon - fS.aLost;
 
@@ -36,6 +39,7 @@ public class StatsScript : MonoBehaviour
         //Checks if the profit is negative, so the - can go infront of the $.
         if (calcProfit < 0)
         {
+            checkWinnings.text = "Total Losses:";
             calcProfit *= -1;
             profit.text = "-$" + calcProfit.ToString();
         }
