@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class AudioSG : MonoBehaviour
 {
-    public AudioClip startGameButton;
+    /*public AudioClip startGameButton;
     public AudioClip tutorialButton;
     public AudioClip gameControlsButton;
     public AudioClip betsOfRouletteButton;
     public AudioClip highScoresButton;
     public AudioClip achievementsButton;
-    public AudioSource source;  
+    */
+    public AudioSource source;
+    public AudioClip hoverSound;
 
     // Start is called before the first frame update
-    void Start()
+   /* void Start()
     {
         source = GetComponent<AudioSource>();
     }
@@ -55,6 +57,11 @@ public class AudioSG : MonoBehaviour
         //HoverSound(source.clip);
         //HoverSound(achievementsButton);
     }
+    */
 
+    public void HoverSound()
+    {
+        source.PlayOneShot(hoverSound);
+    }
 
 }
