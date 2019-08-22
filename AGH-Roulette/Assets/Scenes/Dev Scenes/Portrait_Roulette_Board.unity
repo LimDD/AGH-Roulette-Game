@@ -2099,7 +2099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1492789873}
-  NumToRead: 2147483647
+  NumToRead: 765
   currentClip: 0
   lastClip: 0
 --- !u!4 &248899837
