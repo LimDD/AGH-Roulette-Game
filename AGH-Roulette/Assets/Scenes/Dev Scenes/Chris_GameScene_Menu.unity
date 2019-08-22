@@ -1352,7 +1352,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 603986849}
+      - m_Target: {fileID: 1166302141}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -9783,7 +9783,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 603986849}
+      - m_Target: {fileID: 1166302141}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
