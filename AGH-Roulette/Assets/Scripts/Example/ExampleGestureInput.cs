@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ExampleInput : MonoBehaviour
+public class ExampleGestureInput : MonoBehaviour
 {
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.CurrentInput != InputAction.Null)
+        if (GestureInputManager.CurrentInput != InputAction.Null)
         {
-            Debug.Log(InputManager.CurrentInput);
+            Debug.Log(GestureInputManager.CurrentInput);
         }
     }
 }

@@ -4,10 +4,10 @@ using System.Collections.Generic;
 using TMPro;
 using MultiTouchInput;
 
-public class InputManager : MonoBehaviour {
+public class GestureInputManager : MonoBehaviour {
 
 	InputAction currentInput;
-	public static InputManager _Instance;
+	public static GestureInputManager _Instance;
 
 	int numClicked = 0; //The counter to check double click.
 	float angleRange = 30f;
