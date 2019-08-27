@@ -19,6 +19,8 @@ public class PlayerPosition : MonoBehaviour
     void Start()
     {
         initialPosition = transform.position;
+
+        gameObject.SetActive(false);
     }
 
 
