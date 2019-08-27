@@ -5,11 +5,18 @@ using UnityEngine;
 public class DisplayAmountToBet : MonoBehaviour
 {
     public GameObject Panel;
+    public SoundScript Ss;
+
+    private void Start()
+    {
+        Ss = FindObjectOfType<SoundScript>();
+    }
 
     public void showHidePanel()
     {
         if (Panel != null)
         {
+            Ss.Bet();
             bool isActive = Panel.activeSelf;
 
             Panel.SetActive(!isActive);

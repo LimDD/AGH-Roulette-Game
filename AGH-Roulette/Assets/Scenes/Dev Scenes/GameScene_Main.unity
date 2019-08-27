@@ -423,6 +423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -569,6 +570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,6 +717,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &77668890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1855,6 +1860,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &171056039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2315,6 +2321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,6 +2782,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3314,6 +3322,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3539,6 +3548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4110,6 +4120,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4256,6 +4267,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5030,6 +5042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5490,6 +5503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5793,6 +5807,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6096,6 +6111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &616024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6242,6 +6258,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6553,6 +6570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,6 +6781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &681424414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7074,6 +7093,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &697793730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7774,6 +7794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &813376614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8013,6 +8034,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,6 +8181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -8758,6 +8781,8 @@ GameObject:
   - component: {fileID: 863234861}
   - component: {fileID: 863234863}
   - component: {fileID: 863234862}
+  - component: {fileID: 863234864}
+  - component: {fileID: 863234865}
   m_Layer: 0
   m_Name: Portrait_Roulette_Table
   m_TagString: Untagged
@@ -8823,6 +8848,116 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 863234860}
   m_CullTransparentMesh: 0
+--- !u!82 &863234864
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863234860}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 0a2cfa4110269314fb7957bfc60c901e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &863234865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863234860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d347d6480f206c14694272f4d1fe22e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonPress: {fileID: 8300000, guid: 0a2cfa4110269314fb7957bfc60c901e, type: 3}
+  source: {fileID: 0}
 --- !u!1 &929073120
 GameObject:
   m_ObjectHideFlags: 0
@@ -9190,6 +9325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &940745560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9335,6 +9471,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
 --- !u!114 &941031137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9899,6 +10036,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -10045,6 +10183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &993047429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10339,6 +10478,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -10485,6 +10625,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -10904,6 +11045,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11050,6 +11192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1177302147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11196,6 +11339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1203901639
 GameObject:
   m_ObjectHideFlags: 0
@@ -11499,6 +11643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -11645,6 +11790,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -11791,6 +11937,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -11937,6 +12084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -12083,6 +12231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -12229,6 +12378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12534,6 +12684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -13647,6 +13798,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14055,6 +14207,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14376,6 +14529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &1563760643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14772,6 +14926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -14918,6 +15073,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -15128,6 +15284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &1664672278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15274,6 +15431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &1666046602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15670,6 +15828,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1724643862
 GameObject:
   m_ObjectHideFlags: 0
@@ -16134,6 +16293,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!1 &1767130604
 GameObject:
   m_ObjectHideFlags: 0
@@ -16186,6 +16346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &1767130607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17159,6 +17320,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -17462,6 +17624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -17608,6 +17771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17817,6 +17981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &1966442484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18146,6 +18311,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -18292,6 +18458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2050043414
 GameObject:
   m_ObjectHideFlags: 0
@@ -18581,6 +18748,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &2081244241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18820,6 +18988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -18966,6 +19135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -19112,6 +19282,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2103451469
 GameObject:
   m_ObjectHideFlags: 0
@@ -19337,6 +19508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
 --- !u!1 &2133633091
 GameObject:
   m_ObjectHideFlags: 0
@@ -19390,6 +19562,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
 --- !u!114 &2133633094
 MonoBehaviour:
   m_ObjectHideFlags: 0
