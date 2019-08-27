@@ -6,13 +6,15 @@ public class DisplayAmountToBet : MonoBehaviour
 {
     public GameObject Panel;
     public SoundScript Ss;
+    public GetButtonNum Gbn;
+
 
     private void Start()
     {
         Ss = FindObjectOfType<SoundScript>();
     }
 
-    public void showHidePanel()
+    public void ShowHidePanel()
     {
         if (Panel != null)
         {
