@@ -361,7 +361,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 18504149}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -423,6 +423,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -507,7 +509,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 22643031}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -569,6 +571,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -652,8 +656,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 28234591}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -715,6 +719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -798,8 +804,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 35355873}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -861,6 +867,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &77668890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1178,7 +1186,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 84177454}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1240,6 +1248,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1793,7 +1803,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 162625820}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1855,6 +1865,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &171056039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2252,8 +2264,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 199731304}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2315,6 +2327,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,8 +2726,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 256244947}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2775,6 +2789,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,8 +3267,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 301854771}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3314,6 +3330,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3476,8 +3494,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 329475461}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3539,6 +3557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -3867,6 +3887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bddd20eb411fd459d624cfe5d3afec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 0}
   amountToChange: 10
@@ -4047,8 +4068,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 458555055}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4110,6 +4131,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4194,7 +4217,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 469675278}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4256,6 +4279,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -4967,8 +4992,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 550351219}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5030,6 +5055,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5428,7 +5455,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 561959461}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5490,6 +5517,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -5731,7 +5760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 571273866}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5793,6 +5822,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,7 +6065,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 595861946}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6096,6 +6127,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &616024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6180,7 +6213,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 616024473}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6242,6 +6275,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6491,7 +6526,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 635001760}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6553,6 +6588,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -6763,6 +6800,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &681424414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6807,7 +6846,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 681424413}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7074,6 +7113,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &697793730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7118,7 +7159,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 697793729}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7774,6 +7815,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &813376614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7817,8 +7860,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 813376613}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7950,8 +7993,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 825994015}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8013,6 +8056,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8096,8 +8141,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 836823906}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8159,6 +8204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -9176,6 +9223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &940745560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9219,8 +9268,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 940745559}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9667,7 +9716,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 958431350}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9729,6 +9778,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -9812,8 +9863,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 960676969}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9875,6 +9926,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &993047429
 GameObject:
   m_ObjectHideFlags: 0
@@ -9926,6 +9979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bddd20eb411fd459d624cfe5d3afec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
   amountToChange: 10
@@ -10106,8 +10160,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1023385967}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10169,6 +10223,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -10252,8 +10308,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1036812359}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10315,6 +10371,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -10671,8 +10729,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1142114609}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10734,6 +10792,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -10817,8 +10877,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1157757727}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10880,6 +10940,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1177302147
 GameObject:
   m_ObjectHideFlags: 0
@@ -10963,8 +11025,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1177302152}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11026,6 +11088,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1203901639
 GameObject:
   m_ObjectHideFlags: 0
@@ -11266,8 +11330,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1205669522}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11329,6 +11393,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -11412,8 +11478,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1227263168}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11475,6 +11541,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -11558,8 +11626,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1246405275}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11621,6 +11689,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -11705,7 +11775,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1258632480}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11767,6 +11837,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -11850,8 +11922,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1323412631}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11913,6 +11985,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -11997,7 +12071,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1334521020}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12059,6 +12133,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -12301,8 +12377,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1359132691}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12364,6 +12440,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -13414,8 +13492,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1511159811}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13477,6 +13555,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -13611,6 +13691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5ffbc4a19354e40b89a003c8755b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
 --- !u!114 &1523562245
@@ -13789,8 +13870,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1527291867}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13852,6 +13933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14173,6 +14256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1563760643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14216,8 +14301,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1563760642}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14507,7 +14592,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1610360089}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14569,6 +14654,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -14652,8 +14739,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1617909953}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -14715,6 +14802,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -14925,6 +15014,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1664672278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14968,8 +15059,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1664672277}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15071,6 +15162,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1666046602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15114,8 +15207,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1666046601}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15404,8 +15497,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1716691571}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15467,6 +15560,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1724643862
 GameObject:
   m_ObjectHideFlags: 0
@@ -15869,7 +15964,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1756720132}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -15931,6 +16026,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1767130604
 GameObject:
   m_ObjectHideFlags: 0
@@ -15983,6 +16080,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1767130607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16027,7 +16126,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1767130606}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16882,8 +16981,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1835142228}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -16945,6 +17044,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -17185,8 +17286,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1916122769}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17248,6 +17349,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -17331,8 +17434,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1928020087}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17394,6 +17497,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -17603,6 +17708,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1966442484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17647,7 +17754,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1966442483}
-        m_MethodName: showHidePanel
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17858,8 +17965,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012285371}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17921,6 +18028,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -18004,8 +18113,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2033281530}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18067,6 +18176,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2050043414
 GameObject:
   m_ObjectHideFlags: 0
@@ -18356,6 +18467,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &2081244241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18399,8 +18512,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2081244240}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18532,8 +18645,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2094731941}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18595,6 +18708,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -18678,8 +18793,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2096150378}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18741,6 +18856,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -18824,8 +18941,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2100022147}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -18887,6 +19004,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2103451469
 GameObject:
   m_ObjectHideFlags: 0
@@ -19049,8 +19168,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2128767687}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 18504149}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19112,6 +19231,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!1 &2133633091
 GameObject:
   m_ObjectHideFlags: 0
@@ -19165,6 +19286,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &2133633094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19208,8 +19331,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2133633093}
-        m_MethodName: showHidePanel
+      - m_Target: {fileID: 681424413}
+        m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
