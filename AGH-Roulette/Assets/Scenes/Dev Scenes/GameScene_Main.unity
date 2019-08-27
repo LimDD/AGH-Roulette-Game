@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 18504148}
   - component: {fileID: 18504147}
   - component: {fileID: 18504146}
-  - component: {fileID: 18504149}
+  - component: {fileID: 18504150}
   m_Layer: 5
   m_Name: 2_Cell
   m_TagString: Untagged
@@ -360,7 +360,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -374,6 +374,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 18504144}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -432,7 +443,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18504144}
   m_CullTransparentMesh: 0
---- !u!114 &18504149
+--- !u!114 &18504150
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -441,12 +452,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 18504144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +473,7 @@ GameObject:
   - component: {fileID: 22643029}
   - component: {fileID: 22643028}
   - component: {fileID: 22643031}
+  - component: {fileID: 22643032}
   m_Layer: 5
   m_Name: Odds
   m_TagString: Untagged
@@ -552,6 +566,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 22643032}
+        m_MethodName: MoveToken
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &22643029
@@ -605,7 +630,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &22643032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22643026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -618,7 +659,7 @@ GameObject:
   - component: {fileID: 28234590}
   - component: {fileID: 28234589}
   - component: {fileID: 28234588}
-  - component: {fileID: 28234591}
+  - component: {fileID: 28234592}
   m_Layer: 5
   m_Name: 10_Cell
   m_TagString: Untagged
@@ -689,7 +730,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -703,6 +744,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 28234586}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -761,7 +813,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 28234586}
   m_CullTransparentMesh: 0
---- !u!114 &28234591
+--- !u!114 &28234592
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -770,12 +822,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 28234586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -788,7 +842,7 @@ GameObject:
   - component: {fileID: 35355872}
   - component: {fileID: 35355871}
   - component: {fileID: 35355870}
-  - component: {fileID: 35355873}
+  - component: {fileID: 35355874}
   m_Layer: 5
   m_Name: 3_Cell
   m_TagString: Untagged
@@ -859,7 +913,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -873,6 +927,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 35355868}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -931,7 +996,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 35355868}
   m_CullTransparentMesh: 0
---- !u!114 &35355873
+--- !u!114 &35355874
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -940,12 +1005,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 35355868}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &77668890
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1259,7 @@ GameObject:
   - component: {fileID: 84177452}
   - component: {fileID: 84177451}
   - component: {fileID: 84177454}
+  - component: {fileID: 84177455}
   m_Layer: 5
   m_Name: 1st_Third
   m_TagString: Untagged
@@ -1262,7 +1330,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 84177454}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -1276,6 +1344,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 84177455}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1337,7 +1416,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &84177455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84177449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +1914,7 @@ GameObject:
   - component: {fileID: 162625819}
   - component: {fileID: 162625818}
   - component: {fileID: 162625817}
+  - component: {fileID: 162625820}
   m_Layer: 5
   m_Name: 1_Cell
   m_TagString: Untagged
@@ -1911,6 +2007,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 162625815}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -1961,6 +2068,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162625815}
   m_CullTransparentMesh: 0
+--- !u!114 &162625820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162625815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &171056039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2287,7 +2411,7 @@ GameObject:
   - component: {fileID: 199731303}
   - component: {fileID: 199731302}
   - component: {fileID: 199731301}
-  - component: {fileID: 199731304}
+  - component: {fileID: 199731305}
   m_Layer: 5
   m_Name: 14_Cell
   m_TagString: Untagged
@@ -2358,7 +2482,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -2372,6 +2496,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 199731299}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2430,7 +2565,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199731299}
   m_CullTransparentMesh: 0
---- !u!114 &199731304
+--- !u!114 &199731305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2439,12 +2574,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 199731299}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -2771,7 +2908,7 @@ GameObject:
   - component: {fileID: 256244946}
   - component: {fileID: 256244945}
   - component: {fileID: 256244944}
-  - component: {fileID: 256244947}
+  - component: {fileID: 256244948}
   m_Layer: 5
   m_Name: 16_Cell
   m_TagString: Untagged
@@ -2842,7 +2979,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -2856,6 +2993,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 256244942}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2914,7 +3062,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256244942}
   m_CullTransparentMesh: 0
---- !u!114 &256244947
+--- !u!114 &256244948
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2923,12 +3071,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 256244942}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -3334,7 +3484,7 @@ GameObject:
   - component: {fileID: 301854770}
   - component: {fileID: 301854769}
   - component: {fileID: 301854768}
-  - component: {fileID: 301854771}
+  - component: {fileID: 301854772}
   m_Layer: 5
   m_Name: 12_Cell
   m_TagString: Untagged
@@ -3405,7 +3555,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -3419,6 +3569,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 301854766}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3477,7 +3638,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301854766}
   m_CullTransparentMesh: 0
---- !u!114 &301854771
+--- !u!114 &301854772
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3486,12 +3647,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 301854766}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -3583,7 +3746,7 @@ GameObject:
   - component: {fileID: 329475460}
   - component: {fileID: 329475459}
   - component: {fileID: 329475458}
-  - component: {fileID: 329475461}
+  - component: {fileID: 329475462}
   m_Layer: 5
   m_Name: 27_Cell
   m_TagString: Untagged
@@ -3654,7 +3817,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -3668,6 +3831,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 329475456}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3726,7 +3900,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 329475456}
   m_CullTransparentMesh: 0
---- !u!114 &329475461
+--- !u!114 &329475462
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3735,12 +3909,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 329475456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -4179,7 +4355,7 @@ GameObject:
   - component: {fileID: 458555054}
   - component: {fileID: 458555053}
   - component: {fileID: 458555052}
-  - component: {fileID: 458555055}
+  - component: {fileID: 458555056}
   m_Layer: 5
   m_Name: 18_Cell
   m_TagString: Untagged
@@ -4250,7 +4426,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -4264,6 +4440,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 458555050}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4322,7 +4509,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 458555050}
   m_CullTransparentMesh: 0
---- !u!114 &458555055
+--- !u!114 &458555056
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4331,12 +4518,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 458555050}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -4350,6 +4539,7 @@ GameObject:
   - component: {fileID: 469675276}
   - component: {fileID: 469675275}
   - component: {fileID: 469675278}
+  - component: {fileID: 469675279}
   m_Layer: 5
   m_Name: 2nd_Third
   m_TagString: Untagged
@@ -4420,7 +4610,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 469675278}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -4434,6 +4624,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 469675279}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4495,7 +4696,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &469675279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469675273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,7 +5353,7 @@ GameObject:
   - component: {fileID: 550351218}
   - component: {fileID: 550351217}
   - component: {fileID: 550351216}
-  - component: {fileID: 550351219}
+  - component: {fileID: 550351220}
   m_Layer: 5
   m_Name: 20_Cell
   m_TagString: Untagged
@@ -5207,7 +5424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -5221,6 +5438,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 550351214}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5279,7 +5507,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550351214}
   m_CullTransparentMesh: 0
---- !u!114 &550351219
+--- !u!114 &550351220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5288,12 +5516,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 550351214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -5692,7 +5922,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 561959461}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -5778,7 +6008,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &561959462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6037,7 +6266,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 571273866}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -6123,7 +6352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &571273867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6311,6 +6539,7 @@ GameObject:
   - component: {fileID: 595861944}
   - component: {fileID: 595861943}
   - component: {fileID: 595861946}
+  - component: {fileID: 595861947}
   m_Layer: 5
   m_Name: Evens
   m_TagString: Untagged
@@ -6381,7 +6610,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 595861946}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -6395,6 +6624,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 595861947}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6456,7 +6696,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &595861947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595861941}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &616024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -6469,6 +6725,7 @@ GameObject:
   - component: {fileID: 616024472}
   - component: {fileID: 616024471}
   - component: {fileID: 616024470}
+  - component: {fileID: 616024474}
   - component: {fileID: 616024473}
   m_Layer: 5
   m_Name: 2nd_Column
@@ -6540,7 +6797,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 616024473}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -6554,6 +6811,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 616024474}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6615,7 +6883,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &616024474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616024468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -6794,6 +7078,7 @@ GameObject:
   - component: {fileID: 635001758}
   - component: {fileID: 635001757}
   - component: {fileID: 635001760}
+  - component: {fileID: 635001761}
   m_Layer: 5
   m_Name: 1_To_18
   m_TagString: Untagged
@@ -6864,7 +7149,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 635001760}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -6878,6 +7163,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 635001761}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6939,7 +7235,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &635001761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635001755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -7151,7 +7463,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &681424414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7464,7 +7775,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &697793730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8166,7 +8476,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &813376614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8272,7 +8581,7 @@ GameObject:
   - component: {fileID: 825994014}
   - component: {fileID: 825994013}
   - component: {fileID: 825994012}
-  - component: {fileID: 825994015}
+  - component: {fileID: 825994016}
   m_Layer: 5
   m_Name: 8_Cell
   m_TagString: Untagged
@@ -8343,7 +8652,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -8357,6 +8666,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 825994010}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8415,7 +8735,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825994010}
   m_CullTransparentMesh: 0
---- !u!114 &825994015
+--- !u!114 &825994016
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8424,12 +8744,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 825994010}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -8442,7 +8764,7 @@ GameObject:
   - component: {fileID: 836823905}
   - component: {fileID: 836823904}
   - component: {fileID: 836823903}
-  - component: {fileID: 836823906}
+  - component: {fileID: 836823907}
   m_Layer: 5
   m_Name: 17_Cell
   m_TagString: Untagged
@@ -8513,7 +8835,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -8527,6 +8849,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 836823901}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8585,7 +8918,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836823901}
   m_CullTransparentMesh: 0
---- !u!114 &836823906
+--- !u!114 &836823907
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8594,12 +8927,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 836823901}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -9405,7 +9740,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 78692584}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!1 &929073120
 GameObject:
   m_ObjectHideFlags: 0
@@ -9774,7 +10108,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &940745560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9921,7 +10254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &941031137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10353,6 +10685,7 @@ GameObject:
   - component: {fileID: 958431348}
   - component: {fileID: 958431347}
   - component: {fileID: 958431350}
+  - component: {fileID: 958431351}
   m_Layer: 5
   m_Name: 19_To_36
   m_TagString: Untagged
@@ -10423,7 +10756,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 958431350}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -10437,6 +10770,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 958431351}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10498,7 +10842,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &958431351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958431345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -10511,7 +10871,7 @@ GameObject:
   - component: {fileID: 960676968}
   - component: {fileID: 960676967}
   - component: {fileID: 960676966}
-  - component: {fileID: 960676969}
+  - component: {fileID: 960676970}
   m_Layer: 5
   m_Name: 13_Cell
   m_TagString: Untagged
@@ -10582,7 +10942,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -10596,6 +10956,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 960676964}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10654,7 +11025,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 960676964}
   m_CullTransparentMesh: 0
---- !u!114 &960676969
+--- !u!114 &960676970
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10663,12 +11034,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 960676964}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &993047429
 GameObject:
   m_ObjectHideFlags: 0
@@ -10830,7 +11203,7 @@ GameObject:
   - component: {fileID: 1023385966}
   - component: {fileID: 1023385965}
   - component: {fileID: 1023385964}
-  - component: {fileID: 1023385967}
+  - component: {fileID: 1023385968}
   m_Layer: 5
   m_Name: 33_Cell
   m_TagString: Untagged
@@ -10901,7 +11274,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -10915,6 +11288,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1023385968}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10973,7 +11357,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023385962}
   m_CullTransparentMesh: 0
---- !u!114 &1023385967
+--- !u!114 &1023385968
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10982,12 +11366,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1023385962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -11000,7 +11386,7 @@ GameObject:
   - component: {fileID: 1036812358}
   - component: {fileID: 1036812357}
   - component: {fileID: 1036812356}
-  - component: {fileID: 1036812359}
+  - component: {fileID: 1036812360}
   m_Layer: 5
   m_Name: 11_Cell
   m_TagString: Untagged
@@ -11071,7 +11457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -11085,6 +11471,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1036812354}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11143,7 +11540,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1036812354}
   m_CullTransparentMesh: 0
---- !u!114 &1036812359
+--- !u!114 &1036812360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11152,12 +11549,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1036812354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -11443,7 +11842,7 @@ GameObject:
   - component: {fileID: 1142114608}
   - component: {fileID: 1142114607}
   - component: {fileID: 1142114606}
-  - component: {fileID: 1142114609}
+  - component: {fileID: 1142114610}
   m_Layer: 5
   m_Name: 6_Cell
   m_TagString: Untagged
@@ -11514,7 +11913,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -11528,6 +11927,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1142114604}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11586,7 +11996,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142114604}
   m_CullTransparentMesh: 0
---- !u!114 &1142114609
+--- !u!114 &1142114610
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11595,12 +12005,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142114604}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -11613,7 +12025,7 @@ GameObject:
   - component: {fileID: 1157757726}
   - component: {fileID: 1157757725}
   - component: {fileID: 1157757724}
-  - component: {fileID: 1157757727}
+  - component: {fileID: 1157757728}
   m_Layer: 5
   m_Name: 28_Cell
   m_TagString: Untagged
@@ -11684,7 +12096,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -11698,6 +12110,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1157757722}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11756,7 +12179,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1157757722}
   m_CullTransparentMesh: 0
---- !u!114 &1157757727
+--- !u!114 &1157757728
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11765,12 +12188,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1157757722}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1177302147
 GameObject:
   m_ObjectHideFlags: 0
@@ -11783,7 +12208,7 @@ GameObject:
   - component: {fileID: 1177302151}
   - component: {fileID: 1177302150}
   - component: {fileID: 1177302149}
-  - component: {fileID: 1177302152}
+  - component: {fileID: 1177302153}
   m_Layer: 5
   m_Name: 5_Cell
   m_TagString: Untagged
@@ -11854,7 +12279,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -11868,6 +12293,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1177302147}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11926,7 +12362,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177302147}
   m_CullTransparentMesh: 0
---- !u!114 &1177302152
+--- !u!114 &1177302153
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11935,12 +12371,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1177302147}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1203901639
 GameObject:
   m_ObjectHideFlags: 0
@@ -12110,7 +12548,7 @@ GameObject:
   - component: {fileID: 1205669521}
   - component: {fileID: 1205669520}
   - component: {fileID: 1205669519}
-  - component: {fileID: 1205669522}
+  - component: {fileID: 1205669523}
   m_Layer: 5
   m_Name: 19_Cell
   m_TagString: Untagged
@@ -12181,7 +12619,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -12195,6 +12633,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1205669517}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12253,7 +12702,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205669517}
   m_CullTransparentMesh: 0
---- !u!114 &1205669522
+--- !u!114 &1205669523
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12262,12 +12711,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1205669517}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -12280,7 +12731,7 @@ GameObject:
   - component: {fileID: 1227263167}
   - component: {fileID: 1227263166}
   - component: {fileID: 1227263165}
-  - component: {fileID: 1227263168}
+  - component: {fileID: 1227263169}
   m_Layer: 5
   m_Name: 9_Cell
   m_TagString: Untagged
@@ -12351,7 +12802,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -12365,6 +12816,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1227263163}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12423,7 +12885,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227263163}
   m_CullTransparentMesh: 0
---- !u!114 &1227263168
+--- !u!114 &1227263169
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12432,12 +12894,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1227263163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -12450,7 +12914,7 @@ GameObject:
   - component: {fileID: 1246405274}
   - component: {fileID: 1246405273}
   - component: {fileID: 1246405272}
-  - component: {fileID: 1246405275}
+  - component: {fileID: 1246405276}
   m_Layer: 5
   m_Name: 26_Cell
   m_TagString: Untagged
@@ -12521,7 +12985,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -12535,6 +12999,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1246405270}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12593,7 +13068,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1246405270}
   m_CullTransparentMesh: 0
---- !u!114 &1246405275
+--- !u!114 &1246405276
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12602,12 +13077,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1246405270}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -12620,7 +13097,7 @@ GameObject:
   - component: {fileID: 1258632479}
   - component: {fileID: 1258632478}
   - component: {fileID: 1258632477}
-  - component: {fileID: 1258632480}
+  - component: {fileID: 1258632481}
   m_Layer: 0
   m_Name: 0_Cell
   m_TagString: Untagged
@@ -12691,7 +13168,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -12713,8 +13190,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 863234866}
-        m_MethodName: GetNum
+      - m_Target: {fileID: 1258632475}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12774,7 +13251,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1258632475}
   m_CullTransparentMesh: 0
---- !u!114 &1258632480
+--- !u!114 &1258632481
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12783,12 +13260,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258632475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -12801,7 +13280,7 @@ GameObject:
   - component: {fileID: 1323412630}
   - component: {fileID: 1323412629}
   - component: {fileID: 1323412628}
-  - component: {fileID: 1323412631}
+  - component: {fileID: 1323412632}
   m_Layer: 5
   m_Name: 32_Cell
   m_TagString: Untagged
@@ -12872,7 +13351,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -12886,6 +13365,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1323412632}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -12944,7 +13434,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1323412626}
   m_CullTransparentMesh: 0
---- !u!114 &1323412631
+--- !u!114 &1323412632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12953,12 +13443,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1323412626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -12972,6 +13464,7 @@ GameObject:
   - component: {fileID: 1334521018}
   - component: {fileID: 1334521017}
   - component: {fileID: 1334521020}
+  - component: {fileID: 1334521021}
   m_Layer: 5
   m_Name: 3rd_Column
   m_TagString: Untagged
@@ -13042,7 +13535,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 1334521020}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -13056,6 +13549,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1334521021}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13117,7 +13621,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &1334521021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334521015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -13289,7 +13809,7 @@ GameObject:
   - component: {fileID: 1359132690}
   - component: {fileID: 1359132689}
   - component: {fileID: 1359132688}
-  - component: {fileID: 1359132691}
+  - component: {fileID: 1359132692}
   m_Layer: 5
   m_Name: 31_Cell
   m_TagString: Untagged
@@ -13360,7 +13880,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -13374,6 +13894,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1359132692}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -13432,7 +13963,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1359132686}
   m_CullTransparentMesh: 0
---- !u!114 &1359132691
+--- !u!114 &1359132692
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13441,12 +13972,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359132686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -14426,7 +14959,7 @@ GameObject:
   - component: {fileID: 1511159810}
   - component: {fileID: 1511159809}
   - component: {fileID: 1511159808}
-  - component: {fileID: 1511159811}
+  - component: {fileID: 1511159812}
   m_Layer: 5
   m_Name: 25_Cell
   m_TagString: Untagged
@@ -14497,7 +15030,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -14511,6 +15044,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1511159806}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -14569,7 +15113,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1511159806}
   m_CullTransparentMesh: 0
---- !u!114 &1511159811
+--- !u!114 &1511159812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14578,12 +15122,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511159806}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14870,7 +15416,7 @@ GameObject:
   - component: {fileID: 1527291866}
   - component: {fileID: 1527291865}
   - component: {fileID: 1527291864}
-  - component: {fileID: 1527291867}
+  - component: {fileID: 1527291868}
   m_Layer: 5
   m_Name: 36_Cell
   m_TagString: Untagged
@@ -14941,7 +15487,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -14955,6 +15501,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1527291868}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15013,7 +15570,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1527291862}
   m_CullTransparentMesh: 0
---- !u!114 &1527291867
+--- !u!114 &1527291868
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15022,12 +15579,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1527291862}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -15350,7 +15909,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1563760643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15614,6 +16172,7 @@ GameObject:
   - component: {fileID: 1610360087}
   - component: {fileID: 1610360086}
   - component: {fileID: 1610360089}
+  - component: {fileID: 1610360090}
   m_Layer: 5
   m_Name: 1st_Column
   m_TagString: Untagged
@@ -15684,7 +16243,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 1610360089}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -15698,6 +16257,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1610360090}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15759,7 +16329,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &1610360090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610360084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -15772,7 +16358,7 @@ GameObject:
   - component: {fileID: 1617909952}
   - component: {fileID: 1617909951}
   - component: {fileID: 1617909950}
-  - component: {fileID: 1617909953}
+  - component: {fileID: 1617909954}
   m_Layer: 5
   m_Name: 35_Cell
   m_TagString: Untagged
@@ -15843,7 +16429,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -15857,6 +16443,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1617909954}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -15915,7 +16512,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1617909948}
   m_CullTransparentMesh: 0
---- !u!114 &1617909953
+--- !u!114 &1617909954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15924,12 +16521,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1617909948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -16141,7 +16740,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1664672278
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16289,7 +16887,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1666046602
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16552,7 +17149,7 @@ GameObject:
   - component: {fileID: 1716691570}
   - component: {fileID: 1716691569}
   - component: {fileID: 1716691568}
-  - component: {fileID: 1716691571}
+  - component: {fileID: 1716691572}
   m_Layer: 5
   m_Name: 30_Cell
   m_TagString: Untagged
@@ -16623,7 +17220,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -16637,6 +17234,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1716691572}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16695,7 +17303,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1716691566}
   m_CullTransparentMesh: 0
---- !u!114 &1716691571
+--- !u!114 &1716691572
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16704,12 +17312,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1716691566}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1724643862
 GameObject:
   m_ObjectHideFlags: 0
@@ -17041,6 +17651,7 @@ GameObject:
   - component: {fileID: 1756720130}
   - component: {fileID: 1756720129}
   - component: {fileID: 1756720132}
+  - component: {fileID: 1756720133}
   m_Layer: 5
   m_Name: 3rd Third
   m_TagString: Untagged
@@ -17111,7 +17722,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 22643031}
+      - m_Target: {fileID: 1756720132}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -17125,6 +17736,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1756720133}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -17186,7 +17808,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+--- !u!114 &1756720133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1756720127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1767130604
 GameObject:
   m_ObjectHideFlags: 0
@@ -17240,7 +17878,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1767130607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18080,7 +18717,7 @@ GameObject:
   - component: {fileID: 1835142227}
   - component: {fileID: 1835142226}
   - component: {fileID: 1835142225}
-  - component: {fileID: 1835142228}
+  - component: {fileID: 1835142229}
   m_Layer: 5
   m_Name: 29_Cell
   m_TagString: Untagged
@@ -18151,7 +18788,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -18165,6 +18802,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1835142223}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18223,7 +18871,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1835142223}
   m_CullTransparentMesh: 0
---- !u!114 &1835142228
+--- !u!114 &1835142229
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18232,12 +18880,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1835142223}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -18407,7 +19057,7 @@ GameObject:
   - component: {fileID: 1916122768}
   - component: {fileID: 1916122767}
   - component: {fileID: 1916122766}
-  - component: {fileID: 1916122769}
+  - component: {fileID: 1916122770}
   m_Layer: 5
   m_Name: 21_Cell
   m_TagString: Untagged
@@ -18478,7 +19128,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -18492,6 +19142,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1916122764}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18550,7 +19211,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1916122764}
   m_CullTransparentMesh: 0
---- !u!114 &1916122769
+--- !u!114 &1916122770
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18559,12 +19220,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1916122764}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -18577,7 +19240,7 @@ GameObject:
   - component: {fileID: 1928020086}
   - component: {fileID: 1928020085}
   - component: {fileID: 1928020084}
-  - component: {fileID: 1928020087}
+  - component: {fileID: 1928020088}
   m_Layer: 5
   m_Name: 22_Cell
   m_TagString: Untagged
@@ -18648,7 +19311,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -18662,6 +19325,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1928020082}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -18720,7 +19394,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928020082}
   m_CullTransparentMesh: 0
---- !u!114 &1928020087
+--- !u!114 &1928020088
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -18729,12 +19403,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928020082}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -18945,7 +19621,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1966442484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19141,7 +19816,7 @@ GameObject:
   - component: {fileID: 2012285370}
   - component: {fileID: 2012285369}
   - component: {fileID: 2012285368}
-  - component: {fileID: 2012285371}
+  - component: {fileID: 2012285372}
   m_Layer: 5
   m_Name: 7_Cell
   m_TagString: Untagged
@@ -19212,7 +19887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2012285371}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -19226,6 +19901,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2012285366}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19284,7 +19970,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2012285366}
   m_CullTransparentMesh: 0
---- !u!114 &2012285371
+--- !u!114 &2012285372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19293,12 +19979,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2012285366}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -19311,7 +19999,7 @@ GameObject:
   - component: {fileID: 2033281529}
   - component: {fileID: 2033281528}
   - component: {fileID: 2033281527}
-  - component: {fileID: 2033281530}
+  - component: {fileID: 2033281531}
   m_Layer: 5
   m_Name: 23_Cell
   m_TagString: Untagged
@@ -19382,7 +20070,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -19396,6 +20084,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2033281525}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19454,7 +20153,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2033281525}
   m_CullTransparentMesh: 0
---- !u!114 &2033281530
+--- !u!114 &2033281531
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -19463,12 +20162,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2033281525}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2050043414
 GameObject:
   m_ObjectHideFlags: 0
@@ -19759,7 +20460,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &2081244241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19865,7 +20565,7 @@ GameObject:
   - component: {fileID: 2094731940}
   - component: {fileID: 2094731939}
   - component: {fileID: 2094731938}
-  - component: {fileID: 2094731941}
+  - component: {fileID: 2094731942}
   m_Layer: 5
   m_Name: 34_Cell
   m_TagString: Untagged
@@ -19936,7 +20636,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -19950,6 +20650,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2094731942}
+        m_MethodName: MoveToken
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20008,7 +20719,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094731936}
   m_CullTransparentMesh: 0
---- !u!114 &2094731941
+--- !u!114 &2094731942
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20017,12 +20728,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2094731936}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -20035,7 +20748,7 @@ GameObject:
   - component: {fileID: 2096150377}
   - component: {fileID: 2096150376}
   - component: {fileID: 2096150375}
-  - component: {fileID: 2096150378}
+  - component: {fileID: 2096150379}
   m_Layer: 5
   m_Name: 15_Cell
   m_TagString: Untagged
@@ -20106,7 +20819,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -20120,6 +20833,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2096150373}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20178,7 +20902,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096150373}
   m_CullTransparentMesh: 0
---- !u!114 &2096150378
+--- !u!114 &2096150379
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20187,12 +20911,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096150373}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -20205,7 +20931,7 @@ GameObject:
   - component: {fileID: 2100022146}
   - component: {fileID: 2100022145}
   - component: {fileID: 2100022144}
-  - component: {fileID: 2100022147}
+  - component: {fileID: 2100022148}
   m_Layer: 5
   m_Name: 4_Cell
   m_TagString: Untagged
@@ -20276,7 +21002,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -20290,6 +21016,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2100022142}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20348,7 +21085,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100022142}
   m_CullTransparentMesh: 0
---- !u!114 &2100022147
+--- !u!114 &2100022148
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20357,12 +21094,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2100022142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2103451469
 GameObject:
   m_ObjectHideFlags: 0
@@ -20454,7 +21193,7 @@ GameObject:
   - component: {fileID: 2128767686}
   - component: {fileID: 2128767685}
   - component: {fileID: 2128767684}
-  - component: {fileID: 2128767687}
+  - component: {fileID: 2128767688}
   m_Layer: 5
   m_Name: 24_Cell
   m_TagString: Untagged
@@ -20525,7 +21264,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 18504149}
+      - m_Target: {fileID: 863234867}
         m_MethodName: ShowHidePanel
         m_Mode: 1
         m_Arguments:
@@ -20539,6 +21278,17 @@ MonoBehaviour:
       - m_Target: {fileID: 1135392838}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2128767682}
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -20597,7 +21347,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2128767682}
   m_CullTransparentMesh: 0
---- !u!114 &2128767687
+--- !u!114 &2128767688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20606,12 +21356,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2128767682}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Panel: {fileID: 78692584}
-  Ss: {fileID: 0}
-  Gbn: {fileID: 0}
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &2133633091
 GameObject:
   m_ObjectHideFlags: 0
@@ -20666,7 +21418,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &2133633094
 MonoBehaviour:
   m_ObjectHideFlags: 0

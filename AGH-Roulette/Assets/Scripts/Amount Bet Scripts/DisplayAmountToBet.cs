@@ -6,8 +6,6 @@ public class DisplayAmountToBet : MonoBehaviour
 {
     public GameObject Panel;
     public SoundScript Ss;
-    public GetButtonNum Gbn;
-
 
     private void Start()
     {

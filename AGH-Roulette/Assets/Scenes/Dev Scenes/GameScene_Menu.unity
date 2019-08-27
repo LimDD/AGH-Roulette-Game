@@ -1179,6 +1179,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &156785049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1529,6 +1531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &206839238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1722,6 +1726,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &256283268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4136,6 +4142,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &684521773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6943,6 +6951,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1016359394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9931,6 +9941,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1495487194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10638,6 +10650,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1522099661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11445,7 +11459,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Outside Bet
+  m_text: Outside Bets
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -12219,6 +12233,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
+  Ss: {fileID: 0}
+  Gbn: {fileID: 0}
 --- !u!114 &1824440346
 MonoBehaviour:
   m_ObjectHideFlags: 0
