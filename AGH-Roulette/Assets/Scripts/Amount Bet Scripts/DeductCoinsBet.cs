@@ -6,13 +6,21 @@ using System.Text.RegularExpressions;
 
 public class DeductCoinsBet : MonoBehaviour
 {
-
+    public SoundScript Ss;
     public Text betText;
     public Text playerCoinsText;
     //int tempBet = 20; 
 
+    private void Start()
+    {
+        Ss = FindObjectOfType<SoundScript>();
+    }
+
     public void DeductCoins()
     {
+
+        Ss.Bet();
+
         int amountBet = 0;
         int playerCoins = 0;
 

@@ -6,15 +6,21 @@ using System.Text.RegularExpressions;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
-   
+    public SoundScript Ss;
     public Text betText;
     public Text playerCoinsText;
     public int amountToChange = 10;
     public int minBet = 10;
-    
+
+    private void Start()
+    {
+        Ss = FindObjectOfType<SoundScript>();
+    }
+
     //Increases the text display
     public void Increment()
     {
+        Ss.Bet();
         int bettingAmount = 0; 
         int maxBet = 0;
 
@@ -31,7 +37,8 @@ public class PlusMinusAmountBet : MonoBehaviour
     }
 
     public void Decrement()
-    {    
+    {
+        Ss.Bet();
         int bettingAmount = TextToInt(betText);
         
         if(bettingAmount > minBet)
