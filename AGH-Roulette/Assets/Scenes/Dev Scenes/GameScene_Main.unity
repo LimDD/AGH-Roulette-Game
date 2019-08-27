@@ -5621,6 +5621,7 @@ GameObject:
   - component: {fileID: 561959459}
   - component: {fileID: 561959458}
   - component: {fileID: 561959461}
+  - component: {fileID: 561959462}
   m_Layer: 5
   m_Name: Reds
   m_TagString: Untagged
@@ -5713,6 +5714,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 561959462}
+        m_MethodName: MoveToken
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &561959459
@@ -5767,6 +5779,23 @@ MonoBehaviour:
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
   Gbn: {fileID: 0}
+--- !u!114 &561959462
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561959456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11306,7 +11335,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1135392839
 RectTransform:
   m_ObjectHideFlags: 0
