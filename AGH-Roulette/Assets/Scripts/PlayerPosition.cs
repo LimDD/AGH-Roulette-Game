@@ -13,12 +13,14 @@ public class PlayerPosition : MonoBehaviour
     private Vector2 mousePosition;
     //Used to calculate the position of the object and mouse/touch position
     private float deltaX, deltaY;
-    
-    
+
+
     // Start is called before the first frame update
     void Start()
     {
         initialPosition = transform.position;
+
+        gameObject.SetActive(false);
     }
 
 

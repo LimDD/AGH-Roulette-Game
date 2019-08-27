@@ -5937,6 +5937,7 @@ GameObject:
   - component: {fileID: 571273864}
   - component: {fileID: 571273863}
   - component: {fileID: 571273866}
+  - component: {fileID: 571273867}
   m_Layer: 5
   m_Name: Black
   m_TagString: Untagged
@@ -6029,6 +6030,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 571273867}
+        m_MethodName: MoveToken
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &571273864
@@ -6083,6 +6095,23 @@ MonoBehaviour:
   Panel: {fileID: 1519994127}
   Ss: {fileID: 0}
   Gbn: {fileID: 0}
+--- !u!114 &571273867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571273861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b71ac68af46a7d478ece846e9181431, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coordx: 0
+  coordy: 0
+  coordz: 0
+  PlayerToken: {fileID: 0}
+  TokenCopy: {fileID: 0}
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
