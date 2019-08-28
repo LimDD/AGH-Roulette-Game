@@ -9,7 +9,14 @@ using System;
 public class GetButtonNum : MonoBehaviour
 {
     public Text tNum;
-    public Text botR; 
+    public Text topL;
+    public Text topM;
+    public Text topR;
+    public Text midL;
+    public Text midR;
+    public Text botL;
+    public Text botM;
+    public Text botR;
 
     public void GetNum()
     {
@@ -24,6 +31,13 @@ public class GetButtonNum : MonoBehaviour
 
     public void BetType(string num)
     {
+        //topL = GameObject.Find("TopL").GetComponent<Text>();
+        //topM = GameObject.Find("TopM").GetComponent<Text>();
+       // topR = GameObject.Find("TopR").GetComponent<Text>();
+        //midL = GameObject.Find("MiddleL").GetComponent<Text>();
+        //midR = GameObject.Find("MiddleR").GetComponent<Text>();
+        //botL = GameObject.Find("BottomL").GetComponent<Text>();
+        //botM = GameObject.Find("BottomM").GetComponent<Text>();
         botR = GameObject.Find("BottomR").GetComponent<Text>();
         int n = Convert.ToInt32(num);
 
@@ -34,8 +48,9 @@ public class GetButtonNum : MonoBehaviour
             if (n == 3 * x || n >= 34)
             {
                 //Commented these out for now as I do not know the best way to restore it after they have completed their bet.
-                //botR.GetComponentInParent<Button>().gameObject.SetActive(false);
+                botR.GetComponentInParent<Button>().gameObject.SetActive(false);
                 //botR.GetComponentInParent<Button>().interactable = false;
+                x = 12;
             }
         }
     }
