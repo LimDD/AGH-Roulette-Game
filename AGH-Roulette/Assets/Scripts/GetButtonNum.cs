@@ -60,13 +60,13 @@ public class GetButtonNum : MonoBehaviour
             topM.GetComponentInParent<Button>().gameObject.SetActive(false);
             topR.GetComponentInParent<Button>().gameObject.SetActive(false);
 
-            if (n == 34)
+            if (n == 1)
             {
                 midL.GetComponentInParent<Button>().gameObject.SetActive(false);
                 topL.GetComponentInParent<Button>().gameObject.SetActive(false);
             }
 
-            if (n == 36)
+            if (n == 3)
             {
                 midR.GetComponentInParent<Button>().gameObject.SetActive(false);
                 topR.GetComponentInParent<Button>().gameObject.SetActive(false);
