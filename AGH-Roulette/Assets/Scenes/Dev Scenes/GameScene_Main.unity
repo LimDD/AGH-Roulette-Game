@@ -3405,7 +3405,7 @@ GameObject:
   - component: {fileID: 293601254}
   - component: {fileID: 293601253}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TopL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3667,7 +3667,7 @@ GameObject:
   - component: {fileID: 313070601}
   - component: {fileID: 313070600}
   m_Layer: 0
-  m_Name: Text
+  m_Name: MiddleL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6998,7 +6998,7 @@ GameObject:
   - component: {fileID: 629687683}
   - component: {fileID: 629687682}
   m_Layer: 0
-  m_Name: Text
+  m_Name: BottomR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7056,7 +7056,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Corner \nBet"
+  m_Text: test
 --- !u!222 &629687683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9748,6 +9748,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tNum: {fileID: 0}
+  topL: {fileID: 0}
+  topM: {fileID: 0}
+  topR: {fileID: 0}
+  midL: {fileID: 0}
+  midR: {fileID: 0}
+  botL: {fileID: 0}
+  botM: {fileID: 0}
+  botR: {fileID: 0}
 --- !u!114 &863234867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11591,7 +11599,7 @@ GameObject:
   - component: {fileID: 1062282968}
   - component: {fileID: 1062282967}
   m_Layer: 0
-  m_Name: Text
+  m_Name: MiddleR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11670,7 +11678,7 @@ GameObject:
   - component: {fileID: 1069604289}
   - component: {fileID: 1069604288}
   m_Layer: 0
-  m_Name: Text
+  m_Name: BottomL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19794,7 +19802,7 @@ GameObject:
   - component: {fileID: 1986678839}
   - component: {fileID: 1986678838}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TopM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20396,7 +20404,7 @@ GameObject:
   - component: {fileID: 2052606561}
   - component: {fileID: 2052606560}
   m_Layer: 0
-  m_Name: Text
+  m_Name: TopR
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21602,7 +21610,7 @@ GameObject:
   - component: {fileID: 2139356511}
   - component: {fileID: 2139356510}
   m_Layer: 0
-  m_Name: Text
+  m_Name: BottomM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
