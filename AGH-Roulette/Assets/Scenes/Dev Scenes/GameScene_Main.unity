@@ -7056,7 +7056,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: test
+  m_Text: 'Corner
+
+    Bet'
 --- !u!222 &629687683
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9748,13 +9750,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tNum: {fileID: 0}
-  topL: {fileID: 0}
-  topM: {fileID: 0}
-  topR: {fileID: 0}
-  midL: {fileID: 0}
-  midR: {fileID: 0}
-  botL: {fileID: 0}
-  botM: {fileID: 0}
   botR: {fileID: 0}
 --- !u!114 &863234867
 MonoBehaviour:
