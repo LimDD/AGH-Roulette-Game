@@ -382,17 +382,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 18504144}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -469,7 +458,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &22643026
 GameObject:
@@ -656,7 +645,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &28234586
 GameObject:
@@ -763,17 +752,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 28234586}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -850,7 +828,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &35355868
 GameObject:
@@ -957,17 +935,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 35355868}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -1044,7 +1011,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &77668890
 GameObject:
@@ -1464,7 +1431,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &97601915
 GameObject:
@@ -2040,17 +2007,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 162625815}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -2127,7 +2083,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &171056039
 GameObject:
@@ -2548,17 +2504,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 199731299}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -2635,7 +2580,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &201331711
 GameObject:
@@ -3056,17 +3001,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 256244942}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -3143,7 +3077,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &272479950
 GameObject:
@@ -3643,17 +3577,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 301854766}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -3730,7 +3653,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &313070598
 GameObject:
@@ -3916,17 +3839,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 329475456}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -4003,7 +3915,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &396104701
 GameObject:
@@ -4536,17 +4448,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 458555050}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -4623,7 +4524,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &469675273
 GameObject:
@@ -4810,7 +4711,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &513992966
 GameObject:
@@ -5545,17 +5446,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 550351214}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -5632,7 +5522,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &551281550
 GameObject:
@@ -6133,7 +6023,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &563829114
 GameObject:
@@ -6477,7 +6367,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &584579353
 GameObject:
@@ -6821,7 +6711,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &616024468
 GameObject:
@@ -7008,7 +6898,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &626435985
 GameObject:
@@ -7360,7 +7250,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &648230563
 GameObject:
@@ -8784,17 +8674,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 825994010}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -8871,7 +8750,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &836823901
 GameObject:
@@ -8978,17 +8857,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 836823901}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -9065,7 +8933,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &843211966
 GameObject:
@@ -10989,7 +10857,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &960676964
 GameObject:
@@ -11096,17 +10964,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 960676964}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -11183,7 +11040,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &993047429
 GameObject:
@@ -11461,17 +11318,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1023385968}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1023385965
@@ -11526,7 +11372,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1036812354
 GameObject:
@@ -11633,17 +11479,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1036812354}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -11720,7 +11555,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1062282965
 GameObject:
@@ -11899,7 +11734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1135392839
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12100,17 +11935,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1142114604}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -12187,7 +12011,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1157757722
 GameObject:
@@ -12294,17 +12118,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1157757722}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -12381,7 +12194,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1177302147
 GameObject:
@@ -12488,17 +12301,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1177302147}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -12575,7 +12377,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1203901639
 GameObject:
@@ -12839,17 +12641,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1205669517}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -12926,7 +12717,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1227263163
 GameObject:
@@ -13033,17 +12824,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1227263163}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -13120,7 +12900,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1246405270
 GameObject:
@@ -13227,17 +13007,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1246405270}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -13314,7 +13083,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1258632475
 GameObject:
@@ -13421,17 +13190,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1258632475}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -13508,7 +13266,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1323412626
 GameObject:
@@ -13637,17 +13395,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1323412632}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1323412629
@@ -13702,7 +13449,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1334521015
 GameObject:
@@ -13889,7 +13636,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1355835433
 GameObject:
@@ -14177,17 +13924,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1359132692}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1359132689
@@ -14242,7 +13978,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1368922823
 GameObject:
@@ -15316,17 +15052,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1511159806}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -15403,7 +15128,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1519994127
 GameObject:
@@ -15806,17 +15531,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1527291868}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1527291865
@@ -15871,7 +15585,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1534680677
 GameObject:
@@ -16630,7 +16344,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1617909948
 GameObject:
@@ -16759,17 +16473,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1617909954}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1617909951
@@ -16824,7 +16527,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1655330608
 GameObject:
@@ -17561,17 +17264,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1716691572}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1716691569
@@ -17626,7 +17318,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1724643862
 GameObject:
@@ -18131,7 +17823,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1767130604
 GameObject:
@@ -19118,8 +18810,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1835142223}
-        m_MethodName: 
+      - m_Target: {fileID: 1835142229}
+        m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19131,17 +18823,6 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1835142229}
-        m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -19205,7 +18886,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1857630197
 GameObject:
@@ -19469,17 +19150,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1916122764}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -19556,7 +19226,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1928020082
 GameObject:
@@ -19663,17 +19333,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1928020082}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -19750,7 +19409,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &1933396131
 GameObject:
@@ -20250,17 +19909,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2012285366}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -20337,7 +19985,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2033281525
 GameObject:
@@ -20444,17 +20092,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2033281525}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -20531,7 +20168,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2050043414
 GameObject:
@@ -21043,17 +20680,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2094731942}
-        m_MethodName: MoveToken
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2094731939
@@ -21108,7 +20734,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2096150373
 GameObject:
@@ -21215,17 +20841,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2096150373}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -21302,7 +20917,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2100022142
 GameObject:
@@ -21409,17 +21024,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2100022142}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 863234866}
         m_MethodName: GetNum
         m_Mode: 1
@@ -21496,7 +21100,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2103451469
 GameObject:
@@ -21682,8 +21286,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 2128767682}
-        m_MethodName: 
+      - m_Target: {fileID: 2128767688}
+        m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21758,7 +21362,7 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 0}
+  PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
 --- !u!1 &2133633091
 GameObject:

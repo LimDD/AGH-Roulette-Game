@@ -11,11 +11,11 @@ public class PlaceToken : MonoBehaviour
 
     void Start()
     {
+
+
         coordx = this.transform.position.x;
         coordy = this.transform.position.y;
         coordz = this.transform.position.z;
-
-        PlayerToken = GameObject.Find("Player Token");
 
         //PlayerToken.transform.Translate(coordx, coordy, coordz);
 
@@ -37,7 +37,9 @@ public class PlaceToken : MonoBehaviour
 
     public void MoveToken()
     {
+        PlayerToken.SetActive(true);
+        PlayerToken = GameObject.Find("Player Token");
         PlayerToken.transform.position = new Vector3(coordx, coordy, coordz);
-
+        PlayerToken.SetActive(false);
     }
 }
