@@ -59,7 +59,6 @@ public class GetButtonNum : MonoBehaviour
                 botR.GetComponentInParent<Button>().interactable = false;
                 midR.GetComponentInParent<Button>().interactable = false;
                 topR.GetComponentInParent<Button>().interactable = false;
-                //botR.GetComponentInParent<Button>().interactable = false;
                 x = 12;
             }
         }
@@ -71,7 +70,6 @@ public class GetButtonNum : MonoBehaviour
                 botL.GetComponentInParent<Button>().interactable = false;
                 midL.GetComponentInParent<Button>().interactable = false;
                 topL.GetComponentInParent<Button>().interactable = false;
-                //botR.GetComponentInParent<Button>().interactable = false;
                 x = 12;
             }
         }
