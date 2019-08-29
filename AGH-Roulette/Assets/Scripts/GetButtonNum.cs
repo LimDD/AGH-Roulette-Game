@@ -64,24 +64,28 @@ public class GetButtonNum : MonoBehaviour
         botM.GetComponentInParent<Button>().interactable = true;
         botR.GetComponentInParent<Button>().interactable = true;
 
+        topL.text = "Corner\nBet";
+        topR.text = "Corner\nBet";
 
-        for (int x = 2; x < 12; x++)
+
+        //Makes far right column inside bets unable to place a bet on the right side buttons
+        for (int x = 1; x < 13; x++)
         {
-            if (n == 3 *x)
+            if (n == (3 * x))
             {
                 botR.GetComponentInParent<Button>().interactable = false;
                 midR.GetComponentInParent<Button>().interactable = false;
                 topR.GetComponentInParent<Button>().interactable = false;
-                x = 12;
+                x = 14;
             }
         }
 
-        for (int x = 0; x < 10; x++)
+        for (int x = 0; x < 12; x++)
         {
-            if (n == 4 + x *3)
+            if (n == (1 + x * 3))
             {
+                midL.text = "Street\nBet";
                 botL.GetComponentInParent<Button>().interactable = false;
-                midL.GetComponentInParent<Button>().interactable = false;
                 topL.GetComponentInParent<Button>().interactable = false;
                 x = 12;
             }
@@ -89,21 +93,8 @@ public class GetButtonNum : MonoBehaviour
 
         if (n <= 3 && n > 0)
         {
-            topL.GetComponentInParent<Button>().interactable = false;
-            topM.GetComponentInParent<Button>().interactable = false;
-            topR.GetComponentInParent<Button>().interactable = false;
-
-            if (n == 1)
-            {
-                midL.GetComponentInParent<Button>().interactable = false;
-                botL.GetComponentInParent<Button>().interactable = false;
-            }
-
-            if (n == 3)
-            {
-                midR.GetComponentInParent<Button>().interactable = false;
-                botR.GetComponentInParent<Button>().interactable = false;
-            }
+            topL.text = "Trio\nBet";
+            topR.text = "Trio\nBet";
         }
 
         if (n >= 34)
@@ -111,19 +102,9 @@ public class GetButtonNum : MonoBehaviour
             botL.GetComponentInParent<Button>().interactable = false;
             botM.GetComponentInParent<Button>().interactable = false;
             botR.GetComponentInParent<Button>().interactable = false;
-
-            if (n == 34)
-            {
-                midL.GetComponentInParent<Button>().interactable = false;
-                topL.GetComponentInParent<Button>().interactable = false;
-            }
-
-            if (n== 36)
-            {
-                midR.GetComponentInParent<Button>().interactable = false;
-                topR.GetComponentInParent<Button>().interactable = false;
-            }
         }
+
+
     }
 }
 
