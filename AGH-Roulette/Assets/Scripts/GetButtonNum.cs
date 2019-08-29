@@ -28,7 +28,7 @@ public class GetButtonNum : MonoBehaviour
         BetType(number);
     }
 
-
+ 
     public void BetType(string num)
     {
         topL = GameObject.Find("TopL").GetComponent<Text>();
@@ -39,56 +39,78 @@ public class GetButtonNum : MonoBehaviour
         botL = GameObject.Find("BottomL").GetComponent<Text>();
         botM = GameObject.Find("BottomM").GetComponent<Text>();
         botR = GameObject.Find("BottomR").GetComponent<Text>();
+
         int n = Convert.ToInt32(num);
 
-        Debug.Log(n);
- 
-        for (int x = 0; x < 11; x++)
+        topL.GetComponentInParent<Button>().interactable = true;
+        topM.GetComponentInParent<Button>().interactable = true;
+        topR.GetComponentInParent<Button>().interactable = true;
+        midL.GetComponentInParent<Button>().interactable = true;
+        midR.GetComponentInParent<Button>().interactable = true;
+        botL.GetComponentInParent<Button>().interactable = true;
+        botM.GetComponentInParent<Button>().interactable = true;
+        botR.GetComponentInParent<Button>().interactable = true;
+
+
+        for (int x = 2; x < 12; x++)
         {
             if (n == 3 *x)
             {
-                //Commented these out for now as I do not know the best way to restore it after they have completed their bet.
-                botR.GetComponentInParent<Button>().gameObject.SetActive(false);
+                botR.GetComponentInParent<Button>().interactable = false;
+                midR.GetComponentInParent<Button>().interactable = false;
+                topR.GetComponentInParent<Button>().interactable = false;
                 //botR.GetComponentInParent<Button>().interactable = false;
                 x = 12;
             }
         }
 
-        if (n <= 3)
+        for (int x = 0; x < 10; x++)
         {
-            topL.GetComponentInParent<Button>().gameObject.SetActive(false);
-            topM.GetComponentInParent<Button>().gameObject.SetActive(false);
-            topR.GetComponentInParent<Button>().gameObject.SetActive(false);
+            if (n == 4 + x *3)
+            {
+                botL.GetComponentInParent<Button>().interactable = false;
+                midL.GetComponentInParent<Button>().interactable = false;
+                topL.GetComponentInParent<Button>().interactable = false;
+                //botR.GetComponentInParent<Button>().interactable = false;
+                x = 12;
+            }
+        }
+
+        if (n <= 3 && n > 0)
+        {
+            topL.GetComponentInParent<Button>().interactable = false;
+            topM.GetComponentInParent<Button>().interactable = false;
+            topR.GetComponentInParent<Button>().interactable = false;
 
             if (n == 1)
             {
-                midL.GetComponentInParent<Button>().gameObject.SetActive(false);
-                topL.GetComponentInParent<Button>().gameObject.SetActive(false);
+                midL.GetComponentInParent<Button>().interactable = false;
+                botL.GetComponentInParent<Button>().interactable = false;
             }
 
             if (n == 3)
             {
-                midR.GetComponentInParent<Button>().gameObject.SetActive(false);
-                topR.GetComponentInParent<Button>().gameObject.SetActive(false);
+                midR.GetComponentInParent<Button>().interactable = false;
+                botR.GetComponentInParent<Button>().interactable = false;
             }
         }
 
         if (n >= 34)
         {
-            botL.GetComponentInParent<Button>().gameObject.SetActive(false);
-            botM.GetComponentInParent<Button>().gameObject.SetActive(false);
-            botR.GetComponentInParent<Button>().gameObject.SetActive(false);
+            botL.GetComponentInParent<Button>().interactable = false;
+            botM.GetComponentInParent<Button>().interactable = false;
+            botR.GetComponentInParent<Button>().interactable = false;
 
             if (n == 34)
             {
-                midL.GetComponentInParent<Button>().gameObject.SetActive(false);
-                topL.GetComponentInParent<Button>().gameObject.SetActive(false);
+                midL.GetComponentInParent<Button>().interactable = false;
+                topL.GetComponentInParent<Button>().interactable = false;
             }
 
             if (n== 36)
             {
-                midR.GetComponentInParent<Button>().gameObject.SetActive(false);
-                topR.GetComponentInParent<Button>().gameObject.SetActive(false);
+                midR.GetComponentInParent<Button>().interactable = false;
+                topR.GetComponentInParent<Button>().interactable = false;
             }
         }
     }
