@@ -23,7 +23,13 @@ public class roulettewheel_spin : MonoBehaviour
     //Betting Values
     public List<int> playerBets;
     public int winningBet;
-    
+
+    // Is called when a player makes their bet
+    public void PlayerBets()
+    {
+
+    }
+
     //Check results against hardcoded player bets
     private void CheckBets()
     {
@@ -66,7 +72,7 @@ public class roulettewheel_spin : MonoBehaviour
     {
         resulttext_component.text = "The ball landed on " + roulette_value + " meaning you lost this round...";
     }
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -83,10 +89,7 @@ public class roulettewheel_spin : MonoBehaviour
         wheelSpinning = true;
 
         //Player bets
-        playerBets.Add(7);
-        playerBets.Add(10);
-        playerBets.Add(25);
-        playerBets.Add(32);
+        PlayerBets();
     }
 
     // Update is called once per frame
