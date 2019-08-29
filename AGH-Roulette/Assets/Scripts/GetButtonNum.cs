@@ -9,6 +9,7 @@ using System;
 public class GetButtonNum : MonoBehaviour
 {
     public Text tNum;
+    public Vector4 tNumColor;
     public Text topL;
     public Text topM;
     public Text topR;
@@ -20,12 +21,24 @@ public class GetButtonNum : MonoBehaviour
 
     public void GetNum()
     {
+        //Getting the current text of the zoomed button
         tNum = GameObject.Find("ZoomNum").GetComponent<Text>();
+        tNumColor = GameObject.Find("Zoomed Button").GetComponent<Image>().color;
+
+        //Getting the color of the button selected in the roulette table
+        Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
+
+        //Getting the numbers from the name of the button selected by the user
         string name = EventSystem.current.currentSelectedGameObject.name;
         string number = Regex.Replace(name, "[^.0-9]", "");
+
         tNum.text = number;
+        GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
 
         BetType(number);
+
+        Debug.Log("Color to set is: " + buttonColor);
+        Debug.Log("Color of the zoomed button is: " + tNumColor);
     }
 
  
