@@ -14,5 +14,10 @@ public class SceneSwitcher : MonoBehaviour
     {
         SceneManager.LoadScene("Gamescene_Menu");
     }
+
+    public void WheelScene()
+    {
+        SceneManager.LoadScene("Roulette_Wheel");
+    }
 }
 

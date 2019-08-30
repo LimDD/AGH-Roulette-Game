@@ -62,7 +62,7 @@ public class roulettewheel_spin : MonoBehaviour
             Loser(rouletteValue);
         }
         //This works when starting from the roulette wheel scene but no where else
-        //bS.ShowButton();
+        bS.ShowButton();
     }
 
     //Is called when you win a game and the roulette value is the same as your bet
@@ -82,8 +82,6 @@ public class roulettewheel_spin : MonoBehaviour
     {
         winner = false;
 
-        bS = FindObjectOfType<ButtonState>();
-
         //Result after the wheel spins
         rouletteValue = Random.Range(0, 36);
 
@@ -96,6 +94,11 @@ public class roulettewheel_spin : MonoBehaviour
 
         //Player bets
         PlayerBets();
+    }
+
+    void Awake()
+    {
+        bS = FindObjectOfType<ButtonState>();
     }
 
     // Update is called once per frame
