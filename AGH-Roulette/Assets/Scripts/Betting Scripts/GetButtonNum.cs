@@ -18,6 +18,7 @@ public class GetButtonNum : MonoBehaviour
     public Text botL;
     public Text botM;
     public Text botR;
+    public int num;
 
     public void GetNum()
     {
@@ -34,15 +35,15 @@ public class GetButtonNum : MonoBehaviour
 
         tNum.text = number;
         GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
-
-        BetType(number);
+        num = Convert.ToInt32(number);
+        BetType(num);
 
         Debug.Log("Color to set is: " + buttonColor);
         Debug.Log("Color of the zoomed button is: " + tNumColor);
     }
 
  
-    public void BetType(string num)
+    public void BetType(int n)
     {
         topL = GameObject.Find("TopL").GetComponent<Text>();
         topM = GameObject.Find("TopM").GetComponent<Text>();
@@ -52,9 +53,7 @@ public class GetButtonNum : MonoBehaviour
         botL = GameObject.Find("BottomL").GetComponent<Text>();
         botM = GameObject.Find("BottomM").GetComponent<Text>();
         botR = GameObject.Find("BottomR").GetComponent<Text>();
-
-        int n = Convert.ToInt32(num);
-
+        
         topL.GetComponentInParent<Button>().interactable = true;
         topM.GetComponentInParent<Button>().interactable = true;
         topR.GetComponentInParent<Button>().interactable = true;
@@ -66,6 +65,7 @@ public class GetButtonNum : MonoBehaviour
 
         topL.text = "Corner\nBet";
         topR.text = "Corner\nBet";
+        midL.text = "Split\nBet";
 
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
@@ -103,8 +103,6 @@ public class GetButtonNum : MonoBehaviour
             botM.GetComponentInParent<Button>().interactable = false;
             botR.GetComponentInParent<Button>().interactable = false;
         }
-
-
     }
 }
 

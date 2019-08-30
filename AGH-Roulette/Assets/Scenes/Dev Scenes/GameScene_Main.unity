@@ -3726,7 +3726,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Split \nBet"
+  m_Text: 'Split
+
+    Bet'
 --- !u!222 &313070601
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7425,6 +7427,7 @@ GameObject:
   - component: {fileID: 681424415}
   - component: {fileID: 681424414}
   - component: {fileID: 681424413}
+  - component: {fileID: 681424417}
   m_Layer: 0
   m_Name: TopMiddleButton
   m_TagString: Untagged
@@ -7531,6 +7534,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 681424417}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &681424415
@@ -7570,6 +7584,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681424411}
   m_CullTransparentMesh: 0
+--- !u!114 &681424417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 681424411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 681424414}
 --- !u!1 &682947524
 GameObject:
   m_ObjectHideFlags: 0
@@ -7740,6 +7768,7 @@ GameObject:
   - component: {fileID: 697793731}
   - component: {fileID: 697793730}
   - component: {fileID: 697793729}
+  - component: {fileID: 697793733}
   m_Layer: 0
   m_Name: Zoomed Button
   m_TagString: Untagged
@@ -7843,6 +7872,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 697793733}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &697793731
@@ -7882,6 +7922,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697793727}
   m_CullTransparentMesh: 0
+--- !u!114 &697793733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697793727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 697793730}
 --- !u!1 &712825360
 GameObject:
   m_ObjectHideFlags: 0
@@ -8449,6 +8503,7 @@ GameObject:
   - component: {fileID: 813376615}
   - component: {fileID: 813376614}
   - component: {fileID: 813376613}
+  - component: {fileID: 813376617}
   m_Layer: 0
   m_Name: MiddleLeftButton
   m_TagString: Untagged
@@ -8555,6 +8610,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 813376617}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &813376615
@@ -8594,6 +8660,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813376611}
   m_CullTransparentMesh: 0
+--- !u!114 &813376617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813376611}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 813376614}
 --- !u!1 &825994010
 GameObject:
   m_ObjectHideFlags: 0
@@ -9761,6 +9841,7 @@ MonoBehaviour:
   botL: {fileID: 0}
   botM: {fileID: 0}
   botR: {fileID: 0}
+  num: 0
 --- !u!114 &863234867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10247,6 +10328,7 @@ GameObject:
   - component: {fileID: 940745561}
   - component: {fileID: 940745560}
   - component: {fileID: 940745559}
+  - component: {fileID: 940745563}
   m_Layer: 0
   m_Name: BottomLeftButton
   m_TagString: Untagged
@@ -10353,6 +10435,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 940745563}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &940745561
@@ -10392,6 +10485,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940745557}
   m_CullTransparentMesh: 0
+--- !u!114 &940745563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940745557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 940745560}
 --- !u!1 &941031134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11966,7 +12073,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Split \nBet"
+  m_Text: 'Split
+
+    Bet'
 --- !u!222 &1062282968
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16224,6 +16333,7 @@ GameObject:
   - component: {fileID: 1563760644}
   - component: {fileID: 1563760643}
   - component: {fileID: 1563760642}
+  - component: {fileID: 1563760646}
   m_Layer: 0
   m_Name: MiddleRightButton
   m_TagString: Untagged
@@ -16330,6 +16440,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1563760646}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1563760644
@@ -16369,6 +16490,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563760640}
   m_CullTransparentMesh: 0
+--- !u!114 &1563760646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563760640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 1563760643}
 --- !u!1 &1603466981
 GameObject:
   m_ObjectHideFlags: 0
@@ -17066,6 +17201,7 @@ GameObject:
   - component: {fileID: 1664672279}
   - component: {fileID: 1664672278}
   - component: {fileID: 1664672277}
+  - component: {fileID: 1664672281}
   m_Layer: 0
   m_Name: TopLeftButton
   m_TagString: Untagged
@@ -17172,6 +17308,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1664672281}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1664672279
@@ -17211,6 +17358,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664672275}
   m_CullTransparentMesh: 0
+--- !u!114 &1664672281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664672275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 1664672278}
 --- !u!1 &1666046599
 GameObject:
   m_ObjectHideFlags: 0
@@ -17224,6 +17385,7 @@ GameObject:
   - component: {fileID: 1666046603}
   - component: {fileID: 1666046602}
   - component: {fileID: 1666046601}
+  - component: {fileID: 1666046605}
   m_Layer: 0
   m_Name: BottomRightButton
   m_TagString: Untagged
@@ -17330,6 +17492,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1666046605}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1666046603
@@ -17369,6 +17542,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666046599}
   m_CullTransparentMesh: 0
+--- !u!114 &1666046605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666046599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 1666046602}
 --- !u!1 &1700215599
 GameObject:
   m_ObjectHideFlags: 0
@@ -20247,7 +20434,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Split \nBet"
+  m_Text: 'Split
+
+    Bet'
 --- !u!222 &1986678839
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20871,6 +21060,7 @@ GameObject:
   - component: {fileID: 2081244242}
   - component: {fileID: 2081244241}
   - component: {fileID: 2081244240}
+  - component: {fileID: 2081244244}
   m_Layer: 0
   m_Name: BottomMiddleButton
   m_TagString: Untagged
@@ -20977,6 +21167,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2081244244}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2081244242
@@ -21016,6 +21217,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081244238}
   m_CullTransparentMesh: 0
+--- !u!114 &2081244244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2081244238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 2081244241}
 --- !u!1 &2094731936
 GameObject:
   m_ObjectHideFlags: 0
@@ -21840,6 +22055,7 @@ GameObject:
   - component: {fileID: 2133633095}
   - component: {fileID: 2133633094}
   - component: {fileID: 2133633093}
+  - component: {fileID: 2133633097}
   m_Layer: 0
   m_Name: TopRightButton
   m_TagString: Untagged
@@ -21946,6 +22162,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2133633097}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &2133633095
@@ -21985,6 +22212,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133633091}
   m_CullTransparentMesh: 0
+--- !u!114 &2133633097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2133633091}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 2133633094}
 --- !u!1 &2139356508
 GameObject:
   m_ObjectHideFlags: 0
@@ -22055,7 +22296,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Split \nBet"
+  m_Text: 'Split
+
+    Bet'
 --- !u!222 &2139356511
 CanvasRenderer:
   m_ObjectHideFlags: 0
