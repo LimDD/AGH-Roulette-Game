@@ -1180,7 +1180,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &156785049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1532,7 +1531,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &206839238
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1727,7 +1725,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &256283268
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4143,7 +4140,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &684521773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6952,7 +6948,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1016359394
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9942,7 +9937,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1495487194
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10651,7 +10645,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1522099661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11213,7 +11206,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 603986851}
-        m_MethodName: StartGame
+        m_MethodName: BoardScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12234,7 +12227,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Panel: {fileID: 0}
   Ss: {fileID: 0}
-  Gbn: {fileID: 0}
 --- !u!114 &1824440346
 MonoBehaviour:
   m_ObjectHideFlags: 0
