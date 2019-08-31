@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
+using System.IO;
 
 public class roulettewheel_spin : MonoBehaviour
 {
@@ -23,6 +24,8 @@ public class roulettewheel_spin : MonoBehaviour
     //Betting Values
     public List<int> playerBets;
     public int winningBet;
+
+    public ArrayList betonNum = new ArrayList();
 
     public ButtonState bS;
 
@@ -53,9 +56,30 @@ public class roulettewheel_spin : MonoBehaviour
     //Checks if the result is the same
     private void CheckIfWinner()
     {
-        if (winner == true)
+        string path = "Assets/SavedData/winningNumbers.txt";
+        string line;
+        int saveNum;
+
+        StreamReader reader = new StreamReader(path);
+
+        while ((line = reader.ReadLine()) != null)
         {
-            Winner(winningBet);
+            saveNum = System.Convert.ToInt32(line);
+            betonNum.Add(saveNum);
+        }
+
+        foreach (int i in betonNum)
+        {
+            if (i == rouletteValue)
+            {
+                winner = true;
+            }
+        }
+
+        if (winner)
+        {
+            //Winner(winningBet);
+            Winner(rouletteValue);
         }
         else
         {
@@ -66,9 +90,11 @@ public class roulettewheel_spin : MonoBehaviour
     }
 
     //Is called when you win a game and the roulette value is the same as your bet
-    private void Winner(int winning_bet)
+    //Changed int winning_bet to roulette_value
+    private void Winner(int roulette_value)
     {
-        resulttext_component.text = "You won the round with " + winning_bet + "!!!";
+        //resulttext_component.text = "You won the round with " + winning_bet + "!!!";
+        resulttext_component.text = "The ball landed on " + roulette_value + "! You have won!!";
     }
 
     //Is called when you lose a game and the roulette value is not the same as your bet
