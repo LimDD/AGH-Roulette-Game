@@ -68,6 +68,8 @@ public class roulettewheel_spin : MonoBehaviour
             betonNum.Add(saveNum);
         }
 
+        reader.Close();
+
         foreach (int i in betonNum)
         {
             if (i == rouletteValue)

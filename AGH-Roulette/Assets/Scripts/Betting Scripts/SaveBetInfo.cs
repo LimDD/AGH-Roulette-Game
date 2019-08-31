@@ -6,12 +6,13 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
+using System;
 
 public class SaveBetInfo : MonoBehaviour
 {
     public GetButtonNum gBN;
     public Button btn;
-    public ArrayList betNums = new ArrayList();
     public ArrayList betTypes = new ArrayList();
     public ArrayList winNum = new ArrayList();
 
@@ -28,13 +29,31 @@ public class SaveBetInfo : MonoBehaviour
 
     public void SaveBetType()
     {
-        string str = "";
-        str = btn.GetComponentInChildren<Text>().text;
+        string str;
+
+        try
+        {
+            str = btn.GetComponentInChildren<TextMeshProUGUI>().text;
+        }
+
+        catch
+        {
+            str = btn.GetComponentInChildren<Text>().text;
+        }
+
         string type = Regex.Replace(str,"\n"," ");
+
+        Int32.TryParse(type, out int single);
+
+        if (single != 0 || type == "0")
+        {
+            type = "Single Bet";
+        }
+
         Debug.Log(type);
         betTypes.Add(type);
 
-        if (str.Contains("Bet"))
+        if (type.Contains("Bet"))
         {
             WinningNumbers(type);
         }
@@ -50,8 +69,19 @@ public class SaveBetInfo : MonoBehaviour
     public void WinningNumbers(string betType)
     {
         gBN = FindObjectOfType<GetButtonNum>();
-        int num = gBN.num;
-        betNums.Add(num);
+
+        int num;
+
+        try
+        {
+            num = gBN.num;
+        }
+
+        catch
+        {
+            num = 0;
+        }
+
         winNum.Add(num);
 
         string name = EventSystem.current.currentSelectedGameObject.name;
@@ -146,10 +176,6 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        foreach (int i in winNum)
-        {
-            Debug.Log("winNum= "+ i);
-        }
         WriteToFile();
     }
 
@@ -268,16 +294,17 @@ public class SaveBetInfo : MonoBehaviour
 
             for (int i = calc; i < calc + 18; i++)
             {
-                winNum.Add(calc);
+                winNum.Add(i);
             }
         }
-
+        WriteToFile();
     }
+
+
 
 
     public void WriteToFile()
     {
-
         string path = "Assets/SavedData/winningNumbers.txt";
 
         //Write some text to the test.txt file
@@ -288,9 +315,10 @@ public class SaveBetInfo : MonoBehaviour
             writer.WriteLine(i + " ");
         }
 
-        writer.WriteLine(-1);
+        //writer.WriteLine(-1);
 
         writer.Close();
+        winNum.Clear();
 
         ReadString();
     }
