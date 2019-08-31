@@ -43,7 +43,7 @@ public class roulette_ball : MonoBehaviour
         spinTimer = wheelScript.spinTimer;
         wheelSpinning = wheelScript.wheelSpinning;
 
-        if (startSpin == true && spinTimer <= 1)
+        if (startSpin == true && spinTimer == 0)
         {
             switch (rouletteValue)
             {
@@ -161,7 +161,7 @@ public class roulette_ball : MonoBehaviour
                     break;
             }
 
-            startRotation += 5;
+            //startRotation += 5;
 
             startSpin = false;
             this.transform.Rotate(xAngle, yAngle, startRotation, Space.Self);
