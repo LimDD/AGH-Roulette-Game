@@ -695,7 +695,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 22643028}
-  txt: {fileID: 0}
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1542,7 +1541,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 84177451}
-  txt: {fileID: 313070600}
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4928,7 +4926,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 469675275}
-  txt: {fileID: 0}
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -6289,7 +6286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 561959458}
-  txt: {fileID: 0}
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6671,7 +6667,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 571273863}
-  txt: {fileID: 0}
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -7053,7 +7048,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 595861943}
-  txt: {fileID: 0}
 --- !u!1 &616024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -7278,7 +7272,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 616024470}
-  txt: {fileID: 0}
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -7670,7 +7663,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 635001757}
-  txt: {fileID: 0}
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8012,7 +8004,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 681424414}
-  txt: {fileID: 0}
 --- !u!1 &682947524
 GameObject:
   m_ObjectHideFlags: 0
@@ -8351,7 +8342,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 697793730}
-  txt: {fileID: 0}
 --- !u!1 &712825360
 GameObject:
   m_ObjectHideFlags: 0
@@ -9090,7 +9080,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 813376614}
-  txt: {fileID: 0}
 --- !u!1 &825994010
 GameObject:
   m_ObjectHideFlags: 0
@@ -10938,7 +10927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 940745560}
-  txt: {fileID: 0}
 --- !u!1 &941031134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11623,7 +11611,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 958431347}
-  txt: {fileID: 0}
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -14137,6 +14124,7 @@ GameObject:
   - component: {fileID: 1258632477}
   - component: {fileID: 1258632481}
   - component: {fileID: 1258632480}
+  - component: {fileID: 1258632482}
   m_Layer: 0
   m_Name: 0_Cell
   m_TagString: Untagged
@@ -14251,6 +14239,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1258632482}
+        m_MethodName: SaveBetType
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1258632478
@@ -14321,6 +14320,20 @@ MonoBehaviour:
   coordz: 0
   PlayerToken: {fileID: 1135392838}
   TokenCopy: {fileID: 0}
+--- !u!114 &1258632482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258632475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gBN: {fileID: 0}
+  btn: {fileID: 1258632477}
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -14739,7 +14752,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1334521017}
-  txt: {fileID: 0}
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -17198,7 +17210,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1563760643}
-  txt: {fileID: 0}
 --- !u!1 &1603466981
 GameObject:
   m_ObjectHideFlags: 0
@@ -17580,7 +17591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1610360086}
-  txt: {fileID: 0}
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -18116,7 +18126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1664672278}
-  txt: {fileID: 0}
 --- !u!1 &1666046599
 GameObject:
   m_ObjectHideFlags: 0
@@ -18301,7 +18310,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1666046602}
-  txt: {fileID: 0}
 --- !u!1 &1700215599
 GameObject:
   m_ObjectHideFlags: 0
@@ -19195,7 +19203,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 1756720129}
-  txt: {fileID: 0}
 --- !u!1 &1767130604
 GameObject:
   m_ObjectHideFlags: 0
@@ -22081,7 +22088,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 2081244241}
-  txt: {fileID: 0}
 --- !u!1 &2094731936
 GameObject:
   m_ObjectHideFlags: 0
@@ -23121,7 +23127,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
   btn: {fileID: 2133633094}
-  txt: {fileID: 0}
 --- !u!1 &2139356508
 GameObject:
   m_ObjectHideFlags: 0
