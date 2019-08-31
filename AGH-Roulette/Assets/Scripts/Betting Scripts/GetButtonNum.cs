@@ -42,7 +42,6 @@ public class GetButtonNum : MonoBehaviour
         Debug.Log("Color of the zoomed button is: " + tNumColor);
     }
 
- 
     public void BetType(int n)
     {
         topL = GameObject.Find("TopL").GetComponent<Text>();
