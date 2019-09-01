@@ -20,9 +20,8 @@ public class SaveBetInfo : MonoBehaviour
     {
         string path = "Assets/SavedData/winningNumbers.txt";
 
-        //Write some text to the test.txt file
-        StreamWriter writer = new StreamWriter(path, false);
-
+        //Clears the file
+        StreamWriter writer = new StreamWriter(path);
         writer.Flush();
         writer.Close();
     }
@@ -31,6 +30,7 @@ public class SaveBetInfo : MonoBehaviour
     {
         string str;
 
+        //Gets the text/tmp component of the button and saves it to a string
         try
         {
             str = btn.GetComponentInChildren<TextMeshProUGUI>().text;
@@ -41,10 +41,12 @@ public class SaveBetInfo : MonoBehaviour
             str = btn.GetComponentInChildren<Text>().text;
         }
 
+        //Remove New Lines in the string
         string type = Regex.Replace(str,"\n"," ");
 
         Int32.TryParse(type, out int single);
 
+        //If the tryparse doesn't fail then single will be = to a number meaning it was a single number bet
         if (single != 0 || type == "0")
         {
             type = "Single Bet";
@@ -53,6 +55,7 @@ public class SaveBetInfo : MonoBehaviour
         Debug.Log(type);
         betTypes.Add(type);
 
+        //The only strings containing "Bet" are inside bets
         if (type.Contains("Bet"))
         {
             WinningNumbers(type);
@@ -72,6 +75,7 @@ public class SaveBetInfo : MonoBehaviour
 
         int num;
 
+        //Zero does not have a zoom screen so it never uses the GetButtonNum script, so any errors must mean the bet on number was zero
         try
         {
             num = gBN.num;
@@ -84,59 +88,56 @@ public class SaveBetInfo : MonoBehaviour
 
         winNum.Add(num);
 
+        //Get the name of the button to determine the numbers around it
         string name = EventSystem.current.currentSelectedGameObject.name;
 
         if (betType == "Split Bet")
         {
-            if (name == "TopMiddleButton")
-            { 
-                winNum.Add(num - 3);
-            }
-
-            else if (name == "MiddleLeftButton")
+            switch (name)
             {
-                winNum.Add(num-1);
-            }
+                case "TopMiddleButton":
+                    winNum.Add(num - 3);
+                    break;
 
-            else if (name == "MiddleRightButton")
-            {
-                winNum.Add(num + 1);
-            }
+                case "MiddleLeftButton":
+                    winNum.Add(num - 1);
+                    break;
 
-            else if (name == "BottomMiddleButton")
-            {
-                winNum.Add(num + 3);
+                case "MiddleRightButton":
+                    winNum.Add(num + 1);
+                    break;
+                case "BottomMiddleButton":
+                    winNum.Add(num + 3);
+                    break;
             }
         }
 
         else if (betType == "Corner Bet")
         {
-            if (name == "TopLeftButton")
+            switch (name)
             {
-                winNum.Add(num-1);
-                winNum.Add(num-4);
-                winNum.Add(num-3);
-            }
+                case "TopLeftButton":
+                    winNum.Add(num - 1);
+                    winNum.Add(num - 4);
+                    winNum.Add(num - 3);
+                    break;
 
-            else if (name == "TopRightButton")
-            {
-                winNum.Add(num-3);
-                winNum.Add(num-2);
-                winNum.Add(num+1);
-            }
+                case "TopRightButton":
+                    winNum.Add(num - 3);
+                    winNum.Add(num - 2);
+                    winNum.Add(num + 1);
+                    break;
 
-            else if (name == "BottomLeftButton")
-            {
-                winNum.Add(num+2);
-                winNum.Add(num+3);
-                winNum.Add(num-1);
-            }
-
-            else if (name == "BottomRightButton")
-            {
-                winNum.Add(num+1);
-                winNum.Add(num+3);
-                winNum.Add(num+4);
+                case "BottomLeftButton":
+                    winNum.Add(num + 2);
+                    winNum.Add(num + 3);
+                    winNum.Add(num - 1);
+                    break;
+                case "BottomRightButton":
+                    winNum.Add(num + 1);
+                    winNum.Add(num + 3);
+                    winNum.Add(num + 4);
+                    break;
             }
         }
 
@@ -181,6 +182,7 @@ public class SaveBetInfo : MonoBehaviour
 
     public void WinningNumbersOutside(string betType)
     {
+        //Get the name of the button to determine the numbers covered by the bet
         string name = EventSystem.current.currentSelectedGameObject.name;
         int calc = 0;
 
@@ -307,15 +309,13 @@ public class SaveBetInfo : MonoBehaviour
     {
         string path = "Assets/SavedData/winningNumbers.txt";
 
-        //Write some text to the test.txt file
+        //Write some text to the winningNumbers.txt file
         StreamWriter writer = new StreamWriter(path, true);
 
         foreach (int i in winNum)
         {
-            writer.WriteLine(i + " ");
+            writer.WriteLine(i);
         }
-
-        //writer.WriteLine(-1);
 
         writer.Close();
         winNum.Clear();
@@ -327,7 +327,7 @@ public class SaveBetInfo : MonoBehaviour
     {
         string path = "Assets/SavedData/winningNumbers.txt";
 
-        //Read the text from directly from the test.txt file
+        //Display the file text in the Debug.Log
         StreamReader reader = new StreamReader(path);
         Debug.Log("Reader: " + reader.ReadToEnd());
         reader.Close();

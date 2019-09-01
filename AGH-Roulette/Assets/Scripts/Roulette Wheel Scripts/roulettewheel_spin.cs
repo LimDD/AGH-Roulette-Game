@@ -62,6 +62,7 @@ public class roulettewheel_spin : MonoBehaviour
 
         StreamReader reader = new StreamReader(path);
 
+        //Add file data to betonNum
         while ((line = reader.ReadLine()) != null)
         {
             saveNum = System.Convert.ToInt32(line);

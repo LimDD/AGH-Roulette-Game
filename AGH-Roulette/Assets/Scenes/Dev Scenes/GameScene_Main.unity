@@ -16361,7 +16361,6 @@ GameObject:
   - component: {fileID: 1523562246}
   - component: {fileID: 1523562245}
   - component: {fileID: 1523562244}
-  - component: {fileID: 1523562248}
   m_Layer: 5
   m_Name: Confirm Bet Button
   m_TagString: Untagged
@@ -16552,18 +16551,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523562242}
   m_CullTransparentMesh: 0
---- !u!114 &1523562248
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523562242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e79aef9c907825418f30e155640f5b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1527291862
 GameObject:
   m_ObjectHideFlags: 0
