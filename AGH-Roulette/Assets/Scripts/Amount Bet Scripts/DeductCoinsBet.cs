@@ -18,7 +18,6 @@ public class DeductCoinsBet : MonoBehaviour
 
     public void DeductCoins()
     {
-
         Ss.Bet();
 
         int amountBet = 0;
@@ -33,7 +32,6 @@ public class DeductCoinsBet : MonoBehaviour
             playerCoins = playerCoins - amountBet;
         }
         
-
         IntToTextCoinsText(playerCoins);
         int resetBet = 10;
         IntToText(resetBet);
@@ -50,8 +48,6 @@ public class DeductCoinsBet : MonoBehaviour
 
         return number;
     }
-
-
 
     private Text IntToTextCoinsText(int intToConvert)
     {
@@ -73,7 +69,6 @@ public class DeductCoinsBet : MonoBehaviour
         return convertedInt;
 
     }
-
 
     // Update is called once per frame
     void Update()

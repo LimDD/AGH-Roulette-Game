@@ -26,6 +26,7 @@ public class roulettewheel_spin : MonoBehaviour
     public int winningBet;
 
     public ArrayList betonNum = new ArrayList();
+    public ArrayList betType = new ArrayList();
 
     public ButtonState bS;
 
@@ -59,14 +60,38 @@ public class roulettewheel_spin : MonoBehaviour
         string path = "Assets/SavedData/winningNumbers.txt";
         string line;
         int saveNum;
+        int count = 0;
+        int betNum = 0;
+        int numbers = 0;
 
         StreamReader reader = new StreamReader(path);
 
         //Add file data to betonNum
         while ((line = reader.ReadLine()) != null)
         {
-            saveNum = System.Convert.ToInt32(line);
-            betonNum.Add(saveNum);
+            if (line.Length <= 2)
+            {
+                saveNum = System.Convert.ToInt32(line);
+                betonNum.Add(saveNum);
+                numbers++;
+            }
+
+            else
+            {
+                if (!(line == "Delete"))
+                {
+                    betType.Add(line);
+                    betNum++;
+                    numbers = 0;
+                }
+
+                else
+                {
+                    betType.Remove(count);
+                    betonNum.RemoveRange(count - numbers, count);
+                }
+            }
+            count++;
         }
 
         reader.Close();

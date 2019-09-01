@@ -1,8 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -13,7 +11,6 @@ public class SaveBetInfo : MonoBehaviour
 {
     public GetButtonNum gBN;
     public Button btn;
-    public ArrayList betTypes = new ArrayList();
     public ArrayList winNum = new ArrayList();
 
     private void Awake()
@@ -53,12 +50,11 @@ public class SaveBetInfo : MonoBehaviour
         }
 
         Debug.Log(type);
-        betTypes.Add(type);
 
         //The only strings containing "Bet" are inside bets
         if (type.Contains("Bet"))
         {
-            WinningNumbers(type);
+            WinningNumbers(type, single);
         }
 
         else
@@ -69,23 +65,8 @@ public class SaveBetInfo : MonoBehaviour
 
     //Gets the list of numbers the player can win on according to the number they chose and the type of bet
     //and saves it in winNum list
-    public void WinningNumbers(string betType)
+    public void WinningNumbers(string betType , int num)
     {
-        gBN = FindObjectOfType<GetButtonNum>();
-
-        int num;
-
-        //Zero does not have a zoom screen so it never uses the GetButtonNum script, so any errors must mean the bet on number was zero
-        try
-        {
-            num = gBN.num;
-        }
-
-        catch
-        {
-            num = 0;
-        }
-
         winNum.Add(num);
 
         //Get the name of the button to determine the numbers around it
@@ -177,7 +158,7 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        WriteToFile();
+        WriteToFile(betType);
     }
 
     public void WinningNumbersOutside(string betType)
@@ -191,15 +172,15 @@ public class SaveBetInfo : MonoBehaviour
             switch (name)
             {
                 case "1st_Column":
-                    calc = 1;
+                    calc = -2;
                     break;
 
                 case "2nd_Column":
-                    calc = 2;
+                    calc = -1;
                     break;
 
                 case "3rd_Column":
-                    calc = 3;
+                    calc = 0;
                     break;
             }
 
@@ -299,19 +280,17 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(i);
             }
         }
-        WriteToFile();
+        WriteToFile(betType);
     }
 
-
-
-
-    public void WriteToFile()
+    public void WriteToFile(string betType)
     {
         string path = "Assets/SavedData/winningNumbers.txt";
 
         //Write some text to the winningNumbers.txt file
         StreamWriter writer = new StreamWriter(path, true);
 
+        writer.WriteLine(betType);
         foreach (int i in winNum)
         {
             writer.WriteLine(i);
