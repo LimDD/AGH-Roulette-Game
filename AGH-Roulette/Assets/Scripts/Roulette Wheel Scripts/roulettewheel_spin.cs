@@ -66,7 +66,7 @@ public class roulettewheel_spin : MonoBehaviour
 
         StreamReader reader = new StreamReader(path);
 
-        //Add file data to betonNum
+        //Add file data to betonNum array
         while ((line = reader.ReadLine()) != null)
         {
             if (line.Length <= 2)
@@ -88,7 +88,7 @@ public class roulettewheel_spin : MonoBehaviour
                 else
                 {
                     betType.Remove(count);
-                    betonNum.RemoveRange(count - numbers, count);
+                    betonNum.RemoveRange((count - numbers), count); //FIX ME
                 }
             }
             count++;
@@ -113,7 +113,6 @@ public class roulettewheel_spin : MonoBehaviour
         {
             Loser(rouletteValue);
         }
-        //This works when starting from the roulette wheel scene but no where else
         bS.ShowButton();
     }
 
