@@ -9,6 +9,8 @@ public class DeductCoinsBet : MonoBehaviour
     public SoundScript Ss;
     public Text betText;
     public Text playerCoinsText;
+    public int amountBet;
+    public int playerCoins;
     //int tempBet = 20; 
 
     private void Start()
@@ -20,8 +22,8 @@ public class DeductCoinsBet : MonoBehaviour
     {
         Ss.Bet();
 
-        int amountBet = 0;
-        int playerCoins = 0;
+        amountBet = 0;
+        playerCoins = 0;
 
         //amountBet = TextToInt(betText);
         amountBet = TextToInt(betText);
@@ -68,16 +70,5 @@ public class DeductCoinsBet : MonoBehaviour
 
         return convertedInt;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if(Input.GetButtonDown("Confirm Bet Button"))
-        {
-            DeductCoins();
-        }
-        */
     }
 }

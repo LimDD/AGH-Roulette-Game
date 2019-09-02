@@ -5,14 +5,18 @@ using UnityEngine;
 
 public class SpinResult : MonoBehaviour
 {
-    public ArrayList betonNum = new ArrayList();
-    public ArrayList betType = new ArrayList();
+    //public ArrayList betonNum = new ArrayList();
+    public List<int> betonNum = new List<int>();
+    public List<int> typeIndex = new List<int>();
+    public List<string> betType = new List<string>();
     public RouletteWheelSpin rWS;
+    public WinningsPayout wP;
     bool winner;
 
     private void Start()
     {
         rWS = FindObjectOfType<RouletteWheelSpin>();
+        wP = FindObjectOfType<WinningsPayout>();
         winner = false;
     }
 
@@ -21,6 +25,7 @@ public class SpinResult : MonoBehaviour
     {
         string path = "Assets/SavedData/winningNumbers.txt";
         string line;
+        string type = "";
         int saveNum;
         int count = 0;
         int betNum = 0;
@@ -30,13 +35,18 @@ public class SpinResult : MonoBehaviour
 
         StreamReader reader = new StreamReader(path);
 
-        //Add file data to betonNum array
+        //Add file data to betonNum list
         while ((line = reader.ReadLine()) != null)
         {
             if (line.Length <= 2)
             {
                 saveNum = System.Convert.ToInt32(line);
                 betonNum.Add(saveNum);
+                if (numbers == 0)
+                {
+                    typeIndex.Add(betonNum.Count - 1);
+                }
+
                 numbers++;
             }
 
@@ -56,7 +66,7 @@ public class SpinResult : MonoBehaviour
 
                     for (int i = 0; i < numbers; i++)
                     {
-                        betonNum.RemoveAt(count - betNum - i);
+                        betonNum.RemoveAt(count - i - betNum - 1);
                     }
                     count -= numbers;
                     count--;
@@ -71,18 +81,37 @@ public class SpinResult : MonoBehaviour
         {
             if (i == winNum)
             {
+                int winIndex = betonNum.IndexOf(i);
+                int smallest = 0;
+
+                for (int j = 0; j < typeIndex.Count; j++)
+                {
+                    int temp = winIndex - typeIndex[j];
+
+                    if (j == 0)
+                    {
+                        smallest = temp;
+                    }
+
+                    else if (temp < smallest && temp >= 0)
+                    {
+                        smallest = temp;
+                        type = betType[j];
+
+                    }
+                }
                 winner = true;
             }
         }
 
         if (winner)
         {
+            //wP.GetWinnings(type);
             rWS.Winner(winNum);
         }
         else
         {
             rWS.Loser(winNum);
         }
-
     }
 }
