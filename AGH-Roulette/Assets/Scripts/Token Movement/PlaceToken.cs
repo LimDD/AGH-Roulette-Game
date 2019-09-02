@@ -11,8 +11,6 @@ public class PlaceToken : MonoBehaviour
 
     void Start()
     {
-
-
         coordx = this.transform.position.x;
         coordy = this.transform.position.y;
         coordz = this.transform.position.z;
@@ -28,11 +26,6 @@ public class PlaceToken : MonoBehaviour
         //TokenCopy.transform.position = new Vector3(coordx, coordy, coordz);
 
         //TokenCopy.SetActive(true);
-    }
-
-    void Update()
-    {
-
     }
 
     public void MoveToken()

@@ -28,6 +28,8 @@ public class roulettewheel_spin : MonoBehaviour
     public ArrayList betonNum = new ArrayList();
     public ArrayList betType = new ArrayList();
 
+    public bool check;
+
     public ButtonState bS;
 
     // Is called when a player makes their bet
@@ -67,7 +69,7 @@ public class roulettewheel_spin : MonoBehaviour
         StreamReader reader = new StreamReader(path);
 
         //Add file data to betonNum array
-        while ((line = reader.ReadLine()) != null)
+        while ((line = reader.ReadLine()) != null && !check)
         {
             if (line.Length <= 2)
             {
@@ -78,7 +80,7 @@ public class roulettewheel_spin : MonoBehaviour
 
             else
             {
-                if (!(line == "Delete"))
+                if (line != "Delete")
                 {
                     betType.Add(line);
                     betNum++;
@@ -87,8 +89,15 @@ public class roulettewheel_spin : MonoBehaviour
 
                 else
                 {
-                    betType.Remove(count);
-                    betonNum.RemoveRange((count - numbers), count); //FIX ME
+                    betType.RemoveAt(betNum - 1);
+                    count--;
+
+                    for (int i = 0; i < numbers; i++)
+                    {
+                        betonNum.RemoveAt(count - betNum - i);
+                    }
+                    count -= numbers;
+                    count--;
                 }
             }
             count++;
@@ -103,6 +112,8 @@ public class roulettewheel_spin : MonoBehaviour
                 winner = true;
             }
         }
+
+        check = true;
 
         if (winner)
         {
@@ -134,6 +145,7 @@ public class roulettewheel_spin : MonoBehaviour
     void Start()
     {
         winner = false;
+        check = false;
 
         //Result after the wheel spins
         rouletteValue = Random.Range(0, 36);
