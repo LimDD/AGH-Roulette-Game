@@ -10068,10 +10068,10 @@ GameObject:
   - component: {fileID: 863234861}
   - component: {fileID: 863234863}
   - component: {fileID: 863234862}
-  - component: {fileID: 863234864}
-  - component: {fileID: 863234865}
   - component: {fileID: 863234866}
   - component: {fileID: 863234867}
+  - component: {fileID: 863234865}
+  - component: {fileID: 863234864}
   m_Layer: 0
   m_Name: Portrait_Roulette_Table
   m_TagString: Untagged
@@ -10940,6 +10940,7 @@ GameObject:
   - component: {fileID: 941031138}
   - component: {fileID: 941031137}
   - component: {fileID: 941031136}
+  - component: {fileID: 941031140}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -11023,8 +11024,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 941031136}
-        m_MethodName: ShowHidePanel
+      - m_Target: {fileID: 941031140}
+        m_MethodName: MenuScene
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11073,6 +11074,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941031134}
   m_CullTransparentMesh: 0
+--- !u!114 &941031140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941031134}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &947974663
 GameObject:
   m_ObjectHideFlags: 0
@@ -19647,7 +19660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  NumToRead: 42069
+  NumToRead: 100
   currentClip: 0
   lastClip: 0
 --- !u!4 &1802385790

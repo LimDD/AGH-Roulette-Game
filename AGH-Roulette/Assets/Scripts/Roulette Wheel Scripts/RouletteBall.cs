@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class roulette_ball : MonoBehaviour
+public class RouletteBall : MonoBehaviour
 {
     //The Roulette Wheel
     public GameObject rouletteWheel;
-    public roulettewheel_spin wheelScript;
+    public RouletteWheelSpin wheelScript;
 
     //Roulette Wheel result
     public int rouletteValue;
@@ -26,7 +26,7 @@ public class roulette_ball : MonoBehaviour
     void Start()
     {
         rouletteWheel = GameObject.Find("Roulette Wheel");
-        wheelScript = rouletteWheel.GetComponent<roulettewheel_spin>();
+        wheelScript = rouletteWheel.GetComponent<RouletteWheelSpin>();
 
         startSpin = true;
         

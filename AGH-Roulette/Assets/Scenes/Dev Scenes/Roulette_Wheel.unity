@@ -688,6 +688,7 @@ MonoBehaviour:
   resulttext: 
   playerBets: 
   winningBet: 0
+  check: 0
   bS: {fileID: 0}
 --- !u!1 &1537819007
 GameObject:

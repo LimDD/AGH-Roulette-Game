@@ -9,7 +9,6 @@ public class SoundScript : MonoBehaviour
 
     void Start()
     {
-
         source = GetComponent<AudioSource>();
     }
 

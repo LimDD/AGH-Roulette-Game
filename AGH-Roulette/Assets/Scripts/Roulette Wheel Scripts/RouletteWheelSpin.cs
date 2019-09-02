@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using UnityEngine;
 using System.IO;
 
-public class roulettewheel_spin : MonoBehaviour
+public class RouletteWheelSpin : MonoBehaviour
 {
     //Result of the bet compared to the roulette wheel value
     public bool winner;
