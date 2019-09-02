@@ -36,3 +36,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 AGH-Roulette/Assets/SavedData/winningNumbers.txt
+*.txt

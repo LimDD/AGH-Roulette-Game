@@ -25,125 +25,17 @@ public class RouletteWheelSpin : MonoBehaviour
     public List<int> playerBets;
     public int winningBet;
 
-    public ArrayList betonNum = new ArrayList();
-    public ArrayList betType = new ArrayList();
-
     public bool check;
 
     public ButtonState bS;
+    public SpinResult sR;
 
-    // Is called when a player makes their bet
-    public void PlayerBets()
-    {
-
-    }
-
-    //Check results against hardcoded player bets
-    private void CheckBets()
-    {
-        if (winner == false)
-        {
-            for (int i = 0; i < (playerBets.Count - 1); i++)
-            {
-                if (playerBets[i] == rouletteValue)
-                {
-                    winningBet = playerBets[i];
-                    winner = true;
-                }
-            }
-        }
-
-        CheckIfWinner();
-    }
-
-    //Checks if the result is the same
-    private void CheckIfWinner()
-    {
-        string path = "Assets/SavedData/winningNumbers.txt";
-        string line;
-        int saveNum;
-        int count = 0;
-        int betNum = 0;
-        int numbers = 0;
-
-        StreamReader reader = new StreamReader(path);
-
-        //Add file data to betonNum array
-        while ((line = reader.ReadLine()) != null && !check)
-        {
-            if (line.Length <= 2)
-            {
-                saveNum = System.Convert.ToInt32(line);
-                betonNum.Add(saveNum);
-                numbers++;
-            }
-
-            else
-            {
-                if (line != "Delete")
-                {
-                    betType.Add(line);
-                    betNum++;
-                    numbers = 0;
-                }
-
-                else
-                {
-                    betType.RemoveAt(betNum - 1);
-                    count--;
-
-                    for (int i = 0; i < numbers; i++)
-                    {
-                        betonNum.RemoveAt(count - betNum - i);
-                    }
-                    count -= numbers;
-                    count--;
-                }
-            }
-            count++;
-        }
-
-        reader.Close();
-
-        foreach (int i in betonNum)
-        {
-            if (i == rouletteValue)
-            {
-                winner = true;
-            }
-        }
-
-        check = true;
-
-        if (winner)
-        {
-            //Winner(winningBet);
-            Winner(rouletteValue);
-        }
-        else
-        {
-            Loser(rouletteValue);
-        }
-        bS.ShowButton();
-    }
-
-    //Is called when you win a game and the roulette value is the same as your bet
-    //Changed int winning_bet to roulette_value
-    private void Winner(int roulette_value)
-    {
-        //resulttext_component.text = "You won the round with " + winning_bet + "!!!";
-        resulttext_component.text = "The ball landed on " + roulette_value + "! You have won!!";
-    }
-
-    //Is called when you lose a game and the roulette value is not the same as your bet
-    private void Loser(int roulette_value)
-    {
-        resulttext_component.text = "The ball landed on " + roulette_value + " meaning you lost this round...";
-    }
-    
     // Start is called before the first frame update
     void Start()
     {
+        bS = FindObjectOfType<ButtonState>();
+        sR = FindObjectOfType<SpinResult>();
+
         winner = false;
         check = false;
 
@@ -156,20 +48,13 @@ public class RouletteWheelSpin : MonoBehaviour
         zAngle = 0;
         spinTimer = 0;
         wheelSpinning = true;
-
-        //Player bets
-        PlayerBets();
-    }
-
-    void Awake()
-    {
-        bS = FindObjectOfType<ButtonState>();
+        check = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (wheelSpinning == true)
+        if (wheelSpinning)
         {
             if(spinTimer < 60)
             {
@@ -202,10 +87,30 @@ public class RouletteWheelSpin : MonoBehaviour
         }
         
 
-        if(wheelSpinning == false)
+        if(!wheelSpinning)
         {
             this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-            CheckBets();
+
+            if (!check)
+            {
+                check = true;
+                sR.CheckIfWinner();
+            }
         }
+    }
+    //Is called when you win a game and the roulette value is the same as your bet
+    //Changed int winning_bet to roulette_value
+    public void Winner(int roulette_value)
+    {
+        //resulttext_component.text = "You won the round with " + winning_bet + "!!!";
+        resulttext_component.text = "The ball landed on " + roulette_value + "! You have won!!";
+        bS.ShowButton();
+    }
+
+    //Is called when you lose a game and the roulette value is not the same as your bet
+    public void Loser(int roulette_value)
+    {
+        resulttext_component.text = "The ball landed on " + roulette_value + " meaning you lost this round...";
+        bS.ShowButton();
     }
 }

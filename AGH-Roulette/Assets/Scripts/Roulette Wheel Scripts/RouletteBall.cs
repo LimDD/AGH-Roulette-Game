@@ -27,7 +27,6 @@ public class RouletteBall : MonoBehaviour
     {
         rouletteWheel = GameObject.Find("Roulette Wheel");
         wheelScript = rouletteWheel.GetComponent<RouletteWheelSpin>();
-
         startSpin = true;
         
         //Ball rotation values
@@ -43,7 +42,7 @@ public class RouletteBall : MonoBehaviour
         spinTimer = wheelScript.spinTimer;
         wheelSpinning = wheelScript.wheelSpinning;
 
-        if (startSpin == true && spinTimer == 0)
+        if (startSpin && spinTimer == 0)
         {
             switch (rouletteValue)
             {
@@ -88,7 +87,6 @@ public class RouletteBall : MonoBehaviour
                     break;
                 case 13:
                     startRotation = 72;
-                    
                     break;
                 case 14:
                     startRotation = 306;
@@ -161,8 +159,6 @@ public class RouletteBall : MonoBehaviour
                     break;
             }
 
-            //startRotation += 5;
-
             startSpin = false;
             this.transform.Rotate(xAngle, yAngle, startRotation, Space.Self);
         }
@@ -182,7 +178,7 @@ public class RouletteBall : MonoBehaviour
             zAngle -= 0.1f;
         }
 
-        if (wheelSpinning == false)
+        if (!wheelSpinning)
         {
             zAngle = -0.6f;
             this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
