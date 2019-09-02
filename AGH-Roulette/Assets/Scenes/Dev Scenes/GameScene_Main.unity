@@ -694,7 +694,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 22643028}
+  winNum: 
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1251,6 +1253,7 @@ GameObject:
   - component: {fileID: 78692585}
   - component: {fileID: 78692587}
   - component: {fileID: 78692586}
+  - component: {fileID: 78692588}
   m_Layer: 0
   m_Name: Zoom Panel
   m_TagString: Untagged
@@ -1317,6 +1320,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78692584}
   m_CullTransparentMesh: 0
+--- !u!114 &78692588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78692584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winNum: 
+  betType: 
 --- !u!1 &84177449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1540,7 +1557,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 84177451}
+  winNum: 
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4925,7 +4944,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 469675275}
+  winNum: 
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -6285,7 +6306,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 561959458}
+  winNum: 
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -6666,7 +6689,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 571273863}
+  winNum: 
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -7047,7 +7072,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 595861943}
+  winNum: 
 --- !u!1 &616024468
 GameObject:
   m_ObjectHideFlags: 0
@@ -7271,7 +7298,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 616024470}
+  winNum: 
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -7283,6 +7312,7 @@ GameObject:
   - component: {fileID: 626435986}
   - component: {fileID: 626435988}
   - component: {fileID: 626435987}
+  - component: {fileID: 626435989}
   m_Layer: 0
   m_Name: Outside Table
   m_TagString: Untagged
@@ -7358,6 +7388,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626435985}
   m_CullTransparentMesh: 0
+--- !u!114 &626435989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626435985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winNum: 
+  betType: 
 --- !u!1 &629687680
 GameObject:
   m_ObjectHideFlags: 0
@@ -7662,7 +7706,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 635001757}
+  winNum: 
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -8003,7 +8049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 681424414}
+  winNum: 
 --- !u!1 &682947524
 GameObject:
   m_ObjectHideFlags: 0
@@ -8341,7 +8389,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 697793730}
+  winNum: 
 --- !u!1 &712825360
 GameObject:
   m_ObjectHideFlags: 0
@@ -9079,7 +9129,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 813376614}
+  winNum: 
 --- !u!1 &825994010
 GameObject:
   m_ObjectHideFlags: 0
@@ -10926,7 +10978,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 940745560}
+  winNum: 
 --- !u!1 &941031134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11623,7 +11677,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 958431347}
+  winNum: 
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -14138,6 +14194,7 @@ GameObject:
   - component: {fileID: 1258632481}
   - component: {fileID: 1258632480}
   - component: {fileID: 1258632482}
+  - component: {fileID: 1258632483}
   m_Layer: 0
   m_Name: 0_Cell
   m_TagString: Untagged
@@ -14346,7 +14403,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1258632477}
+  winNum: 
+--- !u!114 &1258632483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1258632475}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winNum: 
+  betType: 
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -14764,7 +14837,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1334521017}
+  winNum: 
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -16374,6 +16449,7 @@ GameObject:
   - component: {fileID: 1523562246}
   - component: {fileID: 1523562245}
   - component: {fileID: 1523562244}
+  - component: {fileID: 1523562248}
   m_Layer: 5
   m_Name: Confirm Bet Button
   m_TagString: Untagged
@@ -16416,6 +16492,8 @@ MonoBehaviour:
   Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
+  amountBet: 0
+  playerCoins: 0
 --- !u!114 &1523562245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16525,6 +16603,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 78692588}
+        m_MethodName: WriteToFile
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1523562246
@@ -16564,6 +16653,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1523562242}
   m_CullTransparentMesh: 0
+--- !u!114 &1523562248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523562242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winNum: 
+  betType: 
 --- !u!1 &1527291862
 GameObject:
   m_ObjectHideFlags: 0
@@ -17209,7 +17312,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1563760643}
+  winNum: 
 --- !u!1 &1603466981
 GameObject:
   m_ObjectHideFlags: 0
@@ -17590,7 +17695,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1610360086}
+  winNum: 
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -18125,7 +18232,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1664672278}
+  winNum: 
 --- !u!1 &1666046599
 GameObject:
   m_ObjectHideFlags: 0
@@ -18309,7 +18418,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1666046602}
+  winNum: 
 --- !u!1 &1700215599
 GameObject:
   m_ObjectHideFlags: 0
@@ -19202,7 +19313,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 1756720129}
+  winNum: 
 --- !u!1 &1767130604
 GameObject:
   m_ObjectHideFlags: 0
@@ -22122,7 +22235,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 2081244241}
+  winNum: 
 --- !u!1 &2094731936
 GameObject:
   m_ObjectHideFlags: 0
@@ -23161,7 +23276,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gBN: {fileID: 0}
+  sV: {fileID: 0}
   btn: {fileID: 2133633094}
+  winNum: 
 --- !u!1 &2139356508
 GameObject:
   m_ObjectHideFlags: 0

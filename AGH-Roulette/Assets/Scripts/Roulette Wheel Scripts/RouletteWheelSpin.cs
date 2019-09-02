@@ -22,7 +22,6 @@ public class RouletteWheelSpin : MonoBehaviour
     public string resulttext;
 
     //Betting Values
-    public List<int> playerBets;
     public int winningBet;
 
     public bool check;

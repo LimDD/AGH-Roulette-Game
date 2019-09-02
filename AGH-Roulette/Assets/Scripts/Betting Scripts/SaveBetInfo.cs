@@ -6,12 +6,14 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 using System;
+using System.Collections.Generic;
 
 public class SaveBetInfo : MonoBehaviour
 {
     public GetButtonNum gBN;
+    public SaveValues sV;
     public Button btn;
-    public ArrayList winNum = new ArrayList();
+    public List<int> winNum = new List<int>();
 
     private void Awake()
     {
@@ -19,6 +21,7 @@ public class SaveBetInfo : MonoBehaviour
 
         //Clears the file
         StreamWriter writer = new StreamWriter(path);
+        sV = FindObjectOfType<SaveValues>();
         writer.Flush();
         writer.Close();
     }
@@ -157,7 +160,7 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(2);
             }
         }
-
+        //sV.SaveInfo(winNum, betType);
         WriteToFile(betType);
     }
 
@@ -280,6 +283,7 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(i);
             }
         }
+        //sV.SaveInfo(winNum, betType);
         WriteToFile(betType);
     }
 
@@ -295,7 +299,6 @@ public class SaveBetInfo : MonoBehaviour
         {
             writer.WriteLine(i);
         }
-
         writer.Close();
         winNum.Clear();
 

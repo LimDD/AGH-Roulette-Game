@@ -38,7 +38,7 @@ public class SpinResult : MonoBehaviour
         //Add file data to betonNum list
         while ((line = reader.ReadLine()) != null)
         {
-            if (line.Length <= 2)
+            if (line.Length <= 2 && line != "")
             {
                 saveNum = System.Convert.ToInt32(line);
                 betonNum.Add(saveNum);
@@ -50,7 +50,7 @@ public class SpinResult : MonoBehaviour
                 numbers++;
             }
 
-            else
+            else if (line != "")
             {
                 if (line != "Delete")
                 {
