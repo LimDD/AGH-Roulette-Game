@@ -1334,6 +1334,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winNum: 
   betType: 
+  bal: {fileID: 0}
+  amount: {fileID: 0}
 --- !u!1 &84177449
 GameObject:
   m_ObjectHideFlags: 0
@@ -7402,6 +7404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winNum: 
   betType: 
+  bal: {fileID: 0}
+  amount: {fileID: 0}
 --- !u!1 &629687680
 GameObject:
   m_ObjectHideFlags: 0
@@ -14420,6 +14424,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winNum: 
   betType: 
+  bal: {fileID: 0}
+  amount: {fileID: 0}
 --- !u!1 &1323412626
 GameObject:
   m_ObjectHideFlags: 0
@@ -16603,7 +16609,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 78692588}
+      - m_Target: {fileID: 1523562248}
         m_MethodName: WriteToFile
         m_Mode: 1
         m_Arguments:
@@ -16667,6 +16673,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winNum: 
   betType: 
+  bal: {fileID: 1817253530}
+  amount: {fileID: 1483096875}
 --- !u!1 &1527291862
 GameObject:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ public class SpinResult : MonoBehaviour
         int count = 0;
         int betNum = 0;
         int numbers = 0;
+        int save = 0;
 
         int winNum = rWS.rouletteValue;
 
@@ -97,7 +98,7 @@ public class SpinResult : MonoBehaviour
                     {
                         smallest = temp;
                         type = betType[j];
-
+                        save = j;
                     }
                 }
                 winner = true;
@@ -106,7 +107,7 @@ public class SpinResult : MonoBehaviour
 
         if (winner)
         {
-            //wP.GetWinnings(type);
+            wP.GetWinnings(type, save);
             rWS.Winner(winNum);
         }
         else

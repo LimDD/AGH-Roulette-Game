@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
+using System.IO;
 
 public class DeductCoinsBet : MonoBehaviour
 {
@@ -15,7 +16,19 @@ public class DeductCoinsBet : MonoBehaviour
 
     private void Start()
     {
+        string path = "Assets/SavedData/balandamount.txt";
+        string line;
         Ss = FindObjectOfType<SoundScript>();
+
+        StreamReader reader = new StreamReader(path);
+
+        if ((line = reader.ReadLine()) != null)
+        {
+            playerCoinsText.text = line;
+        }
+
+        reader.Close();
+
     }
 
     public void DeductCoins()
@@ -35,8 +48,6 @@ public class DeductCoinsBet : MonoBehaviour
         }
         
         IntToTextCoinsText(playerCoins);
-        int resetBet = 10;
-        IntToText(resetBet);
     }
 
     private int TextToInt(Text textToConvert)
@@ -59,16 +70,5 @@ public class DeductCoinsBet : MonoBehaviour
         convertedInt.text = "Coins: " + text;
 
         return convertedInt;
-    }
-
-    private Text IntToText(int intToConvert)
-    {
-        Text convertedInt = betText;
-
-        string text = intToConvert.ToString();
-        convertedInt.text = text;
-
-        return convertedInt;
-
     }
 }

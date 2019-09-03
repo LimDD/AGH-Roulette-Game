@@ -1,5 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,10 +10,29 @@ public class WinningsPayout : MonoBehaviour
 {
     public Text bal;
     //In this class I would have an instance of another class storing the balance variable
-    public void GetWinnings(string bet)
+    public void GetWinnings(string bet, int index)
     {
-        int amount = gameObject.GetComponent<DeductCoinsBet>().amountBet;
-        int balance = gameObject.GetComponent<DeductCoinsBet>().playerCoins;
+        List<string> betInfo = new List<string>();
+        string line;
+        string path = "Assets/SavedData/balandamount.txt";
+        StreamReader reader = new StreamReader(path);
+
+        int count = 0;
+        while ((line = reader.ReadLine()) != null)
+        {
+            betInfo.Add(line);
+            count++;
+        }
+
+        reader.Close();
+
+        string temp = betInfo[count - 1];
+
+        temp = Regex.Replace(temp, "[^0-9.]", "");
+
+        int balance = Int32.Parse(temp);
+
+        Int32.TryParse(betInfo[index], out int amount);
 
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
@@ -42,6 +64,9 @@ public class WinningsPayout : MonoBehaviour
             balance += amount * 9;
         }
 
-        bal.text = "Coins: " + balance.ToString();
+        StreamWriter writer = new StreamWriter(path);
+
+        writer.WriteLine("Coins: " + balance.ToString());
+        writer.Close();
     }
 }
