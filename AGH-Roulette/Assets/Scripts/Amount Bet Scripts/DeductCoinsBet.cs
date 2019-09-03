@@ -21,8 +21,6 @@ public class DeductCoinsBet : MonoBehaviour
         string line;
         Ss = FindObjectOfType<SoundScript>();
 
- 
-
         if (firstRun)
         {
             StreamReader reader = new StreamReader(path);
