@@ -5,12 +5,12 @@ using UnityEngine;
 public class ShowTokens : MonoBehaviour
 {
     public GameObject PlayerToken;
-    public Canvas canvas;
+    public GameObject table;
 
     public void ShowDuplicates()
     {
         GameObject duplicate = Instantiate(PlayerToken);
-        duplicate.transform.SetParent(canvas.transform);
+        duplicate.transform.SetParent(table.transform);
         duplicate.transform.position = PlayerToken.transform.position;
     }
 }
