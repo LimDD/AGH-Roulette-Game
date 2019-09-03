@@ -6,8 +6,6 @@ public class PlaceToken : MonoBehaviour
 {
     public float coordx, coordy, coordz;
     public GameObject PlayerToken;
-    public GameObject TokenCopy;
-
 
     void Start()
     {

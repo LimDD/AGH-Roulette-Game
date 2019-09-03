@@ -57,7 +57,7 @@ public class SaveBetInfo : MonoBehaviour
         //The only strings containing "Bet" are inside bets
         if (type.Contains("Bet"))
         {
-            WinningNumbers(type, single);
+            WinningNumbers(type);
         }
 
         else
@@ -68,10 +68,23 @@ public class SaveBetInfo : MonoBehaviour
 
     //Gets the list of numbers the player can win on according to the number they chose and the type of bet
     //and saves it in winNum list
-    public void WinningNumbers(string betType , int num)
+    public void WinningNumbers(string betType)
     {
-        winNum.Add(num);
+        gBN = FindObjectOfType<GetButtonNum>();
 
+        int num;
+
+        //Zero does not have a zoom screen so it never uses the GetButtonNum script, so any errors must mean the bet on number was zero
+        try
+        {
+            num = gBN.num;
+        }
+
+        catch
+        {
+            num = 0;
+        }
+        winNum.Add(num);
         //Get the name of the button to determine the numbers around it
         string name = EventSystem.current.currentSelectedGameObject.name;
 
