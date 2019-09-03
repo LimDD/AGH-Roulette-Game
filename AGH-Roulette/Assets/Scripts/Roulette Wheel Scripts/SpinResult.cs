@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class SpinResult : MonoBehaviour
 {
-    //public ArrayList betonNum = new ArrayList();
     public List<int> betonNum = new List<int>();
     public List<int> typeIndex = new List<int>();
+    public List<int> winIndex = new List<int>();
     public List<string> betType = new List<string>();
+    public List<string> type = new List<string>();
+    public List<int> saveIndex = new List<int>();
     public RouletteWheelSpin rWS;
     public WinningsPayout wP;
     bool winner;
@@ -26,12 +28,10 @@ public class SpinResult : MonoBehaviour
     {
         string path = "Assets/SavedData/winningNumbers.txt";
         string line;
-        string type = "";
         int saveNum;
         int count = 0;
         int betNum = 0;
         int numbers = 0;
-        int saveIndex = 0;
 
         int winNum = rWS.rouletteValue;
 
@@ -83,25 +83,25 @@ public class SpinResult : MonoBehaviour
         {
             if (i == winNum)
             {
-                int winIndex = betonNum.IndexOf(i);
+                winIndex.Add(betonNum.IndexOf(i));
                 int smallest = 0;
 
                 for (int j = 0; j < typeIndex.Count; j++)
                 {
-                    int temp = winIndex - typeIndex[j];
+                    int temp = winIndex[winIndex.Count() - 1] - typeIndex[j];
 
                     if (j == 0)
                     {
                         smallest = temp;
-                        type = betType[0];
-                        saveIndex = 0;
+                        type.Add(betType[0]);
+                        saveIndex.Add(0);
                     }
 
                     else if (temp < smallest && temp >= 0)
                     {
                         smallest = temp;
-                        type = betType[j];
-                        saveIndex = j;
+                        type.Add(betType[j]);
+                        saveIndex.Add(j);
                     }
                 }
                 winner = true;
@@ -110,7 +110,10 @@ public class SpinResult : MonoBehaviour
 
         if (winner)
         {
-            wP.GetWinnings(type, saveIndex);
+            for (int i = 0; i < type.Count() - 1; i++)
+            {
+                wP.GetWinnings(type[i], saveIndex[i]);
+            }
             rWS.Winner(winNum);
         }
 

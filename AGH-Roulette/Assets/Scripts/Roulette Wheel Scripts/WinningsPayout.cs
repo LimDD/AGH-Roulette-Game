@@ -32,7 +32,7 @@ public class WinningsPayout : MonoBehaviour
 
         int balance = Int32.Parse(temp);
 
-        Int32.TryParse(betInfo[index+1], out int amount);
+        Int32.TryParse(betInfo[index + 1], out int amount);
 
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
