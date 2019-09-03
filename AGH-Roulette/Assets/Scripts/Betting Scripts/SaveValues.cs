@@ -21,14 +21,6 @@ public class SaveValues : MonoBehaviour
         }
     }
 
-    public void Start()
-    {
-        string path = "Assets/SavedData/balandamount.txt";
-        StreamWriter writer = new StreamWriter(path);
-        writer.Flush();
-        writer.Close();
-    }
-
     public void WriteToFile()
     {
         string path = "Assets/SavedData/balandamount.txt";
