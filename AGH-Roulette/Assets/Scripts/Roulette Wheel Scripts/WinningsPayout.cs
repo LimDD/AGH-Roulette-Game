@@ -65,8 +65,7 @@ public class WinningsPayout : MonoBehaviour
         }
 
         StreamWriter writer = new StreamWriter(path);
-
-        writer.WriteLine("Coins: " + balance.ToString());
+        writer.WriteLine(balance.ToString());
         writer.Close();
     }
 }

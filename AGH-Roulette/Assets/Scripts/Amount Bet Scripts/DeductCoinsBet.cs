@@ -13,39 +13,20 @@ public class DeductCoinsBet : MonoBehaviour
     public int amountBet;
     public int playerCoins;
     //int tempBet = 20; 
-    public bool firstRun = false;
 
-    private void Start()
-    {
-        string path = "Assets/SavedData/balandamount.txt";
-        string line;
-        Ss = FindObjectOfType<SoundScript>();
+    //private void Start()
+    //{
+    //    string path = "Assets/SavedData/balandamount.txt";
 
-        if (firstRun)
-        {
-            StreamReader reader = new StreamReader(path);
+    //    StreamWriter writer = new StreamWriter(path);
 
-            if ((line = reader.ReadLine()) != null)
-            {
-                playerCoinsText.text = line;
-            }
-
-            reader.Close();
-        }
-
-        else
-        {
-            StreamWriter writer = new StreamWriter(path);
-            writer.Flush();
-            writer.Close();
-
-            playerCoinsText.text = "Coins: 500";
-            firstRun = true;
-        }
-    }
+    //    writer.Flush(); 
+    //    writer.Close();
+    //}
 
     public void DeductCoins()
     {
+        Ss = FindObjectOfType<SoundScript>();
         Ss.Bet();
 
         amountBet = 0;

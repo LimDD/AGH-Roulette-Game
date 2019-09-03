@@ -12,6 +12,7 @@ public class SpinResult : MonoBehaviour
     public RouletteWheelSpin rWS;
     public WinningsPayout wP;
     bool winner;
+    string path;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class SpinResult : MonoBehaviour
     //Checks if the result is the same
     public void CheckIfWinner()
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        path = "Assets/SavedData/winningNumbers.txt";
         string line;
         string type = "";
         int saveNum;
@@ -109,10 +110,15 @@ public class SpinResult : MonoBehaviour
         {
             wP.GetWinnings(type, save);
             rWS.Winner(winNum);
+
         }
+
         else
         {
             rWS.Loser(winNum);
+            StreamWriter writer = new StreamWriter(path);
+            writer.Flush();
+            writer.Close();
         }
     }
 }
