@@ -32,36 +32,4 @@ public class SaveValues : MonoBehaviour
         writer.WriteLine(balance);
         writer.Close();
     }
-
-    public void AWriteToFile()
-    {
-        string path = "Assets/SavedData/winningNumbers.txt";
-
-        //Write some text to the winningNumbers.txt file
-        StreamWriter writer = new StreamWriter(path, true);
-
-        Debug.Log("wtf: " + betType);
-        writer.WriteLine(betType);
-        foreach (int i in winNum)
-        {
-            Debug.Log("wtf: "+i);
-            writer.WriteLine(i);
-        }
-
-        writer.Close();
-        winNum.Clear();
-
-        ReadString();
-    }
-
-    private void ReadString()
-    {
-        string path = "Assets/SavedData/winningNumbers.txt";
-
-        //Display the file text in the Debug.Log
-        StreamReader reader = new StreamReader(path);
-        Debug.Log("Reader: " + reader.ReadToEnd());
-        reader.Close();
-    }
-
 }

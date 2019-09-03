@@ -160,7 +160,6 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(2);
             }
         }
-        //sV.SaveInfo(winNum, betType);
         WriteToFile(betType);
     }
 

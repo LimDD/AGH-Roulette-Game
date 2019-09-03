@@ -13,6 +13,7 @@ public class DeductCoinsBet : MonoBehaviour
     public int amountBet;
     public int playerCoins;
     //int tempBet = 20; 
+    public bool firstRun = false;
 
     private void Start()
     {
@@ -20,15 +21,29 @@ public class DeductCoinsBet : MonoBehaviour
         string line;
         Ss = FindObjectOfType<SoundScript>();
 
-        StreamReader reader = new StreamReader(path);
+ 
 
-        if ((line = reader.ReadLine()) != null)
+        if (firstRun)
         {
-            playerCoinsText.text = line;
+            StreamReader reader = new StreamReader(path);
+
+            if ((line = reader.ReadLine()) != null)
+            {
+                playerCoinsText.text = line;
+            }
+
+            reader.Close();
         }
 
-        reader.Close();
+        else
+        {
+            StreamWriter writer = new StreamWriter(path);
+            writer.Flush();
+            writer.Close();
 
+            playerCoinsText.text = "Coins: 500";
+            firstRun = true;
+        }
     }
 
     public void DeductCoins()
