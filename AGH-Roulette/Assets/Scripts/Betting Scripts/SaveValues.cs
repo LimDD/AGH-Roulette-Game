@@ -16,8 +16,8 @@ public class SaveValues : MonoBehaviour
         string bet = amount.text;
         string balance = bal.text;
 
-        writer.WriteLine(balance);
         writer.WriteLine(bet);
+        writer.WriteLine(balance);
         writer.Close();
     }
 }

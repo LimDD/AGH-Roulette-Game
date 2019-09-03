@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class SpinResult : MonoBehaviour
@@ -12,7 +13,6 @@ public class SpinResult : MonoBehaviour
     public RouletteWheelSpin rWS;
     public WinningsPayout wP;
     bool winner;
-    string path;
 
     private void Start()
     {
@@ -24,14 +24,14 @@ public class SpinResult : MonoBehaviour
     //Checks if the result is the same
     public void CheckIfWinner()
     {
-        path = "Assets/SavedData/winningNumbers.txt";
+        string path = "Assets/SavedData/winningNumbers.txt";
         string line;
         string type = "";
         int saveNum;
         int count = 0;
         int betNum = 0;
         int numbers = 0;
-        int save = 0;
+        int saveIndex = 0;
 
         int winNum = rWS.rouletteValue;
 
@@ -93,13 +93,15 @@ public class SpinResult : MonoBehaviour
                     if (j == 0)
                     {
                         smallest = temp;
+                        type = betType[0];
+                        saveIndex = 0;
                     }
 
                     else if (temp < smallest && temp >= 0)
                     {
                         smallest = temp;
                         type = betType[j];
-                        save = j;
+                        saveIndex = j;
                     }
                 }
                 winner = true;
@@ -108,17 +110,13 @@ public class SpinResult : MonoBehaviour
 
         if (winner)
         {
-            wP.GetWinnings(type, save);
+            wP.GetWinnings(type, saveIndex);
             rWS.Winner(winNum);
-
         }
 
         else
         {
             rWS.Loser(winNum);
-            StreamWriter writer = new StreamWriter(path);
-            writer.Flush();
-            writer.Close();
         }
     }
 }

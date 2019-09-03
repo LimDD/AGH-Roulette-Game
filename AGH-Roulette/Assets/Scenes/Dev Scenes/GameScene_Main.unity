@@ -1328,8 +1328,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winNum: 
-  betType: 
   bal: {fileID: 0}
   amount: {fileID: 0}
 --- !u!1 &84177449
@@ -7385,8 +7383,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winNum: 
-  betType: 
   bal: {fileID: 0}
   amount: {fileID: 0}
 --- !u!1 &629687680
@@ -14391,8 +14387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winNum: 
-  betType: 
   bal: {fileID: 0}
   amount: {fileID: 0}
 --- !u!1 &1323412626
@@ -16466,7 +16460,6 @@ MonoBehaviour:
   playerCoinsText: {fileID: 1817253530}
   amountBet: 0
   playerCoins: 0
-  firstRun: 0
 --- !u!114 &1523562245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16649,8 +16642,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  winNum: 
-  betType: 
   bal: {fileID: 1817253530}
   amount: {fileID: 1483096875}
 --- !u!114 &1523562249
@@ -19992,8 +19983,8 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Coins: 500'
 --- !u!222 &1817253531

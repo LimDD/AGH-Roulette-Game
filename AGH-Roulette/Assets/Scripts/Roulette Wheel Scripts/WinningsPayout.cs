@@ -32,7 +32,7 @@ public class WinningsPayout : MonoBehaviour
 
         int balance = Int32.Parse(temp);
 
-        Int32.TryParse(betInfo[index], out int amount);
+        Int32.TryParse(betInfo[index+1], out int amount);
 
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
@@ -65,7 +65,7 @@ public class WinningsPayout : MonoBehaviour
         }
 
         StreamWriter writer = new StreamWriter(path);
-        writer.WriteLine(balance.ToString());
+        writer.WriteLine("Coins: "+balance.ToString());
         writer.Close();
     }
 }

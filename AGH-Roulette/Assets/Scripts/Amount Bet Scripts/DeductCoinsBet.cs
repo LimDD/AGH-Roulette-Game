@@ -12,17 +12,32 @@ public class DeductCoinsBet : MonoBehaviour
     public Text playerCoinsText;
     public int amountBet;
     public int playerCoins;
-    //int tempBet = 20; 
 
-    //private void Start()
-    //{
-    //    string path = "Assets/SavedData/balandamount.txt";
+    private void Start()
+    {
+        string path = "Assets/SavedData/balandamount.txt";
+        string last = "";
 
-    //    StreamWriter writer = new StreamWriter(path);
+        StreamReader reader = new StreamReader(path);
 
-    //    writer.Flush(); 
-    //    writer.Close();
-    //}
+        while (!reader.EndOfStream)
+        {
+            last = reader.ReadLine();
+        }
+
+        reader.Close();
+
+        if (last == "")
+        {
+            last = "500";
+            playerCoinsText.text = last;
+        }
+
+        else
+        {
+            playerCoinsText.text = last;
+        }
+    }
 
     public void DeductCoins()
     {
