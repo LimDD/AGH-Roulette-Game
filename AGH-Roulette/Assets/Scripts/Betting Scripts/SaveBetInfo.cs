@@ -258,7 +258,7 @@ public class SaveBetInfo : MonoBehaviour
                     i--;
                 }
 
-                if (i == 17 || i == 9 || i == 27)
+                else if (i == 17 || i == 9 || i == 27)
                 {
                     i++;
                 }
