@@ -39,8 +39,8 @@ public class RouletteWheelSpin : MonoBehaviour
         check = false;
 
         //Result after the wheel spins
-        //rouletteValue = 17;
-        rouletteValue = Random.Range(0, 36);
+        rouletteValue = 18;
+        //rouletteValue = Random.Range(0, 36);
 
         //Wheel rotation values
         xAngle = 0;

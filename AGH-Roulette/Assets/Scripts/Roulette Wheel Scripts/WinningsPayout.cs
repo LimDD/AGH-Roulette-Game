@@ -33,7 +33,7 @@ public class WinningsPayout : MonoBehaviour
             balance += amount * 12;
         }
 
-        if (bet == "Odds" || bet == "Evens" || bet == "Reds" || bet == "Blacks")
+        if (bet == "Odds" || bet == "Evens" || bet == "Red" || bet == "Black" || bet == "1 To 18" || bet == "19 to 36")
         {
             balance += amount * 2;
         }
@@ -57,6 +57,7 @@ public class WinningsPayout : MonoBehaviour
         {
             balance += amount * 9;
         }
+
 
         return balance;
     }
