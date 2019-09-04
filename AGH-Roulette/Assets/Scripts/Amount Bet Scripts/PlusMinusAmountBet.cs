@@ -1,20 +1,61 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
+using System.IO;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
     public SoundScript Ss;
     public Text betText;
     public Text playerCoinsText;
+    public Button inc;
+    public Button dec;
+    public Button confirm;
     public int amountToChange = 10;
     public int minBet = 10;
+    private string coins;
+    private int balance;
 
     private void Start()
     {
+        if (!confirm.IsInteractable())
+        {
+            confirm.interactable = true;
+            inc.interactable = true;
+            dec.interactable = true;
+        }
+
         Ss = FindObjectOfType<SoundScript>();
+        string path = "Assets/SavedData/balandamount.txt";
+        string temp;
+
+        StreamReader reader = new StreamReader(path);
+
+        while (!reader.EndOfStream)
+        {
+            temp = reader.ReadLine();
+            if (temp.Contains("Coins"))
+            {
+                coins = temp;
+            }
+        }
+
+        reader.Close();
+
+        playerCoinsText.text = coins;
+
+        balance = TextToInt(playerCoinsText);
+
+        if (balance == 10)
+        {
+            inc.interactable = false;
+            dec.interactable = false;
+        }
+
+        if (balance == 0)
+        {
+            confirm.interactable = false;
+        }
     }
 
     //Increases the text display
@@ -27,15 +68,20 @@ public class PlusMinusAmountBet : MonoBehaviour
         bettingAmount = TextToInt(betText);
         maxBet = TextToInt(playerCoinsText);
 
-        if (bettingAmount <= maxBet)
+        if (bettingAmount < maxBet)
         {
             bettingAmount += amountToChange;
             IntToText(bettingAmount);
+            dec.interactable = true;
         }
-        
 
+        if (bettingAmount == maxBet)
+        {
+            inc.interactable = false;
+        }
     }
 
+    //Decreases the text display
     public void Decrement()
     {
         Ss.Bet();
@@ -45,9 +91,13 @@ public class PlusMinusAmountBet : MonoBehaviour
         {
             bettingAmount -= amountToChange;
             IntToText(bettingAmount);
+            inc.interactable = true;
         }
-        
 
+        if (bettingAmount == minBet)
+        {
+            dec.interactable = false;
+        }
     }
 
     private int TextToInt(Text textToConvert)
@@ -71,19 +121,4 @@ public class PlusMinusAmountBet : MonoBehaviour
         return convertedInt;
 
     }
-    void Update()
-    {
-        //on button press: call the increase/decrease functions
-       /* if(Input.GetButtonDown("Increase Bet Button"))
-        {
-            Increment();
-        }
-
-        if(Input.GetButtonDown("Decrease Bet Button"))
-        {
-            Decrement();
-        }
-        */
-    }
-
 }

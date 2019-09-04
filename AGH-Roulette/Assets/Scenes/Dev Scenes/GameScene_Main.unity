@@ -4421,7 +4421,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Ss: {fileID: 0}
   betText: {fileID: 1483096875}
-  playerCoinsText: {fileID: 0}
+  playerCoinsText: {fileID: 1817253530}
+  inc: {fileID: 993047432}
+  dec: {fileID: 448481269}
+  confirm: {fileID: 1523562245}
   amountToChange: 10
   minBet: 10
 --- !u!114 &448481269
@@ -4462,7 +4465,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 448481270}
   m_OnClick:
     m_PersistentCalls:
@@ -11906,6 +11909,9 @@ MonoBehaviour:
   Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
+  inc: {fileID: 993047432}
+  dec: {fileID: 448481269}
+  confirm: {fileID: 1523562245}
   amountToChange: 10
   minBet: 10
 --- !u!114 &993047432
@@ -15801,7 +15807,7 @@ GameObject:
   - component: {fileID: 1459107715}
   - component: {fileID: 1459107714}
   m_Layer: 5
-  m_Name: Bet Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15859,7 +15865,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Amount Bet
+  m_Text: Bet Amount
 --- !u!222 &1459107715
 CanvasRenderer:
   m_ObjectHideFlags: 0
