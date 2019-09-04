@@ -110,7 +110,7 @@ public class SpinResult : MonoBehaviour
 
         if (winner)
         {
-            for (int i = 0; i < type.Count() - 1; i++)
+            for (int i = 0; i < type.Count(); i++)
             {
                 wP.GetWinnings(type[i], saveIndex[i]);
             }
