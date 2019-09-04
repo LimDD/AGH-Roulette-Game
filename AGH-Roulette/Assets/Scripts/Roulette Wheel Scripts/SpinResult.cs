@@ -27,7 +27,7 @@ public class SpinResult : MonoBehaviour
     //Checks if the result is the same
     public void CheckIfWinner()
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        string path = "/winningNumbers.txt";
         string line;
         int saveNum;
         int count = 0;
@@ -36,7 +36,7 @@ public class SpinResult : MonoBehaviour
 
         int winNum = rWS.rouletteValue;
 
-        StreamReader reader = new StreamReader(path);
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
         //Add file data to betonNum list
         while ((line = reader.ReadLine()) != null)
@@ -125,8 +125,8 @@ public class SpinResult : MonoBehaviour
             }
         }
 
-        path = "Assets/SavedData/balandamount.txt";
-        reader = new StreamReader(path);
+        path = "/balandamount.txt";
+        reader = new StreamReader(Application.persistentDataPath + path);
 
         count = 0;
         //Add the balance and bet amount to betInfo

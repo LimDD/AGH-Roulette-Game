@@ -17,10 +17,10 @@ public class SaveBetInfo : MonoBehaviour
 
     private void Awake()
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        string path = "/winningNumbers.txt";
 
         //Clears the file
-        StreamWriter writer = new StreamWriter(path);
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
         sV = FindObjectOfType<SaveValues>();
         writer.Flush();
         writer.Close();
@@ -301,10 +301,10 @@ public class SaveBetInfo : MonoBehaviour
 
     public void WriteToFile(string betType)
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        string path = "/winningNumbers.txt";
 
         //Write some text to the winningNumbers.txt file
-        StreamWriter writer = new StreamWriter(path, true);
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
 
         writer.WriteLine(betType);
         foreach (int i in winNum)
@@ -319,10 +319,10 @@ public class SaveBetInfo : MonoBehaviour
 
     private void ReadString()
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        string path = "/winningNumbers.txt";
 
         //Display the file text in the Debug.Log
-        StreamReader reader = new StreamReader(path);
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
         Debug.Log("Reader: " + reader.ReadToEnd());
         reader.Close();
     }

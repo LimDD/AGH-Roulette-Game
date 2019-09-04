@@ -8,7 +8,6 @@ using UnityEngine.UI;
 
 public class WinningsPayout : MonoBehaviour
 {
-    public Text bal;
     //In this class I would have an instance of another class storing the balance variable
     public int GetWinnings(string bet, int balance, int amount)
     {
@@ -47,8 +46,8 @@ public class WinningsPayout : MonoBehaviour
 
     public void ResetFile(int balance)
     {
-        string path = "Assets/SavedData/balandamount.txt";
-        StreamWriter writer = new StreamWriter(path);
+        string path = "/balandamount.txt";
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
         writer.WriteLine("Coins: " + balance.ToString());
         writer.Close();
     }

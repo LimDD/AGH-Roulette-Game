@@ -11,8 +11,8 @@ public class SaveValues : MonoBehaviour
 
     public void WriteToFile()
     {
-        string path = "Assets/SavedData/balandamount.txt";
-        StreamWriter writer = new StreamWriter(path, true);
+        string path = "/balandamount.txt";
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
         string balance = bal.text;
         string bet = amount.text;
 

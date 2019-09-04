@@ -7,8 +7,8 @@ public class ResetCoins : MonoBehaviour
 {
     public void ResetFile()
     {
-        string path = "Assets/SavedData/balandamount.txt";
-        StreamWriter writer = new StreamWriter(path);
+        string path = "/balandamount.txt";
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
         writer.Flush();
         writer.WriteLine("Coins: 500");
         writer.Close();

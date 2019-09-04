@@ -10,7 +10,7 @@ public class RemoveBets : MonoBehaviour
         string path = "Assets/SavedData/winningNumbers.txt";
 
         //Clears the file
-        StreamWriter writer = new StreamWriter(path, true);
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
         writer.WriteLine("Delete");
         writer.Close();
     }

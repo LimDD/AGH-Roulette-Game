@@ -26,10 +26,10 @@ public class PlusMinusAmountBet : MonoBehaviour
         }
 
         Ss = FindObjectOfType<SoundScript>();
-        string path = "Assets/SavedData/balandamount.txt";
+        string path = "/balandamount.txt";
         string temp;
 
-        StreamReader reader = new StreamReader(path);
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
         while (!reader.EndOfStream)
         {

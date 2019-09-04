@@ -352,7 +352,7 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &642648704
@@ -375,7 +375,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9856349c1d149b141a291adbbaee3667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bal: {fileID: 0}
 --- !u!1 &666174601
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,7 +719,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   betonNum: 
   typeIndex: 
+  winIndex: 
   betType: []
+  type: []
+  saveIndex: 
   rWS: {fileID: 0}
   wP: {fileID: 0}
 --- !u!114 &1368955253
@@ -735,7 +737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9856349c1d149b141a291adbbaee3667, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bal: {fileID: 0}
 --- !u!1 &1537819007
 GameObject:
   m_ObjectHideFlags: 0
@@ -983,8 +984,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 960, y: -1706.5}
-  m_SizeDelta: {x: 1920, y: 3413}
+  m_AnchoredPosition: {x: 949.2, y: -1706.5}
+  m_SizeDelta: {x: 2041.5, y: 3524.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1684317197
 MonoBehaviour:
