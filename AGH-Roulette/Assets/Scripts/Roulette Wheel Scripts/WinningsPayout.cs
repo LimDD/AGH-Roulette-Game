@@ -10,7 +10,7 @@ public class WinningsPayout : MonoBehaviour
 {
     public Text bal;
     //In this class I would have an instance of another class storing the balance variable
-    public void GetWinnings(string bet, int index)
+    public int GetWinnings(string bet, int index, int balance)
     {
         List<string> betInfo = new List<string>();
         string line;
@@ -26,13 +26,7 @@ public class WinningsPayout : MonoBehaviour
 
         reader.Close();
 
-        string temp = betInfo[count - 1];
-
-        temp = Regex.Replace(temp, "[^0-9.]", "");
-
-        int balance = Int32.Parse(temp);
-
-        Int32.TryParse(betInfo[index + 1], out int amount);
+        Int32.TryParse(betInfo[index + 2], out int amount);
 
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
@@ -64,8 +58,13 @@ public class WinningsPayout : MonoBehaviour
             balance += amount * 9;
         }
 
+        return balance;
+    }
+
+    public void ResetFile(int balance, string path)
+    {
         StreamWriter writer = new StreamWriter(path);
-        writer.WriteLine("Coins: "+balance.ToString());
+        writer.WriteLine("Coins: " + balance.ToString());
         writer.Close();
     }
 }

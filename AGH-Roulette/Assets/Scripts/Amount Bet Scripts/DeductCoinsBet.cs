@@ -17,26 +17,24 @@ public class DeductCoinsBet : MonoBehaviour
     {
         string path = "Assets/SavedData/balandamount.txt";
         string last = "";
+        string temp;
 
         StreamReader reader = new StreamReader(path);
 
         while (!reader.EndOfStream)
         {
-            last = reader.ReadLine();
+             temp = reader.ReadLine();
+
+            if (temp.Contains("Coins"))
+            {
+                last = temp;
+            }
+
         }
 
         reader.Close();
 
-        if (last == "")
-        {
-            last = "500";
-            playerCoinsText.text = last;
-        }
-
-        else
-        {
-            playerCoinsText.text = last;
-        }
+        playerCoinsText.text = last;
     }
 
     public void DeductCoins()

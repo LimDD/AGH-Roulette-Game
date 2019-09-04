@@ -13,11 +13,11 @@ public class SaveValues : MonoBehaviour
     {
         string path = "Assets/SavedData/balandamount.txt";
         StreamWriter writer = new StreamWriter(path, true);
-        string bet = amount.text;
         string balance = bal.text;
+        string bet = amount.text;
 
-        writer.WriteLine(bet);
         writer.WriteLine(balance);
+        writer.WriteLine(bet);
         writer.Close();
     }
 }
