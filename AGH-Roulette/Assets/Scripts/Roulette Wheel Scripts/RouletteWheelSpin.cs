@@ -26,13 +26,14 @@ public class RouletteWheelSpin : MonoBehaviour
 
     public bool check;
 
-    public ButtonState bS;
     public SpinResult sR;
+
+    public Button back;
+    public Button newBet;
 
     // Start is called before the first frame update
     void Start()
     {
-        bS = FindObjectOfType<ButtonState>();
         sR = FindObjectOfType<SpinResult>();
 
         winner = false;
@@ -98,19 +99,27 @@ public class RouletteWheelSpin : MonoBehaviour
             }
         }
     }
+
     //Is called when you win a game and the roulette value is the same as your bet
     //Changed int winning_bet to roulette_value
     public void Winner(int roulette_value)
     {
         //resulttext_component.text = "You won the round with " + winning_bet + "!!!";
         resulttext_component.text = "The ball landed on " + roulette_value + "! You have won!!";
-        bS.ShowButton();
+        ShowButtons();
     }
 
     //Is called when you lose a game and the roulette value is not the same as your bet
     public void Loser(int roulette_value)
     {
         resulttext_component.text = "The ball landed on " + roulette_value + " meaning you lost this round...";
-        bS.ShowButton();
+        ShowButtons();
+    }
+
+    public void ShowButtons()
+    {
+        back.interactable = true;
+        newBet.interactable = true;
     }
 }
+
