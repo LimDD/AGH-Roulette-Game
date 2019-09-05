@@ -26,7 +26,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.7f);
 
         if (inFocus)
         {
