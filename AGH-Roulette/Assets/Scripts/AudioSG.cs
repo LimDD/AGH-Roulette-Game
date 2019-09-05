@@ -1,67 +1,31 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class AudioSG : MonoBehaviour
 {
-    /*public AudioClip startGameButton;
-    public AudioClip tutorialButton;
-    public AudioClip gameControlsButton;
-    public AudioClip betsOfRouletteButton;
-    public AudioClip highScoresButton;
-    public AudioClip achievementsButton;
-    */
     public AudioSource source;
     public AudioClip hoverSound;
+    public Button btn;
 
-    // Start is called before the first frame update
-   /* void Start()
-    {
-        source = GetComponent<AudioSource>();
-    }
-
-    public void StartGame()
-    {
-        source.clip = startGameButton;
-        source.Play();
-    }
-
-    public void Tutorial()
-    {
-        source.clip = tutorialButton;
-        source.Play();
-    }
-
-    public void GameControls()
-    {
-        source.clip = gameControlsButton;
-        source.Play();
-    }
-
-    public void betsOfRoulette()
-    {
-        source.clip = betsOfRouletteButton;
-        source.Play();
-    }
-
-    public void HighScores()
-    {
-        source.clip = highScoresButton;
-        source.Play();
-    }
-
-    public void Achievements()
-    {
-        source.clip = achievementsButton;
-        source.Play();
-        //HoverSound(source.clip);
-        //HoverSound(achievementsButton);
-    }
-    */
 
     public void HoverSound()
     {
         source.PlayOneShot(hoverSound);
+    }
+
+    public void SetPitch()
+    {
+
+        Debug.Log(btn.GetComponentInChildren<TMP_Text>().text);
+        string num = btn.GetComponentInChildren<TMP_Text>().text;
+
+        float number = Int32.Parse(num);
+
+        source.pitch = 1 + (number * 0.01f);
+
+        HoverSound();
     }
 
 }
