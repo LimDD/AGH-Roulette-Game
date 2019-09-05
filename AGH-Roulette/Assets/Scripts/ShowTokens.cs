@@ -10,7 +10,10 @@ public class ShowTokens : MonoBehaviour
     public void ShowDuplicates()
     {
         GameObject duplicate = Instantiate(PlayerToken);
+        Vector2 vec = new Vector2(1f, 1f);
+
         duplicate.transform.SetParent(table.transform);
         duplicate.transform.position = PlayerToken.transform.position;
+        duplicate.transform.localScale = vec;
     }
 }
