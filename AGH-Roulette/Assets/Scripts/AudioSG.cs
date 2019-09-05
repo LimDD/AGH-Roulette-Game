@@ -2,17 +2,36 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Collections;
+using UnityEngine.EventSystems;
 
-public class AudioSG : MonoBehaviour
+public class AudioSG : MonoBehaviour, IPointerExitHandler
 {
     public AudioSource source;
     public AudioClip hoverSound;
     public Button btn;
+    public bool inFocus;
 
 
     public void HoverSound()
     {
         source.PlayOneShot(hoverSound);
+    }
+
+    public void CallTimer()
+    {
+        inFocus = true;
+        StartCoroutine(StartCountdown());
+    }
+
+    public IEnumerator StartCountdown()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        if (inFocus)
+        {
+            source.PlayOneShot(hoverSound);
+        }
     }
 
     public void SetPitch()
@@ -28,4 +47,8 @@ public class AudioSG : MonoBehaviour
         HoverSound();
     }
 
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        inFocus = false;
+    }
 }
