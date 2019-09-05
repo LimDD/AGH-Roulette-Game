@@ -16,7 +16,7 @@ public class DeductCoinsBet : MonoBehaviour
     public void DeductCoins()
     {
         Ss = FindObjectOfType<SoundScript>();
-        Ss.Bet();
+        //Ss.Bet();
 
         amountBet = 0;
         playerCoins = 0;

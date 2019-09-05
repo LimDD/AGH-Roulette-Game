@@ -62,7 +62,7 @@ public class PlusMinusAmountBet : MonoBehaviour
     //Increases the text display
     public void Increment()
     {
-        Ss.Bet();
+        //Ss.Bet();
         int bettingAmount = 0; 
         int maxBet = 0;
 
@@ -85,7 +85,7 @@ public class PlusMinusAmountBet : MonoBehaviour
     //Decreases the text display
     public void Decrement()
     {
-        Ss.Bet();
+        //Ss.Bet();
         int bettingAmount = TextToInt(betText);
         
         if(bettingAmount > minBet)

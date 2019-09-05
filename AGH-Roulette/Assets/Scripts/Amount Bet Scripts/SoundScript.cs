@@ -12,7 +12,7 @@ public class SoundScript : MonoBehaviour
         source = GetComponent<AudioSource>();
     }
 
-    public void Bet()
+    public void Click()
     {
         source.PlayOneShot(buttonPress, 0.7f);
     }

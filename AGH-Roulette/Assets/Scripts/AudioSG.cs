@@ -32,6 +32,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
     {
         yield return new WaitForSeconds(0.1f);
 
+        //If the button is still in focus
         if (inFocus)
         {
             source.PlayOneShot(hoverSound);
@@ -40,8 +41,6 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public void SetPitch()
     {
-
-        Debug.Log(btn.GetComponentInChildren<TMP_Text>().text);
         string num = btn.GetComponentInChildren<TMP_Text>().text;
 
         float number = Int32.Parse(num);
@@ -53,6 +52,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        //If a button currently has the pointer on it
         if (inFocus)
         {
             source.Stop();
