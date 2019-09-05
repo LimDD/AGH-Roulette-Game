@@ -46,7 +46,7 @@ public class PlusMinusAmountBet : MonoBehaviour
 
         balance = TextToInt(playerCoinsText);
 
-        if (balance == 10)
+        if (balance <= 10)
         {
             inc.interactable = false;
             dec.interactable = false;
@@ -55,6 +55,7 @@ public class PlusMinusAmountBet : MonoBehaviour
         if (balance == 0)
         {
             confirm.interactable = false;
+            betText.text = "0";
         }
     }
 

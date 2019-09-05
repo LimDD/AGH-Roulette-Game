@@ -7,7 +7,7 @@ public class RemoveBets : MonoBehaviour
 {
     public void CancelledBet()
     {
-        string path = "Assets/SavedData/winningNumbers.txt";
+        string path = "/winningNumbers.txt";
 
         //Clears the file
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
