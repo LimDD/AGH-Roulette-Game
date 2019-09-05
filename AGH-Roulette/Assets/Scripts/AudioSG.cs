@@ -12,6 +12,10 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
     public Button btn;
     public bool inFocus;
 
+    void Start()
+    {
+        
+    }
 
     public void HoverSound()
     {
@@ -26,7 +30,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.1f);
 
         if (inFocus)
         {
@@ -49,6 +53,10 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        inFocus = false;
+        if (inFocus)
+        {
+            source.Stop();
+            inFocus = false;
+        }
     }
 }
