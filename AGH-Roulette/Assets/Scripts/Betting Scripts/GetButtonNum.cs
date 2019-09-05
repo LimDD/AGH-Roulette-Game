@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using TMPro;
 using System.Text.RegularExpressions;
 using System;
 
@@ -20,7 +21,10 @@ public class GetButtonNum : MonoBehaviour
     public Text botR;
     public int num;
 
-    public void GetNum()
+    //GetNumAndColor
+    //Gets the number and color of the button clicked on the board
+    //Sets the number and color to the Zoomed Button on the Zoom Panel
+    public void GetNumAndColor()
     {
         //Getting the current text of the zoomed button
         tNum = GameObject.Find("ZoomNum").GetComponent<Text>();
@@ -29,17 +33,34 @@ public class GetButtonNum : MonoBehaviour
         //Getting the color of the button selected in the roulette table
         Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
 
-        //Getting the numbers from the name of the button selected by the user
-        string name = EventSystem.current.currentSelectedGameObject.name;
-        string number = Regex.Replace(name, "[^.0-9]", "");
+        //Gets number from selected roulette cell
+        int number = GetNumber();
 
-        tNum.text = number;
+        //Setting the number and color retreived from the roulette table button to the zoomed button
+        tNum.text = Convert.ToString(number);
         GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
         num = Convert.ToInt32(number);
         BetType(num);
 
         Debug.Log("Color to set is: " + buttonColor);
         Debug.Log("Color of the zoomed button is: " + tNumColor);
+    }
+
+    //GetNumber
+    //Gets and returns the numbers from the name of the currently selected gameobject.
+    //Returns as int.
+    public int GetNumber()
+    {
+        //Gets the gameobject name of the pressed button as string.
+        string name = EventSystem.current.currentSelectedGameObject.name;
+
+        //Removes all non digit characters from string and saves as string.
+        string strNum = Regex.Replace(name, "[^.0-9]", "");
+        
+        //Converts saved number string to type int.
+        int num = Convert.ToInt32(strNum);
+
+        return num;
     }
 
     public void BetType(int n)

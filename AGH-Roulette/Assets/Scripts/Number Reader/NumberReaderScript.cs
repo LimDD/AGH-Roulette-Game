@@ -32,14 +32,19 @@ public class NumberReaderScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Iterating through clips
         IterateClips();
 
+        //If spacebar is pressed play the last set number
+        //Set for debugging purposes
         if(Input.GetKeyDown(KeyCode.Space))
         {
             ReadNumber();
         }
     }
 
+    //IterateClips
+    //Iterates through clips in queue and plays them one by one
     private void IterateClips()
     {
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
@@ -51,10 +56,26 @@ public class NumberReaderScript : MonoBehaviour
             currentClip++;
         }
     }
+    
+    //SetNumber
+    //Takes in integer parameter
+    //Sets integer parameter i as NumToRead
+    public void SetNumber(int i)
+    {
+        NumToRead = i;
+    }
 
+    //GetNumber
+    //Returns currently set number in NumToRead
+    public int GetNumber()
+    {
+        return NumToRead;
+    }
+
+    //ReadNumber
+    //Sets currentClip to 0, initiating reading of the currently set number
     public void ReadNumber()
     {
         currentClip = 0;
     }
-
 }

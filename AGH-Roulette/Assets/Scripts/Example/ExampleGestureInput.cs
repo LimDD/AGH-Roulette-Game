@@ -11,5 +11,12 @@ public class ExampleGestureInput : MonoBehaviour
         {
             Debug.Log(GestureInputManager.CurrentInput);
         }
+
+        if (GestureInputManager.CurrentInput == InputAction.Click)
+        {
+            Debug.Log("The User has clicked");
+
+            //TODO: Get the number of the selected cell, give that number to the number reader, read the number
+        }
     }
 }
