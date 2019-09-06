@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FakeScores : MonoBehaviour
 {
@@ -9,10 +7,4 @@ public class FakeScores : MonoBehaviour
     public int aLost;
     public int betNum;
     public int profit;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 }

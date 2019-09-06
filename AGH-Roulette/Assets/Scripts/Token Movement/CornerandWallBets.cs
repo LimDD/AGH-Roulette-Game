@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
@@ -22,6 +20,7 @@ public class CornerandWallBets : MonoBehaviour
 
         string number = num.ToString();
         btn = GameObject.Find(number + "_Cell").GetComponent<Button>();
+
 
         switch (name)
         {
@@ -49,6 +48,11 @@ public class CornerandWallBets : MonoBehaviour
             case "BottomRightButton":
                 num += 4;
                 break;
+        }
+
+        if (num < 0)
+        {
+            num = 0;
         }
 
         SetButton();

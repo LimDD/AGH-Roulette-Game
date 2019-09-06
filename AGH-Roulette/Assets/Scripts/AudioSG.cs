@@ -1,5 +1,4 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using System.Collections;
@@ -12,10 +11,6 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
     public Button btn;
     public bool inFocus;
 
-    void Start()
-    {
-        
-    }
 
     public void HoverSound()
     {
@@ -43,7 +38,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
     {
         string num = btn.GetComponentInChildren<TMP_Text>().text;
 
-        float number = Int32.Parse(num);
+        float number = float.Parse(num);
 
         source.pitch = 0.9f + (number * 0.02f);
 

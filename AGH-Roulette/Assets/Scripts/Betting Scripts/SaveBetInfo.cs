@@ -1,11 +1,9 @@
-﻿using System.Collections;
-using System.IO;
+﻿using System.IO;
 using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
-using System;
 using System.Collections.Generic;
 
 public class SaveBetInfo : MonoBehaviour
@@ -44,7 +42,7 @@ public class SaveBetInfo : MonoBehaviour
         //Remove New Lines in the string
         string type = Regex.Replace(str,"\n"," ");
 
-        Int32.TryParse(type, out int single);
+        int.TryParse(type, out int single);
 
         //If the tryparse doesn't fail then single will be = to a number meaning it was a single number bet
         if (single != 0 || type == "0")
@@ -94,7 +92,15 @@ public class SaveBetInfo : MonoBehaviour
             switch (name)
             {
                 case "TopMiddleButton":
-                    winNum.Add(num - 3);
+                    if (num < 3)
+                    {
+                        winNum.Add(0);
+                    }
+
+                    else
+                    {
+                        winNum.Add(num - 3);
+                    }
                     break;
 
                 case "MiddleLeftButton":

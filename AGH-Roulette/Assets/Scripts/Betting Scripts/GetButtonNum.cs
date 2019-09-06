@@ -2,20 +2,19 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Text.RegularExpressions;
-using System;
 
 public class GetButtonNum : MonoBehaviour
 {
     public Text tNum;
     public Vector4 tNumColor;
-    public Text topL;
-    public Text topM;
-    public Text topR;
-    public Text midL;
-    public Text midR;
-    public Text botL;
-    public Text botM;
-    public Text botR;
+    public Button topL;
+    public Button topM;
+    public Button topR;
+    public Button midL;
+    public Button midR;
+    public Button botL;
+    public Button botM;
+    public Button botR;
     public int num;
 
     //GetNumAndColor
@@ -31,12 +30,11 @@ public class GetButtonNum : MonoBehaviour
         Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
 
         //Gets number from selected roulette cell
-        int number = GetNumber();
+        num = GetNumber();
 
         //Setting the number and color retreived from the roulette table button to the zoomed button
-        tNum.text = Convert.ToString(number);
+        tNum.text = System.Convert.ToString(num);
         GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
-        num = Convert.ToInt32(number);
         BetType(num);
 
         Debug.Log("Color to set is: " + buttonColor);
@@ -55,34 +53,25 @@ public class GetButtonNum : MonoBehaviour
         string strNum = Regex.Replace(name, "[^.0-9]", "");
         
         //Converts saved number string to type int.
-        int num = Convert.ToInt32(strNum);
+        int num = System.Convert.ToInt32(strNum);
 
         return num;
     }
 
     public void BetType(int n)
     {
-        topL = GameObject.Find("TopL").GetComponent<Text>();
-        topM = GameObject.Find("TopM").GetComponent<Text>();
-        topR = GameObject.Find("TopR").GetComponent<Text>();
-        midL = GameObject.Find("MiddleL").GetComponent<Text>();
-        midR = GameObject.Find("MiddleR").GetComponent<Text>();
-        botL = GameObject.Find("BottomL").GetComponent<Text>();
-        botM = GameObject.Find("BottomM").GetComponent<Text>();
-        botR = GameObject.Find("BottomR").GetComponent<Text>();
-        
-        topL.GetComponentInParent<Button>().interactable = true;
-        topM.GetComponentInParent<Button>().interactable = true;
-        topR.GetComponentInParent<Button>().interactable = true;
-        midL.GetComponentInParent<Button>().interactable = true;
-        midR.GetComponentInParent<Button>().interactable = true;
-        botL.GetComponentInParent<Button>().interactable = true;
-        botM.GetComponentInParent<Button>().interactable = true;
-        botR.GetComponentInParent<Button>().interactable = true;
+        topL.interactable = true;
+        topM.interactable = true;
+        topR.interactable = true;
+        midL.interactable = true;
+        midR.interactable = true;
+        botL.interactable = true;
+        botM.interactable = true;
+        botR.interactable = true;
 
-        topL.text = "Corner\nBet";
-        topR.text = "Corner\nBet";
-        midL.text = "Split\nBet";
+        topL.GetComponentInChildren<Text>().text = "Corner\nBet";
+        topR.GetComponentInChildren<Text>().text = "Corner\nBet";
+        midL.GetComponentInChildren<Text>().text = "Split\nBet";
 
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
@@ -90,9 +79,9 @@ public class GetButtonNum : MonoBehaviour
         {
             if (n == (3 * x))
             {
-                botR.GetComponentInParent<Button>().interactable = false;
-                midR.GetComponentInParent<Button>().interactable = false;
-                topR.GetComponentInParent<Button>().interactable = false;
+                botR.interactable = false;
+                midR.interactable = false;
+                topR.interactable = false;
                 x = 14;
             }
         }
@@ -101,24 +90,24 @@ public class GetButtonNum : MonoBehaviour
         {
             if (n == (1 + x * 3))
             {
-                midL.text = "Street\nBet";
-                botL.GetComponentInParent<Button>().interactable = false;
-                topL.GetComponentInParent<Button>().interactable = false;
+                midL.GetComponentInChildren<Text>().text = "Street\nBet";
+                botL.interactable = false;
+                topL.interactable = false;
                 x = 12;
             }
         }
 
         if (n <= 3 && n > 0)
         {
-            topL.text = "Trio\nBet";
-            topR.text = "Trio\nBet";
+            topL.GetComponentInChildren<Text>().text = "Trio\nBet";
+            topR.GetComponentInChildren<Text>().text = "Trio\nBet";
         }
 
         if (n >= 34)
         {
-            botL.GetComponentInParent<Button>().interactable = false;
-            botM.GetComponentInParent<Button>().interactable = false;
-            botR.GetComponentInParent<Button>().interactable = false;
+            botL.interactable = false;
+            botM.interactable = false;
+            botR.interactable = false;
         }
     }
 }
