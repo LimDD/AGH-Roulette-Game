@@ -1,60 +1,89 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CornerandWallBets : MonoBehaviour
 {
-    //public GameObject PlayerToken;
+    public int num;
+    public Button btn;
+    public Button btn2;
+    public GameObject token;
+    public GameObject table;
 
-    // Start is called before the first frame update
-    void Start()
+    public void CoinPos(string name, int n)
     {
-        
+        num = n;
+
+        string number = num.ToString();
+
+        btn = GameObject.Find(number + "_Cell").GetComponent<Button>();
+
+        switch (name)
+        {
+            case "TopLeftButton":
+                num -= 4;
+                break;
+            case "TopMiddleButton":
+                num -= 3;
+                break;
+            case "TopRightButton":
+                num -= 2;
+                break;
+            case "MiddleLeftButton":
+                num--;
+                break;
+            case "MiddleRightButton":
+                num++;
+                break;
+            case "BottomLeftButton":
+                num += 2;
+                break;
+            case "BottomMiddleButton":
+                num += 3;
+                break;
+            case "BottomRightButton":
+                num += 4;
+                break;
+        }
+
+        SetButton();
+
+        float x = XMove();
+        float y = YMove();
+
+        if (token == null)
+        {
+            token = GameObject.Find("Player Token(Clone)");
+            Debug.Log(token);
+        }
+
+        token.transform.position = new Vector2(x, y);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void SetButton()
     {
-        //PlayerToken = GameObject.Find("Player Token");
+        string number = num.ToString();
+        btn2 = GameObject.Find(number + "_Cell").GetComponent<Button>();
     }
 
-    public void MoveUp()
+    private float XMove()
     {
-        gameObject.transform.Translate(0f, 59.0f, 0f);
+        float x = btn.transform.position.x;
+        float x2 = btn2.transform.position.x;
+
+        float tokenX = (x + x2) / 2;
+
+        return tokenX;
     }
 
-    public void MoveTopRight()
+    private float YMove()
     {
-        gameObject.transform.Translate(98.0f, 59.0f, 0f);
-    }
+        float y = btn.transform.position.y;
+        float y2 = btn2.transform.position.y;
 
-    public void MoveRight()
-    {
-        gameObject.transform.Translate(98.0f, 0f, 0f);
-    }
+        float tokenY = (y + y2) / 2;
 
-    public void MoveBottomRight()
-    {
-        gameObject.transform.Translate(98.0f, -59.0f, 0f);
-    }
-
-    public void MoveDown()
-    {
-        gameObject.transform.Translate(0f, -59.0f, 0f);
-    }
-
-    public void MoveBottomLeft()
-    {
-        gameObject.transform.Translate(-98.0f, -59.0f, 0f);
-    }
-
-    public void MoveLeft()
-    {
-        gameObject.transform.Translate(-98.0f, 0f, 0f);
-    }
-
-    public void MoveTopLeft()
-    {
-        gameObject.transform.Translate(-98.0f, 59.0f, 0f);
+        return tokenY;
     }
 }

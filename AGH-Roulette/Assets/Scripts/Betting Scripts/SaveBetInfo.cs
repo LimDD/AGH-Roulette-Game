@@ -10,8 +10,8 @@ using System.Collections.Generic;
 
 public class SaveBetInfo : MonoBehaviour
 {
-    public GetButtonNum gBN;
-    public SaveValues sV;
+    private GetButtonNum gBN;
+    private CornerandWallBets cAW; 
     public Button btn;
     public List<int> winNum = new List<int>();
 
@@ -21,7 +21,6 @@ public class SaveBetInfo : MonoBehaviour
 
         //Clears the file
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
-        sV = FindObjectOfType<SaveValues>();
         writer.Flush();
         writer.Close();
     }
@@ -71,6 +70,7 @@ public class SaveBetInfo : MonoBehaviour
     public void WinningNumbers(string betType)
     {
         gBN = FindObjectOfType<GetButtonNum>();
+        cAW = FindObjectOfType<CornerandWallBets>();
 
         int num;
 
@@ -174,6 +174,11 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
         WriteToFile(betType);
+
+        if (betType != "Single Bet")
+        {
+            cAW.CoinPos(name, num);
+        }
     }
 
     public void WinningNumbersOutside(string betType)
@@ -295,7 +300,6 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(i);
             }
         }
-        //sV.SaveInfo(winNum, betType);
         WriteToFile(betType);
     }
 

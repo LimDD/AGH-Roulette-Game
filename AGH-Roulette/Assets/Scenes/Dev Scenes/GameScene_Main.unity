@@ -471,6 +471,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 18504146}
+  inFocus: 0
 --- !u!114 &18504150
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -738,8 +739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 22643028}
   winNum: 
 --- !u!1 &28234586
@@ -936,6 +935,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 28234588}
+  inFocus: 0
 --- !u!114 &28234592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1176,6 +1176,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 35355870}
+  inFocus: 0
 --- !u!114 &35355874
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1390,7 +1391,6 @@ GameObject:
   - component: {fileID: 78692585}
   - component: {fileID: 78692587}
   - component: {fileID: 78692586}
-  - component: {fileID: 78692588}
   m_Layer: 0
   m_Name: Zoom Panel
   m_TagString: Untagged
@@ -1457,20 +1457,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 78692584}
   m_CullTransparentMesh: 0
---- !u!114 &78692588
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78692584}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bal: {fileID: 0}
-  amount: {fileID: 0}
 --- !u!1 &84177449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1692,8 +1678,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 84177451}
   winNum: 
 --- !u!1 &97601915
@@ -2375,6 +2359,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 162625817}
+  inFocus: 0
 --- !u!114 &162625822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2913,6 +2898,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 199731301}
+  inFocus: 0
 --- !u!114 &199731305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3467,6 +3453,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 256244944}
+  inFocus: 0
 --- !u!114 &256244948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4100,6 +4087,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 301854768}
+  inFocus: 0
 --- !u!114 &301854772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4421,6 +4409,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 329475458}
+  inFocus: 0
 --- !u!114 &329475462
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5090,6 +5079,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 458555052}
+  inFocus: 0
 --- !u!114 &458555056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5357,8 +5347,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 469675275}
   winNum: 
 --- !u!1 &513992966
@@ -6183,6 +6171,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 550351216}
+  inFocus: 0
 --- !u!114 &550351220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6764,8 +6753,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 561959458}
   winNum: 
 --- !u!1 &563829114
@@ -7146,8 +7133,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 571273863}
   winNum: 
 --- !u!1 &584579353
@@ -7528,8 +7513,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 595861943}
   winNum: 
 --- !u!1 &616024468
@@ -7753,8 +7736,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 616024470}
   winNum: 
 --- !u!1 &626435985
@@ -7768,7 +7749,6 @@ GameObject:
   - component: {fileID: 626435986}
   - component: {fileID: 626435988}
   - component: {fileID: 626435987}
-  - component: {fileID: 626435989}
   m_Layer: 0
   m_Name: Outside Table
   m_TagString: Untagged
@@ -7844,20 +7824,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626435985}
   m_CullTransparentMesh: 0
---- !u!114 &626435989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626435985}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bal: {fileID: 0}
-  amount: {fileID: 0}
 --- !u!1 &629687680
 GameObject:
   m_ObjectHideFlags: 0
@@ -8160,8 +8126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 635001757}
   winNum: 
 --- !u!1 &648230563
@@ -8430,17 +8394,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveUp
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 681424417}
         m_MethodName: SaveBetType
         m_Mode: 1
@@ -8503,8 +8456,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 681424414}
   winNum: 
 --- !u!1 &682947524
@@ -8678,6 +8629,7 @@ GameObject:
   - component: {fileID: 697793730}
   - component: {fileID: 697793729}
   - component: {fileID: 697793733}
+  - component: {fileID: 697793734}
   m_Layer: 0
   m_Name: Zoomed Button
   m_TagString: Untagged
@@ -8843,10 +8795,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 697793730}
   winNum: 
+--- !u!114 &697793734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697793727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3448961a333c399499b28e0dd45d89de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 0
+  btn: {fileID: 0}
+  btn2: {fileID: 0}
+  token: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!1 &712825360
 GameObject:
   m_ObjectHideFlags: 0
@@ -9510,17 +9477,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveLeft
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
@@ -9583,8 +9539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 813376614}
   winNum: 
 --- !u!1 &825994010
@@ -9781,6 +9735,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 825994012}
+  inFocus: 0
 --- !u!114 &825994016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10021,6 +9976,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 836823903}
+  inFocus: 0
 --- !u!114 &836823907
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11535,18 +11491,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveBottomLeft
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 940745563}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -11608,8 +11553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 940745560}
   winNum: 
 --- !u!1 &941031134
@@ -12306,8 +12249,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 958431347}
   winNum: 
 --- !u!1 &960676964
@@ -12504,6 +12445,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 960676966}
+  inFocus: 0
 --- !u!114 &960676970
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13055,6 +12997,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1023385964}
+  inFocus: 0
 --- !u!114 &1023385968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13295,6 +13238,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1036812356}
+  inFocus: 0
 --- !u!114 &1036812360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13501,134 +13445,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069604286}
   m_CullTransparentMesh: 0
---- !u!1 &1135392838
+--- !u!1 &1135392838 stripped
 GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6053321715508009084, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1135392839}
-  - component: {fileID: 1135392842}
-  - component: {fileID: 1135392841}
-  - component: {fileID: 1135392840}
-  - component: {fileID: 1135392844}
-  - component: {fileID: 1135392843}
-  m_Layer: 0
-  m_Name: Player Token
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1135392839
+--- !u!224 &1135392839 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 863234861}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 114, y: -0.018677}
-  m_SizeDelta: {x: 75, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1135392840
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58020f116c706dd4998efb9fba6ed366, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPlace: {fileID: 1258632476}
---- !u!114 &1135392841
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c3beb413b7e37c9459d1939a88432aa9, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
---- !u!222 &1135392842
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_CullTransparentMesh: 0
---- !u!61 &1135392843
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &1135392844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135392838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3448961a333c399499b28e0dd45d89de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1142114604
 GameObject:
   m_ObjectHideFlags: 0
@@ -13823,6 +13651,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1142114606}
+  inFocus: 0
 --- !u!114 &1142114610
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14063,6 +13892,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1157757724}
+  inFocus: 0
 --- !u!114 &1157757728
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14303,6 +14133,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1177302149}
+  inFocus: 0
 --- !u!114 &1177302153
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14700,6 +14531,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1205669519}
+  inFocus: 0
 --- !u!114 &1205669523
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14940,6 +14772,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1227263165}
+  inFocus: 0
 --- !u!114 &1227263169
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15180,6 +15013,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1246405272}
+  inFocus: 0
 --- !u!114 &1246405276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15450,8 +15284,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1258632477}
   winNum: 
 --- !u!114 &1258632483
@@ -15483,6 +15315,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1258632477}
+  inFocus: 0
 --- !u!114 &1258632485
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15707,6 +15540,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1323412628}
+  inFocus: 0
 --- !u!114 &1323412632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15974,8 +15808,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1334521017}
   winNum: 
 --- !u!1 &1355835433
@@ -16331,6 +16163,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1359132688}
+  inFocus: 0
 --- !u!114 &1359132692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17538,6 +17371,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1511159808}
+  inFocus: 0
 --- !u!114 &1511159812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17845,17 +17679,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1523562249}
-        m_MethodName: ShowDuplicates
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1523562246
@@ -18117,6 +17940,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1527291864}
+  inFocus: 0
 --- !u!114 &1527291868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18540,18 +18364,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveRight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1563760646}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -18613,8 +18426,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1563760643}
   winNum: 
 --- !u!1 &1603466981
@@ -18995,8 +18806,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1610360086}
   winNum: 
 --- !u!1 &1617909948
@@ -19193,6 +19002,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1617909950}
+  inFocus: 0
 --- !u!114 &1617909954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19505,18 +19315,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveTopLeft
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1664672281}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -19578,8 +19377,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1664672278}
   winNum: 
 --- !u!1 &1666046599
@@ -19691,18 +19488,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveBottomRight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1666046605}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -19764,8 +19550,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1666046602}
   winNum: 
 --- !u!1 &1700215599
@@ -20119,6 +19903,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1716691568}
+  inFocus: 0
 --- !u!114 &1716691572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20704,8 +20489,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 1756720129}
   winNum: 
 --- !u!1 &1767130604
@@ -21771,6 +21554,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1835142225}
+  inFocus: 0
 --- !u!114 &1835142229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22168,6 +21952,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1916122766}
+  inFocus: 0
 --- !u!114 &1916122770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22408,6 +22193,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1928020084}
+  inFocus: 0
 --- !u!114 &1928020088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23152,6 +22938,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2012285368}
+  inFocus: 0
 --- !u!114 &2012285372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23392,6 +23179,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2033281527}
+  inFocus: 0
 --- !u!114 &2033281531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23783,18 +23571,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveDown
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2081244244}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -23856,8 +23633,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 2081244241}
   winNum: 
 --- !u!1 &2094731936
@@ -24054,6 +23829,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2094731938}
+  inFocus: 0
 --- !u!114 &2094731942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24294,6 +24070,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2096150375}
+  inFocus: 0
 --- !u!114 &2096150379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24534,6 +24311,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2100022144}
+  inFocus: 0
 --- !u!114 &2100022148
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24853,6 +24631,7 @@ MonoBehaviour:
   source: {fileID: 863234864}
   hoverSound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2128767684}
+  inFocus: 0
 --- !u!114 &2128767688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25008,18 +24787,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1135392844}
-        m_MethodName: MoveTopRight
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2133633097}
+      - m_Target: {fileID: 813376617}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -25081,8 +24849,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gBN: {fileID: 0}
-  sV: {fileID: 0}
   btn: {fileID: 2133633094}
   winNum: 
 --- !u!1 &2139356508
@@ -25166,3 +24932,127 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2139356508}
   m_CullTransparentMesh: 0
+--- !u!1001 &6053321714495905850
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 863234861}
+    m_Modifications:
+    - target: {fileID: 6053321715508009084, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_Name
+      value: Player Token
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 114
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.018677
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009074, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: playerPlace
+      value: 
+      objectReference: {fileID: 1258632476}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7, type: 3}

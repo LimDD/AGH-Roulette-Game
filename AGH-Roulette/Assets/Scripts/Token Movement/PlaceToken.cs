@@ -9,21 +9,9 @@ public class PlaceToken : MonoBehaviour
 
     void Start()
     {
-        coordx = this.transform.position.x;
-        coordy = this.transform.position.y;
-        coordz = this.transform.position.z;
-
-        //PlayerToken.transform.Translate(coordx, coordy, coordz);
-
-        //PlayerToken.transform.position = new Vector3(coordx, coordy, coordz);
-
-        //PlayerToken.SetActive(true);
-
-        //TokenCopy = Instantiate(PlayerToken);
-
-        //TokenCopy.transform.position = new Vector3(coordx, coordy, coordz);
-
-        //TokenCopy.SetActive(true);
+        coordx = transform.position.x;
+        coordy = transform.position.y;
+        coordz = transform.position.z;
     }
 
     public void MoveToken()
