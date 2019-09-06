@@ -487,7 +487,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &18504151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -726,7 +727,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &22643033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -740,6 +742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 22643028}
+  num: 0
   winNum: 
 --- !u!1 &28234586
 GameObject:
@@ -951,7 +954,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &28234593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,7 +1196,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &35355875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1665,7 +1670,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &84177456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1679,6 +1685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 84177451}
+  num: 0
   winNum: 
 --- !u!1 &97601915
 GameObject:
@@ -2343,7 +2350,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &162625821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2914,7 +2922,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &199731306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3469,7 +3478,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &256244949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4103,7 +4113,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &301854773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4425,7 +4436,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &329475463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5095,7 +5107,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &458555057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5334,7 +5347,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &469675280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5348,6 +5362,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 469675275}
+  num: 0
   winNum: 
 --- !u!1 &513992966
 GameObject:
@@ -6187,7 +6202,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &550351221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6740,7 +6756,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &561959463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6754,6 +6771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 561959458}
+  num: 0
   winNum: 
 --- !u!1 &563829114
 GameObject:
@@ -7120,7 +7138,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &571273868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7134,6 +7153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 571273863}
+  num: 0
   winNum: 
 --- !u!1 &584579353
 GameObject:
@@ -7500,7 +7520,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &595861948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7514,6 +7535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 595861943}
+  num: 0
   winNum: 
 --- !u!1 &616024468
 GameObject:
@@ -7723,7 +7745,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &616024475
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7737,6 +7760,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 616024470}
+  num: 0
   winNum: 
 --- !u!1 &626435985
 GameObject:
@@ -8113,7 +8137,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &635001762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8127,6 +8152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 635001757}
+  num: 0
   winNum: 
 --- !u!1 &648230563
 GameObject:
@@ -8457,6 +8483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 681424414}
+  num: 0
   winNum: 
 --- !u!1 &682947524
 GameObject:
@@ -8796,6 +8823,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 697793730}
+  num: 0
   winNum: 
 --- !u!114 &697793734
 MonoBehaviour:
@@ -8813,7 +8841,9 @@ MonoBehaviour:
   btn: {fileID: 0}
   btn2: {fileID: 0}
   token: {fileID: 1135392838}
-  table: {fileID: 863234860}
+  table: {fileID: 0}
+  gBN: {fileID: 0}
+  sBI: {fileID: 0}
 --- !u!1 &712825360
 GameObject:
   m_ObjectHideFlags: 0
@@ -9540,6 +9570,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 813376614}
+  num: 0
   winNum: 
 --- !u!1 &825994010
 GameObject:
@@ -9751,7 +9782,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &825994017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9992,7 +10024,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &836823908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11554,6 +11587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 940745560}
+  num: 0
   winNum: 
 --- !u!1 &941031134
 GameObject:
@@ -12236,7 +12270,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &958431352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12250,6 +12285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 958431347}
+  num: 0
   winNum: 
 --- !u!1 &960676964
 GameObject:
@@ -12461,7 +12497,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &960676971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13013,7 +13050,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1023385969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13254,7 +13292,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1036812361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13445,18 +13484,148 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1069604286}
   m_CullTransparentMesh: 0
---- !u!1 &1135392838 stripped
+--- !u!1 &1135392838
 GameObject:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 6053321715508009084, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
     type: 3}
   m_PrefabInstance: {fileID: 6053321714495905850}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1135392839 stripped
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1135392839}
+  - component: {fileID: 1135392844}
+  - component: {fileID: 1135392843}
+  - component: {fileID: 1135392842}
+  - component: {fileID: 1135392841}
+  - component: {fileID: 1135392840}
+  m_Layer: 0
+  m_Name: Player Token
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1135392839
 RectTransform:
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
     type: 3}
   m_PrefabInstance: {fileID: 6053321714495905850}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 863234861}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 114.00003, y: -0.018690562}
+  m_SizeDelta: {x: 75, y: 75}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!61 &1135392840
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6053321715508009073, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!114 &1135392841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6053321715508009078, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3448961a333c399499b28e0dd45d89de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  num: 0
+  btn: {fileID: 0}
+  btn2: {fileID: 0}
+  token: {fileID: 1135392838}
+  table: {fileID: 0}
+  gBN: {fileID: 0}
+  sBI: {fileID: 0}
+--- !u!114 &1135392842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6053321715508009074, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58020f116c706dd4998efb9fba6ed366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPlace: {fileID: 1258632476}
+--- !u!114 &1135392843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6053321715508009075, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: c3beb413b7e37c9459d1939a88432aa9, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!222 &1135392844
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6053321715508009072, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+    type: 3}
+  m_PrefabInstance: {fileID: 6053321714495905850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1135392838}
+  m_CullTransparentMesh: 0
 --- !u!1 &1142114604
 GameObject:
   m_ObjectHideFlags: 0
@@ -13667,7 +13836,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1142114611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13908,7 +14078,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1157757729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14149,7 +14320,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1177302154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14547,7 +14719,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1205669524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14788,7 +14961,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1227263170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15029,7 +15203,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1246405277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15271,7 +15446,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1258632482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15285,6 +15461,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1258632477}
+  num: 0
   winNum: 
 --- !u!114 &1258632483
 MonoBehaviour:
@@ -15556,7 +15733,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1323412633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15795,7 +15973,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1334521022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15809,6 +15988,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1334521017}
+  num: 0
   winNum: 
 --- !u!1 &1355835433
 GameObject:
@@ -16179,7 +16359,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1359132693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17387,7 +17568,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1511159813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17515,6 +17697,7 @@ GameObject:
   - component: {fileID: 1523562244}
   - component: {fileID: 1523562248}
   - component: {fileID: 1523562249}
+  - component: {fileID: 1523562250}
   m_Layer: 5
   m_Name: Confirm Bet Button
   m_TagString: Untagged
@@ -17679,6 +17862,28 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1523562250}
+        m_MethodName: ShowDuplicates
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1135392841}
+        m_MethodName: CoinPos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1523562246
@@ -17745,6 +17950,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
+--- !u!114 &1523562250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1523562242}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f836e1f73b70434799f07abbb034848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerToken: {fileID: 1135392838}
   table: {fileID: 863234860}
 --- !u!1 &1527291862
 GameObject:
@@ -17956,7 +18175,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1527291869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18427,6 +18647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1563760643}
+  num: 0
   winNum: 
 --- !u!1 &1603466981
 GameObject:
@@ -18793,7 +19014,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1610360091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18807,6 +19029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1610360086}
+  num: 0
   winNum: 
 --- !u!1 &1617909948
 GameObject:
@@ -19018,7 +19241,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1617909955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19378,6 +19602,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1664672278}
+  num: 0
   winNum: 
 --- !u!1 &1666046599
 GameObject:
@@ -19551,6 +19776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1666046602}
+  num: 0
   winNum: 
 --- !u!1 &1700215599
 GameObject:
@@ -19919,7 +20145,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1716691573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20476,7 +20703,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1756720134
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20490,6 +20718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1756720129}
+  num: 0
   winNum: 
 --- !u!1 &1767130604
 GameObject:
@@ -21570,7 +21799,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1835142230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21968,7 +22198,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1916122771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22209,7 +22440,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &1928020089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22954,7 +23186,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2012285373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23195,7 +23428,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2033281532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23634,6 +23868,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 2081244241}
+  num: 0
   winNum: 
 --- !u!1 &2094731936
 GameObject:
@@ -23845,7 +24080,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2094731943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24086,7 +24322,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2096150380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24327,7 +24564,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2100022149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24647,7 +24885,8 @@ MonoBehaviour:
   coordx: 0
   coordy: 0
   coordz: 0
-  PlayerToken: {fileID: 1135392838}
+  playerToken: {fileID: 1135392838}
+  table: {fileID: 863234860}
 --- !u!114 &2128767689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24850,6 +25089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 2133633094}
+  num: 0
   winNum: 
 --- !u!1 &2139356508
 GameObject:
@@ -24944,6 +25184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Token
       objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009084, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25002,12 +25247,12 @@ PrefabInstance:
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 114
+      value: 114.00003
       objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -0.018677
+      value: -0.018690562
       objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
@@ -25048,6 +25293,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009074, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}

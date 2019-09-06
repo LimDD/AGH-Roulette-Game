@@ -13,6 +13,7 @@ public class SaveBetInfo : MonoBehaviour
     private GetButtonNum gBN;
     private CornerandWallBets cAW; 
     public Button btn;
+    public int num;
     public List<int> winNum = new List<int>();
 
     private void Awake()
@@ -72,7 +73,7 @@ public class SaveBetInfo : MonoBehaviour
         gBN = FindObjectOfType<GetButtonNum>();
         cAW = FindObjectOfType<CornerandWallBets>();
 
-        int num;
+        //int num;
 
         //Zero does not have a zoom screen so it never uses the GetButtonNum script, so any errors must mean the bet on number was zero
         try
@@ -177,7 +178,7 @@ public class SaveBetInfo : MonoBehaviour
 
         if (betType != "Single Bet")
         {
-            cAW.CoinPos(name, num);
+            //cAW.CoinPos(name, num);
         }
     }
 

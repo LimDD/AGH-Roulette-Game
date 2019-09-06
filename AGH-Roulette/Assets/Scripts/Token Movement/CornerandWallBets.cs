@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class CornerandWallBets : MonoBehaviour
@@ -10,13 +11,16 @@ public class CornerandWallBets : MonoBehaviour
     public Button btn2;
     public GameObject token;
     public GameObject table;
+    public GetButtonNum gBN;
 
-    public void CoinPos(string name, int n)
+    //public void CoinPos(string name, int n)
+    public void CoinPos()
     {
-        num = n;
+        gBN = FindObjectOfType<GetButtonNum>();
+        num = gBN.num;
+        string name = EventSystem.current.currentSelectedGameObject.name;
 
         string number = num.ToString();
-
         btn = GameObject.Find(number + "_Cell").GetComponent<Button>();
 
         switch (name)
@@ -51,12 +55,6 @@ public class CornerandWallBets : MonoBehaviour
 
         float x = XMove();
         float y = YMove();
-
-        if (token == null)
-        {
-            token = GameObject.Find("Player Token(Clone)");
-            Debug.Log(token);
-        }
 
         token.transform.position = new Vector2(x, y);
     }

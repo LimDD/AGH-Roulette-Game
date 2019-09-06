@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlaceToken : MonoBehaviour
 {
     public float coordx, coordy, coordz;
-    public GameObject PlayerToken;
+    public GameObject playerToken;
+    public GameObject table;
 
     void Start()
     {
@@ -16,9 +17,9 @@ public class PlaceToken : MonoBehaviour
 
     public void MoveToken()
     {
-        PlayerToken.SetActive(true);
-        PlayerToken = GameObject.Find("Player Token");
-        PlayerToken.transform.position = new Vector3(coordx, coordy, coordz);
-        PlayerToken.SetActive(false);
+        playerToken.SetActive(true);
+
+        playerToken.transform.position = new Vector3(coordx, coordy, coordz);
+        playerToken.SetActive(false);
     }
 }
