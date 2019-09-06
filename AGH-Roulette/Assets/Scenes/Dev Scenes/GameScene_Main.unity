@@ -17727,7 +17727,6 @@ GameObject:
   - component: {fileID: 1523562245}
   - component: {fileID: 1523562244}
   - component: {fileID: 1523562248}
-  - component: {fileID: 1523562249}
   - component: {fileID: 1523562250}
   m_Layer: 5
   m_Name: Confirm Bet Button
@@ -17957,20 +17956,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bal: {fileID: 1817253530}
   amount: {fileID: 1483096875}
---- !u!114 &1523562249
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1523562242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2e88a9be74c45245ae84d4132e9201d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerToken: {fileID: 1135392838}
-  table: {fileID: 863234860}
 --- !u!114 &1523562250
 MonoBehaviour:
   m_ObjectHideFlags: 0
