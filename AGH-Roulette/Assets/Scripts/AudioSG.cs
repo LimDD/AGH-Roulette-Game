@@ -45,7 +45,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
         float number = Int32.Parse(num);
 
-        source.pitch = 1 + (number * 0.01f);
+        source.pitch = 0.9f + (number * 0.02f);
 
         HoverSound();
     }
