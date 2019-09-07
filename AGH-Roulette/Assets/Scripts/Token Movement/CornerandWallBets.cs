@@ -11,17 +11,51 @@ public class CornerandWallBets : MonoBehaviour
     public GameObject table;
     public GetButtonNum gBN;
 
-    //public void CoinPos(string name, int n)
+    //Gets the button number that was first clicked e.g 5 and the name of the button around the zoomed number e.g TopRightButton
+    //To determine where the coin should go
     public void CoinPos()
     {
         gBN = FindObjectOfType<GetButtonNum>();
-        num = gBN.num;
+
         string name = EventSystem.current.currentSelectedGameObject.name;
+        bool set = false;
+        float x;
+        float y;
 
-        string number = num.ToString();
-        btn = GameObject.Find(number + "_Cell").GetComponent<Button>();
+        num = gBN.num;
 
+        //If a trio bet between 2 and zero, then the coin should be between 0, 2 and either 1 or 3
+        if (num == 2)
+        {
+            if (name == "TopRightButton")
+            {
+                num = 3;
+            }
 
+            else if (name == "TopLeftButton")
+            {
+                num = 1;
+            }
+        }
+
+        //Sets the button
+        btn = SetButton(btn);
+
+        //If a first column number was picked, check if it was a street bet
+        for (int i = 0; i < 12; i++)
+        {
+            if (num == 1 + (i * 3))
+            {
+                if (name == "MiddleLeftButton")
+                {
+                    //Sets button 2 to 1st thrid to get its x value
+                    btn2 = GameObject.Find("1st_Third").GetComponent<Button>();
+                    set = true; 
+                }
+            }
+        }
+
+        //For most numbers this gets the second number the coin will be between
         switch (name)
         {
             case "TopLeftButton":
@@ -50,25 +84,54 @@ public class CornerandWallBets : MonoBehaviour
                 break;
         }
 
+        //For buttons 1_Cell 2_Cell 3_Cell since only 0 is in the row above is num is less than zero then zero must be the other number
         if (num < 0)
         {
             num = 0;
         }
 
-        SetButton();
+        //If button2 already set (If it was a street bet
+        if (!set)
+        {
+            btn2 = SetButton(btn2);
+        }
 
-        float x = XMove();
-        float y = YMove();
+        //Don't need to calculate x for split bets containing zero, just use the first buttons x
+        if (num == 0 && name == "TopMiddleButton")
+        {
+            x = btn.transform.position.x;
+        }
 
+        else
+        {
+            x = XMove();
+        }
+
+        //If not a street bet
+        if (!set)
+        {
+            y = YMove();
+        }
+
+        //Just use the first buttons y value, no need to calculate
+        else
+        {
+            y = btn.transform.position.y;
+        }
+
+        //Set the token position
         token.transform.position = new Vector2(x, y);
     }
 
-    public void SetButton()
+    //Sets the buttons
+    private Button SetButton(Button temp)
     {
         string number = num.ToString();
-        btn2 = GameObject.Find(number + "_Cell").GetComponent<Button>();
+        temp = GameObject.Find(number + "_Cell").GetComponent<Button>();
+        return temp;
     }
 
+    //Calculates the X value for the token to move to
     private float XMove()
     {
         float x = btn.transform.position.x;
@@ -79,6 +142,7 @@ public class CornerandWallBets : MonoBehaviour
         return tokenX;
     }
 
+    //Calculates the Y value for the token to move to
     private float YMove()
     {
         float y = btn.transform.position.y;
