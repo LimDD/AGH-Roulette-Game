@@ -14,6 +14,7 @@ public class SoundScript : MonoBehaviour
 
     public void Click()
     {
+        source.pitch = 1f;
         source.PlayOneShot(buttonPress, 0.7f);
     }
 }

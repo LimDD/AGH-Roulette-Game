@@ -69,7 +69,6 @@ public class SaveBetInfo : MonoBehaviour
     public void WinningNumbers(string betType)
     {
         gBN = FindObjectOfType<GetButtonNum>();
-        cAW = FindObjectOfType<CornerandWallBets>();
 
         //int num;
 
@@ -181,11 +180,6 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
         WriteToFile(betType);
-
-        if (betType != "Single Bet")
-        {
-            //cAW.CoinPos(name, num);
-        }
     }
 
     public void WinningNumbersOutside(string betType)
@@ -323,18 +317,5 @@ public class SaveBetInfo : MonoBehaviour
             writer.WriteLine(i);
         }
         writer.Close();
-        winNum.Clear();
-
-        ReadString();
-    }
-
-    private void ReadString()
-    {
-        string path = "/winningNumbers.txt";
-
-        //Display the file text in the Debug.Log
-        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
-        Debug.Log("Reader: " + reader.ReadToEnd());
-        reader.Close();
     }
 }

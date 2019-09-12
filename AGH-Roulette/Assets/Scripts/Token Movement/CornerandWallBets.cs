@@ -18,13 +18,12 @@ public class CornerandWallBets : MonoBehaviour
         gBN = FindObjectOfType<GetButtonNum>();
 
         string name = EventSystem.current.currentSelectedGameObject.name;
-        bool set = false;
-        float x;
-        float y;
+        float x = 0;
+        float y = 0;
 
         num = gBN.num;
 
-        //If a trio bet between 2 and zero, then the coin should be between 0, 2 and either 1 or 3
+        //If a trio bet between 2 and zero, then the coin should be placed between 0, 1, 2 or 0, 2, 3
         if (num == 2)
         {
             if (name == "TopRightButton")
@@ -42,81 +41,65 @@ public class CornerandWallBets : MonoBehaviour
         btn = SetButton(btn);
 
         //If a first column number was picked, check if it was a street bet
-        for (int i = 0; i < 12; i++)
+        if (num % 3 == 1 && name == "MiddleLeftButton")
         {
-            if (num == 1 + (i * 3))
+            x = btn.transform.position.x - (btn.GetComponent<RectTransform>().rect.width * btn.transform.localScale.x) / 2;
+            y = btn.transform.position.y;
+        }
+
+        else
+        {
+            //For most numbers this gets the second number the coin will be between
+            switch (name)
             {
-                if (name == "MiddleLeftButton")
-                {
-                    //Sets button 2 to 1st thrid to get its x value
-                    btn2 = GameObject.Find("1st_Third").GetComponent<Button>();
-                    set = true; 
-                }
+                case "TopLeftButton":
+                    num -= 4;
+                    break;
+                case "TopMiddleButton":
+                    num -= 3;
+                    break;
+                case "TopRightButton":
+                    num -= 2;
+                    break;
+                case "MiddleLeftButton":
+                    num--;
+                    break;
+                case "MiddleRightButton":
+                    num++;
+                    break;
+                case "BottomLeftButton":
+                    num += 2;
+                    break;
+                case "BottomMiddleButton":
+                    num += 3;
+                    break;
+                case "BottomRightButton":
+                    num += 4;
+                    break;
             }
         }
 
-        //For most numbers this gets the second number the coin will be between
-        switch (name)
-        {
-            case "TopLeftButton":
-                num -= 4;
-                break;
-            case "TopMiddleButton":
-                num -= 3;
-                break;
-            case "TopRightButton":
-                num -= 2;
-                break;
-            case "MiddleLeftButton":
-                num--;
-                break;
-            case "MiddleRightButton":
-                num++;
-                break;
-            case "BottomLeftButton":
-                num += 2;
-                break;
-            case "BottomMiddleButton":
-                num += 3;
-                break;
-            case "BottomRightButton":
-                num += 4;
-                break;
-        }
-
         //For buttons 1_Cell 2_Cell 3_Cell since only 0 is in the row above is num is less than zero then zero must be the other number
-        if (num < 0)
+        if (num <= 0)
         {
             num = 0;
-        }
-
-        //If button2 already set (If it was a street bet
-        if (!set)
-        {
-            btn2 = SetButton(btn2);
-        }
-
-        //Don't need to calculate x for split bets containing zero, just use the first buttons x
-        if (num == 0 && name == "TopMiddleButton")
-        {
-            x = btn.transform.position.x;
-        }
-
-        else
-        {
-            x = XMove();
+            //Don't need to calculate x for split bets containing zero, just use the first buttons x value
+            if (name == "TopMiddleButton")
+            {
+                x = btn.transform.position.x;
+            }
         }
 
         //If not a street bet
-        if (!set)
+        if (y == 0)
         {
+            btn2 = SetButton(btn2);
             y = YMove();
         }
 
-        //Just use the first buttons y value, no need to calculate
-        else
+        if (x == 0)
         {
-            y = btn.transform.position.y;
+            x = XMove();
         }
 
         //Set the token position

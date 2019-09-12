@@ -14,7 +14,7 @@ public class DisplayAmountToBet : MonoBehaviour
     {
         if (Panel != null)
         {
-            //Ss.Bet();
+            Ss.Click();
             bool isActive = Panel.activeSelf;
 
             Panel.SetActive(!isActive);
