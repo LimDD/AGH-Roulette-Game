@@ -39,12 +39,12 @@ public class CornerandWallBets : MonoBehaviour
         }
 
         //Sets the button
-        btn = SetButton(btn);
+        btn = SetButton();
 
         //If a first column number was picked, check if it was a street bet
         if (num % 3 == 1 && name == "MiddleLeftButton")
         {
-            x = btn.transform.position.x - (btn.GetComponent<RectTransform>().rect.width * btn.transform.localScale.x) / 2;
+            btn2 = GameObject.Find("StreetCalc").GetComponent<Button>();
             y = btn.transform.position.y;
         }
 
@@ -94,7 +94,7 @@ public class CornerandWallBets : MonoBehaviour
         //If not a street bet
         if (y == 0)
         {
-            btn2 = SetButton(btn2);
+            btn2 = SetButton();
             y = YMove();
         }
 
@@ -108,10 +108,10 @@ public class CornerandWallBets : MonoBehaviour
     }
 
     //Sets the buttons
-    private Button SetButton(Button temp)
+    private Button SetButton()
     {
         string number = num.ToString();
-        temp = GameObject.Find(number + "_Cell").GetComponent<Button>();
+        Button temp = GameObject.Find(number + "_Cell").GetComponent<Button>();
         return temp;
     }
 
