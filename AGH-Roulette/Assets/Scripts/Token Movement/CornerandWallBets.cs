@@ -17,6 +17,7 @@ public class CornerandWallBets : MonoBehaviour
     {
         gBN = FindObjectOfType<GetButtonNum>();
 
+        //Gets the currently selected button which is one of the buttons around the zoomed number
         string name = EventSystem.current.currentSelectedGameObject.name;
         float x = 0;
         float y = 0;
