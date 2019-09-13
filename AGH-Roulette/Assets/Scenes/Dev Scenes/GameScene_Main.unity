@@ -764,7 +764,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 22643028}
-  num: 0
   winNum: 
 --- !u!1 &28234586
 GameObject:
@@ -1739,7 +1738,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 84177451}
-  num: 0
   winNum: 
 --- !u!1 &97601915
 GameObject:
@@ -5624,7 +5622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 469675275}
-  num: 0
   winNum: 
 --- !u!1 &513992966
 GameObject:
@@ -7055,7 +7052,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 561959458}
-  num: 0
   winNum: 
 --- !u!1 &563829114
 GameObject:
@@ -7448,7 +7444,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 571273863}
-  num: 0
   winNum: 
 --- !u!1 &584579353
 GameObject:
@@ -7841,7 +7836,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 595861943}
-  num: 0
   winNum: 
 --- !u!1 &616024468
 GameObject:
@@ -8077,7 +8071,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 616024470}
-  num: 0
   winNum: 
 --- !u!1 &626435985
 GameObject:
@@ -8480,7 +8473,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 635001757}
-  num: 0
   winNum: 
 --- !u!1 &648230563
 GameObject:
@@ -8833,7 +8825,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 681424414}
-  num: 0
   winNum: 
 --- !u!1 &682947524
 GameObject:
@@ -9183,7 +9174,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 697793730}
-  num: 0
   winNum: 
 --- !u!1 &712825360
 GameObject:
@@ -9933,7 +9923,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 813376614}
-  num: 0
   winNum: 
 --- !u!1 &825994010
 GameObject:
@@ -12018,7 +12007,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 940745560}
-  num: 0
   winNum: 
 --- !u!1 &941031134
 GameObject:
@@ -12751,7 +12739,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 958431347}
-  num: 0
   winNum: 
 --- !u!1 &960676964
 GameObject:
@@ -16047,7 +16034,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1258632477}
-  num: 0
   winNum: 
 --- !u!114 &1258632483
 MonoBehaviour:
@@ -16596,7 +16582,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1334521017}
-  num: 0
   winNum: 
 --- !u!1 &1355835433
 GameObject:
@@ -19308,7 +19293,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1563760643}
-  num: 0
   winNum: 
 --- !u!1 &1603466981
 GameObject:
@@ -19701,7 +19685,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1610360086}
-  num: 0
   winNum: 
 --- !u!1 &1617909948
 GameObject:
@@ -20307,7 +20290,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1664672278}
-  num: 0
   winNum: 
 --- !u!1 &1666046599
 GameObject:
@@ -20503,7 +20485,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1666046602}
-  num: 0
   winNum: 
 --- !u!1 &1700215599
 GameObject:
@@ -21467,7 +21448,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 1756720129}
-  num: 0
   winNum: 
 --- !u!1 &1785434554
 GameObject:
@@ -24356,7 +24336,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 2081244241}
-  num: 0
   winNum: 
 --- !u!1 &2094731936
 GameObject:
@@ -25643,7 +25622,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   btn: {fileID: 2133633094}
-  num: 0
   winNum: 
 --- !u!1 &2139356508
 GameObject:
