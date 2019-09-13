@@ -2693,7 +2693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 490614400}
-  - component: {fileID: 490614402}
+  - component: {fileID: 490614401}
   m_Layer: 5
   m_Name: StatisticsMenu
   m_TagString: Untagged
@@ -2727,7 +2727,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0.000053406, y: 0.0024872}
   m_SizeDelta: {x: 529.7, y: 1195.5}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &490614402
+--- !u!114 &490614401
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2736,14 +2736,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 490614399}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5cc3df86869e2674eab747882da4be8c, type: 3}
+  m_Script: {fileID: 11500000, guid: 4a21ed57f92a28340b545de7d3d0581d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rounds: 1212
-  aWon: 123
-  aLost: 12
-  betNum: 1
-  profit: 0
+  roundsPlayed: {fileID: 1386486645}
+  amountWon: {fileID: 1030879057}
+  amountLost: {fileID: 41711410}
+  betsMade: {fileID: 1065889236}
+  profit: {fileID: 452097113}
+  checkWinnings: {fileID: 2029284071}
+  calcProfit: 0
 --- !u!1 &493153863
 GameObject:
   m_ObjectHideFlags: 0
@@ -11843,7 +11845,6 @@ GameObject:
   - component: {fileID: 1845050740}
   - component: {fileID: 1845050739}
   - component: {fileID: 1845050738}
-  - component: {fileID: 1845050744}
   m_Layer: 5
   m_Name: StatisticsButton
   m_TagString: Untagged
@@ -12089,17 +12090,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1845050744}
-        m_MethodName: ShowStats
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &1845050742
@@ -12139,25 +12129,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845050736}
   m_CullTransparentMesh: 0
---- !u!114 &1845050744
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1845050736}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a21ed57f92a28340b545de7d3d0581d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  roundsPlayed: {fileID: 1386486645}
-  amountWon: {fileID: 1030879057}
-  amountLost: {fileID: 41711410}
-  betsMade: {fileID: 1065889236}
-  profit: {fileID: 452097113}
-  checkWinnings: {fileID: 2029284071}
-  calcProfit: 0
 --- !u!1 &1853369420
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,12 +14,18 @@ public class StatsScript : MonoBehaviour
     public Text checkWinnings;
     public int calcProfit;
 
-    public void ShowStats()
+    void Start()
     {
-        string path = "/statsFile.txt";
-        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
-
         List<string> stats = new List<string>();
+        string path = "/statsFile.txt";
+
+        if (!File.Exists(Application.persistentDataPath + path))
+        {
+            StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
+            writer.Close();
+        }
+
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
         while (!reader.EndOfStream)
         {

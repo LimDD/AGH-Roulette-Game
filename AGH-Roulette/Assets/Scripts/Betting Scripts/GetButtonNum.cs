@@ -36,9 +36,6 @@ public class GetButtonNum : MonoBehaviour
         tNum.text = System.Convert.ToString(num);
         GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
         BetType(num);
-
-        Debug.Log("Color to set is: " + buttonColor);
-        Debug.Log("Color of the zoomed button is: " + tNumColor);
     }
 
     //GetNumber
