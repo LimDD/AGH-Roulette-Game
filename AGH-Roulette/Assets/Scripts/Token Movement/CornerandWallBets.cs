@@ -16,6 +16,7 @@ public class CornerandWallBets : MonoBehaviour
     public void CoinPos()
     {
         gBN = FindObjectOfType<GetButtonNum>();
+        bool isTwo = false;
 
         //Gets the currently selected button which is one of the buttons around the zoomed number
         string name = EventSystem.current.currentSelectedGameObject.name;
@@ -30,11 +31,13 @@ public class CornerandWallBets : MonoBehaviour
             if (name == "TopRightButton")
             {
                 num = 3;
+                isTwo = true;
             }
 
             else if (name == "TopLeftButton")
             {
                 num = 1;
+                isTwo = true;
             }
         }
 
@@ -42,7 +45,7 @@ public class CornerandWallBets : MonoBehaviour
         btn = SetButton();
 
         //If a first column number was picked, check if it was a street bet
-        if (num % 3 == 1 && name.Contains("LeftButton"))
+        if (num % 3 == 1 && name.Contains("LeftButton") && !isTwo)
         {
             btn2 = GameObject.Find("StreetCalc").GetComponent<Button>();
 
@@ -80,7 +83,15 @@ public class CornerandWallBets : MonoBehaviour
                     num -= 3;
                     break;
                 case "TopRightButton":
-                    num -= 2;
+                    if (isTwo)
+                    {
+                        num = 0;
+                    }
+
+                    else
+                    {
+                        num -= 2;
+                    }
                     break;
                 case "MiddleLeftButton":
                     num--;
