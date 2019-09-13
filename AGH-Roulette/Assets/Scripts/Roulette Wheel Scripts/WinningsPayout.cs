@@ -14,38 +14,44 @@ public class WinningsPayout : MonoBehaviour
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
             multi = 12;
-            balance += amount * multi;
         }
 
         else if (bet == "Odds" || bet == "Evens" || bet == "Red" || bet == "Black" || bet == "1 To 18" || bet == "19 To 36")
         {
             multi = 2;
-            balance += amount * multi;
         }
 
-        else if(bet == "1st Third" || bet == "2nd Third" || bet == "3rd Third" || bet == "2:1")
+        else if (bet == "1st Third" || bet == "2nd Third" || bet == "3rd Third" || bet == "2:1")
         {
             multi = 3;
-            balance += amount * multi;
+        }
+
+        else if (bet == "Six Line Bet")
+        {
+            multi = 6;
+        }
+
+        else if (bet == "Basket Bet")
+        {
+            multi = 7;
         }
 
         else if(bet == "Single Bet")
         {
             multi = 36;
-            balance += amount * multi;
         }
 
         else if(bet == "Split Bet")
         {
             multi = 18;
-            balance += amount * multi;
         }
 
         else if(bet == "Corner Bet")
         {
             multi = 9;
-            balance += amount * multi;
         }
+
+        balance += amount * multi;
 
         SaveStatistics stats = FindObjectOfType<SaveStatistics>();
 
