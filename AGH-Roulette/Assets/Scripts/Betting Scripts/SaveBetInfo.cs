@@ -79,7 +79,9 @@ public class SaveBetInfo : MonoBehaviour
         {
             num = 0;
         }
+
         winNum.Add(num);
+
         //Get the name of the button to determine the numbers around it
         string name = EventSystem.current.currentSelectedGameObject.name;
 
@@ -176,6 +178,38 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(2);
             }
         }
+
+        else if (betType == "Six Line Bet")
+        {
+            if (name == "TopLeftButton")
+            {
+                for (int i = 1; i < 6; i++)
+                {
+                    winNum.Add(num + i);
+                }
+            }
+
+            else
+            {
+                winNum.Add(num - 3);
+                winNum.Add(num - 2);
+                winNum.Add(num - 1);
+                winNum.Add(num + 1);
+                winNum.Add(num + 2);
+            }
+        }
+
+        else if (betType == "Basket Bet")
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (i != 1)
+                {
+                    winNum.Add(i);
+                }
+            }
+        }
+
         WriteToFile(betType);
     }
 
