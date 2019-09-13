@@ -21,7 +21,6 @@ public class SetBalance : MonoBehaviour
         reader.Close();
 
         SetLastCoins(lastCoins);
-        
     }
 
     //Saves the last coins as the only item in the text file

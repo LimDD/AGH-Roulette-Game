@@ -1,10 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.IO;
+using UnityEngine;
 using UnityEngine.UI;
 
-//This script would collect the information from other scripts containing player statistics to be displayed.
+//This script collects the information from the statsFile text file containing player statistics so it can be displayed.
 public class StatsScript : MonoBehaviour
 {
-    public FakeScores fS;
     public Text roundsPlayed;
     public Text amountWon;
     public Text amountLost;
@@ -13,12 +14,8 @@ public class StatsScript : MonoBehaviour
     public Text checkWinnings;
     public int calcProfit;
 
-    // Start is called before the first frame update
-    void Start()
+    public void ShowStats()
     {
-        //Give access to another script, in the real game all relevant scripts will need to be added.
-        fS = FindObjectOfType<FakeScores>();
-
         roundsPlayed = GameObject.Find("RP").GetComponent<Text>();
         amountWon = GameObject.Find("AW").GetComponent<Text>();
         amountLost = GameObject.Find("AL").GetComponent<Text>();
@@ -26,13 +23,23 @@ public class StatsScript : MonoBehaviour
         profit = GameObject.Find("Pt").GetComponent<Text>();
         checkWinnings = GameObject.Find("Profit").GetComponent<Text>();
 
+        string path = "/statsFile.txt";
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
-        calcProfit = fS.aWon - fS.aLost;
+        List<string> stats = new List<string>();
 
-        roundsPlayed.text = fS.rounds.ToString();
-        amountWon.text = "$"+ fS.aWon.ToString();
-        amountLost.text = "$"+ fS.aLost.ToString();
-        betsMade.text = fS.betNum.ToString();
+        while (!reader.EndOfStream)
+        {
+            stats.Add(reader.ReadLine());
+        }
+
+
+        calcProfit = int.Parse(stats[3]) - int.Parse(stats[2]);
+
+        roundsPlayed.text = stats[0];
+        amountWon.text = "$"+ stats[3];
+        amountLost.text = "$"+ stats[2];
+        betsMade.text = stats[1];
 
         //Checks if the profit is negative, so the - can go infront of the $.
         if (calcProfit < 0)

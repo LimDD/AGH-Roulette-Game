@@ -44,7 +44,7 @@ public class SpinResult : MonoBehaviour
             //Checks if the line length is 2 or less meaning its a number e.g. 0 - 36
             if (line.Length <= 2 && line != "")
             {
-                saveNum = System.Convert.ToInt32(line);
+                saveNum = int.Parse(line);
                 betonNum.Add(saveNum);
                 if (numbers == 0)
                 {
@@ -54,30 +54,12 @@ public class SpinResult : MonoBehaviour
                 numbers++;
             }
 
+            //Gets the bet type name from the file
             else if (line != "")
             {
-                //Gets the bet type name from the file
-                if (line != "Delete")
-                {
-                    betType.Add(line);
-                    betNum++;
-                    numbers = 0;
-                }
-
-                //Delete is added to the file when the back button is pressed when the user has already selected an outside bet or the bet type of the inside bet
-                //This removes the bet they didn't confirm
-                else
-                {
-                    betType.RemoveAt(betNum - 1);
-                    count--;
-
-                    for (int i = 0; i < numbers; i++)
-                    {
-                        betonNum.RemoveAt(count - i - betNum);
-                    }
-                    count -= numbers;
-                    count--;
-                }
+                betType.Add(line);
+                betNum++;
+                numbers = 0;
             }
             count++;
         }
@@ -151,7 +133,7 @@ public class SpinResult : MonoBehaviour
             //Loops for each time the winning number was found
             for (int i = 0; i < type.Count(); i++)
             {
-                System.Int32.TryParse(betInfo[saveIndex[i] + 2], out int amount);
+                int.TryParse(betInfo[saveIndex[i] + 2], out int amount);
                 balance = wP.GetWinnings(type[i], balance, amount);
             }
 

@@ -5,42 +5,56 @@ using UnityEngine.UI;
 public class WinningsPayout : MonoBehaviour
 {
     public Text bal;
-    //In this class I would have an instance of another class storing the balance variable
+    
+    //Finds out the winnings owed due to the bet type and the amound and adds it to the balance
     public int GetWinnings(string bet, int balance, int amount)
     {
+        int multi = 0;
+
         if (bet == "Trio Bet" || bet == "Street Bet")
         {
-            balance += amount * 12;
+            multi = 12;
+            balance += amount * multi;
         }
 
         else if (bet == "Odds" || bet == "Evens" || bet == "Red" || bet == "Black" || bet == "1 To 18" || bet == "19 To 36")
         {
-            balance += amount * 2;
+            multi = 2;
+            balance += amount * multi;
         }
 
         else if(bet == "1st Third" || bet == "2nd Third" || bet == "3rd Third" || bet == "2:1")
         {
-            balance += amount * 3;
+            multi = 3;
+            balance += amount * multi;
         }
 
         else if(bet == "Single Bet")
         {
-            balance += amount * 36;
+            multi = 36;
+            balance += amount * multi;
         }
 
         else if(bet == "Split Bet")
         {
-            balance += amount * 18;
+            multi = 18;
+            balance += amount * multi;
         }
 
         else if(bet == "Corner Bet")
         {
-            balance += amount * 9;
+            multi = 9;
+            balance += amount * multi;
         }
+
+        SaveStatistics stats = FindObjectOfType<SaveStatistics>();
+
+        stats.SaveWinnings(amount, multi);
 
         return balance;
     }
 
+    //Resets the balandamount text file to only contain the latest balance
     public void ResetFile(int balance)
     {
         bal = GameObject.Find("Balance").GetComponent<Text>();
