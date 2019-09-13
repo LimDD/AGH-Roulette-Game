@@ -187,8 +187,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &41711411
@@ -2440,10 +2440,10 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: test
 --- !u!222 &452097114
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6690,8 +6690,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1030879058
@@ -6926,8 +6926,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1065889237
@@ -8906,8 +8906,8 @@ MonoBehaviour:
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_HorizontalOverflow: 1
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 
 --- !u!222 &1386486646
@@ -12151,12 +12151,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a21ed57f92a28340b545de7d3d0581d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  roundsPlayed: {fileID: 0}
-  amountWon: {fileID: 0}
-  amountLost: {fileID: 0}
-  betsMade: {fileID: 0}
-  profit: {fileID: 0}
-  checkWinnings: {fileID: 0}
+  roundsPlayed: {fileID: 1386486645}
+  amountWon: {fileID: 1030879057}
+  amountLost: {fileID: 41711410}
+  betsMade: {fileID: 1065889236}
+  profit: {fileID: 452097113}
+  checkWinnings: {fileID: 2029284071}
   calcProfit: 0
 --- !u!1 &1853369420
 GameObject:

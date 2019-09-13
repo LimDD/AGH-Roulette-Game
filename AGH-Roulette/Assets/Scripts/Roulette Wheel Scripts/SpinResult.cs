@@ -125,7 +125,7 @@ public class SpinResult : MonoBehaviour
         //Get back only the numbers in bal
         bal = Regex.Replace(bal, "[^0-9.]", "");
 
-        int balance = System.Int32.Parse(bal);
+        int balance = int.Parse(bal);
 
 
         if (winner)
