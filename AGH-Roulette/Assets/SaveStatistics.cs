@@ -13,6 +13,12 @@ public class SaveStatistics : MonoBehaviour
         int temp;
         string line;
 
+        if (!File.Exists(Application.persistentDataPath + path))
+        {
+            StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
+            writer.Close();
+        }
+
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
         while ((line = reader.ReadLine()) != "" && line != null)

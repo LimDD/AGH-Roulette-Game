@@ -42,10 +42,30 @@ public class CornerandWallBets : MonoBehaviour
         btn = SetButton();
 
         //If a first column number was picked, check if it was a street bet
-        if (num % 3 == 1 && name == "MiddleLeftButton")
+        if (num % 3 == 1 && name.Contains("LeftButton"))
         {
             btn2 = GameObject.Find("StreetCalc").GetComponent<Button>();
-            y = btn.transform.position.y;
+
+            if (name.Contains("Middle"))
+            {
+                y = btn.transform.position.y;
+            }
+
+            else
+            {
+                x = XMove();
+                btn2 = null;
+
+                if (name.Contains("Top"))
+                {
+                    num -= 3;
+                }
+
+                else
+                {
+                    num += 3;
+                }
+            }
         }
 
         else
