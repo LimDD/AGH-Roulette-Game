@@ -13976,7 +13976,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 114.00003, y: -0.018690562}
-  m_SizeDelta: {x: 75, y: 75}
+  m_SizeDelta: {x: 55, y: 55}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!61 &1135392840
 BoxCollider2D:
@@ -25669,12 +25669,12 @@ PrefabInstance:
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: 75
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 75
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 6053321715508009085, guid: 703c46fc2bb5f8d4f8d8ad104fd6dee7,
         type: 3}
