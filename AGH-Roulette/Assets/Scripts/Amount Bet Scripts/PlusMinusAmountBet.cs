@@ -18,6 +18,7 @@ public class PlusMinusAmountBet : MonoBehaviour
 
     private void Start()
     {
+        //If the confirm button isn't interactable then set all buttons back to interactable
         if (!confirm.IsInteractable())
         {
             confirm.interactable = true;
@@ -31,6 +32,7 @@ public class PlusMinusAmountBet : MonoBehaviour
 
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
+        //Gets the latest coin value to be shown to the player
         while (!reader.EndOfStream)
         {
             temp = reader.ReadLine();
@@ -46,12 +48,14 @@ public class PlusMinusAmountBet : MonoBehaviour
 
         balance = TextToInt(playerCoinsText);
 
+        //If the balance is less than or equal to 10 then only a bet of 10 can be played
         if (balance <= 10)
         {
             inc.interactable = false;
             dec.interactable = false;
         }
 
+        //THe confirm button cannot be clicked as the player has no money
         if (balance == 0)
         {
             confirm.interactable = false;
@@ -62,7 +66,6 @@ public class PlusMinusAmountBet : MonoBehaviour
     //Increases the text display
     public void Increment()
     {
-        //Ss.Bet();
         int bettingAmount = 0; 
         int maxBet = 0;
 
@@ -85,7 +88,6 @@ public class PlusMinusAmountBet : MonoBehaviour
     //Decreases the text display
     public void Decrement()
     {
-        //Ss.Bet();
         int bettingAmount = TextToInt(betText);
         
         if(bettingAmount > minBet)

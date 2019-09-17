@@ -32,6 +32,7 @@ public class StatsScript : MonoBehaviour
             stats.Add(reader.ReadLine());
         }
 
+        //If the stats file contains nothing then set all values to 0
         if (stats.Count == 0)
         {
             roundsPlayed.text = "0";

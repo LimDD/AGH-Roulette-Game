@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 
+//Gets the position of the button clicked and moves the coin to that position
 public class PlaceToken : MonoBehaviour
 {
     public float coordx, coordy, coordz;
     public GameObject playerToken;
-    public GameObject table;
 
     void Start()
     {
@@ -15,9 +15,6 @@ public class PlaceToken : MonoBehaviour
 
     public void MoveToken()
     {
-        playerToken.SetActive(true);
-
         playerToken.transform.position = new Vector3(coordx, coordy, coordz);
-        playerToken.SetActive(false);
     }
 }

@@ -10586,7 +10586,6 @@ GameObject:
   - component: {fileID: 1612733939}
   - component: {fileID: 1612733940}
   - component: {fileID: 1612733941}
-  - component: {fileID: 1612733942}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -10860,18 +10859,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1612733942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1612733934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 41c0aaa2cb052cb46928fbe9a7355f03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1635406903
 GameObject:
   m_ObjectHideFlags: 0

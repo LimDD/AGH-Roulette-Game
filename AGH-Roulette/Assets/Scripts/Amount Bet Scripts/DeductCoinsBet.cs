@@ -13,7 +13,6 @@ public class DeductCoinsBet : MonoBehaviour
     public void DeductCoins()
     {
         Ss = FindObjectOfType<SoundScript>();
-        //Ss.Bet();
 
         amountBet = 0;
         playerCoins = 0;
@@ -32,7 +31,6 @@ public class DeductCoinsBet : MonoBehaviour
     private int TextToInt(Text textToConvert)
     {
         int number = 0;
-        //number = int.Parse(textToConvert.text);
 
         string textToString = Regex.Replace(textToConvert.text.ToString(), "[^0-9]", "");
 

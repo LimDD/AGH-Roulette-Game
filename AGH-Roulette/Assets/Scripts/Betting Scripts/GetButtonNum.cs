@@ -57,6 +57,7 @@ public class GetButtonNum : MonoBehaviour
 
     public void BetType(int n)
     {
+        //Sets all buttons back to interactable if they werent already
         topL.interactable = true;
         topM.interactable = true;
         topR.interactable = true;
@@ -66,13 +67,13 @@ public class GetButtonNum : MonoBehaviour
         botM.interactable = true;
         botR.interactable = true;
 
+        //Sets the button text back to default
         topL.GetComponentInChildren<Text>().text = "Corner\nBet";
         topR.GetComponentInChildren<Text>().text = "Corner\nBet";
         midL.GetComponentInChildren<Text>().text = "Split\nBet";
         botL.GetComponentInChildren<Text>().text = "Corner\nBet";
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
-
         if (n % 3 == 0)
         {
             botR.interactable = false;
@@ -80,6 +81,7 @@ public class GetButtonNum : MonoBehaviour
             topR.interactable = false;
         }
 
+        //Makes left column left buttons names change for due to the different bets that can be made
         if (n % 3 == 1)
         {
             midL.GetComponentInChildren<Text>().text = "Street\nBet";
@@ -97,12 +99,13 @@ public class GetButtonNum : MonoBehaviour
             }
         }
 
-        if (n <= 3 && n > 1)
+        if (n == 3 || n == 2)
         {
             topL.GetComponentInChildren<Text>().text = "Trio\nBet";
             topR.GetComponentInChildren<Text>().text = "Trio\nBet";
         }
 
+        //Bottom buttons on the bottom row cannot be played
         if (n >= 34)
         {
             botL.interactable = false;

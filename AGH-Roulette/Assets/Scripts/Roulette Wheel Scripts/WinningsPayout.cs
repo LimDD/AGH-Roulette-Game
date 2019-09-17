@@ -6,7 +6,7 @@ public class WinningsPayout : MonoBehaviour
 {
     public Text bal;
     
-    //Finds out the winnings owed due to the bet type and the amound and adds it to the balance
+    //Finds out the winnings owed due to the bet type and the amount and adds it to the balance
     public int GetWinnings(string bet, int balance, int amount)
     {
         int multi = 0;

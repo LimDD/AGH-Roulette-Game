@@ -87,7 +87,6 @@ public class RouletteWheelSpin : MonoBehaviour
             }
         }
         
-
         if(!wheelSpinning)
         {
             this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);

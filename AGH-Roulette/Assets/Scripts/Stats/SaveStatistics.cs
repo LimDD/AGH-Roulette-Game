@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 
@@ -8,6 +7,7 @@ public class SaveStatistics : MonoBehaviour
     private string path = "/statsFile.txt";
     private List<int> stats = new List<int>();
 
+    //Reads the data from the stats file and saves it into a list
     public int ReadStats()
     {
         int temp;
@@ -32,6 +32,7 @@ public class SaveStatistics : MonoBehaviour
         return stats.Count;
     }
 
+    //Adds 1 to the amount of rounds played
     public void SaveRounds()
     {
         int count = ReadStats();
@@ -49,6 +50,7 @@ public class SaveStatistics : MonoBehaviour
         SaveAmounts(count);
     }
 
+    //Saves the amount of bets and the amount bet into the statsFile
     private void SaveAmounts(int count)
     {
         int amount = 0;
@@ -85,16 +87,19 @@ public class SaveStatistics : MonoBehaviour
         SaveToFile();
     }
 
+    //Saves the amount won into the stats file
     public void SaveWinnings(int amount, int multi)
     {
         int count = ReadStats();
 
         stats[2] -= amount;
 
+        //Doesn't add the bet amount the player got back from the winnings
         stats[3] += amount * (multi - 1);
         SaveToFile();
     }
 
+    //Saves the data into statsFile.txt
     private void SaveToFile()
     {
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);

@@ -9,7 +9,6 @@ using System.Collections.Generic;
 public class SaveBetInfo : MonoBehaviour
 {
     private GetButtonNum gBN;
-    private CornerandWallBets cAW; 
     public Button btn;
     public List<int> winNum = new List<int>();
 
@@ -213,6 +212,7 @@ public class SaveBetInfo : MonoBehaviour
         WriteToFile(betType);
     }
 
+    //Gets all the winning numbers from the bet type
     public void WinningNumbersOutside(string betType)
     {
         //Get the name of the button to determine the numbers covered by the bet
@@ -335,11 +335,11 @@ public class SaveBetInfo : MonoBehaviour
         WriteToFile(betType);
     }
 
+    //Writes the winning numbers to the text file
     public void WriteToFile(string betType)
     {
         string path = "/winningNumbers.txt";
 
-        //Write some text to the winningNumbers.txt file
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
 
         writer.WriteLine(betType);

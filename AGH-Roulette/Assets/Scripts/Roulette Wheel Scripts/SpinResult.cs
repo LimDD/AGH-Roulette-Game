@@ -127,7 +127,7 @@ public class SpinResult : MonoBehaviour
 
         int balance = int.Parse(bal);
 
-
+        //If the player won
         if (winner)
         {
             //Loops for each time the winning number was found
@@ -141,6 +141,7 @@ public class SpinResult : MonoBehaviour
             wP.ResetFile(balance);
         }
 
+        //If they lost
         else
         {
             rWS.Loser(winNum);

@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+//Sets the position of the duplicated coin to the coins position and size
 public class DuplicateCoin : MonoBehaviour
 {
     public GameObject playerToken;
