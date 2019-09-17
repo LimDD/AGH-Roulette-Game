@@ -9,7 +9,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
     public AudioSource source;
     public AudioClip hoverSound;
     public Button btn;
-    public bool inFocus;
+    bool inFocus;
 
 
     public void HoverSound()

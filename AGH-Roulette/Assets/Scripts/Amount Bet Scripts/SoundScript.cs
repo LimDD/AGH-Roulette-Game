@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SoundScript : MonoBehaviour
 {
-    public AudioClip buttonPress;
-    public AudioSource source;
+    public AudioClip sound;
+    AudioSource source;
 
     void Start()
     {
@@ -15,6 +15,6 @@ public class SoundScript : MonoBehaviour
     public void Click()
     {
         source.pitch = 1f;
-        source.PlayOneShot(buttonPress, 0.7f);
+        source.PlayOneShot(sound);
     }
 }
