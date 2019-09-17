@@ -24,7 +24,7 @@ public class ExampleNumber : MonoBehaviour
             AudioClip[] clips = numberReader.GetNumberAudio(NumToRead);
             for(int i= 0; i < clips.Length; i++)
             {
-                Debug.Log(clips[i].name);
+                audioSource.PlayOneShot(clips[i]);
             }
         }
     }
