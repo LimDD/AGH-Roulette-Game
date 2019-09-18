@@ -21626,7 +21626,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c5ffbc4a19354e40b89a003c8755b25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
   amountBet: 0
@@ -21768,6 +21767,17 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 853792151}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Transform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1523562244}
+        m_MethodName: DeductCoins
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
