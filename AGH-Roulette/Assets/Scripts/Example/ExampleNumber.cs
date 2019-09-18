@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.EventSystems;
@@ -18,9 +17,8 @@ public class ExampleNumber : MonoBehaviour, IPointerExitHandler
     }
 
     // Update is called once per frame
-    public void ReadNumber()
+    private void ReadNumber()
     {
-        inFocus = true;
         string num = btnNum.text;
 
         int.Parse(num);
@@ -31,7 +29,7 @@ public class ExampleNumber : MonoBehaviour, IPointerExitHandler
 
         for(int i= 0; i < clips.Length; i++)
         {
-            audioSource.PlayOneShot(clips[i]);
+            StartCoroutine(ClipDelay(clips[i], i));
             Debug.Log(clips[i].name);
         }
     }
@@ -41,13 +39,23 @@ public class ExampleNumber : MonoBehaviour, IPointerExitHandler
         //If a button currently has the pointer on it
         audioSource.Stop();
         inFocus = false;
-
     }
 
     public void CallTimer()
     {
         inFocus = true;
-        StartCoroutine(StartCountdown(2f));
+        StartCoroutine(StartCountdown(0.5f));
+    }
+
+    //If the there is more than 1 clip add a delay between them
+    public IEnumerator ClipDelay(AudioClip clip, int count)
+    {
+        if (count > 0)
+        {
+            yield return new WaitForSeconds(0.4f * count);
+        }
+
+        audioSource.PlayOneShot(clip);
     }
 
     public IEnumerator StartCountdown(float f)
