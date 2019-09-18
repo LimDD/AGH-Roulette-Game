@@ -6,9 +6,12 @@ using UnityEngine.EventSystems;
 public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
 {
     ReadNumbers rN;
-    AudioSource audioSource;
+    public AudioSource audioSource;
+    public AudioClip sound;
     public TMP_Text btnNum;
     bool inFocus;
+    bool inFocusO;
+    string num;
 
     private void Start()
     {
@@ -19,13 +22,19 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
     {
         inFocus = true;
 
+        num = btnNum.text;
+        StartCoroutine(StartCountdown(0.6f));
+    }
+
+    public void CallTimerOutside()
+    {
+        inFocusO = true;
         StartCoroutine(StartCountdown(0.6f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
     public IEnumerator StartCountdown(float f)
     {
-        string num = btnNum.text;
         yield return new WaitForSeconds(f);
 
         //If the button is still in focus
@@ -34,12 +43,18 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
             inFocus = false;
             rN.ReadNumber(num);
         }
+
+        if (inFocusO)
+        {
+            inFocusO = false;
+            audioSource.PlayOneShot(sound);
+        }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
         //If the pointer has let the button
         inFocus = false;
-
+        inFocusO = false;
     }
 }
