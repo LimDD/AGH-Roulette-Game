@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
 using System.Collections;
 using UnityEngine.EventSystems;
 
@@ -8,7 +6,6 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 {
     public AudioSource source;
     public AudioClip hoverSound;
-    public Button btn;
     bool inFocus;
 
 
@@ -32,17 +29,6 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
         {
             source.PlayOneShot(hoverSound);
         }
-    }
-
-    public void SetPitch()
-    {
-        string num = btn.GetComponentInChildren<TMP_Text>().text;
-
-        float number = float.Parse(num);
-
-        source.pitch = 0.9f + (number * 0.02f);
-
-        HoverSound();
     }
 
     public void OnPointerExit(PointerEventData eventData)
