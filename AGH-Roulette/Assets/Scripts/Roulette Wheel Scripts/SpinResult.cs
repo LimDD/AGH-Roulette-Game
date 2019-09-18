@@ -123,13 +123,18 @@ public class SpinResult : MonoBehaviour
         reader.Close();
 
         string bal = betInfo[count - 2];
+        string lastAmount = betInfo[count - 1];
 
         //Get back only the numbers in bal
         bal = Regex.Replace(bal, "[^0-9.]", "");
 
         int balance = int.Parse(bal);
+        int lAmount = int.Parse(lastAmount);
+
+        balance -= lAmount;
 
         rN.ReadNumber(winNum.ToString());
+
         //If the player won
         if (winner)
         {

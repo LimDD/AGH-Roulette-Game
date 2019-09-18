@@ -5,7 +5,8 @@ using System.IO;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
-    public SoundScript Ss;
+    SoundScript Ss;
+    ReadNumbers rN;
     public Text betText;
     public Text playerCoinsText;
     public Button inc;
@@ -47,6 +48,10 @@ public class PlusMinusAmountBet : MonoBehaviour
         playerCoinsText.text = coins;
 
         balance = TextToInt(playerCoinsText);
+
+        rN = FindObjectOfType<ReadNumbers>();
+
+        rN.ReadNumber(balance.ToString());
 
         //If the balance is less than or equal to 10 then only a bet of 10 can be played
         if (balance <= 10)

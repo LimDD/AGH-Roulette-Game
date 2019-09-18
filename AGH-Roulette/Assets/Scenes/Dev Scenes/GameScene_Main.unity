@@ -6196,7 +6196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bddd20eb411fd459d624cfe5d3afec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
   inc: {fileID: 993047432}
@@ -15049,7 +15048,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01bddd20eb411fd459d624cfe5d3afec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Ss: {fileID: 0}
   betText: {fileID: 1483096875}
   playerCoinsText: {fileID: 1817253530}
   inc: {fileID: 993047432}
@@ -21592,7 +21590,6 @@ GameObject:
   - component: {fileID: 1483096878}
   - component: {fileID: 1483096877}
   - component: {fileID: 1483096875}
-  - component: {fileID: 1483096876}
   m_Layer: 5
   m_Name: Number Bet Text
   m_TagString: Untagged
@@ -21630,29 +21627,10 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 10
---- !u!114 &1483096876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1483096874}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: effd8503b4c1e414c842553aa68c4492, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  singleDigits: []
-  tennerDigits: []
-  s_TennerDigits: []
-  non_Digits: []
-  minus: {fileID: 0}
-  tooLong: {fileID: 0}
-  point: {fileID: 0}
 --- !u!222 &1483096877
 CanvasRenderer:
   m_ObjectHideFlags: 0

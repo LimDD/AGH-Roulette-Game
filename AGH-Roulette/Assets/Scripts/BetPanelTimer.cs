@@ -1,5 +1,4 @@
-﻿using System.Text.RegularExpressions;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 public class BetPanelTimer : MonoBehaviour
@@ -14,11 +13,6 @@ public class BetPanelTimer : MonoBehaviour
     {
         finished = true;
         rN = FindObjectOfType<ReadNumbers>();
-        string balance = bal.text;
-
-        balance = Regex.Replace(balance, "[^0-9]", "");
-
-        rN.ReadNumber(balance);
     }
 
     public void CallTimer()

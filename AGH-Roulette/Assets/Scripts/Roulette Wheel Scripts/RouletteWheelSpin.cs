@@ -31,6 +31,7 @@ public class RouletteWheelSpin : MonoBehaviour
     {
         sR = FindObjectOfType<SpinResult>();
 
+        newBet.GetComponentInChildren<Text>().color = Color.black;
         winner = false;
         check = false;
 
@@ -55,7 +56,7 @@ public class RouletteWheelSpin : MonoBehaviour
             if(spinTimer < 60)
             {
                 //Wheel no spinning rotation code
-                this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+                transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
 
                 spinTimer += 1;
                 zAngle -= 0.05f;
@@ -84,7 +85,7 @@ public class RouletteWheelSpin : MonoBehaviour
         
         if(!wheelSpinning)
         {
-            this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+            transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
 
             if (!check)
             {
@@ -114,6 +115,7 @@ public class RouletteWheelSpin : MonoBehaviour
     {
         back.interactable = true;
         newBet.interactable = true;
+        newBet.GetComponentInChildren<Text>().color = Color.white;
     }
 }
 
