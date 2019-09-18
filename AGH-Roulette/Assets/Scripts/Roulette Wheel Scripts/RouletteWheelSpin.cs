@@ -1,8 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
+﻿using UnityEngine.UI;
 using UnityEngine;
-using System.IO;
 
 public class RouletteWheelSpin : MonoBehaviour
 {
@@ -21,12 +18,10 @@ public class RouletteWheelSpin : MonoBehaviour
     public Text resulttext_component;
     public string resulttext;
 
-    //Betting Values
-    public int winningBet;
+    bool check;
 
-    public bool check;
+    SpinResult sR;
 
-    public SpinResult sR;
 
     public Button back;
     public Button newBet;

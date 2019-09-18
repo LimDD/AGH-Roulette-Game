@@ -6,21 +6,23 @@ using UnityEngine;
 
 public class SpinResult : MonoBehaviour
 {
-    public List<int> betonNum = new List<int>();    //Saves the numbers from a bet read in from the winningNumbers.txt file
-    public List<int> typeIndex = new List<int>();   //Gets the index of the first number of a new bet in betonNum
-    public List<int> winIndex = new List<int>();    //Gets the index of the winning number in betonNum
-    public List<string> betType = new List<string>(); //Saves the bet type read in from the winningNumbers.txt file
-    public List<string> type = new List<string>(); //Saves the name of the winning bet type from betType
-    public List<int> saveIndex = new List<int>(); //Saves the index of the winning betType
+    List<int> betonNum = new List<int>();    //Saves the numbers from a bet read in from the winningNumbers.txt file
+    List<int> typeIndex = new List<int>();   //Gets the index of the first number of a new bet in betonNum
+    List<int> winIndex = new List<int>();    //Gets the index of the winning number in betonNum
+    List<string> betType = new List<string>(); //Saves the bet type read in from the winningNumbers.txt file
+    List<string> type = new List<string>(); //Saves the name of the winning bet type from betType
+    List<int> saveIndex = new List<int>(); //Saves the index of the winning betType
     List<string> betInfo = new List<string>();  //Reads in the data from the balandamount.txt file
-    public RouletteWheelSpin rWS;
-    public WinningsPayout wP;
+    RouletteWheelSpin rWS;
+    WinningsPayout wP;
+    ReadNumbers rN;
     bool winner;
 
     private void Start()
     {
         rWS = FindObjectOfType<RouletteWheelSpin>();
         wP = FindObjectOfType<WinningsPayout>();
+        rN = FindObjectOfType<ReadNumbers>();
         winner = false;
     }
 
@@ -127,6 +129,7 @@ public class SpinResult : MonoBehaviour
 
         int balance = int.Parse(bal);
 
+        rN.ReadNumber(winNum.ToString());
         //If the player won
         if (winner)
         {

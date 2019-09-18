@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 18504152}
   - component: {fileID: 18504153}
   - component: {fileID: 18504149}
+  - component: {fileID: 18504154}
   m_Layer: 5
   m_Name: 2_Cell
   m_TagString: Untagged
@@ -527,7 +528,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 18504152}
+        - m_Target: {fileID: 18504154}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -565,7 +566,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 940298903}
 --- !u!82 &18504153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -662,6 +662,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &18504154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 18504144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 940298903}
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,6 +925,7 @@ GameObject:
   - component: {fileID: 28234594}
   - component: {fileID: 28234595}
   - component: {fileID: 28234591}
+  - component: {fileID: 28234596}
   m_Layer: 5
   m_Name: 10_Cell
   m_TagString: Untagged
@@ -1156,7 +1170,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 28234594}
+        - m_Target: {fileID: 28234596}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -1183,7 +1197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1751334348}
 --- !u!82 &28234595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1280,6 +1293,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &28234596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 28234586}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1751334348}
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1323,7 @@ GameObject:
   - component: {fileID: 35355876}
   - component: {fileID: 35355877}
   - component: {fileID: 35355873}
+  - component: {fileID: 35355878}
   m_Layer: 5
   m_Name: 3_Cell
   m_TagString: Untagged
@@ -1530,7 +1557,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 35355876}
+        - m_Target: {fileID: 35355878}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -1568,7 +1595,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1477539041}
 --- !u!82 &35355877
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1665,6 +1691,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &35355878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 35355868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1477539041}
 --- !u!1 &77668890
 GameObject:
   m_ObjectHideFlags: 0
@@ -2631,6 +2670,7 @@ GameObject:
   - component: {fileID: 162625823}
   - component: {fileID: 162625824}
   - component: {fileID: 162625821}
+  - component: {fileID: 162625825}
   m_Layer: 5
   m_Name: 1_Cell
   m_TagString: Untagged
@@ -2875,7 +2915,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 162625823}
+        - m_Target: {fileID: 162625825}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -2902,7 +2942,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1933396133}
 --- !u!82 &162625824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2999,6 +3038,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &162625825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 162625815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1933396133}
 --- !u!1 &163544376
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,6 +3502,7 @@ GameObject:
   - component: {fileID: 199731307}
   - component: {fileID: 199731308}
   - component: {fileID: 199731304}
+  - component: {fileID: 199731309}
   m_Layer: 5
   m_Name: 14_Cell
   m_TagString: Untagged
@@ -3694,7 +3747,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 199731307}
+        - m_Target: {fileID: 199731309}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -3721,7 +3774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 855363968}
 --- !u!82 &199731308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3818,6 +3870,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &199731309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199731299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 855363968}
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4149,6 +4214,7 @@ GameObject:
   - component: {fileID: 256244950}
   - component: {fileID: 256244951}
   - component: {fileID: 256244947}
+  - component: {fileID: 256244952}
   m_Layer: 5
   m_Name: 16_Cell
   m_TagString: Untagged
@@ -4393,7 +4459,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 256244950}
+        - m_Target: {fileID: 256244952}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -4420,7 +4486,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1534680679}
 --- !u!82 &256244951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4517,6 +4582,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &256244952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 256244942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1534680679}
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -4927,6 +5005,7 @@ GameObject:
   - component: {fileID: 301854774}
   - component: {fileID: 301854775}
   - component: {fileID: 301854771}
+  - component: {fileID: 301854776}
   m_Layer: 5
   m_Name: 12_Cell
   m_TagString: Untagged
@@ -5171,7 +5250,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 301854774}
+        - m_Target: {fileID: 301854776}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -5198,7 +5277,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 929073122}
 --- !u!82 &301854775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5295,6 +5373,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &301854776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301854766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 929073122}
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,6 +5484,7 @@ GameObject:
   - component: {fileID: 329475464}
   - component: {fileID: 329475465}
   - component: {fileID: 329475461}
+  - component: {fileID: 329475466}
   m_Layer: 5
   m_Name: 27_Cell
   m_TagString: Untagged
@@ -5637,7 +5729,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 329475464}
+        - m_Target: {fileID: 329475466}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -5664,7 +5756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 97601917}
 --- !u!82 &329475465
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5761,6 +5852,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &329475466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 329475456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 97601917}
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -6051,6 +6155,9 @@ GameObject:
   - component: {fileID: 448481270}
   - component: {fileID: 448481269}
   - component: {fileID: 448481268}
+  - component: {fileID: 448481272}
+  - component: {fileID: 448481273}
+  - component: {fileID: 448481274}
   m_Layer: 5
   m_Name: Decrease Bet Button
   m_TagString: Untagged
@@ -6162,6 +6269,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 448481274}
+        m_MethodName: CallTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &448481270
@@ -6201,6 +6319,131 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448481266}
   m_CullTransparentMesh: 0
+--- !u!114 &448481272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448481266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
+    type: 3}
+--- !u!82 &448481273
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448481266}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &448481274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 448481266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6a982ea3c9c8b4cadbafd54b4e294f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: {fileID: 1483096875}
+  bal: {fileID: 1817253530}
+  targetTime: 0
 --- !u!1 &458555050
 GameObject:
   m_ObjectHideFlags: 0
@@ -6218,6 +6461,7 @@ GameObject:
   - component: {fileID: 458555058}
   - component: {fileID: 458555059}
   - component: {fileID: 458555055}
+  - component: {fileID: 458555060}
   m_Layer: 5
   m_Name: 18_Cell
   m_TagString: Untagged
@@ -6462,7 +6706,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 458555058}
+        - m_Target: {fileID: 458555060}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -6489,7 +6733,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 184122278}
 --- !u!82 &458555059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6586,6 +6829,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &458555060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458555050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 184122278}
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -7464,6 +7720,7 @@ GameObject:
   - component: {fileID: 550351222}
   - component: {fileID: 550351223}
   - component: {fileID: 550351219}
+  - component: {fileID: 550351224}
   m_Layer: 5
   m_Name: 20_Cell
   m_TagString: Untagged
@@ -7708,7 +7965,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 550351222}
+        - m_Target: {fileID: 550351224}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -7735,7 +7992,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 154903446}
 --- !u!82 &550351223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7832,6 +8088,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &550351224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550351214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 154903446}
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -11247,6 +11516,7 @@ GameObject:
   - component: {fileID: 825994018}
   - component: {fileID: 825994019}
   - component: {fileID: 825994015}
+  - component: {fileID: 825994020}
   m_Layer: 5
   m_Name: 8_Cell
   m_TagString: Untagged
@@ -11480,7 +11750,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 825994018}
+        - m_Target: {fileID: 825994020}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -11518,7 +11788,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1603466983}
 --- !u!82 &825994019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11615,6 +11884,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &825994020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825994010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1603466983}
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -11632,6 +11914,7 @@ GameObject:
   - component: {fileID: 836823909}
   - component: {fileID: 836823910}
   - component: {fileID: 836823906}
+  - component: {fileID: 836823911}
   m_Layer: 5
   m_Name: 17_Cell
   m_TagString: Untagged
@@ -11876,7 +12159,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 836823909}
+        - m_Target: {fileID: 836823911}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -11903,7 +12186,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 682947526}
 --- !u!82 &836823910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12000,6 +12282,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &836823911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836823901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 682947526}
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -14319,6 +14614,7 @@ GameObject:
   - component: {fileID: 960676972}
   - component: {fileID: 960676973}
   - component: {fileID: 960676969}
+  - component: {fileID: 960676974}
   m_Layer: 5
   m_Name: 13_Cell
   m_TagString: Untagged
@@ -14563,7 +14859,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 960676972}
+        - m_Target: {fileID: 960676974}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -14590,7 +14886,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1447748271}
 --- !u!82 &960676973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14687,6 +14982,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &960676974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960676964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1447748271}
 --- !u!1 &993047429
 GameObject:
   m_ObjectHideFlags: 0
@@ -14700,6 +15008,9 @@ GameObject:
   - component: {fileID: 993047433}
   - component: {fileID: 993047432}
   - component: {fileID: 993047431}
+  - component: {fileID: 993047435}
+  - component: {fileID: 993047436}
+  - component: {fileID: 993047437}
   m_Layer: 5
   m_Name: Increase Bet Button
   m_TagString: Untagged
@@ -14811,6 +15122,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 993047437}
+        m_MethodName: CallTimer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &993047433
@@ -14850,6 +15172,131 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993047429}
   m_CullTransparentMesh: 0
+--- !u!114 &993047435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993047429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
+    type: 3}
+--- !u!82 &993047436
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993047429}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &993047437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993047429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6a982ea3c9c8b4cadbafd54b4e294f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: {fileID: 1483096875}
+  bal: {fileID: 1817253530}
+  targetTime: 0
 --- !u!1 &1005186372
 GameObject:
   m_ObjectHideFlags: 0
@@ -15026,6 +15473,7 @@ GameObject:
   - component: {fileID: 1023385970}
   - component: {fileID: 1023385971}
   - component: {fileID: 1023385967}
+  - component: {fileID: 1023385972}
   m_Layer: 5
   m_Name: 33_Cell
   m_TagString: Untagged
@@ -15270,7 +15718,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1023385970}
+        - m_Target: {fileID: 1023385972}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -15297,7 +15745,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 648230565}
 --- !u!82 &1023385971
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15394,6 +15841,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1023385972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023385962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 648230565}
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -15411,6 +15871,7 @@ GameObject:
   - component: {fileID: 1036812362}
   - component: {fileID: 1036812363}
   - component: {fileID: 1036812359}
+  - component: {fileID: 1036812364}
   m_Layer: 5
   m_Name: 11_Cell
   m_TagString: Untagged
@@ -15655,7 +16116,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1036812362}
+        - m_Target: {fileID: 1036812364}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -15682,7 +16143,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1724643864}
 --- !u!82 &1036812363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15779,6 +16239,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1036812364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1036812354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1724643864}
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -16097,6 +16570,7 @@ GameObject:
   - component: {fileID: 1142114612}
   - component: {fileID: 1142114613}
   - component: {fileID: 1142114609}
+  - component: {fileID: 1142114614}
   m_Layer: 5
   m_Name: 6_Cell
   m_TagString: Untagged
@@ -16330,7 +16804,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1142114612}
+        - m_Target: {fileID: 1142114614}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -16368,7 +16842,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1355835435}
 --- !u!82 &1142114613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16465,6 +16938,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1142114614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1142114604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1355835435}
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -16482,6 +16968,7 @@ GameObject:
   - component: {fileID: 1157757730}
   - component: {fileID: 1157757731}
   - component: {fileID: 1157757727}
+  - component: {fileID: 1157757732}
   m_Layer: 5
   m_Name: 28_Cell
   m_TagString: Untagged
@@ -16726,7 +17213,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1157757730}
+        - m_Target: {fileID: 1157757732}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -16753,7 +17240,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 584579355}
 --- !u!82 &1157757731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16850,6 +17336,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1157757732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1157757722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 584579355}
 --- !u!1 &1177302147
 GameObject:
   m_ObjectHideFlags: 0
@@ -16867,6 +17366,7 @@ GameObject:
   - component: {fileID: 1177302155}
   - component: {fileID: 1177302156}
   - component: {fileID: 1177302152}
+  - component: {fileID: 1177302157}
   m_Layer: 5
   m_Name: 5_Cell
   m_TagString: Untagged
@@ -17100,7 +17600,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1177302155}
+        - m_Target: {fileID: 1177302157}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -17138,7 +17638,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 563829116}
 --- !u!82 &1177302156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17235,6 +17734,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1177302157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177302147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 563829116}
 --- !u!1 &1203901639
 GameObject:
   m_ObjectHideFlags: 0
@@ -17409,6 +17921,7 @@ GameObject:
   - component: {fileID: 1205669525}
   - component: {fileID: 1205669526}
   - component: {fileID: 1205669522}
+  - component: {fileID: 1205669527}
   m_Layer: 5
   m_Name: 19_Cell
   m_TagString: Untagged
@@ -17653,7 +18166,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1205669525}
+        - m_Target: {fileID: 1205669527}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -17680,7 +18193,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1785434556}
 --- !u!82 &1205669526
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17777,6 +18289,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1205669527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205669517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1785434556}
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -17794,6 +18319,7 @@ GameObject:
   - component: {fileID: 1227263171}
   - component: {fileID: 1227263172}
   - component: {fileID: 1227263168}
+  - component: {fileID: 1227263173}
   m_Layer: 5
   m_Name: 9_Cell
   m_TagString: Untagged
@@ -18027,7 +18553,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1227263171}
+        - m_Target: {fileID: 1227263173}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -18065,7 +18591,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 712825362}
 --- !u!82 &1227263172
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18162,6 +18687,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1227263173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227263163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 712825362}
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -18179,6 +18717,7 @@ GameObject:
   - component: {fileID: 1246405278}
   - component: {fileID: 1246405279}
   - component: {fileID: 1246405275}
+  - component: {fileID: 1246405280}
   m_Layer: 5
   m_Name: 26_Cell
   m_TagString: Untagged
@@ -18423,7 +18962,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1246405278}
+        - m_Target: {fileID: 1246405280}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -18450,7 +18989,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 532980707}
 --- !u!82 &1246405279
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18547,6 +19085,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1246405280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246405270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 532980707}
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -18563,10 +19114,10 @@ GameObject:
   - component: {fileID: 1258632480}
   - component: {fileID: 1258632482}
   - component: {fileID: 1258632485}
-  - component: {fileID: 1258632483}
   - component: {fileID: 1258632486}
   - component: {fileID: 1258632487}
   - component: {fileID: 1258632484}
+  - component: {fileID: 1258632483}
   m_Layer: 0
   m_Name: 0_Cell
   m_TagString: Untagged
@@ -18805,11 +19356,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258632475}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7374986bc3cd6d438a6042a9c4806a8, type: 3}
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bal: {fileID: 0}
-  amount: {fileID: 0}
+  btnNum: {fileID: 551281552}
 --- !u!114 &1258632484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18841,7 +19391,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1258632486}
+        - m_Target: {fileID: 1258632483}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -18879,7 +19429,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 551281552}
 --- !u!82 &1258632487
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18993,6 +19542,7 @@ GameObject:
   - component: {fileID: 1323412634}
   - component: {fileID: 1323412635}
   - component: {fileID: 1323412631}
+  - component: {fileID: 1323412636}
   m_Layer: 5
   m_Name: 32_Cell
   m_TagString: Untagged
@@ -19237,7 +19787,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1323412634}
+        - m_Target: {fileID: 1323412636}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -19264,7 +19814,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 947974665}
 --- !u!82 &1323412635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19361,6 +19910,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1323412636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323412626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 947974665}
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -19770,6 +20332,7 @@ GameObject:
   - component: {fileID: 1359132694}
   - component: {fileID: 1359132695}
   - component: {fileID: 1359132691}
+  - component: {fileID: 1359132696}
   m_Layer: 5
   m_Name: 31_Cell
   m_TagString: Untagged
@@ -20014,7 +20577,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1359132694}
+        - m_Target: {fileID: 1359132696}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -20041,7 +20604,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 956118838}
 --- !u!82 &1359132695
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20138,6 +20700,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1359132696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1359132686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 956118838}
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -21122,6 +21697,7 @@ GameObject:
   - component: {fileID: 1511159814}
   - component: {fileID: 1511159815}
   - component: {fileID: 1511159811}
+  - component: {fileID: 1511159816}
   m_Layer: 5
   m_Name: 25_Cell
   m_TagString: Untagged
@@ -21366,7 +21942,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1511159814}
+        - m_Target: {fileID: 1511159816}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -21393,7 +21969,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1832346318}
 --- !u!82 &1511159815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21490,6 +22065,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1511159816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511159806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1832346318}
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -21879,6 +22467,7 @@ GameObject:
   - component: {fileID: 1527291870}
   - component: {fileID: 1527291871}
   - component: {fileID: 1527291867}
+  - component: {fileID: 1527291872}
   m_Layer: 5
   m_Name: 36_Cell
   m_TagString: Untagged
@@ -22123,7 +22712,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1527291870}
+        - m_Target: {fileID: 1527291872}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -22150,7 +22739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1203901641}
 --- !u!82 &1527291871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22247,6 +22835,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1527291872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527291862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1203901641}
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -23114,6 +23715,7 @@ GameObject:
   - component: {fileID: 1617909956}
   - component: {fileID: 1617909957}
   - component: {fileID: 1617909953}
+  - component: {fileID: 1617909958}
   m_Layer: 5
   m_Name: 35_Cell
   m_TagString: Untagged
@@ -23358,7 +23960,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1617909956}
+        - m_Target: {fileID: 1617909958}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -23385,7 +23987,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1389275858}
 --- !u!82 &1617909957
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23482,6 +24083,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1617909958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617909948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1389275858}
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -24195,6 +24809,7 @@ GameObject:
   - component: {fileID: 1716691574}
   - component: {fileID: 1716691575}
   - component: {fileID: 1716691571}
+  - component: {fileID: 1716691576}
   m_Layer: 5
   m_Name: 30_Cell
   m_TagString: Untagged
@@ -24439,7 +25054,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1716691574}
+        - m_Target: {fileID: 1716691576}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -24466,7 +25081,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 272479952}
 --- !u!82 &1716691575
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24563,6 +25177,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1716691576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716691566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 272479952}
 --- !u!1 &1724643862
 GameObject:
   m_ObjectHideFlags: 0
@@ -25457,7 +26084,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 0}
 --- !u!1 &1805067610
 GameObject:
   m_ObjectHideFlags: 0
@@ -25870,6 +26496,7 @@ GameObject:
   - component: {fileID: 1835142231}
   - component: {fileID: 1835142232}
   - component: {fileID: 1835142228}
+  - component: {fileID: 1835142233}
   m_Layer: 5
   m_Name: 29_Cell
   m_TagString: Untagged
@@ -26114,7 +26741,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1835142231}
+        - m_Target: {fileID: 1835142233}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -26141,7 +26768,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 426016973}
 --- !u!82 &1835142232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26238,6 +26864,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1835142233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1835142223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 426016973}
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -26412,6 +27051,7 @@ GameObject:
   - component: {fileID: 1916122772}
   - component: {fileID: 1916122773}
   - component: {fileID: 1916122769}
+  - component: {fileID: 1916122774}
   m_Layer: 5
   m_Name: 21_Cell
   m_TagString: Untagged
@@ -26656,7 +27296,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1916122772}
+        - m_Target: {fileID: 1916122774}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -26683,7 +27323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1700215601}
 --- !u!82 &1916122773
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26780,6 +27419,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1916122774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916122764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1700215601}
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -26797,6 +27449,7 @@ GameObject:
   - component: {fileID: 1928020090}
   - component: {fileID: 1928020091}
   - component: {fileID: 1928020087}
+  - component: {fileID: 1928020092}
   m_Layer: 5
   m_Name: 22_Cell
   m_TagString: Untagged
@@ -27041,7 +27694,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1928020090}
+        - m_Target: {fileID: 1928020092}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -27068,7 +27721,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1374688899}
 --- !u!82 &1928020091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27165,6 +27817,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1928020092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928020082}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1374688899}
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -27494,6 +28159,7 @@ GameObject:
   - component: {fileID: 2012285374}
   - component: {fileID: 2012285375}
   - component: {fileID: 2012285371}
+  - component: {fileID: 2012285376}
   m_Layer: 5
   m_Name: 7_Cell
   m_TagString: Untagged
@@ -27727,7 +28393,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2012285374}
+        - m_Target: {fileID: 2012285376}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -27765,7 +28431,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 2050043416}
 --- !u!82 &2012285375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27862,6 +28527,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2012285376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012285366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 2050043416}
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -27879,6 +28557,7 @@ GameObject:
   - component: {fileID: 2033281533}
   - component: {fileID: 2033281534}
   - component: {fileID: 2033281530}
+  - component: {fileID: 2033281535}
   m_Layer: 5
   m_Name: 23_Cell
   m_TagString: Untagged
@@ -28123,7 +28802,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2033281533}
+        - m_Target: {fileID: 2033281535}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -28150,7 +28829,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 291081664}
 --- !u!82 &2033281534
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28247,6 +28925,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2033281535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2033281525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 291081664}
 --- !u!1 &2050043414
 GameObject:
   m_ObjectHideFlags: 0
@@ -28691,6 +29382,7 @@ GameObject:
   - component: {fileID: 2094731944}
   - component: {fileID: 2094731945}
   - component: {fileID: 2094731941}
+  - component: {fileID: 2094731946}
   m_Layer: 5
   m_Name: 34_Cell
   m_TagString: Untagged
@@ -28935,7 +29627,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2094731944}
+        - m_Target: {fileID: 2094731946}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -28962,7 +29654,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 760437842}
 --- !u!82 &2094731945
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29059,6 +29750,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2094731946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094731936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 760437842}
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -29076,6 +29780,7 @@ GameObject:
   - component: {fileID: 2096150381}
   - component: {fileID: 2096150382}
   - component: {fileID: 2096150378}
+  - component: {fileID: 2096150383}
   m_Layer: 5
   m_Name: 15_Cell
   m_TagString: Untagged
@@ -29320,7 +30025,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2096150381}
+        - m_Target: {fileID: 2096150383}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -29347,7 +30052,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 794607843}
 --- !u!82 &2096150382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29444,6 +30148,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2096150383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096150373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 794607843}
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -29461,6 +30178,7 @@ GameObject:
   - component: {fileID: 2100022150}
   - component: {fileID: 2100022151}
   - component: {fileID: 2100022147}
+  - component: {fileID: 2100022152}
   m_Layer: 5
   m_Name: 4_Cell
   m_TagString: Untagged
@@ -29694,7 +30412,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 2100022150}
+        - m_Target: {fileID: 2100022152}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -29732,7 +30450,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 13776070}
 --- !u!82 &2100022151
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29829,6 +30546,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2100022152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100022142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 13776070}
 --- !u!1 &2103451469
 GameObject:
   m_ObjectHideFlags: 0
@@ -29925,6 +30655,7 @@ GameObject:
   - component: {fileID: 2128767690}
   - component: {fileID: 2128767691}
   - component: {fileID: 2128767687}
+  - component: {fileID: 2128767692}
   m_Layer: 5
   m_Name: 24_Cell
   m_TagString: Untagged
@@ -30169,7 +30900,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2128767690}
+        - m_Target: {fileID: 2128767692}
           m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
@@ -30196,7 +30927,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
-  btnNum: {fileID: 1805067612}
 --- !u!82 &2128767691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30293,6 +31023,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2128767692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128767682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btnNum: {fileID: 1805067612}
 --- !u!1 &2133633091
 GameObject:
   m_ObjectHideFlags: 0
