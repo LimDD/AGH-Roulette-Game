@@ -4,7 +4,6 @@ using System.Text.RegularExpressions;
 
 public class DeductCoinsBet : MonoBehaviour
 {
-    public SoundScript Ss;
     public Text betText;
     public Text playerCoinsText;
     public int amountBet;
@@ -12,8 +11,6 @@ public class DeductCoinsBet : MonoBehaviour
 
     public void DeductCoins()
     {
-        Ss = FindObjectOfType<SoundScript>();
-
         amountBet = 0;
         playerCoins = 0;
 
