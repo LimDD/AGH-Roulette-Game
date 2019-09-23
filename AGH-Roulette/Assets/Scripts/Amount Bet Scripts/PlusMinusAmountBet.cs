@@ -2,13 +2,12 @@
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
 using System.IO;
+using TMPro;
 
 public class PlusMinusAmountBet : MonoBehaviour
 {
-    SoundScript Ss;
-    ReadNumbers rN;
-    public Text betText;
-    public Text playerCoinsText;
+    public TMP_Text betText;
+    public TMP_Text playerCoinsText;
     public Button inc;
     public Button dec;
     public Button confirm;
@@ -27,7 +26,6 @@ public class PlusMinusAmountBet : MonoBehaviour
             dec.interactable = true;
         }
 
-        Ss = FindObjectOfType<SoundScript>();
         string path = "/balandamount.txt";
         string temp;
 
@@ -48,10 +46,6 @@ public class PlusMinusAmountBet : MonoBehaviour
         playerCoinsText.text = coins;
 
         balance = TextToInt(playerCoinsText);
-
-        rN = FindObjectOfType<ReadNumbers>();
-
-        rN.ReadNumber(balance.ToString());
 
         //If the balance is less than or equal to 10 then only a bet of 10 can be played
         if (balance <= 10)
@@ -108,7 +102,7 @@ public class PlusMinusAmountBet : MonoBehaviour
         }
     }
 
-    private int TextToInt(Text textToConvert)
+    private int TextToInt(TMP_Text textToConvert)
     {
         int number = 0;
 
@@ -119,9 +113,9 @@ public class PlusMinusAmountBet : MonoBehaviour
         return number;
     }
 
-    private Text IntToText(int intToConvert)
+    private TMP_Text IntToText(int intToConvert)
     {
-        Text convertedInt = betText;
+        TMP_Text convertedInt = betText;
 
         string text = intToConvert.ToString();
         convertedInt.text = text;

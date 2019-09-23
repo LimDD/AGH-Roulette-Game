@@ -1,18 +1,18 @@
-﻿using UnityEngine;
-using UnityEngine.UI;
+﻿using TMPro;
+using UnityEngine;
 
 public class BetPanelTimer : MonoBehaviour
 {
-    public Text amount;
-    public Text bal;
-    ReadNumbers rN;
+    public TMP_Text amount;
+    public TMP_Text bal;
+    NumberReaderScript nRS;
     public float targetTime;
     bool finished;
 
     void Start()
     {
         finished = true;
-        rN = FindObjectOfType<ReadNumbers>();
+        nRS = FindObjectOfType<NumberReaderScript>();
     }
 
     public void CallTimer()
@@ -35,7 +35,8 @@ public class BetPanelTimer : MonoBehaviour
 
     void TimerEnded()
     {
-        string num = amount.text;
-        rN.ReadNumber(num);
+        int num = int.Parse(amount.text);
+        nRS.SetNumber(num);
+        nRS.ReadNumber();
     }
 }

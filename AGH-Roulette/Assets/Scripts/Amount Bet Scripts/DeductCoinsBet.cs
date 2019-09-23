@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 using System.Text.RegularExpressions;
+using TMPro;
 
 public class DeductCoinsBet : MonoBehaviour
 {
-    public Text betText;
-    public Text playerCoinsText;
+    public TMP_Text betText;
+    public TMP_Text playerCoinsText;
     public int amountBet;
     public int playerCoins;
 
@@ -25,7 +25,7 @@ public class DeductCoinsBet : MonoBehaviour
         IntToTextCoinsText(playerCoins);
     }
 
-    private int TextToInt(Text textToConvert)
+    private int TextToInt(TMP_Text textToConvert)
     {
         int number = 0;
 
@@ -36,9 +36,9 @@ public class DeductCoinsBet : MonoBehaviour
         return number;
     }
 
-    private Text IntToTextCoinsText(int intToConvert)
+    private TMP_Text IntToTextCoinsText(int intToConvert)
     {
-        Text convertedInt = playerCoinsText;
+        TMP_Text convertedInt = playerCoinsText;
 
         string text = intToConvert.ToString();
         convertedInt.text = "Coins: " + text;
