@@ -776,17 +776,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 22643033}
         m_MethodName: SaveBetType
         m_Mode: 1
@@ -2242,7 +2231,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 84177455}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -2253,18 +2242,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 84177456}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -7485,7 +7463,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 469675279}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -7496,18 +7474,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 469675280}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -9182,7 +9149,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 561959462}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -9193,7 +9160,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 561959463}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -9694,7 +9661,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 571273867}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -9705,18 +9672,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 571273868}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -10217,7 +10173,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 595861947}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -10228,18 +10184,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 595861948}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -10583,7 +10528,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 616024474}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -10594,7 +10539,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 616024475}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -11105,7 +11050,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 635001761}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -11116,18 +11061,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 635001762}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -15222,7 +15156,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 360.223, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -50, y: 200}
+  m_AnchoredPosition: {x: -44, y: 92}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &941031136
@@ -15694,7 +15628,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 958431351}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -15705,18 +15639,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 958431352}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -18932,7 +18855,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 1161824147}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -21787,7 +21710,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 1334521021}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -21798,7 +21721,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 1334521022}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -25419,7 +25342,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 1610360090}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -25430,7 +25353,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 1610360091}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -27832,7 +27755,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643032}
+      - m_Target: {fileID: 1756720133}
         m_MethodName: MoveToken
         m_Mode: 1
         m_Arguments:
@@ -27843,18 +27766,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 1756720134}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -29325,10 +29237,10 @@ RectTransform:
   m_Father: {fileID: 853792151}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2, y: 2083}
-  m_SizeDelta: {x: 287.6, y: 82.4}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 32, y: -60}
+  m_SizeDelta: {x: 287.6, y: 82.400024}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1911465249
 MonoBehaviour:
