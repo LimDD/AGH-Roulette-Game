@@ -58,14 +58,14 @@ public class GetButtonNum : MonoBehaviour
     public void BetType(int n)
     {
         //Sets all buttons back to interactable if they werent already
-        topL.interactable = true;
-        topM.interactable = true;
-        topR.interactable = true;
-        midL.interactable = true;
-        midR.interactable = true;
-        botL.interactable = true;
-        botM.interactable = true;
-        botR.interactable = true;
+        topL.gameObject.SetActive(true);
+        topM.gameObject.SetActive(true);
+        topR.gameObject.SetActive(true);
+        midL.gameObject.SetActive(true);
+        midR.gameObject.SetActive(true);
+        botL.gameObject.SetActive(true);
+        botM.gameObject.SetActive(true);
+        botR.gameObject.SetActive(true);
 
         //Sets the button text back to default
         topL.GetComponentInChildren<Text>().text = "Corner\nBet";
@@ -76,9 +76,9 @@ public class GetButtonNum : MonoBehaviour
         //Makes far right column inside bets unable to place a bet on the right side buttons
         if (n % 3 == 0)
         {
-            botR.interactable = false;
-            midR.interactable = false;
-            topR.interactable = false;
+            botR.gameObject.SetActive(false);
+            midR.gameObject.SetActive(false);
+            topR.gameObject.SetActive(false);
         }
 
         //Makes left column left buttons names change for due to the different bets that can be made
@@ -108,9 +108,9 @@ public class GetButtonNum : MonoBehaviour
         //Bottom buttons on the bottom row cannot be played
         if (n >= 34)
         {
-            botL.interactable = false;
-            botM.interactable = false;
-            botR.interactable = false;
+            botL.gameObject.SetActive(false);
+            botM.gameObject.SetActive(false);
+            botR.gameObject.SetActive(false);
         }
     }
 }
