@@ -1,10 +1,10 @@
 ﻿using System.IO;
+using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class WinningsPayout : MonoBehaviour
 {
-    public Text bal;
+    public TMP_Text bal;
     
     //Finds out the winnings owed due to the bet type and the amount and adds it to the balance
     public int GetWinnings(string bet, int balance, int amount)
@@ -63,7 +63,6 @@ public class WinningsPayout : MonoBehaviour
     //Resets the balandamount text file to only contain the latest balance
     public void ResetFile(int balance)
     {
-        bal = GameObject.Find("Balance").GetComponent<Text>();
         string path = "/balandamount.txt";
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
         writer.WriteLine("Coins: " + balance.ToString());

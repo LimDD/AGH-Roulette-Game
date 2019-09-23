@@ -21,7 +21,7 @@ public class UpdateCoins : MonoBehaviour
         while (!reader.EndOfStream)
         {
             temp = reader.ReadLine();
-            if (temp.Contains("Coins"))
+            if (temp.Contains("Coins:"))
             {
                 coins = temp;
             }
