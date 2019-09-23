@@ -85,6 +85,7 @@ public class RouletteWheelSpin : MonoBehaviour
         
         if(!wheelSpinning)
         {
+            zAngle = 0.0f;
             transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
 
             if (!check)

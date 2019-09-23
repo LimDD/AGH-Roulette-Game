@@ -180,7 +180,7 @@ public class RouletteBall : MonoBehaviour
 
         if (!wheelSpinning)
         {
-            zAngle = -0.6f;
+            zAngle = -0.0f;
             transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
         }
     }
