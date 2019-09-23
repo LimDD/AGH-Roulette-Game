@@ -159,13 +159,15 @@ public class RouletteBall : MonoBehaviour
                     break;
             }
 
+            startRotation += 30;
+
             startSpin = false;
             transform.Rotate(xAngle, yAngle, startRotation, Space.Self);
         }
         
         if (spinTimer < 240)
         {
-            zAngle = 6.5f;
+            zAngle = 4.0f;
 
             //Wheel no spinning rotation code
             transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
@@ -180,7 +182,7 @@ public class RouletteBall : MonoBehaviour
 
         if (!wheelSpinning)
         {
-            zAngle = -0.0f;
+            zAngle = 0.0f;
             transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
         }
     }
