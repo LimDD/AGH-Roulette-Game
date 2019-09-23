@@ -18,15 +18,7 @@ public class NumberReaderScript : MonoBehaviour
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-        clips = numberReader.GetNumberAudio(NumToRead);
-        lastClip = clips.Length;
-        currentClip = lastClip;
-    }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -34,13 +26,6 @@ public class NumberReaderScript : MonoBehaviour
     {
         //Iterating through clips
         IterateClips();
-
-        //If spacebar is pressed play the last set number
-        //Set for debugging purposes
-        if(Input.GetKeyDown(KeyCode.Space))
-        {
-            ReadNumber();
-        }
     }
 
     //IterateClips
@@ -76,6 +61,8 @@ public class NumberReaderScript : MonoBehaviour
     //Sets currentClip to 0, initiating reading of the currently set number
     public void ReadNumber()
     {
+        clips = numberReader.GetNumberAudio(NumToRead);
+        lastClip = clips.Length;
         currentClip = 0;
     }
 }

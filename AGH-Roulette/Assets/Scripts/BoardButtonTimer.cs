@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
 {
     ReadNumbers rN;
+    NumberReaderScript nRS;
     public AudioSource audioSource;
     public AudioClip sound;
     public TMP_Text btnNum;
@@ -16,6 +17,7 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
     private void Start()
     {
         rN = FindObjectOfType<ReadNumbers>();
+        nRS = FindObjectOfType<NumberReaderScript>();
     }
 
     public void CallTimer()
@@ -41,7 +43,9 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
         if (inFocus)
         {
             inFocus = false;
-            rN.ReadNumber(num);
+            int i = int.Parse(num);
+            nRS.SetNumber(i);
+            nRS.ReadNumber();
         }
 
         if (inFocusO)
