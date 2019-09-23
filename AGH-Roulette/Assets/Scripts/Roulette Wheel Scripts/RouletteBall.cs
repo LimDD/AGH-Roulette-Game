@@ -160,7 +160,7 @@ public class RouletteBall : MonoBehaviour
             }
 
             startSpin = false;
-            this.transform.Rotate(xAngle, yAngle, startRotation, Space.Self);
+            transform.Rotate(xAngle, yAngle, startRotation, Space.Self);
         }
         
         if (spinTimer < 240)
@@ -168,12 +168,12 @@ public class RouletteBall : MonoBehaviour
             zAngle = 6.5f;
 
             //Wheel no spinning rotation code
-            this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+            transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
         }
         else if (spinTimer == 240 || spinTimer < 300)
         {
             //Wheel no spinning rotation code
-            this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+            transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
 
             zAngle -= 0.1f;
         }
@@ -181,7 +181,7 @@ public class RouletteBall : MonoBehaviour
         if (!wheelSpinning)
         {
             zAngle = -0.6f;
-            this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+            transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
         }
     }
 }

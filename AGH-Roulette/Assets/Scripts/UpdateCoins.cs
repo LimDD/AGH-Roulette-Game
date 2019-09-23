@@ -1,12 +1,12 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.IO;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 
 public class UpdateCoins : MonoBehaviour
 {
     public TMP_Text playerCoins;
+    NumberReaderScript nRS;
     string coins;
 
     // Start is called before the first frame update
@@ -30,5 +30,19 @@ public class UpdateCoins : MonoBehaviour
         reader.Close();
 
         playerCoins.text = coins;
+    }
+
+    public void ReadBalance()
+    {
+        nRS = FindObjectOfType<NumberReaderScript>();
+        string temp = playerCoins.text;
+
+        temp = Regex.Replace(temp, "Coins: ", "");
+
+        int i = int.Parse(temp);
+
+        nRS.SetNumber(i);
+
+        nRS.ReadNumber();
     }
 }
