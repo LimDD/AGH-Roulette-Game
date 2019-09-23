@@ -981,7 +981,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1041062540}
   - component: {fileID: 1041062545}
-  - component: {fileID: 1041062542}
   - component: {fileID: 1041062541}
   m_Layer: 5
   m_Name: BackButton
@@ -1022,19 +1021,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1041062542
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1041062539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ef865b90bafdd734c9a08088b0b92532, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Panel: {fileID: 0}
 --- !u!222 &1041062545
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1375,6 +1361,7 @@ GameObject:
   - component: {fileID: 1537819009}
   - component: {fileID: 1537819008}
   - component: {fileID: 1537819013}
+  - component: {fileID: 1537819012}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1465,6 +1452,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1537819012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537819007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50c13f318a056344985c36612394823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
+    type: 3}
+  NumToRead: 0
+  currentClip: 0
+  lastClip: 0
 --- !u!82 &1537819013
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1797,6 +1801,7 @@ GameObject:
   - component: {fileID: 1805082441}
   - component: {fileID: 1805082440}
   - component: {fileID: 1805082439}
+  - component: {fileID: 1805082442}
   m_Layer: 0
   m_Name: Balance
   m_TagString: Untagged
@@ -1956,6 +1961,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805082437}
   m_CullTransparentMesh: 0
+--- !u!114 &1805082442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805082437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f50c13f318a056344985c36612394823, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
+    type: 3}
+  NumToRead: 0
+  currentClip: 0
+  lastClip: 0
 --- !u!1 &1839399976
 GameObject:
   m_ObjectHideFlags: 0

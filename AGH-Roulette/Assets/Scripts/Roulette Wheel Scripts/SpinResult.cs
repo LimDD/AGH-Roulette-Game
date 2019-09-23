@@ -15,14 +15,14 @@ public class SpinResult : MonoBehaviour
     List<string> betInfo = new List<string>();  //Reads in the data from the balandamount.txt file
     RouletteWheelSpin rWS;
     WinningsPayout wP;
-    ReadNumbers rN;
+    NumberReaderScript nRS;
     bool winner;
 
     private void Start()
     {
         rWS = FindObjectOfType<RouletteWheelSpin>();
         wP = FindObjectOfType<WinningsPayout>();
-        rN = FindObjectOfType<ReadNumbers>();
+        nRS = FindObjectOfType<NumberReaderScript>();
         winner = false;
     }
 
@@ -133,7 +133,8 @@ public class SpinResult : MonoBehaviour
 
         balance -= lAmount;
 
-        rN.ReadNumber(winNum.ToString());
+        nRS.SetNumber(winNum);
+        nRS.ReadNumber();
 
         //If the player won
         if (winner)
