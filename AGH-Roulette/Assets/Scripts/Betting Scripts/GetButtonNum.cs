@@ -2,10 +2,11 @@
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Text.RegularExpressions;
+using TMPro;
 
 public class GetButtonNum : MonoBehaviour
 {
-    public Text tNum;
+    public TMP_Text tNum;
     public Vector4 tNumColor;
     public Button topL;
     public Button topM;
@@ -23,7 +24,7 @@ public class GetButtonNum : MonoBehaviour
     public void GetNumAndColor()
     {
         //Getting the current text of the zoomed button
-        tNum = GameObject.Find("ZoomNum").GetComponent<Text>();
+        tNum = GameObject.Find("ZoomNum").GetComponent<TMP_Text>();
         tNumColor = GameObject.Find("Zoomed Button").GetComponent<Image>().color;
 
         //Getting the color of the button selected in the roulette table

@@ -129,9 +129,6 @@ public class SpinResult : MonoBehaviour
         bal = Regex.Replace(bal, "[^0-9.]", "");
 
         int balance = int.Parse(bal);
-        int lAmount = int.Parse(lastAmount);
-
-        balance -= lAmount;
 
         nRS.SetNumber(winNum);
         nRS.ReadNumber();

@@ -6,12 +6,11 @@ public class BetPanelTimer : MonoBehaviour
     public TMP_Text amount;
     public TMP_Text bal;
     NumberReaderScript nRS;
-    public float targetTime;
+    public float targetTime = 0.8f;
     bool finished;
 
     void Start()
     {
-        finished = true;
         nRS = FindObjectOfType<NumberReaderScript>();
     }
 
