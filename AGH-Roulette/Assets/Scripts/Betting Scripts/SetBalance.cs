@@ -31,9 +31,9 @@ public class SetBalance : MonoBehaviour
         saveData.RemoveAt(saveData.Count - 1);
         saveData.RemoveAt(saveData.Count - 1);
 
-        if (saveData.Count < 2)
+        if (saveData.Count == 1)
         {
-            coins.text = saveData[saveData.Count - 1];
+            coins.text = saveData[0];
         }
 
         else

@@ -9,10 +9,10 @@ using System.Collections.Generic;
 public class SaveBetInfo : MonoBehaviour
 {
     private GetButtonNum gBN;
-    public Button btn;
     public List<int> winNum = new List<int>();
+    string btnName;
 
-    private void Awake()
+    private void Start()
     {
         string path = "/winningNumbers.txt";
 
@@ -24,12 +24,17 @@ public class SaveBetInfo : MonoBehaviour
 
     public void SaveBetType()
     {
+        winNum.Clear();
         string str;
+
+        btnName = EventSystem.current.currentSelectedGameObject.name;
+
+        Button btn = GameObject.Find(btnName).GetComponent<Button>();
 
         //Gets the text/tmp component of the button and saves it to a string
         try
         {
-            str = btn.GetComponentInChildren<TextMeshProUGUI>().text;
+            str = btn.GetComponentInChildren<TMP_Text>().text;
         }
 
         catch
@@ -62,7 +67,7 @@ public class SaveBetInfo : MonoBehaviour
 
     //Gets the list of numbers the player can win on according to the number they chose and the type of bet
     //and saves it in winNum list
-    public void WinningNumbers(string betType)
+    private void WinningNumbers(string betType)
     {
         gBN = FindObjectOfType<GetButtonNum>();
 
@@ -81,12 +86,9 @@ public class SaveBetInfo : MonoBehaviour
 
         winNum.Add(num);
 
-        //Get the name of the button to determine the numbers around it
-        string name = EventSystem.current.currentSelectedGameObject.name;
-
         if (betType == "Split Bet")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "TopMiddleButton":
                     if (num < 3)
@@ -115,7 +117,7 @@ public class SaveBetInfo : MonoBehaviour
 
         else if (betType == "Corner Bet")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "TopLeftButton":
                     winNum.Add(num - 1);
@@ -158,7 +160,7 @@ public class SaveBetInfo : MonoBehaviour
 
             if (num == 2)
             {
-                if (name == "TopLeftButton")
+                if (btnName == "TopLeftButton")
                 {
                     winNum.Add(0);
                     winNum.Add(1);
@@ -180,7 +182,7 @@ public class SaveBetInfo : MonoBehaviour
 
         else if (betType == "Six Line Bet")
         {
-            if (name == "TopLeftButton")
+            if (btnName == "TopLeftButton")
             {
                 for (int i = 1; i < 6; i++)
                 {
@@ -213,15 +215,13 @@ public class SaveBetInfo : MonoBehaviour
     }
 
     //Gets all the winning numbers from the bet type
-    public void WinningNumbersOutside(string betType)
+    private void WinningNumbersOutside(string betType)
     {
-        //Get the name of the button to determine the numbers covered by the bet
-        string name = EventSystem.current.currentSelectedGameObject.name;
         int calc = 0;
 
-        if (name == "1st_Column" || name == "2nd_Column" || name == "3rd_Column")
+        if (btnName == "1st_Column" || btnName == "2nd_Column" || btnName == "3rd_Column")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "1st_Column":
                     calc = -2;
@@ -243,9 +243,9 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        else if (name == "1st_Third" || name == "2nd_Third" || name == "3rd_Third")
+        else if (btnName == "1st_Third" || btnName == "2nd_Third" || btnName == "3rd_Third")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "1st_Third":
                     calc = 1;
@@ -266,9 +266,9 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        else if (name == "Evens" || name == "Odds")
+        else if (btnName == "Evens" || btnName == "Odds")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "Evens":
                     calc = 2;
@@ -285,9 +285,9 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        else if (name == "Reds" || name == "Blacks")
+        else if (btnName == "Reds" || btnName == "Blacks")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "Blacks":
                     calc = 2;
@@ -314,9 +314,9 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
 
-        else if (name == "1_To_18" || name == "19_To_36")
+        else if (btnName == "1_To_18" || btnName == "19_To_36")
         {
-            switch (name)
+            switch (btnName)
             {
                 case "1_To_18":
                     calc = 1;

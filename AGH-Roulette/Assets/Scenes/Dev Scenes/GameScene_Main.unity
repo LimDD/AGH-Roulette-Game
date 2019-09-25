@@ -291,7 +291,6 @@ GameObject:
   - component: {fileID: 18504146}
   - component: {fileID: 18504150}
   - component: {fileID: 18504151}
-  - component: {fileID: 18504152}
   - component: {fileID: 18504153}
   - component: {fileID: 18504149}
   - component: {fileID: 18504154}
@@ -563,20 +562,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &18504152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18504144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &18504153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -702,7 +687,6 @@ GameObject:
   - component: {fileID: 22643028}
   - component: {fileID: 22643031}
   - component: {fileID: 22643032}
-  - component: {fileID: 22643033}
   - component: {fileID: 22643036}
   - component: {fileID: 22643034}
   - component: {fileID: 22643037}
@@ -809,7 +793,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 22643033}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -921,20 +905,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &22643033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22643026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 22643028}
-  winNum: 
 --- !u!114 &22643034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1090,7 +1060,6 @@ GameObject:
   - component: {fileID: 28234588}
   - component: {fileID: 28234592}
   - component: {fileID: 28234593}
-  - component: {fileID: 28234594}
   - component: {fileID: 28234595}
   - component: {fileID: 28234591}
   - component: {fileID: 28234596}
@@ -1362,20 +1331,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &28234594
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28234586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &28234595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1501,7 +1456,6 @@ GameObject:
   - component: {fileID: 35355870}
   - component: {fileID: 35355874}
   - component: {fileID: 35355875}
-  - component: {fileID: 35355876}
   - component: {fileID: 35355877}
   - component: {fileID: 35355873}
   - component: {fileID: 35355878}
@@ -1773,20 +1727,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &35355876
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35355868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &35355877
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1935,7 +1875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.629028, y: 0}
+  m_AnchoredPosition: {x: -27.628906, y: 0}
   m_SizeDelta: {x: 55.258, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &40712009
@@ -2243,7 +2183,6 @@ GameObject:
   - component: {fileID: 84177451}
   - component: {fileID: 84177454}
   - component: {fileID: 84177455}
-  - component: {fileID: 84177456}
   - component: {fileID: 84177459}
   - component: {fileID: 84177457}
   - component: {fileID: 84177460}
@@ -2350,7 +2289,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 84177456}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -2462,20 +2401,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &84177456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84177449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 84177451}
-  winNum: 
 --- !u!114 &84177457
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2810,7 +2735,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.9000244, y: 2.6323242}
+  m_AnchoredPosition: {x: 3.8984375, y: 2.6323242}
   m_SizeDelta: {x: 89.2, y: 74.735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132745757
@@ -3021,7 +2946,6 @@ GameObject:
   - component: {fileID: 162625817}
   - component: {fileID: 162625820}
   - component: {fileID: 162625822}
-  - component: {fileID: 162625823}
   - component: {fileID: 162625824}
   - component: {fileID: 162625821}
   - component: {fileID: 162625825}
@@ -3293,20 +3217,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &162625823
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162625815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &162625824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3866,7 +3776,6 @@ GameObject:
   - component: {fileID: 199731301}
   - component: {fileID: 199731305}
   - component: {fileID: 199731306}
-  - component: {fileID: 199731307}
   - component: {fileID: 199731308}
   - component: {fileID: 199731304}
   - component: {fileID: 199731309}
@@ -4138,20 +4047,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &199731307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199731299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &199731308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4537,6 +4432,17 @@ MonoBehaviour:
       - m_Target: {fileID: 941031134}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1480642223}
+        m_MethodName: RemoveBet
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5023,6 +4929,17 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1663545081}
+        m_MethodName: RemoveBet
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &231089937
@@ -5076,7 +4993,6 @@ GameObject:
   - component: {fileID: 256244944}
   - component: {fileID: 256244948}
   - component: {fileID: 256244949}
-  - component: {fileID: 256244950}
   - component: {fileID: 256244951}
   - component: {fileID: 256244947}
   - component: {fileID: 256244952}
@@ -5348,20 +5264,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &256244950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256244942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &256244951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5880,7 +5782,6 @@ GameObject:
   - component: {fileID: 301854768}
   - component: {fileID: 301854772}
   - component: {fileID: 301854773}
-  - component: {fileID: 301854774}
   - component: {fileID: 301854775}
   - component: {fileID: 301854771}
   - component: {fileID: 301854776}
@@ -6152,20 +6053,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &301854774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301854766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &301854775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6504,7 +6391,6 @@ GameObject:
   - component: {fileID: 329475458}
   - component: {fileID: 329475462}
   - component: {fileID: 329475463}
-  - component: {fileID: 329475464}
   - component: {fileID: 329475465}
   - component: {fileID: 329475461}
   - component: {fileID: 329475466}
@@ -6776,20 +6662,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &329475464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329475456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &329475465
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7478,7 +7350,6 @@ GameObject:
   - component: {fileID: 458555052}
   - component: {fileID: 458555056}
   - component: {fileID: 458555057}
-  - component: {fileID: 458555058}
   - component: {fileID: 458555059}
   - component: {fileID: 458555055}
   - component: {fileID: 458555060}
@@ -7750,20 +7621,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &458555058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458555050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &458555059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7889,7 +7746,6 @@ GameObject:
   - component: {fileID: 469675275}
   - component: {fileID: 469675278}
   - component: {fileID: 469675279}
-  - component: {fileID: 469675280}
   - component: {fileID: 469675283}
   - component: {fileID: 469675281}
   - component: {fileID: 469675284}
@@ -7996,7 +7852,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 469675280}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -8108,20 +7964,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &469675280
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469675273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 469675275}
-  winNum: 
 --- !u!114 &469675281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8905,7 +8747,6 @@ GameObject:
   - component: {fileID: 550351216}
   - component: {fileID: 550351220}
   - component: {fileID: 550351221}
-  - component: {fileID: 550351222}
   - component: {fileID: 550351223}
   - component: {fileID: 550351219}
   - component: {fileID: 550351224}
@@ -9177,20 +9018,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &550351222
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550351214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &550351223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9630,7 +9457,6 @@ GameObject:
   - component: {fileID: 561959458}
   - component: {fileID: 561959461}
   - component: {fileID: 561959462}
-  - component: {fileID: 561959463}
   - component: {fileID: 561959466}
   - component: {fileID: 561959464}
   - component: {fileID: 561959467}
@@ -9737,7 +9563,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 561959463}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -9849,20 +9675,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &561959463
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561959456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 561959458}
-  winNum: 
 --- !u!114 &561959464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10175,7 +9987,6 @@ GameObject:
   - component: {fileID: 571273863}
   - component: {fileID: 571273866}
   - component: {fileID: 571273867}
-  - component: {fileID: 571273868}
   - component: {fileID: 571273871}
   - component: {fileID: 571273869}
   - component: {fileID: 571273872}
@@ -10282,7 +10093,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 571273868}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -10394,20 +10205,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &571273868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571273861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 571273863}
-  winNum: 
 --- !u!114 &571273869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10720,7 +10517,6 @@ GameObject:
   - component: {fileID: 595861943}
   - component: {fileID: 595861946}
   - component: {fileID: 595861947}
-  - component: {fileID: 595861948}
   - component: {fileID: 595861951}
   - component: {fileID: 595861949}
   - component: {fileID: 595861952}
@@ -10827,7 +10623,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 595861948}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -10939,20 +10735,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &595861948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595861941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 595861943}
-  winNum: 
 --- !u!114 &595861949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11108,7 +10890,6 @@ GameObject:
   - component: {fileID: 616024470}
   - component: {fileID: 616024474}
   - component: {fileID: 616024473}
-  - component: {fileID: 616024475}
   - component: {fileID: 616024478}
   - component: {fileID: 616024476}
   - component: {fileID: 616024479}
@@ -11215,7 +10996,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 616024475}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -11327,20 +11108,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &616024475
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616024468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 616024470}
-  winNum: 
 --- !u!114 &616024476
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11663,7 +11430,6 @@ GameObject:
   - component: {fileID: 635001757}
   - component: {fileID: 635001760}
   - component: {fileID: 635001761}
-  - component: {fileID: 635001762}
   - component: {fileID: 635001765}
   - component: {fileID: 635001763}
   - component: {fileID: 635001766}
@@ -11770,7 +11536,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 635001762}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -11882,20 +11648,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &635001762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635001755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 635001757}
-  winNum: 
 --- !u!114 &635001763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12206,7 +11958,6 @@ GameObject:
   - component: {fileID: 681424416}
   - component: {fileID: 681424415}
   - component: {fileID: 681424414}
-  - component: {fileID: 681424417}
   - component: {fileID: 681424418}
   - component: {fileID: 681424413}
   m_Layer: 0
@@ -12305,7 +12056,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -12388,20 +12139,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681424411}
   m_CullTransparentMesh: 0
---- !u!114 &681424417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 681424411}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 681424414}
-  winNum: 
 --- !u!114 &681424418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12584,7 +12321,6 @@ GameObject:
   - component: {fileID: 697793732}
   - component: {fileID: 697793731}
   - component: {fileID: 697793730}
-  - component: {fileID: 697793733}
   - component: {fileID: 697793734}
   - component: {fileID: 697793729}
   m_Layer: 0
@@ -12683,7 +12419,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -12766,20 +12502,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697793727}
   m_CullTransparentMesh: 0
---- !u!114 &697793733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697793727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 697793730}
-  winNum: 
 --- !u!114 &697793734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13376,7 +13098,6 @@ GameObject:
   - component: {fileID: 813376616}
   - component: {fileID: 813376615}
   - component: {fileID: 813376614}
-  - component: {fileID: 813376617}
   - component: {fileID: 813376618}
   - component: {fileID: 813376613}
   m_Layer: 0
@@ -13475,7 +13196,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -13558,20 +13279,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813376611}
   m_CullTransparentMesh: 0
---- !u!114 &813376617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 813376611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 813376614}
-  winNum: 
 --- !u!114 &813376618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13599,7 +13306,6 @@ GameObject:
   - component: {fileID: 825994012}
   - component: {fileID: 825994016}
   - component: {fileID: 825994017}
-  - component: {fileID: 825994018}
   - component: {fileID: 825994019}
   - component: {fileID: 825994015}
   - component: {fileID: 825994020}
@@ -13871,20 +13577,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &825994018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825994010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &825994019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14010,7 +13702,6 @@ GameObject:
   - component: {fileID: 836823903}
   - component: {fileID: 836823907}
   - component: {fileID: 836823908}
-  - component: {fileID: 836823909}
   - component: {fileID: 836823910}
   - component: {fileID: 836823906}
   - component: {fileID: 836823911}
@@ -14282,20 +13973,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &836823909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836823901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &836823910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15118,6 +14795,7 @@ GameObject:
   - component: {fileID: 863234865}
   - component: {fileID: 863234864}
   - component: {fileID: 863234868}
+  - component: {fileID: 863234869}
   m_Layer: 0
   m_Name: Portrait_Roulette_Table
   m_TagString: Untagged
@@ -15347,6 +15025,19 @@ MonoBehaviour:
   dec: {fileID: 448481269}
   playerCoinsText: {fileID: 1189270746}
   betText: {fileID: 228806702}
+--- !u!114 &863234869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863234860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winNum: 
 --- !u!1 &910187216
 GameObject:
   m_ObjectHideFlags: 0
@@ -15830,7 +15521,6 @@ GameObject:
   - component: {fileID: 940745562}
   - component: {fileID: 940745561}
   - component: {fileID: 940745560}
-  - component: {fileID: 940745563}
   - component: {fileID: 940745564}
   - component: {fileID: 940745559}
   m_Layer: 0
@@ -15929,7 +15619,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -16012,20 +15702,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 940745557}
   m_CullTransparentMesh: 0
---- !u!114 &940745563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 940745557}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 940745560}
-  winNum: 
 --- !u!114 &940745564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16425,7 +16101,6 @@ GameObject:
   - component: {fileID: 958431347}
   - component: {fileID: 958431350}
   - component: {fileID: 958431351}
-  - component: {fileID: 958431352}
   - component: {fileID: 958431355}
   - component: {fileID: 958431353}
   - component: {fileID: 958431356}
@@ -16532,7 +16207,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 958431352}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -16644,20 +16319,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &958431352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958431345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 958431347}
-  winNum: 
 --- !u!114 &958431353
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16813,7 +16474,6 @@ GameObject:
   - component: {fileID: 960676966}
   - component: {fileID: 960676970}
   - component: {fileID: 960676971}
-  - component: {fileID: 960676972}
   - component: {fileID: 960676973}
   - component: {fileID: 960676969}
   - component: {fileID: 960676974}
@@ -17085,20 +16745,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &960676972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960676964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &960676973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -17667,7 +17313,6 @@ GameObject:
   - component: {fileID: 1023385964}
   - component: {fileID: 1023385968}
   - component: {fileID: 1023385969}
-  - component: {fileID: 1023385970}
   - component: {fileID: 1023385971}
   - component: {fileID: 1023385967}
   - component: {fileID: 1023385972}
@@ -17939,20 +17584,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1023385970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023385962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1023385971
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18078,7 +17709,6 @@ GameObject:
   - component: {fileID: 1036812356}
   - component: {fileID: 1036812360}
   - component: {fileID: 1036812361}
-  - component: {fileID: 1036812362}
   - component: {fileID: 1036812363}
   - component: {fileID: 1036812359}
   - component: {fileID: 1036812364}
@@ -18350,20 +17980,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1036812362
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036812354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1036812363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18790,7 +18406,6 @@ GameObject:
   - component: {fileID: 1142114606}
   - component: {fileID: 1142114610}
   - component: {fileID: 1142114611}
-  - component: {fileID: 1142114612}
   - component: {fileID: 1142114613}
   - component: {fileID: 1142114609}
   - component: {fileID: 1142114614}
@@ -19062,20 +18677,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1142114612
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142114604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1142114613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19201,7 +18802,6 @@ GameObject:
   - component: {fileID: 1157757724}
   - component: {fileID: 1157757728}
   - component: {fileID: 1157757729}
-  - component: {fileID: 1157757730}
   - component: {fileID: 1157757731}
   - component: {fileID: 1157757727}
   - component: {fileID: 1157757732}
@@ -19473,20 +19073,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1157757730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157757722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1157757731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19743,7 +19329,6 @@ GameObject:
   - component: {fileID: 1177302149}
   - component: {fileID: 1177302153}
   - component: {fileID: 1177302154}
-  - component: {fileID: 1177302155}
   - component: {fileID: 1177302156}
   - component: {fileID: 1177302152}
   - component: {fileID: 1177302157}
@@ -20015,20 +19600,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1177302155
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177302147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1177302156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20482,7 +20053,6 @@ GameObject:
   - component: {fileID: 1205669519}
   - component: {fileID: 1205669523}
   - component: {fileID: 1205669524}
-  - component: {fileID: 1205669525}
   - component: {fileID: 1205669526}
   - component: {fileID: 1205669522}
   - component: {fileID: 1205669527}
@@ -20754,20 +20324,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1205669525
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205669517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1205669526
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20893,7 +20449,6 @@ GameObject:
   - component: {fileID: 1227263165}
   - component: {fileID: 1227263169}
   - component: {fileID: 1227263170}
-  - component: {fileID: 1227263171}
   - component: {fileID: 1227263172}
   - component: {fileID: 1227263168}
   - component: {fileID: 1227263173}
@@ -21165,20 +20720,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1227263171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227263163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1227263172
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21304,7 +20845,6 @@ GameObject:
   - component: {fileID: 1246405272}
   - component: {fileID: 1246405276}
   - component: {fileID: 1246405277}
-  - component: {fileID: 1246405278}
   - component: {fileID: 1246405279}
   - component: {fileID: 1246405275}
   - component: {fileID: 1246405280}
@@ -21576,20 +21116,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1246405278
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246405270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1246405279
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21717,7 +21243,6 @@ GameObject:
   - component: {fileID: 1258632480}
   - component: {fileID: 1258632482}
   - component: {fileID: 1258632485}
-  - component: {fileID: 1258632486}
   - component: {fileID: 1258632487}
   - component: {fileID: 1258632484}
   - component: {fileID: 1258632483}
@@ -21959,7 +21484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 1258632477}
   winNum: 
 --- !u!114 &1258632483
 MonoBehaviour:
@@ -22031,20 +21555,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1258632486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258632475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1258632487
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22155,7 +21665,6 @@ GameObject:
   - component: {fileID: 1323412628}
   - component: {fileID: 1323412632}
   - component: {fileID: 1323412633}
-  - component: {fileID: 1323412634}
   - component: {fileID: 1323412635}
   - component: {fileID: 1323412631}
   - component: {fileID: 1323412636}
@@ -22427,20 +21936,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1323412634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323412626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1323412635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22566,7 +22061,6 @@ GameObject:
   - component: {fileID: 1334521017}
   - component: {fileID: 1334521020}
   - component: {fileID: 1334521021}
-  - component: {fileID: 1334521022}
   - component: {fileID: 1334521025}
   - component: {fileID: 1334521023}
   - component: {fileID: 1334521026}
@@ -22673,7 +22167,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1334521022}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -22785,20 +22279,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &1334521022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334521015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1334521017}
-  winNum: 
 --- !u!114 &1334521023
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23113,7 +22593,6 @@ GameObject:
   - component: {fileID: 1359132688}
   - component: {fileID: 1359132692}
   - component: {fileID: 1359132693}
-  - component: {fileID: 1359132694}
   - component: {fileID: 1359132695}
   - component: {fileID: 1359132691}
   - component: {fileID: 1359132696}
@@ -23385,20 +22864,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1359132694
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359132686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1359132695
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24388,6 +23853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1480642222}
   - component: {fileID: 1480642224}
+  - component: {fileID: 1480642223}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -24415,6 +23881,19 @@ RectTransform:
   m_AnchoredPosition: {x: 158, y: -82.000244}
   m_SizeDelta: {x: 500, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1480642223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480642221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22137410af8e1bf4a952f8858325d45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1519994127}
 --- !u!222 &1480642224
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24437,7 +23916,6 @@ GameObject:
   - component: {fileID: 1511159808}
   - component: {fileID: 1511159812}
   - component: {fileID: 1511159813}
-  - component: {fileID: 1511159814}
   - component: {fileID: 1511159815}
   - component: {fileID: 1511159811}
   - component: {fileID: 1511159816}
@@ -24709,20 +24187,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1511159814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511159806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1511159815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25144,7 +24608,6 @@ GameObject:
   - component: {fileID: 1527291864}
   - component: {fileID: 1527291868}
   - component: {fileID: 1527291869}
-  - component: {fileID: 1527291870}
   - component: {fileID: 1527291871}
   - component: {fileID: 1527291867}
   - component: {fileID: 1527291872}
@@ -25416,20 +24879,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1527291870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1527291862}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1527291871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25979,7 +25428,6 @@ GameObject:
   - component: {fileID: 1563760645}
   - component: {fileID: 1563760644}
   - component: {fileID: 1563760643}
-  - component: {fileID: 1563760646}
   - component: {fileID: 1563760647}
   - component: {fileID: 1563760642}
   m_Layer: 0
@@ -26078,7 +25526,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -26161,20 +25609,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1563760640}
   m_CullTransparentMesh: 0
---- !u!114 &1563760646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1563760640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1563760643}
-  winNum: 
 --- !u!114 &1563760647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26359,7 +25793,6 @@ GameObject:
   - component: {fileID: 1610360086}
   - component: {fileID: 1610360089}
   - component: {fileID: 1610360090}
-  - component: {fileID: 1610360091}
   - component: {fileID: 1610360094}
   - component: {fileID: 1610360092}
   - component: {fileID: 1610360095}
@@ -26466,7 +25899,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1610360091}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -26578,20 +26011,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &1610360091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610360084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1610360086}
-  winNum: 
 --- !u!114 &1610360092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26747,7 +26166,6 @@ GameObject:
   - component: {fileID: 1617909950}
   - component: {fileID: 1617909954}
   - component: {fileID: 1617909955}
-  - component: {fileID: 1617909956}
   - component: {fileID: 1617909957}
   - component: {fileID: 1617909953}
   - component: {fileID: 1617909958}
@@ -27019,20 +26437,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1617909956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617909948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1617909957
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27312,6 +26716,7 @@ GameObject:
   - component: {fileID: 1663545078}
   - component: {fileID: 1663545080}
   - component: {fileID: 1663545079}
+  - component: {fileID: 1663545081}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -27360,6 +26765,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663545077}
   m_CullTransparentMesh: 0
+--- !u!114 &1663545081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663545077}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22137410af8e1bf4a952f8858325d45b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 40712007}
 --- !u!1 &1664672275
 GameObject:
   m_ObjectHideFlags: 0
@@ -27372,7 +26790,6 @@ GameObject:
   - component: {fileID: 1664672280}
   - component: {fileID: 1664672279}
   - component: {fileID: 1664672278}
-  - component: {fileID: 1664672281}
   - component: {fileID: 1664672282}
   - component: {fileID: 1664672277}
   m_Layer: 0
@@ -27471,7 +26888,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -27554,20 +26971,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1664672275}
   m_CullTransparentMesh: 0
---- !u!114 &1664672281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1664672275}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1664672278}
-  winNum: 
 --- !u!114 &1664672282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27593,7 +26996,6 @@ GameObject:
   - component: {fileID: 1666046604}
   - component: {fileID: 1666046603}
   - component: {fileID: 1666046602}
-  - component: {fileID: 1666046605}
   - component: {fileID: 1666046606}
   - component: {fileID: 1666046601}
   m_Layer: 0
@@ -27692,7 +27094,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -27775,20 +27177,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666046599}
   m_CullTransparentMesh: 0
---- !u!114 &1666046605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1666046599}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1666046602}
-  winNum: 
 --- !u!114 &1666046606
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28299,7 +27687,6 @@ GameObject:
   - component: {fileID: 1716691568}
   - component: {fileID: 1716691572}
   - component: {fileID: 1716691573}
-  - component: {fileID: 1716691574}
   - component: {fileID: 1716691575}
   - component: {fileID: 1716691571}
   - component: {fileID: 1716691576}
@@ -28571,20 +27958,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1716691574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716691566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1716691575
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28812,7 +28185,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1480642221}
+      - m_Target: {fileID: 1663545077}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -29230,7 +28603,6 @@ GameObject:
   - component: {fileID: 1756720129}
   - component: {fileID: 1756720132}
   - component: {fileID: 1756720133}
-  - component: {fileID: 1756720134}
   - component: {fileID: 1756720137}
   - component: {fileID: 1756720135}
   - component: {fileID: 1756720138}
@@ -29337,7 +28709,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1756720134}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -29449,20 +28821,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &1756720134
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756720127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 1756720129}
-  winNum: 
 --- !u!114 &1756720135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30277,7 +29635,6 @@ GameObject:
   - component: {fileID: 1835142225}
   - component: {fileID: 1835142229}
   - component: {fileID: 1835142230}
-  - component: {fileID: 1835142231}
   - component: {fileID: 1835142232}
   - component: {fileID: 1835142228}
   - component: {fileID: 1835142233}
@@ -30549,20 +29906,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1835142231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835142223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1835142232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31002,7 +30345,6 @@ GameObject:
   - component: {fileID: 1916122766}
   - component: {fileID: 1916122770}
   - component: {fileID: 1916122771}
-  - component: {fileID: 1916122772}
   - component: {fileID: 1916122773}
   - component: {fileID: 1916122769}
   - component: {fileID: 1916122774}
@@ -31274,20 +30616,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1916122772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916122764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1916122773
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31413,7 +30741,6 @@ GameObject:
   - component: {fileID: 1928020084}
   - component: {fileID: 1928020088}
   - component: {fileID: 1928020089}
-  - component: {fileID: 1928020090}
   - component: {fileID: 1928020091}
   - component: {fileID: 1928020087}
   - component: {fileID: 1928020092}
@@ -31685,20 +31012,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1928020090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928020082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &1928020091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32062,7 +31375,6 @@ GameObject:
   - component: {fileID: 2012285368}
   - component: {fileID: 2012285372}
   - component: {fileID: 2012285373}
-  - component: {fileID: 2012285374}
   - component: {fileID: 2012285375}
   - component: {fileID: 2012285371}
   - component: {fileID: 2012285376}
@@ -32334,20 +31646,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2012285374
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012285366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2012285375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32473,7 +31771,6 @@ GameObject:
   - component: {fileID: 2033281527}
   - component: {fileID: 2033281531}
   - component: {fileID: 2033281532}
-  - component: {fileID: 2033281533}
   - component: {fileID: 2033281534}
   - component: {fileID: 2033281530}
   - component: {fileID: 2033281535}
@@ -32745,20 +32042,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2033281533
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033281525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2033281534
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33118,7 +32401,6 @@ GameObject:
   - component: {fileID: 2081244243}
   - component: {fileID: 2081244242}
   - component: {fileID: 2081244241}
-  - component: {fileID: 2081244244}
   - component: {fileID: 2081244245}
   - component: {fileID: 2081244240}
   m_Layer: 0
@@ -33217,7 +32499,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -33300,20 +32582,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081244238}
   m_CullTransparentMesh: 0
---- !u!114 &2081244244
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081244238}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 2081244241}
-  winNum: 
 --- !u!114 &2081244245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33341,7 +32609,6 @@ GameObject:
   - component: {fileID: 2094731938}
   - component: {fileID: 2094731942}
   - component: {fileID: 2094731943}
-  - component: {fileID: 2094731944}
   - component: {fileID: 2094731945}
   - component: {fileID: 2094731941}
   - component: {fileID: 2094731946}
@@ -33613,20 +32880,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2094731944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094731936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2094731945
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33752,7 +33005,6 @@ GameObject:
   - component: {fileID: 2096150375}
   - component: {fileID: 2096150379}
   - component: {fileID: 2096150380}
-  - component: {fileID: 2096150381}
   - component: {fileID: 2096150382}
   - component: {fileID: 2096150378}
   - component: {fileID: 2096150383}
@@ -34024,20 +33276,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2096150381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096150373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2096150382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34163,7 +33401,6 @@ GameObject:
   - component: {fileID: 2100022144}
   - component: {fileID: 2100022148}
   - component: {fileID: 2100022149}
-  - component: {fileID: 2100022150}
   - component: {fileID: 2100022151}
   - component: {fileID: 2100022147}
   - component: {fileID: 2100022152}
@@ -34435,20 +33672,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2100022150
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100022142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2100022151
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34653,7 +33876,6 @@ GameObject:
   - component: {fileID: 2128767684}
   - component: {fileID: 2128767688}
   - component: {fileID: 2128767689}
-  - component: {fileID: 2128767690}
   - component: {fileID: 2128767691}
   - component: {fileID: 2128767687}
   - component: {fileID: 2128767692}
@@ -34925,20 +34147,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &2128767690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128767682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ce0e1f7ad32df4ab3dfaacdf2ebc36, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
-    type: 3}
 --- !u!82 &2128767691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35062,7 +34270,6 @@ GameObject:
   - component: {fileID: 2133633096}
   - component: {fileID: 2133633095}
   - component: {fileID: 2133633094}
-  - component: {fileID: 2133633097}
   - component: {fileID: 2133633098}
   - component: {fileID: 2133633093}
   m_Layer: 0
@@ -35161,7 +34368,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 681424417}
+      - m_Target: {fileID: 863234869}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -35244,20 +34451,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2133633091}
   m_CullTransparentMesh: 0
---- !u!114 &2133633097
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2133633091}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  btn: {fileID: 2133633094}
-  winNum: 
 --- !u!114 &2133633098
 MonoBehaviour:
   m_ObjectHideFlags: 0
