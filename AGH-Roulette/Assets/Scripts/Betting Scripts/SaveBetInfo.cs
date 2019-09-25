@@ -289,11 +289,11 @@ public class SaveBetInfo : MonoBehaviour
         {
             switch (name)
             {
-                case "Reds":
+                case "Blacks":
                     calc = 2;
                     break;
 
-                case "Blacks":
+                case "Reds":
                     calc = 1;
                     break;
             }

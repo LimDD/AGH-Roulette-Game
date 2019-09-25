@@ -1,32 +1,59 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
+using TMPro;
 using UnityEngine;
 
 public class SetBalance : MonoBehaviour
 {
+    public TMP_Text coins;
     private string path;
+    private List<string> saveData;
 
     //Gets the first balance in the text file, meaning if the user goes back to the menu without playing their bets
     //They will keep their coins
     public void GetLastCoins()
     {
+        saveData = new List<string>();
         path = "/balandamount.txt";
-        string lastCoins;
+        string line;
 
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
-        lastCoins = reader.ReadLine();
+        while (!reader.EndOfStream)
+        {
+            line = reader.ReadLine();
+
+            saveData.Add(line);
+        }
 
         reader.Close();
 
-        SetLastCoins(lastCoins);
+        saveData.RemoveAt(saveData.Count - 1);
+        saveData.RemoveAt(saveData.Count - 1);
+
+        if (saveData.Count < 2)
+        {
+            coins.text = saveData[saveData.Count - 1];
+        }
+
+        else
+        {
+            coins.text = saveData[saveData.Count - 2];
+        }
+
+
+        SetLastCoins();
     }
 
-    //Saves the last coins as the only item in the text file
-    private void SetLastCoins(string coins)
+    //Rewrites the text file to remove the removed bet and balance
+    private void SetLastCoins()
     {
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
 
-        writer.WriteLine(coins);
+        foreach (string s in saveData)
+        {
+            writer.WriteLine(s);
+        }
 
         writer.Close();
     }
