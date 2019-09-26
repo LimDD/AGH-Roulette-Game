@@ -128,7 +128,7 @@ public class RouletteBall : MonoBehaviour
                     startRotation = 199;
                     break;
                 case 27:
-                    startRotation = 101;
+                    startRotation = 82;
                     break;
                 case 28:
                     startRotation = 238;
@@ -149,7 +149,7 @@ public class RouletteBall : MonoBehaviour
                     startRotation = 335;
                     break;
                 case 34:
-                    startRotation = 82;
+                    startRotation = 101;
                     break;
                 case 35:
                     startRotation = 219;
