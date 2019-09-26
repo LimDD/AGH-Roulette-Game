@@ -90,8 +90,11 @@ public class SaveStatistics : MonoBehaviour
     //Saves the amount won into the stats file
     public void SaveWinnings(int amount, int multi)
     {
-
-        int count = ReadStats();
+        //If more than one bet contains the winning number, then no need to read in the stats again
+        if(stats.Count < 4)
+        {
+            int count = ReadStats();
+        }
 
         stats[2] -= amount;
 
