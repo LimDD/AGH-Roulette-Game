@@ -105,7 +105,11 @@ public class SaveStatistics : MonoBehaviour
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
 
         writer.Flush();
-        
+
+        writer.Close();
+
+        writer = new StreamWriter(Application.persistentDataPath + path);
+
         foreach (int i in stats)
         {
             writer.WriteLine(i);
