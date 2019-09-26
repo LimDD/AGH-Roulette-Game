@@ -91,7 +91,8 @@ public class SpinResult : MonoBehaviour
                     {
                         smallest = placeHolder;
                         //If there is more than 1 bet that covers the winning number then count will have increased meaning the next bettype in the list is saved
-                        type.Add(betType[count]);
+                        type.Add("");
+                        type[count] = (betType[count]);
                         saveIndex.Add(0);
                     }
 

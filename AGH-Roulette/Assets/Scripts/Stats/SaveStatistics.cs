@@ -90,6 +90,7 @@ public class SaveStatistics : MonoBehaviour
     //Saves the amount won into the stats file
     public void SaveWinnings(int amount, int multi)
     {
+
         int count = ReadStats();
 
         stats[2] -= amount;
