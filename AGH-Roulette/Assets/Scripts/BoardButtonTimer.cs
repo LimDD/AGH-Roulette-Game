@@ -23,7 +23,6 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
     public void CallTimer()
     {
         inFocus = true;
-
         num = btnNum.text;
         StartCoroutine(StartCountdown(0.6f));
     }
@@ -38,6 +37,9 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
+
+        audioSource.pitch = 1f;
+        audioSource.panStereo = 0f;
 
         //If the button is still in focus
         if (inFocus)
