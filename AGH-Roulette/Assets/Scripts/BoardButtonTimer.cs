@@ -38,8 +38,12 @@ public class BoardButtonTimer : MonoBehaviour, IPointerExitHandler
     {
         yield return new WaitForSeconds(f);
 
-        audioSource.pitch = 1f;
-        audioSource.panStereo = 0f;
+        if(audioSource != null)
+        {
+            audioSource.pitch = 1f;
+            audioSource.panStereo = 0f;
+        }
+
 
         //If the button is still in focus
         if (inFocus)

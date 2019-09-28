@@ -7,12 +7,13 @@ public class SaveValues : MonoBehaviour
 {
     public TMP_Text bal;
     public TMP_Text amount;
+    SceneSwitcher sS;
+    public GameObject panel;
 
     //Saves the balance and the bet amounts into a text file
     public void WriteToFile()
     {
-        string path = "/balandamount.txt";
-        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
+        sS = gameObject.GetComponent<SceneSwitcher>();
         string balance = bal.text;
         string bet = amount.text;
 
@@ -24,8 +25,26 @@ public class SaveValues : MonoBehaviour
 
         bal.text = balance;
 
+        string path = "/balandamount.txt";
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
+
         writer.WriteLine(balance);
         writer.WriteLine(bet);
         writer.Close();
+
+        CheckBal(balNum);
+    }
+
+    private void CheckBal(int balNum)
+    {
+        if (balNum == 0)
+        {
+            sS.WheelScene();
+        }
+
+        else
+        {
+            panel.SetActive(true);
+        }
     }
 }
