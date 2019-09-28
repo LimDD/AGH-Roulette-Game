@@ -4940,7 +4940,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0000019073, y: -52}
+  m_AnchoredPosition: {x: -0, y: -52}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &228806702
@@ -26620,6 +26620,7 @@ GameObject:
   - component: {fileID: 1519994128}
   - component: {fileID: 1519994130}
   - component: {fileID: 1519994129}
+  - component: {fileID: 1519994131}
   m_Layer: 5
   m_Name: Betting Coins Panel
   m_TagString: Untagged
@@ -26688,6 +26689,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519994127}
   m_CullTransparentMesh: 0
+--- !u!114 &1519994131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519994127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad6a982ea3c9c8b4cadbafd54b4e294f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: {fileID: 228806702}
+  bal: {fileID: 1189270746}
+  targetTime: 0.8
 --- !u!1 &1521605600
 GameObject:
   m_ObjectHideFlags: 0

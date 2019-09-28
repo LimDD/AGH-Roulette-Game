@@ -6,7 +6,7 @@ public class BetPanelTimer : MonoBehaviour
     public TMP_Text amount;
     public TMP_Text bal;
     NumberReaderScript nRS;
-    public float targetTime = 0.8f;
+    public float targetTime;
     bool finished;
 
     void Start()

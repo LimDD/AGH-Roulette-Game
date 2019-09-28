@@ -9,9 +9,19 @@ public class ExampleGestureInput : MonoBehaviour
     public TMP_Text amount;
     public TMP_Text balance;
     public Button confirm;
+    bool first;
+    BetPanelTimer bPT;
     // Update is called once per frame
+
     void Update()
     {
+        if (!first)
+        {
+            bPT = panel.GetComponent<BetPanelTimer>();
+            bPT.CallTimer();
+            first = true;
+        }
+
         if (GestureInputManager.CurrentInput != InputAction.Null)
         {
             string type = GestureInputManager.CurrentInput.ToString();
@@ -20,11 +30,21 @@ public class ExampleGestureInput : MonoBehaviour
 
             if (type == "DoubleClick")
             {
-                confirm.onClick.Invoke();
+                if (balance.text != "0")
+                {
+                    first = false;
+                    confirm.onClick.Invoke();
+                }
             }
             
             if (type.Contains("Swipe"))
             {
+                if (bPT == null)
+                {
+                    bPT = panel.GetComponent<BetPanelTimer>();
+                }
+
+                bPT.CallTimer();
                 if (panel.activeSelf)
                 {
                     string temp = Regex.Replace(balance.text, "[^.0-9]", "");
