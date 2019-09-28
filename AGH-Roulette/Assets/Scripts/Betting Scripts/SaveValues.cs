@@ -9,6 +9,7 @@ public class SaveValues : MonoBehaviour
     public TMP_Text amount;
     SceneSwitcher sS;
     public GameObject panel;
+    public GameObject table;
 
     //Saves the balance and the bet amounts into a text file
     public void WriteToFile()
@@ -39,6 +40,7 @@ public class SaveValues : MonoBehaviour
     {
         if (balNum == 0)
         {
+            table.SetActive(false);
             sS.WheelScene();
         }
 
