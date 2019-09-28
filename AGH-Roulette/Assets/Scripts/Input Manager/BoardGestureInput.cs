@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ExampleGestureInput : MonoBehaviour
+public class BoardGestureInput : MonoBehaviour
 {
     public GameObject panel;
     public TMP_Text amount;
@@ -15,7 +15,7 @@ public class ExampleGestureInput : MonoBehaviour
 
     void Update()
     {
-        if (!first)
+        if (!first && panel.activeSelf)
         {
             bPT = panel.GetComponent<BetPanelTimer>();
             bPT.CallTimer();

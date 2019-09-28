@@ -24,14 +24,12 @@ public class RouletteWheelSpin : MonoBehaviour
 
 
     public Button back;
-    public Button newBet;
 
     // Start is called before the first frame update
     void Start()
     {
         sR = FindObjectOfType<SpinResult>();
 
-        newBet.GetComponentInChildren<Text>().color = Color.black;
         winner = false;
         check = false;
 
@@ -115,8 +113,6 @@ public class RouletteWheelSpin : MonoBehaviour
     public void ShowButtons()
     {
         back.interactable = true;
-        newBet.interactable = true;
-        newBet.GetComponentInChildren<Text>().color = Color.white;
     }
 }
 

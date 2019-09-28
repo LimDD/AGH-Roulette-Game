@@ -40,7 +40,6 @@ public class GestureInputManager : MonoBehaviour {
 		if (_Instance == null) {
 			_Instance = this;
 			isActive = true;
-			DontDestroyOnLoad(gameObject);
 			oneFinger = new TapInfo(); //Initialize necessary tap info.
 			multiFinger = new TapInfo();
 			keyboardInfo = new TapInfo();
