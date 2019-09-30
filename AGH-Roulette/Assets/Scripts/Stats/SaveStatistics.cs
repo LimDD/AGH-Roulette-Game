@@ -63,7 +63,14 @@ public class SaveStatistics : MonoBehaviour
         {
             if (!(line.Contains("Coins:")))
             {
-                amount += int.Parse(line);
+                int.TryParse(line, out int temp);
+                amount += temp;
+
+                if (amount == 0)
+                {
+                    Debug.Log("Error"+line);
+                }
+
                 bets++;
             }
         }
