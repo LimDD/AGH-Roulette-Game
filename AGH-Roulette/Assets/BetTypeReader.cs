@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
 using System.Collections;
+using TMPro;
 
 public class BetTypeReader : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class BetTypeReader : MonoBehaviour
     public float targetTime;
     bool inFocus;
 
+    public void Start()
+    {
+        nRS = FindObjectOfType<NumberReaderScript>();
+    }
+
     public void CallTimer()
     {
         StartCoroutine(StartCountdown(0.2f));
@@ -24,8 +30,19 @@ public class BetTypeReader : MonoBehaviour
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
-        BetType();
 
+        if (btn.name == "Zoomed Button")
+        {
+            string num = btn.GetComponentInChildren<TMP_Text>().text;
+            int i = int.Parse(num);
+            nRS.SetNumber(i);
+            nRS.ReadNumber();
+        }
+
+        else
+        {
+            BetType();
+        }
     }
 
     private void BetType()

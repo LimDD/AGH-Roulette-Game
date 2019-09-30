@@ -673,6 +673,7 @@ MonoBehaviour:
   audioSource: {fileID: 18504153}
   sound: {fileID: 0}
   btnNum: {fileID: 940298903}
+  time: 0.6
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1084,7 @@ MonoBehaviour:
   audioSource: {fileID: 22643036}
   sound: {fileID: 8300000, guid: 5633c6b21c2b9c341a740c2a8280bcfe, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +1464,7 @@ MonoBehaviour:
   audioSource: {fileID: 28234595}
   sound: {fileID: 0}
   btnNum: {fileID: 1751334348}
+  time: 0.6
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1841,6 +1844,7 @@ MonoBehaviour:
   audioSource: {fileID: 35355877}
   sound: {fileID: 0}
   btnNum: {fileID: 1477539041}
+  time: 0.6
 --- !u!1 &40712007
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +1978,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 945958812}
+  time: 0
 --- !u!114 &55040741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2850,6 +2855,7 @@ MonoBehaviour:
   audioSource: {fileID: 84177459}
   sound: {fileID: 8300000, guid: f0fd263783d4f7b45952e439c894c662, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3619,6 +3625,7 @@ MonoBehaviour:
   audioSource: {fileID: 162625824}
   sound: {fileID: 0}
   btnNum: {fileID: 1933396133}
+  time: 0.6
 --- !u!1 &163105537
 GameObject:
   m_ObjectHideFlags: 0
@@ -4589,6 +4596,7 @@ MonoBehaviour:
   audioSource: {fileID: 199731308}
   sound: {fileID: 0}
   btnNum: {fileID: 855363968}
+  time: 0.6
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -5833,6 +5841,7 @@ MonoBehaviour:
   audioSource: {fileID: 256244951}
   sound: {fileID: 0}
   btnNum: {fileID: 1534680679}
+  time: 0.6
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,6 +6614,7 @@ MonoBehaviour:
   audioSource: {fileID: 301854775}
   sound: {fileID: 0}
   btnNum: {fileID: 929073122}
+  time: 0.6
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -6874,6 +6884,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 541550023}
+  time: 0
 --- !u!114 &328673772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7420,6 +7431,7 @@ MonoBehaviour:
   audioSource: {fileID: 329475465}
   sound: {fileID: 0}
   btnNum: {fileID: 97601917}
+  time: 0.6
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -8362,6 +8374,7 @@ MonoBehaviour:
   audioSource: {fileID: 458555059}
   sound: {fileID: 0}
   btnNum: {fileID: 184122278}
+  time: 0.6
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -8772,6 +8785,7 @@ MonoBehaviour:
   audioSource: {fileID: 469675283}
   sound: {fileID: 8300000, guid: 25f18ad4be124b1429a4903d630af82b, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -10136,6 +10150,7 @@ MonoBehaviour:
   audioSource: {fileID: 550351223}
   sound: {fileID: 0}
   btnNum: {fileID: 154903446}
+  time: 0.6
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -10860,6 +10875,7 @@ MonoBehaviour:
   audioSource: {fileID: 561959466}
   sound: {fileID: 8300000, guid: 49c33c6ad9ccdcb479c8658ebe243e5f, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11073,6 +11089,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1171451375}
+  time: 0
 --- !u!114 &566553276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11650,6 +11667,7 @@ MonoBehaviour:
   audioSource: {fileID: 571273871}
   sound: {fileID: 8300000, guid: 5ad20305a16b1ce48a1c8f1e6d364845, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -12217,6 +12235,7 @@ MonoBehaviour:
   audioSource: {fileID: 595861951}
   sound: {fileID: 8300000, guid: 015efb0f6945823449c66d6c1c2e5253, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &604232372
 GameObject:
   m_ObjectHideFlags: 0
@@ -12273,6 +12292,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1992966967}
+  time: 0
 --- !u!114 &604232375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12850,6 +12870,7 @@ MonoBehaviour:
   audioSource: {fileID: 616024478}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -13427,6 +13448,7 @@ MonoBehaviour:
   audioSource: {fileID: 635001765}
   sound: {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -14121,6 +14143,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1711038931}
+  time: 0.2
 --- !u!114 &697793730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14658,6 +14681,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1521605602}
+  time: 0
 --- !u!114 &765269729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15768,6 +15792,7 @@ MonoBehaviour:
   audioSource: {fileID: 825994019}
   sound: {fileID: 0}
   btnNum: {fileID: 1603466983}
+  time: 0.6
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -16147,6 +16172,7 @@ MonoBehaviour:
   audioSource: {fileID: 836823910}
   sound: {fileID: 0}
   btnNum: {fileID: 682947526}
+  time: 0.6
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -17323,6 +17349,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 163105539}
+  time: 0
 --- !u!114 &915407014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19067,6 +19094,7 @@ MonoBehaviour:
   audioSource: {fileID: 958431355}
   sound: {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -19446,6 +19474,7 @@ MonoBehaviour:
   audioSource: {fileID: 960676973}
   sound: {fileID: 0}
   btnNum: {fileID: 1447748271}
+  time: 0.6
 --- !u!1 &993047429
 GameObject:
   m_ObjectHideFlags: 0
@@ -20268,6 +20297,7 @@ MonoBehaviour:
   audioSource: {fileID: 1023385971}
   sound: {fileID: 0}
   btnNum: {fileID: 648230565}
+  time: 0.6
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -20647,6 +20677,7 @@ MonoBehaviour:
   audioSource: {fileID: 1036812363}
   sound: {fileID: 0}
   btnNum: {fileID: 1724643864}
+  time: 0.6
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -21484,6 +21515,7 @@ MonoBehaviour:
   audioSource: {fileID: 1142114613}
   sound: {fileID: 0}
   btnNum: {fileID: 1355835435}
+  time: 0.6
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -21863,6 +21895,7 @@ MonoBehaviour:
   audioSource: {fileID: 1157757731}
   sound: {fileID: 0}
   btnNum: {fileID: 584579355}
+  time: 0.6
 --- !u!1 &1161824144
 GameObject:
   m_ObjectHideFlags: 0
@@ -22530,6 +22563,7 @@ MonoBehaviour:
   audioSource: {fileID: 1177302156}
   sound: {fileID: 0}
   btnNum: {fileID: 563829116}
+  time: 0.6
 --- !u!1 &1189270744
 GameObject:
   m_ObjectHideFlags: 0
@@ -23237,6 +23271,7 @@ MonoBehaviour:
   audioSource: {fileID: 1205669526}
   sound: {fileID: 0}
   btnNum: {fileID: 1785434556}
+  time: 0.6
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -23616,6 +23651,7 @@ MonoBehaviour:
   audioSource: {fileID: 1227263172}
   sound: {fileID: 0}
   btnNum: {fileID: 712825362}
+  time: 0.6
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -23995,6 +24031,7 @@ MonoBehaviour:
   audioSource: {fileID: 1246405279}
   sound: {fileID: 0}
   btnNum: {fileID: 532980707}
+  time: 0.6
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -24268,6 +24305,7 @@ MonoBehaviour:
   audioSource: {fileID: 1258632487}
   sound: {fileID: 0}
   btnNum: {fileID: 551281552}
+  time: 0.6
 --- !u!114 &1258632484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24798,6 +24836,7 @@ MonoBehaviour:
   audioSource: {fileID: 1323412635}
   sound: {fileID: 0}
   btnNum: {fileID: 947974665}
+  time: 0.6
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -25208,6 +25247,7 @@ MonoBehaviour:
   audioSource: {fileID: 1334521025}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -25746,6 +25786,7 @@ MonoBehaviour:
   audioSource: {fileID: 1359132695}
   sound: {fileID: 0}
   btnNum: {fileID: 956118838}
+  time: 0.6
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -27052,6 +27093,7 @@ MonoBehaviour:
   audioSource: {fileID: 1511159815}
   sound: {fileID: 0}
   btnNum: {fileID: 1832346318}
+  time: 0.6
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -27934,6 +27976,7 @@ MonoBehaviour:
   audioSource: {fileID: 1527291871}
   sound: {fileID: 0}
   btnNum: {fileID: 1203901641}
+  time: 0.6
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -29251,6 +29294,7 @@ MonoBehaviour:
   audioSource: {fileID: 1610360094}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -29630,6 +29674,7 @@ MonoBehaviour:
   audioSource: {fileID: 1617909957}
   sound: {fileID: 0}
   btnNum: {fileID: 1389275858}
+  time: 0.6
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -31381,6 +31426,7 @@ MonoBehaviour:
   audioSource: {fileID: 1716691575}
   sound: {fileID: 0}
   btnNum: {fileID: 272479952}
+  time: 0.6
 --- !u!1 &1720359095
 GameObject:
   m_ObjectHideFlags: 0
@@ -32322,6 +32368,7 @@ MonoBehaviour:
   audioSource: {fileID: 1756720137}
   sound: {fileID: 8300000, guid: 55569282c2fd3084fa9868091b52f775, type: 3}
   btnNum: {fileID: 0}
+  time: 0.6
 --- !u!1 &1785434554
 GameObject:
   m_ObjectHideFlags: 0
@@ -32535,6 +32582,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1095946964}
+  time: 0
 --- !u!114 &1802963253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33397,6 +33445,7 @@ MonoBehaviour:
   audioSource: {fileID: 1835142232}
   sound: {fileID: 0}
   btnNum: {fileID: 426016973}
+  time: 0.6
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -34090,6 +34139,7 @@ MonoBehaviour:
   audioSource: {fileID: 1916122773}
   sound: {fileID: 0}
   btnNum: {fileID: 1700215601}
+  time: 0.6
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -34469,6 +34519,7 @@ MonoBehaviour:
   audioSource: {fileID: 1928020091}
   sound: {fileID: 0}
   btnNum: {fileID: 1374688899}
+  time: 0.6
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -34920,6 +34971,7 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 538596008}
+  time: 0
 --- !u!114 &2000296557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35466,6 +35518,7 @@ MonoBehaviour:
   audioSource: {fileID: 2012285375}
   sound: {fileID: 0}
   btnNum: {fileID: 2050043416}
+  time: 0.6
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -35845,6 +35898,7 @@ MonoBehaviour:
   audioSource: {fileID: 2033281534}
   sound: {fileID: 0}
   btnNum: {fileID: 291081664}
+  time: 0.6
 --- !u!1 &2050043414
 GameObject:
   m_ObjectHideFlags: 0
@@ -36784,6 +36838,7 @@ MonoBehaviour:
   audioSource: {fileID: 2094731945}
   sound: {fileID: 0}
   btnNum: {fileID: 760437842}
+  time: 0.6
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -37163,6 +37218,7 @@ MonoBehaviour:
   audioSource: {fileID: 2096150382}
   sound: {fileID: 0}
   btnNum: {fileID: 794607843}
+  time: 0.6
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -37542,6 +37598,7 @@ MonoBehaviour:
   audioSource: {fileID: 2100022151}
   sound: {fileID: 0}
   btnNum: {fileID: 13776070}
+  time: 0.6
 --- !u!1 &2128767682
 GameObject:
   m_ObjectHideFlags: 0
@@ -37921,6 +37978,7 @@ MonoBehaviour:
   audioSource: {fileID: 2128767691}
   sound: {fileID: 0}
   btnNum: {fileID: 1805067612}
+  time: 0.6
 --- !u!1 &2133633091
 GameObject:
   m_ObjectHideFlags: 0

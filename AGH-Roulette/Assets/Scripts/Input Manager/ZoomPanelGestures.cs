@@ -9,6 +9,7 @@ public class ZoomPanelGestures : MonoBehaviour
     string findHalf;
     string btnName;
     bool first;
+    float height;
 
     public Button topL;
     public Button topM;
@@ -22,6 +23,7 @@ public class ZoomPanelGestures : MonoBehaviour
 
     private void Start()
     {
+        height = Screen.height;
         findHalf = "";
         btnName = "";
         first = true;
@@ -32,7 +34,6 @@ public class ZoomPanelGestures : MonoBehaviour
         if (type == "Click" && !first)
         {
             float y = Input.mousePosition.y;
-            float height = Screen.height;
 
             float half = height / 2;
 
@@ -40,17 +41,34 @@ public class ZoomPanelGestures : MonoBehaviour
 
             if (y > half + mid)
             {
-                findHalf = "top";
+                if (findHalf == "top")
+                {
+                    findHalf = "";
+                }
+
+                else
+                {
+                    findHalf = "top";
+                }
             }
 
             else if (y < half - mid)
             {
-                findHalf = "bot";
+                if (findHalf == "bot")
+                {
+                    findHalf = "";
+                }
+                else
+                {
+                    findHalf = "bot";
+                }
+
             }
 
             else
             {
                 btnName = zoom.name;
+                EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
                 zoom.Select();
                 findHalf = "";
             }
@@ -65,37 +83,50 @@ public class ZoomPanelGestures : MonoBehaviour
         {
             if (type.Contains("Up"))
             {
-                btnName = topM.name;
-                topM.Select();
-                findHalf = "";
+                if (topM.IsActive())
+                {
+                    btnName = topM.name;
+                    topM.Select();
+                }
             }
 
             else if (type.Contains("Down"))
             {
-                btnName = botM.name;
-                botM.Select();
-                findHalf = "";
+                if (botM.IsActive())
+                {
+                    btnName = botM.name;
+                    botM.Select();
+                }
             }
 
             else if (type.Contains("Left"))
             {
                 if (findHalf == "top")
                 {
-                    btnName = topL.name;
-                    topL.Select();
+                    if (topL.IsActive())
+                    {
+                        btnName = topL.name;
+                        topL.Select();
+                    }
                 }
 
                 else if (findHalf == "bot")
                 {
-                    btnName = botL.name;
-                    botL.Select();
+                    if (botL.IsActive())
+                    {
+                        btnName = botL.name;
+                        botL.Select();
+                    }
                 }
 
                 else
                 {
-                    btnName = midL.name;
-                    midL.Select();
-                    findHalf = "";
+                    if (midL.IsActive())
+                    {
+                        btnName = midL.name;
+                        midL.Select();
+                        findHalf = "";
+                    }
                 }
             }
 
@@ -103,21 +134,30 @@ public class ZoomPanelGestures : MonoBehaviour
             {
                 if (findHalf == "top")
                 {
-                    btnName = topR.name;
-                    topR.Select();
+                    if (topR.IsActive())
+                    {
+                        btnName = topR.name;
+                        topR.Select();
+                    }
                 }
 
                 else if (findHalf == "bot")
                 {
-                    btnName = botR.name;
-                    botR.Select();
+                    if (botR.IsActive())
+                    {
+                        btnName = botR.name;
+                        botR.Select();
+                    }
                 }
 
                 else
                 {
-                    btnName = midR.name;
-                    midR.Select();
-                    findHalf = "";
+                    if (midR.IsActive())
+                    {
+                        btnName = midR.name;
+                        midR.Select();
+                        findHalf = "";
+                    }
                 }
             }
         }
