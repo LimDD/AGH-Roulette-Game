@@ -209,7 +209,7 @@ public class ZoomPanelGestures : MonoBehaviour
                     break;
 
                 case "Zoomed Button":
-                    EventSystem.current.SetSelectedGameObject(botR.gameObject);
+                    EventSystem.current.SetSelectedGameObject(zoom.gameObject);
                     zoom.onClick.Invoke();
                     break;
 
