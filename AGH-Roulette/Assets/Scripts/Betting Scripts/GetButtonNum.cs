@@ -164,6 +164,13 @@ public class GetButtonNum : MonoBehaviour
         int botMInt = chosenNum + 3;
         int botRInt = chosenNum + 4;
 
+        if (topMInt < 0)
+        {
+            topMInt = 0;
+            topLNum.gameObject.SetActive(false);
+            topRNum.gameObject.SetActive(false);
+        }
+
         topLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topLInt);
         topMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topMInt);
         topRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topRInt);
