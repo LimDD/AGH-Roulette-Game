@@ -16802,6 +16802,14 @@ MonoBehaviour:
   botL: {fileID: 940745560}
   botM: {fileID: 2081244241}
   botR: {fileID: 1666046602}
+  topLNum: {fileID: 566553277}
+  topMNum: {fileID: 765269730}
+  topRNum: {fileID: 604232376}
+  midLNum: {fileID: 328673773}
+  midRNum: {fileID: 1802963254}
+  botLNum: {fileID: 1666046602}
+  botMNum: {fileID: 915407015}
+  botRNum: {fileID: 2000296558}
   num: 0
 --- !u!114 &863234867
 MonoBehaviour:

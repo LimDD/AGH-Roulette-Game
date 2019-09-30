@@ -8,6 +8,7 @@ public class GetButtonNum : MonoBehaviour
 {
     public TMP_Text tNum;
     public Vector4 tNumColor;
+
     public Button topL;
     public Button topM;
     public Button topR;
@@ -25,6 +26,7 @@ public class GetButtonNum : MonoBehaviour
     public Button botLNum;
     public Button botMNum;
     public Button botRNum;
+
     public int num;
 
     //GetNumAndColor
@@ -46,6 +48,7 @@ public class GetButtonNum : MonoBehaviour
         tNum.text = System.Convert.ToString(num);
         GameObject.Find("Zoomed Button").GetComponent<Image>().color = buttonColor;
         BetType(num);
+        SetSurroundingNum(num);
     }
 
     //GetNumber
@@ -58,7 +61,7 @@ public class GetButtonNum : MonoBehaviour
 
         //Removes all non digit characters from string and saves as string.
         string strNum = Regex.Replace(name, "[^.0-9]", "");
-        
+
         //Converts saved number string to type int.
         int num = System.Convert.ToInt32(strNum);
 
@@ -107,16 +110,26 @@ public class GetButtonNum : MonoBehaviour
         {
             midL.GetComponentInChildren<Text>().text = "Street\nBet";
             botL.GetComponentInChildren<Text>().text = "Six Line\nBet";
+            topLNum.gameObject.SetActive(false);
+            topMNum.gameObject.SetActive(false);
+            midLNum.gameObject.SetActive(false);
+            botLNum.gameObject.SetActive(false);
 
             if (n == 1)
             {
                 topL.GetComponentInChildren<Text>().text = "Basket\nBet";
                 topR.GetComponentInChildren<Text>().text = "Trio\nBet";
+                topLNum.gameObject.SetActive(false);
+                midLNum.gameObject.SetActive(false);
+                botLNum.gameObject.SetActive(false);
             }
 
             else
             {
                 topL.GetComponentInChildren<Text>().text = "Six Line\nBet";
+                topLNum.gameObject.SetActive(false);
+                midLNum.gameObject.SetActive(false);
+                botLNum.gameObject.SetActive(false);
             }
         }
 
@@ -124,6 +137,8 @@ public class GetButtonNum : MonoBehaviour
         {
             topL.GetComponentInChildren<Text>().text = "Trio\nBet";
             topR.GetComponentInChildren<Text>().text = "Trio\nBet";
+            topLNum.gameObject.SetActive(false);
+
         }
 
         //Bottom buttons on the bottom row cannot be played
@@ -135,7 +150,30 @@ public class GetButtonNum : MonoBehaviour
             botLNum.gameObject.SetActive(false);
             botMNum.gameObject.SetActive(false);
             botRNum.gameObject.SetActive(false);
+
         }
+    }
+
+    public void SetSurroundingNum(int chosenNum)
+    {
+        int topLInt = chosenNum - 4;
+        int topMInt = chosenNum - 3;
+        int topRInt = chosenNum - 2;
+        int midLInt = chosenNum - 1;
+        int midRInt = chosenNum + 1;
+        int botLInt = chosenNum + 2;
+        int botMInt = chosenNum + 3;
+        int botRInt = chosenNum + 4;
+
+        topLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topLInt);
+        topMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topMInt);
+        topRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topRInt);
+        midLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(midLInt);
+        midRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(midRInt);
+        botLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botLInt);
+        botMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botMInt);
+        botRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botRInt);
+
     }
 }
 
