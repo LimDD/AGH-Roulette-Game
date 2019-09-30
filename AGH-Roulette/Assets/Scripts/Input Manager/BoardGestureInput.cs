@@ -1,21 +1,29 @@
-﻿using System.Text.RegularExpressions;
-using TMPro;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BoardGestureInput : MonoBehaviour
 {
     public GameObject panel;
-    public TMP_Text amount;
-    public TMP_Text balance;
-    public Button confirm;
-    bool first;
+    public bool first;
     BetPanelTimer bPT;
+    BettingGestures bG;
+    ZoomPanelGestures zPG;
     // Update is called once per frame
+
+    public void SetFirst()
+    {
+        first = false;
+    }
+
+    private void Start()
+    {
+        bG = panel.GetComponent<BettingGestures>();
+        zPG = panel.GetComponent<ZoomPanelGestures>();
+    }
 
     void Update()
     {
-        if (!first && panel.activeSelf)
+        if (!first && panel.name == "Betting Coins Panel" && panel.activeSelf)
         {
             bPT = panel.GetComponent<BetPanelTimer>();
             bPT.CallTimer();
@@ -25,83 +33,18 @@ public class BoardGestureInput : MonoBehaviour
         if (GestureInputManager.CurrentInput != InputAction.Null)
         {
             string type = GestureInputManager.CurrentInput.ToString();
-
             Debug.Log(type);
 
-            if (type == "DoubleClick")
+            if (panel.activeSelf)
             {
-                if (balance.text != "0")
+                if (panel.name == "Betting Coins Panel")
                 {
-                    first = false;
-                    confirm.onClick.Invoke();
-                }
-            }
-            
-            if (type.Contains("Swipe"))
-            {
-                if (bPT == null)
-                {
-                    bPT = panel.GetComponent<BetPanelTimer>();
+                    bG.Gestures(type);
                 }
 
-                bPT.CallTimer();
-                if (panel.activeSelf)
+                else if (panel.name == "Zoom Panel")
                 {
-                    string temp = Regex.Replace(balance.text, "[^.0-9]", "");
-
-                    int am = int.Parse(amount.text);
-
-                    int bal = int.Parse(temp);
-
-                    if (type.Contains("Up"))
-                    {
-                        if (am + 100 <= bal)
-                        {
-                            am += 100;
-                            
-                        }
-
-                        else
-                        {
-                            am = bal;
-                        }
-
-                        amount.text = am.ToString();
-                    }
-
-                    else if (type.Contains("Down"))
-                    {
-                        if (am - 100 >= 10)
-                        {
-                            am -= 100;
-                            
-                        }
-
-                        else
-                        {
-                            am = 10;
-                        }
-
-                        amount.text = am.ToString();
-                    }
-
-                    else if (type.Contains("Left"))
-                    {
-                        if (am - 10 >= 10)
-                        {
-                            am -= 10;
-                            amount.text = am.ToString();
-                        }
-                    }
-
-                    else if (type.Contains("Right"))
-                    {
-                        if (am + 10 <= bal)
-                        {
-                            am += 10;
-                            amount.text = am.ToString();
-                        }
-                    }
+                    zPG.Gestures(type);
                 }
             }
         }

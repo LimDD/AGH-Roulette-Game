@@ -111,7 +111,6 @@ public class GetButtonNum : MonoBehaviour
             midL.GetComponentInChildren<Text>().text = "Street\nBet";
             botL.GetComponentInChildren<Text>().text = "Six Line\nBet";
             topLNum.gameObject.SetActive(false);
-            topMNum.gameObject.SetActive(false);
             midLNum.gameObject.SetActive(false);
             botLNum.gameObject.SetActive(false);
 

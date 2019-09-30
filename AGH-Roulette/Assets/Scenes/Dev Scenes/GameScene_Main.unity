@@ -1992,7 +1992,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 55040740}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2022,7 +2022,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -2042,7 +2042,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 55040743}
   m_OnClick:
     m_PersistentCalls:
@@ -2310,6 +2310,8 @@ GameObject:
   - component: {fileID: 78692587}
   - component: {fileID: 78692586}
   - component: {fileID: 78692588}
+  - component: {fileID: 78692590}
+  - component: {fileID: 78692589}
   m_Layer: 0
   m_Name: Zoom Panel
   m_TagString: Untagged
@@ -2403,6 +2405,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1519994127}
+--- !u!114 &78692589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78692584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9c08eca1d6bf214e8ca21447db2582e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topL: {fileID: 1664672278}
+  topM: {fileID: 681424414}
+  topR: {fileID: 2133633094}
+  midL: {fileID: 813376614}
+  midR: {fileID: 1563760643}
+  botL: {fileID: 940745560}
+  botM: {fileID: 2081244241}
+  botR: {fileID: 1666046602}
+  zoom: {fileID: 697793730}
+--- !u!114 &78692590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78692584}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34972c6f7fe65dd478e7c92ddac532ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 78692584}
+  first: 0
 --- !u!1 &84177449
 GameObject:
   m_ObjectHideFlags: 0
@@ -6855,7 +6892,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 328673771}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6885,7 +6922,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -6905,7 +6942,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 328673774}
   m_OnClick:
     m_PersistentCalls:
@@ -7418,7 +7455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -59, y: -56.7}
+  m_AnchoredPosition: {x: -59, y: -56.69995}
   m_SizeDelta: {x: 215, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &396104703
@@ -8901,7 +8938,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 520869657}
-  - component: {fileID: 520869656}
   - component: {fileID: 520869655}
   m_Layer: 0
   m_Name: InputManager
@@ -8922,22 +8958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dec27e22d1201df409ce5c99bb0ae8d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &520869656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520869654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 34972c6f7fe65dd478e7c92ddac532ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  panel: {fileID: 1519994127}
-  amount: {fileID: 228806702}
-  balance: {fileID: 1189270746}
-  confirm: {fileID: 1523562245}
 --- !u!4 &520869657
 Transform:
   m_ObjectHideFlags: 0
@@ -11071,7 +11091,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 566553275}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11101,7 +11121,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -11121,7 +11141,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 566553278}
   m_OnClick:
     m_PersistentCalls:
@@ -12271,7 +12291,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 604232374}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12301,7 +12321,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -12321,7 +12341,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 604232377}
   m_OnClick:
     m_PersistentCalls:
@@ -13604,7 +13624,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.20001, y: 256.03}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &681424413
 AudioSource:
@@ -13871,7 +13891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -14119,7 +14139,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -14139,7 +14159,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 697793731}
   m_OnClick:
     m_PersistentCalls:
@@ -14251,7 +14271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -14656,7 +14676,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 765269728}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14686,7 +14706,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -14706,7 +14726,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 765269731}
   m_OnClick:
     m_PersistentCalls:
@@ -15085,7 +15105,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -249.79999, y: 6.03}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &813376613
 AudioSource:
@@ -15352,7 +15372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -17321,7 +17341,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 915407013}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -17351,7 +17371,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -17371,7 +17391,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 915407016}
   m_OnClick:
     m_PersistentCalls:
@@ -17824,7 +17844,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -249.79999, y: -243.96999}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &940745559
 AudioSource:
@@ -18091,7 +18111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -27044,6 +27064,8 @@ GameObject:
   - component: {fileID: 1519994130}
   - component: {fileID: 1519994129}
   - component: {fileID: 1519994131}
+  - component: {fileID: 1519994132}
+  - component: {fileID: 1519994133}
   m_Layer: 5
   m_Name: Betting Coins Panel
   m_TagString: Untagged
@@ -27127,6 +27149,35 @@ MonoBehaviour:
   amount: {fileID: 228806702}
   bal: {fileID: 1189270746}
   targetTime: 0.8
+--- !u!114 &1519994132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519994127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce30351c3c8810440b6f7fbe305de5e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amount: {fileID: 228806702}
+  balance: {fileID: 1189270746}
+  confirm: {fileID: 1523562245}
+--- !u!114 &1519994133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1519994127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34972c6f7fe65dd478e7c92ddac532ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 1519994127}
+  first: 0
 --- !u!1 &1521605600
 GameObject:
   m_ObjectHideFlags: 0
@@ -28349,7 +28400,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250, y: -0.000029087}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1563760642
 AudioSource:
@@ -28616,7 +28667,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -29849,7 +29900,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -249.79999, y: 256.03003}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1664672277
 AudioSource:
@@ -30116,7 +30167,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -30173,7 +30224,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250.20001, y: -243.96997}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1666046601
 AudioSource:
@@ -30440,7 +30491,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -32443,7 +32494,7 @@ GameObject:
   - component: {fileID: 1802963253}
   - component: {fileID: 1802963252}
   m_Layer: 0
-  m_Name: Right Middle
+  m_Name: Right Middle Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32502,7 +32553,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1802963252}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -32532,7 +32583,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -32552,7 +32603,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1802963255}
   m_OnClick:
     m_PersistentCalls:
@@ -34887,7 +34938,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2000296556}
-          m_MethodName: CallTimer
+          m_MethodName: 
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -34917,7 +34968,7 @@ MonoBehaviour:
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
     m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
+  m_Transition: 0
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -34937,7 +34988,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2000296559}
   m_OnClick:
     m_PersistentCalls:
@@ -36070,7 +36121,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0000022054, y: -243.97}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &2081244240
 AudioSource:
@@ -36337,7 +36388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:
@@ -37910,7 +37961,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 250, y: 256.03003}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &2133633093
 AudioSource:
@@ -38177,7 +38228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Delegates:
-  - eventID: 0
+  - eventID: 9
     callback:
       m_PersistentCalls:
         m_Calls:

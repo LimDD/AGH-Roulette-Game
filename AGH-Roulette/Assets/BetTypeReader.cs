@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
-using TMPro;
 using UnityEngine.UI;
 using System.Text.RegularExpressions;
 using System.Collections;
-using UnityEngine.EventSystems;
 
-public class BetTypeReader : MonoBehaviour, IPointerExitHandler
+public class BetTypeReader : MonoBehaviour
 {
     public AudioSource source;
     public AudioClip clip1;
@@ -19,28 +17,15 @@ public class BetTypeReader : MonoBehaviour, IPointerExitHandler
 
     public void CallTimer()
     {
-        Debug.Log(btn.name);
-        inFocus = true;
-        StartCoroutine(StartCountdown(0.6f));
+        StartCoroutine(StartCountdown(0.2f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
+        BetType();
 
-        //If the button is still in focus
-        if (inFocus)
-        {
-            inFocus = false;
-            BetType();
-        }
-    }
-
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        //If the pointer has let the button
-        inFocus = false;
     }
 
     private void BetType()
