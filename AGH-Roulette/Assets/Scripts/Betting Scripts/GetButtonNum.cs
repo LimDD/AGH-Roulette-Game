@@ -16,6 +16,15 @@ public class GetButtonNum : MonoBehaviour
     public Button botL;
     public Button botM;
     public Button botR;
+
+    public Button topLNum;
+    public Button topMNum;
+    public Button topRNum;
+    public Button midLNum;
+    public Button midRNum;
+    public Button botLNum;
+    public Button botMNum;
+    public Button botRNum;
     public int num;
 
     //GetNumAndColor
@@ -67,6 +76,14 @@ public class GetButtonNum : MonoBehaviour
         botL.gameObject.SetActive(true);
         botM.gameObject.SetActive(true);
         botR.gameObject.SetActive(true);
+        topLNum.gameObject.SetActive(true);
+        topMNum.gameObject.SetActive(true);
+        topRNum.gameObject.SetActive(true);
+        midLNum.gameObject.SetActive(true);
+        midRNum.gameObject.SetActive(true);
+        botLNum.gameObject.SetActive(true);
+        botMNum.gameObject.SetActive(true);
+        botRNum.gameObject.SetActive(true);
 
         //Sets the button text back to default
         topL.GetComponentInChildren<Text>().text = "Corner\nBet";
@@ -80,6 +97,9 @@ public class GetButtonNum : MonoBehaviour
             botR.gameObject.SetActive(false);
             midR.gameObject.SetActive(false);
             topR.gameObject.SetActive(false);
+            botRNum.gameObject.SetActive(false);
+            midRNum.gameObject.SetActive(false);
+            topRNum.gameObject.SetActive(false);
         }
 
         //Makes left column left buttons names change for due to the different bets that can be made
@@ -112,6 +132,9 @@ public class GetButtonNum : MonoBehaviour
             botL.gameObject.SetActive(false);
             botM.gameObject.SetActive(false);
             botR.gameObject.SetActive(false);
+            botLNum.gameObject.SetActive(false);
+            botMNum.gameObject.SetActive(false);
+            botRNum.gameObject.SetActive(false);
         }
     }
 }
