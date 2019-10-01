@@ -34,6 +34,11 @@ public class ReadBetNums : MonoBehaviour
         {
             clips = numberReader.GetNumberAudio(i);
             clipList.Add(clips[0]);
+
+            if (i > 20)
+            {
+                clipList.Add(clips[1]);
+            }
         }
 
         lastClip = clipList.Count;
