@@ -3,11 +3,16 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Text.RegularExpressions;
 using TMPro;
+using System.Collections.Generic;
 
 public class GetButtonNum : MonoBehaviour
 {
     public TMP_Text tNum;
+
     public Vector4 tNumColor;
+    Vector4 GREEN = new Vector4(0.09f, 0.73f, 0.0f, 1.0f);
+    Vector4 RED = new Vector4(1.0f, 0.0f, 0.0f, 1.0f);
+    Vector4 BLACK = new Vector4(0.0f, 0.0f, 0.0f, 1.0f);
 
     public Button topL;
     public Button topM;
@@ -28,6 +33,49 @@ public class GetButtonNum : MonoBehaviour
     public Button botRNum;
 
     public int num;
+
+    public List<int> REDNUMBERS = new List<int>()
+    {
+        1,
+        3,
+        5,
+        7,
+        9,
+        12,
+        14,
+        16,
+        18,
+        19,
+        21,
+        23,
+        25,
+        27,
+        30,
+        32,
+        34,
+        36
+    };
+    public List<int> BLACKNUMBERS = new List<int>()
+    {
+        2,
+        4,
+        6,
+        8,
+        10,
+        11,
+        13,
+        15,
+        17,
+        20,
+        22,
+        24,
+        26,
+        28,
+        29,
+        31,
+        33,
+        35
+    };
 
     //GetNumAndColor
     //Gets the number and color of the button clicked on the board
@@ -180,6 +228,32 @@ public class GetButtonNum : MonoBehaviour
         botMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botMInt);
         botRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botRInt);
 
+        SetColor(topLNum);
+        SetColor(topMNum);
+        SetColor(topRNum);
+        SetColor(midLNum);
+        SetColor(midRNum);
+        SetColor(botLNum);
+        SetColor(botMNum);
+        SetColor(botRNum);
+    }
+
+    public void SetColor(Button button)
+    {
+        int buttonNumber = System.Convert.ToInt32(button.GetComponentInChildren<TMP_Text>().text);
+
+        if (REDNUMBERS.Contains(buttonNumber))
+        {
+            button.GetComponent<Image>().color = RED;
+        }
+        else if (BLACKNUMBERS.Contains(buttonNumber))
+        {
+            button.GetComponent<Image>().color = BLACK;
+        }
+        else
+        {
+            button.GetComponent<Image>().color = GREEN;
+        }
     }
 }
 
