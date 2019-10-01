@@ -14,11 +14,9 @@ public class NumberReaderScript : MonoBehaviour
     public int currentClip;
     public int lastClip;
 
-
     private void Awake()
     {
         audioSource = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -26,6 +24,7 @@ public class NumberReaderScript : MonoBehaviour
     {
         //Iterating through clips
         IterateClips();
+
     }
 
     //IterateClips
@@ -41,13 +40,42 @@ public class NumberReaderScript : MonoBehaviour
             currentClip++;
         }
     }
-    
+
+    private void IterateClipList(List<AudioClip> clips)
+    {
+        while ((currentClip < lastClip) && (!audioSource.isPlaying))
+        {
+            Debug.Log("Playing clip" + currentClip + " of " + lastClip + " which is " + clips[currentClip].name);
+            audioSource.clip = clips[currentClip];
+            audioSource.Play();
+
+            currentClip++;
+        }
+    }
+
     //SetNumber
     //Takes in integer parameter
     //Sets integer parameter i as NumToRead
     public void SetNumber(int i)
     {
         NumToRead = i;
+    }
+
+    public void SetNumberList(List<int> num)
+    {
+        List<AudioClip> clipList = new List<AudioClip>();
+
+        foreach (int i in num)
+        {
+            clips = numberReader.GetNumberAudio(i);
+
+            clipList.Add(clips[0]);
+        }
+
+
+        lastClip = clipList.Count;
+        currentClip = 0;
+        IterateClipList(clipList);
     }
 
     //GetNumber

@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Text.RegularExpressions;
 using System.Collections;
 using TMPro;
+using System.Collections.Generic;
 
 public class BetTypeReader : MonoBehaviour
 {
@@ -13,16 +14,22 @@ public class BetTypeReader : MonoBehaviour
     public AudioClip clip4;
     public Button btn;
     NumberReaderScript nRS;
+    ReadBetNums rBN;
     public float targetTime;
-    bool inFocus;
+    List<int> numbers;
+    bool readType;
+    string betType;
+    string btnName;
 
     public void Start()
     {
         nRS = FindObjectOfType<NumberReaderScript>();
+        rBN = FindObjectOfType<ReadBetNums>();
     }
 
     public void CallTimer()
     {
+        readType = false;
         StartCoroutine(StartCountdown(0.2f));
     }
 
@@ -39,22 +46,44 @@ public class BetTypeReader : MonoBehaviour
             nRS.ReadNumber();
         }
 
-        else
+        else if (!readType)
         {
             BetType();
+            readType = true;
+        }
+
+        else
+        {
+            Button bNum = GameObject.Find("Zoomed Button").GetComponent<Button>();
+            string num = bNum.GetComponentInChildren<TMP_Text>().text;
+            int n = int.Parse(num);
+            numbers = ReadNums(n);
+
+            rBN.SetNumberList(numbers);
         }
     }
 
     private void BetType()
     {
         AudioClip myClip;
+        source.panStereo = 0f;
 
         myClip = clip1;
 
-        string betType = btn.GetComponentInChildren<Text>().text;
+        betType = btn.GetComponentInChildren<Text>().text;
 
         betType = Regex.Replace(betType, "\n", " ");
-        string btnName = btn.name;
+        btnName = btn.name;
+
+        if (btnName.Contains("Left"))
+        {
+            source.panStereo = -0.6f;
+        }
+
+        else
+        {
+            source.panStereo = 0.6f;
+        }
 
         if (btnName == "TopLeftButton" || btnName == "TopRightButton" || btnName == "BottomLeftButton" || btnName == "BottomRightButton")
         {
@@ -91,8 +120,150 @@ public class BetTypeReader : MonoBehaviour
                     break;
             }
         }
-            source.clip = myClip;
-            source.Play();
+
+        //Will have single bet audio to use here
+        else if (btnName == "Zoomed Button")
+        {
+            myClip = clip1;
+        }
+
+        source.clip = myClip;
+        source.Play();
+        CallTimer();
+    }
+
+    private List<int> ReadNums(int num)
+    {
+        List<int> betNums = new List<int>();
+
+        betNums.Add(num);
+
+        if (betType == "Split Bet")
+        {
+            switch (btnName)
+            {
+                case "TopMiddleButton":
+                    if (num < 3)
+                    {
+                        betNums.Add(0);
+                    }
+
+                    else
+                    {
+                        betNums.Add(num - 3);
+                    }
+                    break;
+
+                case "MiddleLeftButton":
+                    betNums.Add(num - 1);
+                    break;
+
+                case "MiddleRightButton":
+                    betNums.Add(num + 1);
+                    break;
+                case "BottomMiddleButton":
+                    betNums.Add(num + 3);
+                    break;
+            }
+        }
+
+        else if (betType == "Corner Bet")
+        {
+            switch (btnName)
+            {
+                case "TopLeftButton":
+                    betNums.Add(num - 1);
+                    betNums.Add(num - 4);
+                    betNums.Add(num - 3);
+                    break;
+
+                case "TopRightButton":
+                    betNums.Add(num - 3);
+                    betNums.Add(num - 2);
+                    betNums.Add(num + 1);
+                    break;
+
+                case "BottomLeftButton":
+                    betNums.Add(num + 2);
+                    betNums.Add(num + 3);
+                    betNums.Add(num - 1);
+                    break;
+                case "BottomRightButton":
+                    betNums.Add(num + 1);
+                    betNums.Add(num + 3);
+                    betNums.Add(num + 4);
+                    break;
+            }
+        }
+
+        else if (betType == "Street Bet")
+        {
+            betNums.Add(num + 1);
+            betNums.Add(num + 2);
+        }
+
+        else if (betType == "Trio Bet")
+        {
+            if (num == 1)
+            {
+                betNums.Add(0);
+                betNums.Add(2);
+            }
+
+            if (num == 2)
+            {
+                if (btnName == "TopLeftButton")
+                {
+                    betNums.Add(0);
+                    betNums.Add(1);
+                }
+
+                else
+                {
+                    betNums.Add(0);
+                    betNums.Add(3);
+                }
+            }
+
+            if (num == 3)
+            {
+                betNums.Add(0);
+                betNums.Add(2);
+            }
+        }
+
+        else if (betType == "Six Line Bet")
+        {
+            if (btnName == "TopLeftButton")
+            {
+                for (int i = 1; i < 6; i++)
+                {
+                    betNums.Add(num + i);
+                }
+            }
+
+            else
+            {
+                betNums.Add(num - 3);
+                betNums.Add(num - 2);
+                betNums.Add(num - 1);
+                betNums.Add(num + 1);
+                betNums.Add(num + 2);
+            }
+        }
+
+        else if (betType == "Basket Bet")
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (i != 1)
+                {
+                    betNums.Add(i);
+                }
+            }
+        }
+
+        return betNums;
     }
 }
 
