@@ -182,7 +182,7 @@ public class SaveBetInfo : MonoBehaviour
 
         else if (betType == "Six Line Bet")
         {
-            if (btnName == "TopLeftButton")
+            if (btnName == "BottomLeftButton")
             {
                 for (int i = 1; i < 6; i++)
                 {

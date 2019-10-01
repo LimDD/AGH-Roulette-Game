@@ -59,6 +59,8 @@ public class BetTypeReader : MonoBehaviour
             int n = int.Parse(num);
             numbers = ReadNums(n);
 
+            numbers.Sort();
+
             rBN.SetNumberList(numbers);
         }
     }
@@ -98,7 +100,7 @@ public class BetTypeReader : MonoBehaviour
 
                 case "Six Line Bet":
                     myClip = clip2;
-                    time = 1f;
+                    time = 1.1f;
                     break;
 
                 case "Basket Bet":
@@ -242,7 +244,7 @@ public class BetTypeReader : MonoBehaviour
 
         else if (betType == "Six Line Bet")
         {
-            if (btnName == "TopLeftButton")
+            if (btnName == "BottomLeftButton")
             {
                 for (int i = 1; i < 6; i++)
                 {
