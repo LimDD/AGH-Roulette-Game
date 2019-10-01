@@ -66,6 +66,8 @@ public class BetTypeReader : MonoBehaviour
     private void BetType()
     {
         AudioClip myClip;
+        float time = 0f;
+
         source.panStereo = 0f;
 
         myClip = clip1;
@@ -91,18 +93,22 @@ public class BetTypeReader : MonoBehaviour
             {
                 case "Corner Bet":
                     myClip = clip1;
+                    time = 0.8f;
                     break;
 
                 case "Six Line Bet":
                     myClip = clip2;
+                    time = 1f;
                     break;
 
                 case "Basket Bet":
                     myClip = clip4;
+                    time = 0.8f;
                     break;
 
                 case "Trio Bet":
                     myClip = clip3;
+                    time = 0.8f;
                     break;
             }
         }
@@ -113,10 +119,12 @@ public class BetTypeReader : MonoBehaviour
             {
                 case "Split Bet":
                     myClip = clip1;
+                    time = 0.8f;
                     break;
 
                 case "Street Bet":
                     myClip = clip2;
+                    time = 0.8f;
                     break;
             }
         }
@@ -129,7 +137,7 @@ public class BetTypeReader : MonoBehaviour
 
         source.clip = myClip;
         source.Play();
-        CallTimer();
+        StartCoroutine(StartCountdown(time));
     }
 
     private List<int> ReadNums(int num)
