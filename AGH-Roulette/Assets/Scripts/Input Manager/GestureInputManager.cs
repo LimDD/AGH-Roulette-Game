@@ -9,7 +9,6 @@ public class GestureInputManager : MonoBehaviour {
 	InputAction currentInput;
 	public static GestureInputManager _Instance;
 
-	int numClicked = 0; //The counter to check double click.
 	float angleRange = 30f;
 	float minSwipeDist = 100f;
 	float clickTime;
@@ -109,6 +108,7 @@ public class GestureInputManager : MonoBehaviour {
 			if (oneFinger.lastPressTime + dragThreshold > Time.time && oneFinger.lastPressTime != 0) {
 				Vector2 endPos = Input.mousePosition;
 				currentInput = CalculateSwipe(endPos - startPressPosition);
+                Debug.Log(currentInput);
 				//If the input turns out to be click.
 				if (currentInput == InputAction.Click) {
 					currentInput = InputAction.Null; //Reset it to null so you don't trigger click twice.
@@ -393,30 +393,64 @@ public class GestureInputManager : MonoBehaviour {
 			angle = Mathf.Acos(angle) * Mathf.Rad2Deg;
 			float horizontalAngleRange = 60f;
 			oneFinger.ResetTap();
-			//Reset the tap info because its a swipe, not a tap.
-			if (angle < horizontalAngleRange) {
-				//Swiped right
-				return InputAction.SwipeRight;
+
+            Debug.Log("AngleH: " + angle);
+            //Reset the tap info because its a swipe, not a tap.
+
+            if (angle < horizontalAngleRange && angle < 20) {
+                //Swiped right
+                return InputAction.SwipeRight;
 			}
-			else if ((180f - angle) < horizontalAngleRange) {
+
+			else if ((180f - angle) < horizontalAngleRange && angle > 160) {
 				//Swiped left
 				return InputAction.SwipeLeft;
 			}
-			else {
-				angle = Vector2.Dot(vector, yAxis);
-				angle = Mathf.Acos(angle) * Mathf.Rad2Deg;
-				if (angle < angleRange) {
-					//Swiped Top
-					return InputAction.SwipeUp;
-				}
-				else if ( (180f - angle) < angleRange){
-					//Swiped bot.
-					return InputAction.SwipeDown;
-				} else
-				{
-					return InputAction.Null;
-				}
+
+            float angleH = angle;
+
+            angle = Vector2.Dot(vector, yAxis);
+			angle = Mathf.Acos(angle) * Mathf.Rad2Deg;
+
+            Debug.Log("Angle: " + angle);
+
+            if (angle < angleRange) {
+				//Swiped Top
+				return InputAction.SwipeUp;
 			}
+
+			else if ((180f - angle) < angleRange){
+				//Swiped bot.
+				return InputAction.SwipeDown;
+			}
+
+            else if (angle > angleRange && angleH > 120 && angle < 70)
+            {
+                return InputAction.SwipeDiagUL;
+            }
+
+            else if (angleH < horizontalAngleRange && angleH > 20 && angle > angleRange && angle < horizontalAngleRange)
+            {
+                return InputAction.SwipeDiagUR;
+            }
+
+            else if ((180f - angle) < 60 && angleH > 110)
+            {
+                return InputAction.SwipeDiagDL;
+            }
+
+            else if ((180f - angle) < 60 && angleH < 60)
+            {
+                return InputAction.SwipeDiagDR;
+            }
+
+            else
+			{
+                Debug.Log("AngleH "+angleH);
+                Debug.Log("Angle: " + angle);
+				return InputAction.Null;
+			}
+
 		}
 		else { //Tap.
 			return InputAction.Click;
