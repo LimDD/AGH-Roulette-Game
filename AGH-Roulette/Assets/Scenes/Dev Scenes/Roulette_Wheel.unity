@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rouletteWheel: {fileID: 0}
+  ball: {fileID: 366364296}
   wheelScript: {fileID: 0}
   narrate: {fileID: 1537819013}
   rouletteValue: 0
@@ -1832,6 +1833,7 @@ MonoBehaviour:
   resulttext: 
   back: {fileID: 1935289282}
   narrate: {fileID: 1537819013}
+  ball: {fileID: 366364296}
 --- !u!224 &1890441225
 RectTransform:
   m_ObjectHideFlags: 0

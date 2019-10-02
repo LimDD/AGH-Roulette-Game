@@ -9,7 +9,10 @@ public class DisplayAmountToBet : MonoBehaviour
     {
         if (Panel != null)
         {
-            narration.Stop();
+            if (narration != null)
+            {
+                narration.Stop();
+            }
             bool isActive = Panel.activeSelf;
 
             Panel.SetActive(!isActive);
