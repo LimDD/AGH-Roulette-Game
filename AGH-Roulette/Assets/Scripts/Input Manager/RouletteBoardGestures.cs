@@ -6,21 +6,33 @@ using UnityEngine.UI;
 
 public class RouletteBoardGestures : MonoBehaviour
 {
-    public Button btn;
+    SelectButton sB;
+    BoardGestureInput bGI;
+    Button btn;
+
+    private void Start()
+    {
+        sB = FindObjectOfType<SelectButton>();
+        bGI = FindObjectOfType<BoardGestureInput>();
+    }
 
     public void Gestures(string type)
     {
-        string btnName = btn.name;
+        btn = sB.GetButton();
 
-        if (type == "DoubleClick")
+        if (btn != null)
         {
+            string btnName = btn.name;
 
-            switch (btnName)
+            if (type == "Click")
             {
-                case "TopLeftButton":
+                if (btn != null)
+                {
                     EventSystem.current.SetSelectedGameObject(btn.gameObject);
                     btn.onClick.Invoke();
-                    break;
+                    btn = null;
+                    //bGI.panelName = "zoom";
+                }
             }
         }
     }

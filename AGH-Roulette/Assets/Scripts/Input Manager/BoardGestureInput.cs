@@ -7,8 +7,8 @@ public class BoardGestureInput : MonoBehaviour
     public bool first;
     BetPanelTimer bPT;
     BettingGestures bG;
+    RouletteBoardGestures rBG;
     ZoomPanelGestures zPG;
-    // Update is called once per frame
 
     public void SetFirst()
     {
@@ -19,6 +19,7 @@ public class BoardGestureInput : MonoBehaviour
     {
         bG = panel.GetComponent<BettingGestures>();
         zPG = panel.GetComponent<ZoomPanelGestures>();
+        rBG = FindObjectOfType<RouletteBoardGestures>();
     }
 
     void Update()
@@ -46,14 +47,12 @@ public class BoardGestureInput : MonoBehaviour
                 {
                     zPG.Gestures(type);
                 }
+
+                else if (panel.name == "Portrait_Roulette_Table")
+                {
+                    rBG.Gestures(type);
+                }
             }
-        }
-
-        if (GestureInputManager.CurrentInput == InputAction.Click)
-        {
-            Debug.Log("The User has clicked");
-
-            //TODO: Get the number of the selected cell, give that number to the number reader, read the number
         }
     }
 }

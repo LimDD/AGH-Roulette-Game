@@ -76,7 +76,7 @@ public class SaveBetInfo : MonoBehaviour
         //Zero does not have a zoom screen so it never uses the GetButtonNum script, so any errors must mean the bet on number was zero
         try
         {
-            num = gBN.num;
+            num = gBN.GetNumber();
         }
 
         catch

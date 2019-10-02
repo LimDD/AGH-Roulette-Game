@@ -90,7 +90,7 @@ public class GetButtonNum : MonoBehaviour
         Vector4 buttonColor = EventSystem.current.currentSelectedGameObject.GetComponent<Image>().color;
 
         //Gets number from selected roulette cell
-        num = GetNumber();
+        num = SetNumber();
 
         //Setting the number and color retreived from the roulette table button to the zoomed button
         tNum.text = System.Convert.ToString(num);
@@ -102,7 +102,7 @@ public class GetButtonNum : MonoBehaviour
     //GetNumber
     //Gets and returns the numbers from the name of the currently selected gameobject.
     //Returns as int.
-    public int GetNumber()
+    public int SetNumber()
     {
         //Gets the gameobject name of the pressed button as string.
         string name = EventSystem.current.currentSelectedGameObject.name;
@@ -113,6 +113,11 @@ public class GetButtonNum : MonoBehaviour
         //Converts saved number string to type int.
         int num = System.Convert.ToInt32(strNum);
 
+        return num;
+    }
+
+    public int GetNumber()
+    {
         return num;
     }
 

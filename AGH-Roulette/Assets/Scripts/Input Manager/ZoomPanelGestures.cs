@@ -10,6 +10,8 @@ public class ZoomPanelGestures : MonoBehaviour
     bool first;
     float height;
 
+    BoardGestureInput bGI;
+
     public Button topL;
     public Button topM;
     public Button topR;
@@ -25,23 +27,19 @@ public class ZoomPanelGestures : MonoBehaviour
         height = Screen.height;
         btnName = "";
         first = true;
+        bGI = FindObjectOfType<BoardGestureInput>();
     }
 
     public void Gestures(string type)
     {
-        if (type == "Click" && !first)
+        if (type == "Click")
         {
             btnName = zoom.name;
             EventSystem.current.GetComponent<EventSystem>().SetSelectedGameObject(null);
             zoom.Select();
         }
 
-        else if (first)
-        {
-            first = false;
-        }
-
-        else if (type.Contains("Swipe"))
+        if (type.Contains("Swipe"))
         {
             if (type.Contains("Up"))
             {
@@ -121,8 +119,6 @@ public class ZoomPanelGestures : MonoBehaviour
 
         else if (type == "DoubleClick")
         {
-            first = true;
-
             switch (btnName)
             {
                 case "TopLeftButton":
