@@ -562,6 +562,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 18504154}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &18504153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -670,7 +687,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 18504153}
   sound: {fileID: 0}
   btnNum: {fileID: 940298903}
 --- !u!1 &22643026
@@ -972,6 +988,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 22643037}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &22643036
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1080,7 +1113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 22643036}
   sound: {fileID: 8300000, guid: 5633c6b21c2b9c341a740c2a8280bcfe, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &28234586
@@ -1351,6 +1383,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28234596}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &28234595
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1459,7 +1508,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 28234595}
   sound: {fileID: 0}
   btnNum: {fileID: 1751334348}
 --- !u!1 &35355868
@@ -1730,6 +1778,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 35355878}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &35355877
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1838,7 +1903,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 35355877}
   sound: {fileID: 0}
   btnNum: {fileID: 1477539041}
 --- !u!1 &40712007
@@ -1971,7 +2035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 945958812}
 --- !u!114 &55040741
@@ -2854,6 +2917,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 84177460}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &84177459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2962,7 +3042,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 84177459}
   sound: {fileID: 8300000, guid: f0fd263783d4f7b45952e439c894c662, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &97601915
@@ -3623,6 +3702,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 162625825}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &162625824
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3731,7 +3827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 162625824}
   sound: {fileID: 0}
   btnNum: {fileID: 1933396133}
 --- !u!1 &163105537
@@ -4593,6 +4688,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 199731309}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &199731308
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4701,7 +4813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 199731308}
   sound: {fileID: 0}
   btnNum: {fileID: 855363968}
 --- !u!1 &201331711
@@ -5837,6 +5948,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 256244952}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &256244951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5945,7 +6073,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 256244951}
   sound: {fileID: 0}
   btnNum: {fileID: 1534680679}
 --- !u!1 &272479950
@@ -6609,6 +6736,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 301854776}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &301854775
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6717,7 +6861,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 301854775}
   sound: {fileID: 0}
   btnNum: {fileID: 929073122}
 --- !u!1 &313070598
@@ -6986,7 +7129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 541550023}
 --- !u!114 &328673772
@@ -7424,6 +7566,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 329475466}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &329475465
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7532,7 +7691,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 329475465}
   sound: {fileID: 0}
   btnNum: {fileID: 97601917}
 --- !u!1 &396104701
@@ -8366,6 +8524,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 458555060}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &458555059
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8474,7 +8649,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 458555059}
   sound: {fileID: 0}
   btnNum: {fileID: 184122278}
 --- !u!1 &469675273
@@ -8776,6 +8950,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 469675284}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &469675283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8884,7 +9075,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 469675283}
   sound: {fileID: 8300000, guid: 25f18ad4be124b1429a4903d630af82b, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &513992966
@@ -10140,6 +10330,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 550351224}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &550351223
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10248,7 +10455,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 550351223}
   sound: {fileID: 0}
   btnNum: {fileID: 154903446}
 --- !u!1 &551281550
@@ -10864,6 +11070,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 561959467}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &561959466
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10972,7 +11195,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 561959466}
   sound: {fileID: 8300000, guid: 49c33c6ad9ccdcb479c8658ebe243e5f, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &563829114
@@ -11185,7 +11407,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1171451375}
 --- !u!114 &566553276
@@ -11654,6 +11875,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571273872}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &571273871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -11762,7 +12000,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 571273871}
   sound: {fileID: 8300000, guid: 5ad20305a16b1ce48a1c8f1e6d364845, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &584579353
@@ -12221,6 +12458,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 595861952}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &595861951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12329,7 +12583,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 595861951}
   sound: {fileID: 8300000, guid: 015efb0f6945823449c66d6c1c2e5253, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &604232372
@@ -12385,7 +12638,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1992966967}
 --- !u!114 &604232375
@@ -12854,6 +13106,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 616024479}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &616024478
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12962,7 +13231,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 616024478}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &626435985
@@ -13431,6 +13699,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 635001766}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &635001765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13539,7 +13824,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 635001765}
   sound: {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &648230563
@@ -13890,7 +14174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: e87b0af01ce8f8f45a90b7fb0d3d3be4, type: 3}
+  clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -14136,7 +14420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1711038931}
 --- !u!114 &697793730
@@ -14673,7 +14956,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1521605602}
 --- !u!114 &765269729
@@ -15274,7 +15556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: e87b0af01ce8f8f45a90b7fb0d3d3be4, type: 3}
+  clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 8300000, guid: a15e50d7d73ae1f4fb1e01d4766c907d, type: 3}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -15578,6 +15860,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 825994020}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &825994019
 AudioSource:
   m_ObjectHideFlags: 0
@@ -15686,7 +15985,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 825994019}
   sound: {fileID: 0}
   btnNum: {fileID: 1603466983}
 --- !u!1 &836823901
@@ -15957,6 +16255,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836823911}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &836823910
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16065,7 +16380,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 836823910}
   sound: {fileID: 0}
   btnNum: {fileID: 682947526}
 --- !u!1 &843211966
@@ -16347,7 +16661,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: caad998457ab03845a9fbcfa1a7f650c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: a1f3a020728c94e48ac05bcfea912b09, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -16355,7 +16669,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -16988,6 +17302,8 @@ MonoBehaviour:
   botMNum: {fileID: 915407015}
   botRNum: {fileID: 2000296558}
   num: 0
+  REDNUMBERS: 01000000030000000500000007000000090000000c0000000e0000001000000012000000130000001500000017000000190000001b0000001e000000200000002200000024000000
+  BLACKNUMBERS: 020000000400000006000000080000000a0000000b0000000d0000000f000000110000001400000016000000180000001a0000001c0000001d0000001f0000002100000023000000
 --- !u!114 &863234867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17241,7 +17557,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 163105539}
 --- !u!114 &915407014
@@ -17916,7 +18231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: d8ff545cc9e76344b877f89563171b5e, type: 3}
+  clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 8300000, guid: 862068c479b89b84f8e19869ee81748e, type: 3}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -18780,6 +19095,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 958431356}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &958431355
 AudioSource:
   m_ObjectHideFlags: 0
@@ -18888,7 +19220,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 958431355}
   sound: {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &960676964
@@ -19159,6 +19490,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 960676974}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &960676973
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19267,7 +19615,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 960676973}
   sound: {fileID: 0}
   btnNum: {fileID: 1447748271}
 --- !u!1 &993047429
@@ -19981,6 +20328,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1023385972}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1023385971
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20089,7 +20453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1023385971}
   sound: {fileID: 0}
   btnNum: {fileID: 648230565}
 --- !u!1 &1036812354
@@ -20360,6 +20723,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1036812364}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1036812363
 AudioSource:
   m_ObjectHideFlags: 0
@@ -20468,7 +20848,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1036812363}
   sound: {fileID: 0}
   btnNum: {fileID: 1724643864}
 --- !u!1 &1062282965
@@ -21197,6 +21576,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1142114614}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1142114613
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21305,7 +21701,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1142114613}
   sound: {fileID: 0}
   btnNum: {fileID: 1355835435}
 --- !u!1 &1157757722
@@ -21576,6 +21971,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1157757732}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1157757731
 AudioSource:
   m_ObjectHideFlags: 0
@@ -21684,7 +22096,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1157757731}
   sound: {fileID: 0}
   btnNum: {fileID: 584579355}
 --- !u!1 &1161824144
@@ -22243,6 +22654,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1177302157}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1177302156
 AudioSource:
   m_ObjectHideFlags: 0
@@ -22351,7 +22779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1177302156}
   sound: {fileID: 0}
   btnNum: {fileID: 563829116}
 --- !u!1 &1189270744
@@ -22950,6 +23377,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1205669527}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1205669526
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23058,7 +23502,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1205669526}
   sound: {fileID: 0}
   btnNum: {fileID: 1785434556}
 --- !u!1 &1227263163
@@ -23329,6 +23772,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1227263173}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1227263172
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23437,7 +23897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1227263172}
   sound: {fileID: 0}
   btnNum: {fileID: 712825362}
 --- !u!1 &1246405270
@@ -23708,6 +24167,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1246405280}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1246405279
 AudioSource:
   m_ObjectHideFlags: 0
@@ -23816,7 +24292,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1246405279}
   sound: {fileID: 0}
   btnNum: {fileID: 532980707}
 --- !u!1 &1258632475
@@ -24089,7 +24564,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1258632487}
   sound: {fileID: 0}
   btnNum: {fileID: 551281552}
 --- !u!114 &1258632484
@@ -24136,6 +24610,23 @@ MonoBehaviour:
           m_CallState: 2
         - m_Target: {fileID: 1258632484}
           m_MethodName: SetPitch
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1258632483}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -24511,6 +25002,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1323412636}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1323412635
 AudioSource:
   m_ObjectHideFlags: 0
@@ -24619,7 +25127,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1323412635}
   sound: {fileID: 0}
   btnNum: {fileID: 947974665}
 --- !u!1 &1334521015
@@ -24921,6 +25428,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1334521026}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1334521025
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25029,7 +25553,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1334521025}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &1355835433
@@ -25459,6 +25982,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1359132696}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1359132695
 AudioSource:
   m_ObjectHideFlags: 0
@@ -25567,7 +26107,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1359132695}
   sound: {fileID: 0}
   btnNum: {fileID: 956118838}
 --- !u!1 &1368922823
@@ -26765,6 +27304,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1511159816}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1511159815
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26873,7 +27429,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1511159815}
   sound: {fileID: 0}
   btnNum: {fileID: 1832346318}
 --- !u!1 &1519994127
@@ -27647,6 +28202,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1527291872}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1527291871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -27755,7 +28327,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1527291871}
   sound: {fileID: 0}
   btnNum: {fileID: 1203901641}
 --- !u!1 &1534680677
@@ -28375,7 +28946,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: e87b0af01ce8f8f45a90b7fb0d3d3be4, type: 3}
+  clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -28867,6 +29438,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1610360095}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1610360094
 AudioSource:
   m_ObjectHideFlags: 0
@@ -28975,7 +29563,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1610360094}
   sound: {fileID: 8300000, guid: 727c52aab8bdaea498738b1f980ea948, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &1617909948
@@ -29246,6 +29833,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1617909958}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1617909957
 AudioSource:
   m_ObjectHideFlags: 0
@@ -29354,7 +29958,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1617909957}
   sound: {fileID: 0}
   btnNum: {fileID: 1389275858}
 --- !u!1 &1655330608
@@ -29778,7 +30381,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: d8ff545cc9e76344b877f89563171b5e, type: 3}
+  clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 8300000, guid: 862068c479b89b84f8e19869ee81748e, type: 3}
   clip3: {fileID: 8300000, guid: 916d88fcceba0f644becd879689e1068, type: 3}
   clip4: {fileID: 8300000, guid: 1bebe6f081719de498707781d7784407, type: 3}
@@ -30005,7 +30608,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: d8ff545cc9e76344b877f89563171b5e, type: 3}
+  clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -30803,6 +31406,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1716691576}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1716691575
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30911,7 +31531,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1716691575}
   sound: {fileID: 0}
   btnNum: {fileID: 272479952}
 --- !u!1 &1720359095
@@ -31744,6 +32363,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1756720138}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1756720137
 AudioSource:
   m_ObjectHideFlags: 0
@@ -31852,7 +32488,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1756720137}
   sound: {fileID: 8300000, guid: 55569282c2fd3084fa9868091b52f775, type: 3}
   btnNum: {fileID: 0}
 --- !u!1 &1785434554
@@ -32065,7 +32700,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 1095946964}
 --- !u!114 &1802963253
@@ -32819,6 +33453,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1835142233}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1835142232
 AudioSource:
   m_ObjectHideFlags: 0
@@ -32927,7 +33578,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1835142232}
   sound: {fileID: 0}
   btnNum: {fileID: 426016973}
 --- !u!1 &1857630197
@@ -33512,6 +34162,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1916122774}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1916122773
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33620,7 +34287,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1916122773}
   sound: {fileID: 0}
   btnNum: {fileID: 1700215601}
 --- !u!1 &1928020082
@@ -33891,6 +34557,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1928020092}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1928020091
 AudioSource:
   m_ObjectHideFlags: 0
@@ -33999,7 +34682,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 1928020091}
   sound: {fileID: 0}
   btnNum: {fileID: 1374688899}
 --- !u!1 &1933396131
@@ -34450,7 +35132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
   sound: {fileID: 0}
   btnNum: {fileID: 538596008}
 --- !u!114 &2000296557
@@ -34888,6 +35569,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2012285376}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2012285375
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34996,7 +35694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2012285375}
   sound: {fileID: 0}
   btnNum: {fileID: 2050043416}
 --- !u!1 &2033281525
@@ -35267,6 +35964,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2033281535}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2033281534
 AudioSource:
   m_ObjectHideFlags: 0
@@ -35375,7 +36089,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2033281534}
   sound: {fileID: 0}
   btnNum: {fileID: 291081664}
 --- !u!1 &2050043414
@@ -35805,7 +36518,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: e87b0af01ce8f8f45a90b7fb0d3d3be4, type: 3}
+  clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -36109,6 +36822,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2094731946}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2094731945
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36217,7 +36947,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2094731945}
   sound: {fileID: 0}
   btnNum: {fileID: 760437842}
 --- !u!1 &2096150373
@@ -36488,6 +37217,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2096150383}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2096150382
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36596,7 +37342,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2096150382}
   sound: {fileID: 0}
   btnNum: {fileID: 794607843}
 --- !u!1 &2100022142
@@ -36867,6 +37612,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2100022152}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2100022151
 AudioSource:
   m_ObjectHideFlags: 0
@@ -36975,7 +37737,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2100022151}
   sound: {fileID: 0}
   btnNum: {fileID: 13776070}
 --- !u!1 &2128767682
@@ -37246,6 +38007,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2128767692}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &2128767691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -37354,7 +38132,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 2128767691}
   sound: {fileID: 0}
   btnNum: {fileID: 1805067612}
 --- !u!1 &2133633091
@@ -37645,7 +38422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 2133633093}
-  clip1: {fileID: 8300000, guid: d8ff545cc9e76344b877f89563171b5e, type: 3}
+  clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 8300000, guid: 916d88fcceba0f644becd879689e1068, type: 3}
   clip4: {fileID: 0}

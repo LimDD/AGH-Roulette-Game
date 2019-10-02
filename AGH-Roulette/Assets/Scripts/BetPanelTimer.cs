@@ -34,8 +34,11 @@ public class BetPanelTimer : MonoBehaviour
 
     void TimerEnded()
     {
-        int num = int.Parse(amount.text);
-        nRS.SetNumber(num);
-        nRS.ReadNumber();
+        if (amount.isActiveAndEnabled)
+        {
+            int num = int.Parse(amount.text);
+            nRS.SetNumber(num);
+            nRS.ReadNumber();
+        }
     }
 }
