@@ -27,13 +27,13 @@ public class BoardButtonTimer : MonoBehaviour
     {
         inside = true;
         num = btnNum.text;
-        StartCoroutine(StartCountdown(1f));
+        StartCoroutine(StartCountdown(0.4f));
     }
 
     public void CallTimerOutside()
     {
         inside = false;
-        StartCoroutine(StartCountdown(1f));
+        StartCoroutine(StartCountdown(0.4f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not

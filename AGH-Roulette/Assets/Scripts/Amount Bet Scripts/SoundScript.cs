@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.Collections;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -18,6 +19,17 @@ public class SoundScript : MonoBehaviour
     public void Play()
     {
         source.PlayOneShot(sound);
+    }
+
+    public void CallTimer()
+    {
+        StartCoroutine(StartCountdown(0.1f));
+    }
+
+    public IEnumerator StartCountdown(float f)
+    {
+        yield return new WaitForSeconds(f);
+        Play();
     }
 
     public void SetPitch()
@@ -114,6 +126,6 @@ public class SoundScript : MonoBehaviour
         }
         source.pitch = 0.9f + (num * 0.02f);
 
-        Play();
+        CallTimer();
     }
 }

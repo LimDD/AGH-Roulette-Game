@@ -9,30 +9,35 @@ public class RouletteBoardGestures : MonoBehaviour
     SelectButton sB;
     BoardGestureInput bGI;
     Button btn;
+    bool selected;
 
     private void Start()
     {
         sB = FindObjectOfType<SelectButton>();
         bGI = FindObjectOfType<BoardGestureInput>();
+        btn = null;
     }
 
     public void Gestures(string type)
     {
-        btn = sB.GetButton();
-
-        if (btn != null)
+        if (type != "Click" && type != "back")
         {
-            string btnName = btn.name;
+            btn = sB.GetButton();
+            selected = false;
+        }
 
-            if (type == "Click")
+        if (btn != null && !selected)
+        {
+            selected = true;
+
+            if (type == "DoubleClick")
             {
-                if (btn != null)
-                {
-                    EventSystem.current.SetSelectedGameObject(btn.gameObject);
-                    btn.onClick.Invoke();
-                    btn = null;
-                }
+                EventSystem.current.SetSelectedGameObject(btn.gameObject);
+                btn.onClick.Invoke();
+                btn = null;
             }
         }
+
+
     }
 }
