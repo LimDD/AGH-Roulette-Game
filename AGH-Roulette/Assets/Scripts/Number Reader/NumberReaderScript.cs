@@ -24,7 +24,6 @@ public class NumberReaderScript : MonoBehaviour
     {
         //Iterating through clips
         IterateClips();
-
     }
 
     //IterateClips

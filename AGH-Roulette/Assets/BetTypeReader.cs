@@ -39,15 +39,7 @@ public class BetTypeReader : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
-        if (btn.name == "Zoomed Button")
-        {
-            string num = btn.GetComponentInChildren<TMP_Text>().text;
-            int i = int.Parse(num);
-            nRS.SetNumber(i);
-            nRS.ReadNumber();
-        }
-
-        else if (!readType)
+        if (!readType)
         {
             BetType();
             readType = true;
@@ -74,10 +66,21 @@ public class BetTypeReader : MonoBehaviour
         source.panStereo = 0f;
 
         myClip = clip1;
+        time = 0.8f;
 
-        betType = btn.GetComponentInChildren<Text>().text;
+        try
+        {
+            betType = btn.GetComponentInChildren<Text>().text;
 
-        betType = Regex.Replace(betType, "\n", " ");
+            betType = Regex.Replace(betType, "\n", " ");
+
+        }
+
+        catch
+        {
+            
+        }
+
         btnName = btn.name;
 
         if (btnName.Contains("Left"))
@@ -85,7 +88,7 @@ public class BetTypeReader : MonoBehaviour
             source.panStereo = -0.6f;
         }
 
-        else
+        else if (btnName.Contains("Right"))
         {
             source.panStereo = 0.6f;
         }
@@ -130,12 +133,6 @@ public class BetTypeReader : MonoBehaviour
                     time = 0.8f;
                     break;
             }
-        }
-
-        //Will have single bet audio to use here
-        else if (btnName == "Zoomed Button")
-        {
-            myClip = clip1;
         }
 
         source.clip = myClip;

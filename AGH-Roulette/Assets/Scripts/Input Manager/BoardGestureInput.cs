@@ -9,6 +9,7 @@ public class BoardGestureInput : MonoBehaviour
     BettingGestures bG;
     RouletteBoardGestures rBG;
     ZoomPanelGestures zPG;
+    PlayAgainGestures pAG;
 
     public void SetFirst()
     {
@@ -20,6 +21,7 @@ public class BoardGestureInput : MonoBehaviour
         bG = panel.GetComponent<BettingGestures>();
         zPG = panel.GetComponent<ZoomPanelGestures>();
         rBG = FindObjectOfType<RouletteBoardGestures>();
+        pAG = panel.GetComponent<PlayAgainGestures>();
     }
 
     void Update()
@@ -51,6 +53,11 @@ public class BoardGestureInput : MonoBehaviour
                 else if (panel.name == "Portrait_Roulette_Table")
                 {
                     rBG.Gestures(type);
+                }
+
+                else if (panel.name == "AnotherBetPanel")
+                {
+                    pAG.Gestures(type);
                 }
             }
         }

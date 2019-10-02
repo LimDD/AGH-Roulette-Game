@@ -23,7 +23,6 @@ public class BettingGestures : MonoBehaviour
                 bGI = FindObjectOfType<BoardGestureInput>();
                 bGI.SetFirst();
                 confirm.onClick.Invoke();
-                //bGI.panelName = "board";
             }
         }
 
