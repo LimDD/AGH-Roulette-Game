@@ -8,6 +8,7 @@ using System.Collections.Generic;
 public class BetTypeReader : MonoBehaviour
 {
     public AudioSource source;
+    public AudioSource nums;
     public AudioClip clip1;
     public AudioClip clip2;
     public AudioClip clip3;
@@ -138,7 +139,22 @@ public class BetTypeReader : MonoBehaviour
         }
 
         source.clip = myClip;
-        source.Play();
+
+        bool playing = true;
+
+        if (nums.isPlaying)
+        {
+            nums.Stop();
+        }
+
+        while (playing)
+        {
+            if (!source.isPlaying)
+            {
+                source.Play();
+                playing = false;
+            }
+        }
         StartCoroutine(StartCountdown(time));
     }
 

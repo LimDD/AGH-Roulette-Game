@@ -8,6 +8,8 @@ public class RouletteBall : MonoBehaviour
     public GameObject rouletteWheel;
     public RouletteWheelSpin wheelScript;
 
+    public AudioSource narrate;
+
     //Roulette Wheel result
     public int rouletteValue;
 
@@ -38,6 +40,7 @@ public class RouletteBall : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //if (//narrate.isPlaying)
         rouletteValue = wheelScript.rouletteValue;
         spinTimer = wheelScript.spinTimer;
         wheelSpinning = wheelScript.wheelSpinning;

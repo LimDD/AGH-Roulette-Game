@@ -262,6 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rouletteWheel: {fileID: 0}
   wheelScript: {fileID: 0}
+  narrate: {fileID: 1537819013}
   rouletteValue: 0
   startSpin: 0
   startRotation: 0
@@ -1114,7 +1115,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9b21583fc74b07242b119f9308a6903a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: cb23ec69189c38b45be47b32c27dfc20, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1661,7 +1662,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: f3ac9cbd72800d3419743596236e09bf, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 60f6ae85440bdc547801b2f03bb10632, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -1830,6 +1831,7 @@ MonoBehaviour:
   resulttext_component: {fileID: 1871382662}
   resulttext: 
   back: {fileID: 1935289282}
+  narrate: {fileID: 1537819013}
 --- !u!224 &1890441225
 RectTransform:
   m_ObjectHideFlags: 0

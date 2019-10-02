@@ -19,11 +19,9 @@ public class RouletteWheelSpin : MonoBehaviour
     public string resulttext;
 
     bool check;
-
     SpinResult sR;
-
-
     public Button back;
+    public AudioSource narrate;
 
     // Start is called before the first frame update
     void Start()
@@ -49,47 +47,50 @@ public class RouletteWheelSpin : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (wheelSpinning)
+        if (!narrate.isPlaying)
         {
-            if(spinTimer < 60)
+            if (wheelSpinning)
             {
-                //Wheel no spinning rotation code
-                transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-
-                spinTimer += 1;
-                zAngle -= 0.05f;
-            }
-            else if(spinTimer == 60 || spinTimer < 240)
-            {
-                //Wheel no spinning rotation code
-                this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-
-                spinTimer += 1;
-            }
-            else if(spinTimer == 240 || spinTimer < 300)
-            {
-                //Wheel no spinning rotation code
-                this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
-
-                spinTimer += 1;
-                zAngle += 0.04f;
-
-                if(spinTimer == 300)
+                if (spinTimer < 60)
                 {
-                    wheelSpinning = false;
+                    //Wheel no spinning rotation code
+                    transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+
+                    spinTimer += 1;
+                    zAngle -= 0.05f;
+                }
+                else if (spinTimer == 60 || spinTimer < 240)
+                {
+                    //Wheel no spinning rotation code
+                    this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+
+                    spinTimer += 1;
+                }
+                else if (spinTimer == 240 || spinTimer < 300)
+                {
+                    //Wheel no spinning rotation code
+                    this.transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+
+                    spinTimer += 1;
+                    zAngle += 0.04f;
+
+                    if (spinTimer == 300)
+                    {
+                        wheelSpinning = false;
+                    }
                 }
             }
-        }
-        
-        if(!wheelSpinning)
-        {
-            zAngle = 0.0f;
-            transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
 
-            if (!check)
+            if (!wheelSpinning)
             {
-                check = true;
-                sR.CheckIfWinner();
+                zAngle = 0.0f;
+                transform.Rotate(xAngle, yAngle, zAngle, Space.Self);
+
+                if (!check)
+                {
+                    check = true;
+                    sR.CheckIfWinner();
+                }
             }
         }
     }
