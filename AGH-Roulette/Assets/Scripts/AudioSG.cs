@@ -22,7 +22,7 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.4f);
 
         //If the button is still in focus
         if (inFocus)

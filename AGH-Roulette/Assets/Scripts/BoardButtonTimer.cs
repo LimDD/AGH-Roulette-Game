@@ -7,17 +7,16 @@ public class BoardButtonTimer : MonoBehaviour
 {
     NumberReaderScript nRS;
     AudioSource audioSource;
+    public AudioSource narration;
     public AudioClip sound;
     public TMP_Text btnNum;
     string num;
     bool inside;
-    bool start;
 
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         nRS = FindObjectOfType<NumberReaderScript>();
-        start = true;
     }
 
     public void CallTimer()
@@ -30,18 +29,7 @@ public class BoardButtonTimer : MonoBehaviour
     public void CallTimerOutside()
     {
         inside = false;
-
-        if (start)
-        {
-            start = false;
-            StartCoroutine(StartCountdown(5f));
-        }
-
-        else
-        {
-            StartCoroutine(StartCountdown(0.6f));
-        }
-
+        StartCoroutine(StartCountdown(0.6f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
@@ -61,7 +49,15 @@ public class BoardButtonTimer : MonoBehaviour
 
         else
         {
-            audioSource.Play();
+            bool played = false;
+            while (!played)
+            {
+                if (!narration.isPlaying)
+                {
+                    audioSource.Play();
+                    played = true;
+                }
+            }
         }
     }
 }
