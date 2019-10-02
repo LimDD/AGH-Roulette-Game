@@ -108,7 +108,7 @@ public class GestureInputManager : MonoBehaviour {
 			if (oneFinger.lastPressTime + dragThreshold > Time.time && oneFinger.lastPressTime != 0) {
 				Vector2 endPos = Input.mousePosition;
 				currentInput = CalculateSwipe(endPos - startPressPosition);
-                Debug.Log(currentInput);
+                
 				//If the input turns out to be click.
 				if (currentInput == InputAction.Click) {
 					currentInput = InputAction.Null; //Reset it to null so you don't trigger click twice.
@@ -139,7 +139,7 @@ public class GestureInputManager : MonoBehaviour {
 				else if (oneFinger.numTap == 2) {
 					currentInput = InputAction.DoubleClick;
 				}
-				if (oneFinger.numTap > 0) {
+                if (oneFinger.numTap > 0) {
 					oneFinger.Reset(); //Reset the information.
 				}
 			}
