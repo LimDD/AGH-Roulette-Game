@@ -37,3 +37,4 @@ sysinfo.txt
 *.unitypackage
 AGH-Roulette/Assets/SavedData/winningNumbers.txt
 *.txt
+AGH-Roulette/Assets/SavedData.meta
