@@ -27,9 +27,13 @@ public class StatsScript : MonoBehaviour
 
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
-        while (!reader.EndOfStream)
+        string line;
+        int count = 0;
+
+        while ((line = reader.ReadLine()) != null && count < 4)
         {
-            stats.Add(reader.ReadLine());
+            stats.Add(line);
+            count++;
         }
 
         //If the stats file contains nothing then set all values to 0

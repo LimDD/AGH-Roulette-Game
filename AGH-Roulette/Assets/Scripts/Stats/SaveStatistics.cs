@@ -6,6 +6,17 @@ public class SaveStatistics : MonoBehaviour
 {
     private string path = "/statsFile.txt";
     private List<int> stats = new List<int>();
+    private List<int> summary = new List<int>();
+
+    private void Start()
+    {
+        summary.Clear();
+        for (int i = 0; i < 3; i ++)
+        {
+            summary.Add(0);
+        }
+
+    }
 
     //Reads the data from the stats file and saves it into a list
     public int ReadStats()
@@ -46,7 +57,6 @@ public class SaveStatistics : MonoBehaviour
         {
             stats[0]++;
         }
-
         SaveAmounts(count);
     }
 
@@ -90,6 +100,9 @@ public class SaveStatistics : MonoBehaviour
             stats[2] += amount;
         }
 
+        summary[0] += bets;
+        summary[1] += amount;
+
         path = "/statsFile.txt";
         SaveToFile();
     }
@@ -104,9 +117,11 @@ public class SaveStatistics : MonoBehaviour
         }
 
         stats[2] -= amount;
+        summary[1] -= amount;
 
         //Doesn't add the bet amount the player got back from the winnings
         stats[3] += amount * (multi - 1);
+        summary[2] += amount * (multi - 1);
         SaveToFile();
     }
 
@@ -122,6 +137,11 @@ public class SaveStatistics : MonoBehaviour
         writer = new StreamWriter(Application.persistentDataPath + path);
 
         foreach (int i in stats)
+        {
+            writer.WriteLine(i);
+        }
+
+        foreach (int i in summary)
         {
             writer.WriteLine(i);
         }
