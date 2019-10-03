@@ -21,17 +21,6 @@ public class SoundScript : MonoBehaviour
         source.PlayOneShot(sound);
     }
 
-    public void CallTimer()
-    {
-        StartCoroutine(StartCountdown(0.1f));
-    }
-
-    public IEnumerator StartCountdown(float f)
-    {
-        yield return new WaitForSeconds(f);
-        Play();
-    }
-
     public void SetPitch()
     {
         string btnName;
@@ -126,6 +115,6 @@ public class SoundScript : MonoBehaviour
         }
         source.pitch = 0.9f + (num * 0.02f);
 
-        CallTimer();
+        Play();
     }
 }
