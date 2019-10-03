@@ -7,6 +7,7 @@ public class BetPanelTimer : MonoBehaviour
     public TMP_Text bal;
     NumberReaderScript nRS;
     public float targetTime;
+    public AudioSource narrator;
     bool finished;
 
     void Start()
@@ -38,6 +39,11 @@ public class BetPanelTimer : MonoBehaviour
         {
             int num = int.Parse(amount.text);
             nRS.SetNumber(num);
+
+            while(narrator.isPlaying)
+            {
+                //wait
+            }
             nRS.ReadNumber();
         }
     }

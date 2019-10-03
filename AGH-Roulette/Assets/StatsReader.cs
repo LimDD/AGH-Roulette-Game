@@ -43,7 +43,7 @@ public class StatsReader: MonoBehaviour
             {
                 read = true;
 
-                if (statName.text == "Total Losses")
+                if (statName.text.Contains("Losses"))
                 {
                     source.PlayOneShot(clip2);
                 }
