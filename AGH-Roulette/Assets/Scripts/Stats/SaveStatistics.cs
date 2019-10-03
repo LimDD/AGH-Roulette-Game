@@ -67,9 +67,13 @@ public class SaveStatistics : MonoBehaviour
     //Saves the amount of bets and the amount bet into the statsFile
     private void SaveAmounts(int count)
     {
-        for (int i = 0; i < 3; i++)
+        if (summary.Count == 0)
         {
-            summary.Add(0);
+            for (int i = 0; i < 3; i++)
+            {
+                summary.Add(0);
+            }
+
         }
 
         int amount = 0;

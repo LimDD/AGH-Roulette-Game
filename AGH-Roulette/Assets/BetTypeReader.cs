@@ -16,7 +16,6 @@ public class BetTypeReader : MonoBehaviour
     public Button btn;
     NumberReaderScript nRS;
     ReadBetNums rBN;
-    public float targetTime;
     List<int> numbers;
     bool readType;
     string betType;

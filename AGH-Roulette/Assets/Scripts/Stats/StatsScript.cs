@@ -62,7 +62,7 @@ public class StatsScript : MonoBehaviour
             {
                 checkWinnings.text = "Total Losses:";
                 calcProfit *= -1;
-                profit.text = "-$" + calcProfit.ToString();
+                profit.text = "$" + calcProfit.ToString();
             }
 
             else

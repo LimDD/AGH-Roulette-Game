@@ -45,7 +45,7 @@ public class SummaryScript : MonoBehaviour
         {
             profit.text = "Total Losses:";
             calcProfit *= -1;
-            winnings.text = "-$" + calcProfit.ToString();
+            winnings.text = "$" + calcProfit.ToString();
         }
 
         else
