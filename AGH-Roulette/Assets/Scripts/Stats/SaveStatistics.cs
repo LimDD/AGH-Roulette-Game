@@ -8,16 +8,6 @@ public class SaveStatistics : MonoBehaviour
     private List<int> stats = new List<int>();
     private List<int> summary = new List<int>();
 
-    private void Start()
-    {
-        summary.Clear();
-        for (int i = 0; i < 3; i ++)
-        {
-            summary.Add(0);
-        }
-
-    }
-
     //Reads the data from the stats file and saves it into a list
     public int ReadStats()
     {
@@ -32,10 +22,23 @@ public class SaveStatistics : MonoBehaviour
 
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
+        int count = 0;
+
         while ((line = reader.ReadLine()) != "" && line != null)
         {
             temp = int.Parse(line);
-            stats.Add(temp);
+
+            if (count < 4)
+            {
+                stats.Add(temp);
+            }
+
+            else
+            {
+                summary.Add(temp);
+            }
+
+            count++;
         }
 
         reader.Close();
@@ -57,12 +60,18 @@ public class SaveStatistics : MonoBehaviour
         {
             stats[0]++;
         }
+
         SaveAmounts(count);
     }
 
     //Saves the amount of bets and the amount bet into the statsFile
     private void SaveAmounts(int count)
     {
+        for (int i = 0; i < 3; i++)
+        {
+            summary.Add(0);
+        }
+
         int amount = 0;
         int bets = 0;
         string line;
