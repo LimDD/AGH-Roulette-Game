@@ -7,6 +7,15 @@ public class WheelGestureInput : MonoBehaviour
     public TMP_Text balance;
     public Button newBet;
     public Text text;
+    public GameObject wheel;
+    public GameObject summary;
+
+    SceneSwitcher sS;
+
+    private void Start()
+    {
+        sS = FindObjectOfType<SceneSwitcher>();
+    }
 
     void Update()
     {
@@ -20,8 +29,22 @@ public class WheelGestureInput : MonoBehaviour
             {
                 if (balance.text != "0")
                 {
-                    SceneSwitcher sS = FindObjectOfType<SceneSwitcher>();
+                    
                     sS.BoardScene();
+                }
+
+                else
+                {
+                    sS.MenuScene();
+                }
+            }
+
+            else if (type == "Click" && text.text != "")
+            {
+                if (wheel.activeSelf)
+                {
+                    wheel.SetActive(false);
+                    summary.SetActive(true);
                 }
             }
         }

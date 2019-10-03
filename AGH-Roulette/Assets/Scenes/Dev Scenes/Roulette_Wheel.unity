@@ -1171,6 +1171,7 @@ GameObject:
   - component: {fileID: 1103450581}
   - component: {fileID: 1103450583}
   - component: {fileID: 1103450582}
+  - component: {fileID: 1103450584}
   m_Layer: 0
   m_Name: Summary Panel
   m_TagString: Untagged
@@ -1243,6 +1244,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103450580}
   m_CullTransparentMesh: 0
+--- !u!114 &1103450584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103450580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f522d1f0b9d2e4c9f6170e26f802cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  betsMade: {fileID: 1545497682}
+  amountWon: {fileID: 1565425696}
+  amountLost: {fileID: 2069386007}
+  winnings: {fileID: 311737432}
+  profit: {fileID: 1890646856}
 --- !u!1 &1266093023
 GameObject:
   m_ObjectHideFlags: 0
@@ -1290,6 +1308,8 @@ MonoBehaviour:
   balance: {fileID: 1953436706}
   newBet: {fileID: 1641586359}
   text: {fileID: 1871382662}
+  wheel: {fileID: 1571980667}
+  summary: {fileID: 1103450580}
 --- !u!114 &1266093026
 MonoBehaviour:
   m_ObjectHideFlags: 0
