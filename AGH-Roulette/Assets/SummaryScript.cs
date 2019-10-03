@@ -23,9 +23,12 @@ public class SummaryScript : MonoBehaviour
         string line;
         int count = 0;
 
-        while ((line = reader.ReadLine()) != null && count > 3)
+        while ((line = reader.ReadLine()) != null)
         {
-            summary.Add(line);
+            if (count > 3)
+            {
+                summary.Add(line);
+            }
             count++;
         }
 

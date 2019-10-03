@@ -11,10 +11,12 @@ public class WheelGestureInput : MonoBehaviour
     public GameObject summary;
 
     SceneSwitcher sS;
+    StatsReset sR;
 
     private void Start()
     {
         sS = FindObjectOfType<SceneSwitcher>();
+        sR = FindObjectOfType<StatsReset>();
     }
 
     void Update()
@@ -27,6 +29,7 @@ public class WheelGestureInput : MonoBehaviour
 
             if (type == "DoubleClick" && text.text != "")
             {
+                sR.ClearSummary();
                 if (balance.text != "0")
                 {
                     
