@@ -26,16 +26,20 @@ public class RouletteBoardGestures : MonoBehaviour
             selected = false;
         }
 
-        if (type == "Click" && btn == null)
+        if (type == "Click")
         {
-            btn = sB.GetButton();
-            EventSystem.current.SetSelectedGameObject(btn.gameObject);
-            btn.onClick.Invoke();
-        }
+            if (btn == null)
+            {
+                btn = sB.GetButton();
+                EventSystem.current.SetSelectedGameObject(btn.gameObject);
+                btn.onClick.Invoke();
+            }
 
-        else
-        {
-            btn = null;
+            else
+            {
+                btn = null;
+            }
+
         }
 
         if (btn != null && !selected)
@@ -46,10 +50,7 @@ public class RouletteBoardGestures : MonoBehaviour
             {
                 EventSystem.current.SetSelectedGameObject(btn.gameObject);
                 btn.onClick.Invoke();
-                btn = null;
             }
         }
-
-
     }
 }
