@@ -15,7 +15,6 @@ public class StatsReset : MonoBehaviour
 
         if (File.Exists(Application.persistentDataPath + path))
         {
-
             StreamReader reader = new StreamReader(Application.persistentDataPath + path);
 
             string line;

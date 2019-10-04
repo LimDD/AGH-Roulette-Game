@@ -27,19 +27,26 @@ public class WheelGestureInput : MonoBehaviour
 
             Debug.Log(type);
 
-            if (type == "DoubleClick" && text.text != "")
+            if (text.text != "")
             {
-                sR.ClearSummary();
-                if (balance.text != "0")
+                if (type == "SwipeUp")
                 {
-                    
-                    sS.BoardScene();
-                }
+                    sR.ClearSummary();
+                    if (balance.text != "0")
+                    {
+                        sS.BoardScene();
+                    }
 
-                else
-                {
-                    sS.MenuScene();
+                    else
+                    {
+                        sS.MenuScene();
+                    }
                 }
+            }
+
+            else if (type == "SwipeDown")
+            {
+                sS.MenuScene();
             }
 
             else if (type == "Click" && text.text != "")
