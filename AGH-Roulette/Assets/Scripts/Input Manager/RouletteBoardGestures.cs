@@ -26,12 +26,7 @@ public class RouletteBoardGestures : MonoBehaviour
             selected = false;
         }
 
-        if (type == "back")
-        {
-            bGI.SetFirst();
-        }
-
-        if (type == "Click" && !bGI.first)
+        if (type == "Click" && btn == null)
         {
             btn = sB.GetButton();
             EventSystem.current.SetSelectedGameObject(btn.gameObject);
@@ -40,7 +35,7 @@ public class RouletteBoardGestures : MonoBehaviour
 
         else
         {
-            bGI.SetFirst();
+            btn = null;
         }
 
         if (btn != null && !selected)
