@@ -13,7 +13,7 @@ public class BoardGestureInput : MonoBehaviour
 
     public void SetFirst()
     {
-        first = false;
+        first = !first;
     }
 
     private void Start()
@@ -26,11 +26,14 @@ public class BoardGestureInput : MonoBehaviour
 
     void Update()
     {
-        if (!first && panel.name == "Betting Coins Panel" && panel.activeSelf)
+        if (!first && panel.activeSelf)
         {
-            bPT = panel.GetComponent<BetPanelTimer>();
-            bPT.CallTimer();
-            first = true;
+            if (panel.name == "Betting Coins Panel")
+            {
+                bPT = panel.GetComponent<BetPanelTimer>();
+                bPT.CallTimer();
+                first = true;
+            }
         }
 
         if (GestureInputManager.CurrentInput != InputAction.Null)
