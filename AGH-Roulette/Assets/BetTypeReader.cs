@@ -30,13 +30,15 @@ public class BetTypeReader : MonoBehaviour
     public void CallTimer()
     {
         readType = false;
-        StartCoroutine(StartCountdown(0.2f));
+        StartCoroutine(StartCountdown(0.3f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
+
+        btn.Select();
 
         if (!readType)
         {
@@ -52,7 +54,6 @@ public class BetTypeReader : MonoBehaviour
             numbers = ReadNums(n);
 
             numbers.Sort();
-
             rBN.SetNumberList(numbers);
         }
     }
@@ -70,9 +71,7 @@ public class BetTypeReader : MonoBehaviour
         try
         {
             betType = btn.GetComponentInChildren<Text>().text;
-
             betType = Regex.Replace(betType, "\n", " ");
-
         }
 
         catch

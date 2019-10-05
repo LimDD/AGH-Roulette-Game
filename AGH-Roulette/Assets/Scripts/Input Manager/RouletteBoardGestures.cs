@@ -31,8 +31,11 @@ public class RouletteBoardGestures : MonoBehaviour
             if (btn == null)
             {
                 btn = sB.GetButton();
-                EventSystem.current.SetSelectedGameObject(btn.gameObject);
-                btn.onClick.Invoke();
+                if (btn != null)
+                {
+                    EventSystem.current.SetSelectedGameObject(btn.gameObject);
+                    btn.onClick.Invoke();
+                }
             }
 
             else

@@ -153,9 +153,13 @@ public class GetButtonNum : MonoBehaviour
             botR.gameObject.SetActive(false);
             midR.gameObject.SetActive(false);
             topR.gameObject.SetActive(false);
-            botRNum.gameObject.SetActive(false);
-            midRNum.gameObject.SetActive(false);
-            topRNum.gameObject.SetActive(false);
+
+            botRNum.GetComponentInChildren<Text>().text = "";
+            botRNum.GetComponent<Image>().color = Color.clear;
+            midRNum.GetComponent<Image>().color = Color.clear;
+            midRNum.GetComponentInChildren<Text>().text = "";
+            topRNum.GetComponent<Image>().color = Color.clear;
+            topRNum.GetComponentInChildren<Text>().text = "";
         }
 
         //Makes left column left buttons names change for due to the different bets that can be made
@@ -163,9 +167,13 @@ public class GetButtonNum : MonoBehaviour
         {
             midL.GetComponentInChildren<Text>().text = "Street\nBet";
             botL.GetComponentInChildren<Text>().text = "Six Line\nBet";
-            topLNum.gameObject.SetActive(false);
-            midLNum.gameObject.SetActive(false);
-            botLNum.gameObject.SetActive(false);
+
+            topLNum.GetComponentInChildren<Text>().text = "";
+            topLNum.GetComponent<Image>().color = Color.clear;
+            midLNum.GetComponent<Image>().color = Color.clear;
+            midLNum.GetComponentInChildren<Text>().text = "";
+            botLNum.GetComponent<Image>().color = Color.clear;
+            botLNum.GetComponentInChildren<Text>().text = "";
 
             if (n == 1)
             {
