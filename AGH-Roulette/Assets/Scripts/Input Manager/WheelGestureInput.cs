@@ -42,21 +42,23 @@ public class WheelGestureInput : MonoBehaviour
                         sS.MenuScene();
                     }
                 }
-            }
 
-            else if (type == "SwipeDown")
-            {
-                sS.MenuScene();
-            }
-
-            else if (type == "Click" && text.text != "")
-            {
-                if (wheel.activeSelf)
+                else if (type == "SwipeDown")
                 {
-                    wheel.SetActive(false);
-                    summary.SetActive(true);
+                    sS.MenuScene();
+                }
+
+                else if (type == "Click")
+                {
+                    if (wheel.activeSelf)
+                    {
+                        wheel.SetActive(false);
+                        summary.SetActive(true);
+                    }
                 }
             }
+
+
         }
     }
 }
