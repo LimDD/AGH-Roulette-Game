@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Dev Scenes/Roulette_Wheel.unity
     guid: ad881d729a653084b8ea81e1076b4ee5
+  - enabled: 1
+    path: Assets/Scenes/Dev Scenes/GameScene_Tutorial.unity
+    guid: 5b1c3bb1babba444985047076ff5cde3
   m_configObjects: {}

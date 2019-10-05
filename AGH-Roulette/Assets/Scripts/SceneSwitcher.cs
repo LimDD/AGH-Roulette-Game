@@ -20,6 +20,11 @@ public class SceneSwitcher : MonoBehaviour
         SceneManager.LoadScene("Roulette_Wheel");
     }
 
+    public void TutorialScene()
+    {
+        SceneManager.LoadScene("GameScene_Tutorial");
+    }
+
     //Used to create the files if the game is opening for the first time, since these files are read to first
     private void Start()
     {
