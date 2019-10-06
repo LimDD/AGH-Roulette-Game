@@ -147,6 +147,7 @@ public class GetButtonNum : MonoBehaviour
         topR.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
         midL.GetComponentInChildren<TMP_Text>().text = "Split\nBet";
         botL.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
+        botR.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
         if (n % 3 == 0)

@@ -9,7 +9,8 @@ using System.Collections.Generic;
 public class SaveBetInfo : MonoBehaviour
 {
     private GetButtonNum gBN;
-    public List<int> winNum = new List<int>();
+    public List<string> betNums;
+    public List<int> winNum;
     string btnName;
 
     private void Start()
@@ -22,9 +23,14 @@ public class SaveBetInfo : MonoBehaviour
         writer.Close();
     }
 
+    private void Awake()
+    {
+        betNums = new List<string>();
+    }
+
     public void SaveBetType()
     {
-        winNum.Clear();
+        winNum = new List<int>();
         string str;
 
         btnName = EventSystem.current.currentSelectedGameObject.name;
@@ -212,6 +218,7 @@ public class SaveBetInfo : MonoBehaviour
         }
 
         WriteToFile(betType);
+        SaveNums(betType);
     }
 
     //Gets all the winning numbers from the bet type
@@ -333,6 +340,22 @@ public class SaveBetInfo : MonoBehaviour
             }
         }
         WriteToFile(betType);
+        SaveNums(betType);
+    }
+
+    public void SaveNums(string betType)
+    {
+        betNums.Add(betType);
+
+        foreach (int i in winNum)
+        {
+            betNums.Add(i.ToString());
+        }
+    }
+
+    public List<string> GetSavedNums()
+    {
+        return betNums;
     }
 
     //Writes the winning numbers to the text file

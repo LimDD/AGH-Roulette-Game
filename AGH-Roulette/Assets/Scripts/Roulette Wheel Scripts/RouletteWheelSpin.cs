@@ -95,7 +95,7 @@ public class RouletteWheelSpin : MonoBehaviour
                 if (!check)
                 {
                     check = true;
-                    sR.CheckIfWinner();
+                    sR.CheckWinner();
                 }
             }
         }

@@ -16,6 +16,8 @@ public class SpinResult : MonoBehaviour
     RouletteWheelSpin rWS;
     WinningsPayout wP;
     NumberReaderScript nRS;
+    SaveBetInfo sBI;
+    DontDestroy dD;
     bool winner;
 
     private void Start()
@@ -23,6 +25,8 @@ public class SpinResult : MonoBehaviour
         rWS = FindObjectOfType<RouletteWheelSpin>();
         wP = FindObjectOfType<WinningsPayout>();
         nRS = FindObjectOfType<NumberReaderScript>();
+        sBI = FindObjectOfType<SaveBetInfo>();
+        dD = FindObjectOfType<DontDestroy>();
         winner = false;
     }
 
@@ -154,5 +158,133 @@ public class SpinResult : MonoBehaviour
             rWS.Loser(winNum);
             wP.ResetFile(balance);
         }
+    }
+
+    //Checks if the result is the same
+    public void CheckWinner()
+    {
+        List<string> betNums = sBI.GetSavedNums();
+        string line;
+        int saveNum;
+        int count = 0;
+        int betNum = 0;
+        int numbers = 0;
+
+        int winNum = rWS.rouletteValue;
+
+        //Add file data to betonNum list
+        foreach (string s in betNums)
+        {
+            //Checks if the line length is 2 or less meaning its a number e.g. 0 - 36
+            if (s.Length <= 2)
+            {
+                saveNum = int.Parse(s);
+                betonNum.Add(saveNum);
+                if (numbers == 0)
+                {
+                    typeIndex.Add(betonNum.Count - 1);
+                }
+
+                numbers++;
+            }
+
+            //Gets the bet type name from the file
+            else
+            {
+                betType.Add(s);
+                betNum++;
+                numbers = 0;
+            }
+            count++;
+        }
+
+        count = 0;
+
+        //Loops through the values in betonNum to check if it contains the winning number
+        foreach (int i in betonNum)
+        {
+            if (i == winNum)
+            {
+                //Saves the index of the winning number inside the betonNum list
+                winIndex.Add(betonNum.IndexOf(i));
+                int smallest = 0;
+
+                //Finds the bet type related to the winning number by comparing indexes of the winning number to the
+                //index of the first number for the new bet, the closest index means it must be from that bet type
+
+                for (int j = 0; j < typeIndex.Count; j++)
+                {
+                    int placeHolder = winIndex[winIndex.Count() - 1] - typeIndex[j];
+
+                    //If its the first loop then save the values
+                    if (j == 0)
+                    {
+                        smallest = placeHolder;
+                        //If there is more than 1 bet that covers the winning number then count will have increased meaning the next bettype in the list is saved
+                        type.Add("");
+                        type[count] = (betType[count]);
+                        saveIndex.Add(0);
+                    }
+
+                    //Checks if the smallest bettype index is smaller than the next index
+                    else if (placeHolder < smallest && placeHolder >= 0)
+                    {
+                        smallest = placeHolder;
+                        type.Add(betType[j]);
+                        saveIndex.Add(j);
+                    }
+                }
+                //If the winning number was found
+                winner = true;
+                count++;
+            }
+        }
+
+        string path = "/balandamount.txt";
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
+
+        count = 0;
+        //Add the balance and bet amount to betInfo
+        while ((line = reader.ReadLine()) != null)
+        {
+            betInfo.Add(line);
+            count++;
+        }
+
+        reader.Close();
+
+        string bal = betInfo[count - 2];
+        string lastAmount = betInfo[count - 1];
+
+        //Get back only the numbers in bal
+        bal = Regex.Replace(bal, "[^0-9.]", "");
+
+        int balance = int.Parse(bal);
+
+        nRS.SetNumber(winNum);
+        nRS.ReadNumber();
+
+        //If the player won
+        if (winner)
+        {
+            //Loops for each time the winning number was found
+            for (int i = 0; i < type.Count(); i++)
+            {
+                int.TryParse(betInfo[saveIndex[i] + 2], out int amount);
+                balance = wP.GetWinnings(type[i], balance, amount);
+            }
+
+            rWS.Winner(winNum);
+            wP.ResetFile(balance);
+        }
+
+        //If they lost
+        else
+        {
+            rWS.Loser(winNum);
+            wP.ResetFile(balance);
+        }
+
+        dD.Destroy();
     }
 }

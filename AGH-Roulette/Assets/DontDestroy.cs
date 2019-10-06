@@ -5,20 +5,17 @@ using UnityEngine;
 public class DontDestroy : MonoBehaviour
 {
     SceneSwitcher sS;
-    // Start is called before the first frame update
+    public static DontDestroy Instance;
+    public GameObject gObject;
+
     void Awake()
     {
         sS = FindObjectOfType<SceneSwitcher>();
-
-        if (sS.menu)
-        {
-            Destroy(this.gameObject);
-        }
-
-        else
-        {
-            DontDestroyOnLoad(this.gameObject);
-        }
+        DontDestroyOnLoad(this);
     }
 
+    public void Destroy()
+    {
+        Destroy(gObject);
+    }
 }
