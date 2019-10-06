@@ -132,6 +132,7 @@ public class GetButtonNum : MonoBehaviour
         botL.gameObject.SetActive(true);
         botM.gameObject.SetActive(true);
         botR.gameObject.SetActive(true);
+
         topLNum.gameObject.SetActive(true);
         topMNum.gameObject.SetActive(true);
         topRNum.gameObject.SetActive(true);
@@ -154,12 +155,10 @@ public class GetButtonNum : MonoBehaviour
             midR.gameObject.SetActive(false);
             topR.gameObject.SetActive(false);
 
-            botRNum.GetComponentInChildren<Text>().text = "";
-            botRNum.GetComponent<Image>().color = Color.clear;
-            midRNum.GetComponent<Image>().color = Color.clear;
-            midRNum.GetComponentInChildren<Text>().text = "";
-            topRNum.GetComponent<Image>().color = Color.clear;
-            topRNum.GetComponentInChildren<Text>().text = "";
+            botRNum.gameObject.SetActive(false);
+            midRNum.gameObject.SetActive(false);
+            topRNum.gameObject.SetActive(false);
+
         }
 
         //Makes left column left buttons names change for due to the different bets that can be made
@@ -168,28 +167,15 @@ public class GetButtonNum : MonoBehaviour
             midL.GetComponentInChildren<Text>().text = "Street\nBet";
             botL.GetComponentInChildren<Text>().text = "Six Line\nBet";
 
-            topLNum.GetComponentInChildren<Text>().text = "";
-            topLNum.GetComponent<Image>().color = Color.clear;
-            midLNum.GetComponent<Image>().color = Color.clear;
-            midLNum.GetComponentInChildren<Text>().text = "";
-            botLNum.GetComponent<Image>().color = Color.clear;
-            botLNum.GetComponentInChildren<Text>().text = "";
-
             if (n == 1)
             {
                 topL.GetComponentInChildren<Text>().text = "Basket\nBet";
                 topR.GetComponentInChildren<Text>().text = "Trio\nBet";
-                topLNum.gameObject.SetActive(false);
-                midLNum.gameObject.SetActive(false);
-                botLNum.gameObject.SetActive(false);
             }
 
             else
             {
                 topL.GetComponentInChildren<Text>().text = "Six Line\nBet";
-                topLNum.gameObject.SetActive(false);
-                midLNum.gameObject.SetActive(false);
-                botLNum.gameObject.SetActive(false);
             }
         }
 
@@ -197,8 +183,6 @@ public class GetButtonNum : MonoBehaviour
         {
             topL.GetComponentInChildren<Text>().text = "Trio\nBet";
             topR.GetComponentInChildren<Text>().text = "Trio\nBet";
-            topLNum.gameObject.SetActive(false);
-
         }
 
         //Bottom buttons on the bottom row cannot be played
@@ -207,65 +191,83 @@ public class GetButtonNum : MonoBehaviour
             botL.gameObject.SetActive(false);
             botM.gameObject.SetActive(false);
             botR.gameObject.SetActive(false);
+
             botLNum.gameObject.SetActive(false);
             botMNum.gameObject.SetActive(false);
             botRNum.gameObject.SetActive(false);
-
         }
     }
 
     public void SetSurroundingNum(int chosenNum)
     {
-        int topLInt = chosenNum - 4;
-        int topMInt = chosenNum - 3;
-        int topRInt = chosenNum - 2;
-        int midLInt = chosenNum - 1;
-        int midRInt = chosenNum + 1;
-        int botLInt = chosenNum + 2;
-        int botMInt = chosenNum + 3;
-        int botRInt = chosenNum + 4;
+        Button btn = null;
+        int num;
+        bool inactive = false;
 
-        if (topMInt < 0)
+        string[] btnNames = { "Top Left Number", "Top Middle Number", "Top Right Number", "Middle Left Number", "Middle Right Number", "Bottom Left Number", "Bottom Middle Number", "Bottom Right Number"};
+
+        for (int i = 0; i < 8; i++)
         {
-            topMInt = 0;
-            topLNum.gameObject.SetActive(false);
-            topRNum.gameObject.SetActive(false);
+            try
+            {
+                btn = GameObject.Find(btnNames[i]).GetComponent<Button>();
+                inactive = false;
+            }
+
+            catch
+            {
+                inactive = true;
+            }
+
+            if (!inactive)
+            {
+                num = chosenNum - 4 + i;
+
+                if (num < 0)
+                {
+                    num = 0;
+                }
+
+                if (num >= chosenNum)
+                {
+                    num++;
+                }
+
+                btn.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(num);
+                SetColor(btn);
+            }
         }
 
-        topLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topLInt);
-        topMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topMInt);
-        topRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(topRInt);
-        midLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(midLInt);
-        midRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(midRInt);
-        botLNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botLInt);
-        botMNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botMInt);
-        botRNum.GetComponentInChildren<TMP_Text>().text = System.Convert.ToString(botRInt);
-
-        SetColor(topLNum);
-        SetColor(topMNum);
-        SetColor(topRNum);
-        SetColor(midLNum);
-        SetColor(midRNum);
-        SetColor(botLNum);
-        SetColor(botMNum);
-        SetColor(botRNum);
+        if (chosenNum % 3 == 1)
+        {
+            topLNum.GetComponent<Image>().color = Color.clear;
+            topLNum.GetComponentInChildren<TMP_Text>().text = "";
+            midLNum.GetComponent<Image>().color = Color.clear;
+            midLNum.GetComponentInChildren<TMP_Text>().text = "";
+            botLNum.GetComponent<Image>().color = Color.clear;
+            botLNum.GetComponentInChildren<TMP_Text>().text = "";
+        }
     }
 
     public void SetColor(Button button)
     {
-        int buttonNumber = System.Convert.ToInt32(button.GetComponentInChildren<TMP_Text>().text);
 
-        if (REDNUMBERS.Contains(buttonNumber))
+        if (button.GetComponentInChildren<TMP_Text>().text != "")
         {
-            button.GetComponent<Image>().color = RED;
-        }
-        else if (BLACKNUMBERS.Contains(buttonNumber))
-        {
-            button.GetComponent<Image>().color = BLACK;
-        }
-        else
-        {
-            button.GetComponent<Image>().color = GREEN;
+            int buttonNumber = System.Convert.ToInt32(button.GetComponentInChildren<TMP_Text>().text);
+
+            if (REDNUMBERS.Contains(buttonNumber))
+            {
+                button.GetComponent<Image>().color = RED;
+            }
+            else if (BLACKNUMBERS.Contains(buttonNumber))
+            {
+                button.GetComponent<Image>().color = BLACK;
+            }
+            else
+            {
+                button.GetComponent<Image>().color = GREEN;
+            }
         }
     }
 }

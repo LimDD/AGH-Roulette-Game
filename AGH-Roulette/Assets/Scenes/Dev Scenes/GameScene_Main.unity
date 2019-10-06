@@ -2189,7 +2189,7 @@ GameObject:
   - component: {fileID: 55040742}
   - component: {fileID: 55040740}
   m_Layer: 0
-  m_Name: Left Bottom Number
+  m_Name: Bottom Left Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7408,7 +7408,7 @@ GameObject:
   - component: {fileID: 328673773}
   - component: {fileID: 328673771}
   m_Layer: 0
-  m_Name: Left Middle Number
+  m_Name: Middle Left Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11774,7 +11774,7 @@ GameObject:
   - component: {fileID: 566553277}
   - component: {fileID: 566553275}
   m_Layer: 0
-  m_Name: Left Top Number
+  m_Name: Top Left Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13053,7 +13053,7 @@ GameObject:
   - component: {fileID: 604232376}
   - component: {fileID: 604232374}
   m_Layer: 0
-  m_Name: Right Top Number
+  m_Name: Top Right Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15432,7 +15432,7 @@ GameObject:
   - component: {fileID: 765269730}
   - component: {fileID: 765269728}
   m_Layer: 0
-  m_Name: Middle Top Number
+  m_Name: Top Middle Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18071,7 +18071,7 @@ GameObject:
   - component: {fileID: 915407015}
   - component: {fileID: 915407013}
   m_Layer: 0
-  m_Name: Middle Bottom Number
+  m_Name: Bottom Middle Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33192,7 +33192,7 @@ GameObject:
   - component: {fileID: 1802963254}
   - component: {fileID: 1802963252}
   m_Layer: 0
-  m_Name: Right Middle Number
+  m_Name: Middle Right Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35687,7 +35687,7 @@ GameObject:
   - component: {fileID: 2000296558}
   - component: {fileID: 2000296556}
   m_Layer: 0
-  m_Name: Right Bottom Number
+  m_Name: Bottom Right Number
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
