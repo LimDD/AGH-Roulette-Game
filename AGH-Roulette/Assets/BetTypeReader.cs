@@ -70,7 +70,7 @@ public class BetTypeReader : MonoBehaviour
 
         try
         {
-            betType = btn.GetComponentInChildren<Text>().text;
+            betType = btn.GetComponentInChildren<TMP_Text>().text;
             betType = Regex.Replace(betType, "\n", " ");
         }
 

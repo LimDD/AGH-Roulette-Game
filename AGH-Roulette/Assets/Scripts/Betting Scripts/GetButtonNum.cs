@@ -143,10 +143,10 @@ public class GetButtonNum : MonoBehaviour
         botRNum.gameObject.SetActive(true);
 
         //Sets the button text back to default
-        topL.GetComponentInChildren<Text>().text = "Corner\nBet";
-        topR.GetComponentInChildren<Text>().text = "Corner\nBet";
-        midL.GetComponentInChildren<Text>().text = "Split\nBet";
-        botL.GetComponentInChildren<Text>().text = "Corner\nBet";
+        topL.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
+        topR.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
+        midL.GetComponentInChildren<TMP_Text>().text = "Split\nBet";
+        botL.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
         if (n % 3 == 0)
@@ -164,25 +164,25 @@ public class GetButtonNum : MonoBehaviour
         //Makes left column left buttons names change for due to the different bets that can be made
         if (n % 3 == 1)
         {
-            midL.GetComponentInChildren<Text>().text = "Street\nBet";
-            botL.GetComponentInChildren<Text>().text = "Six Line\nBet";
+            midL.GetComponentInChildren<TMP_Text>().text = "Street\nBet";
+            botL.GetComponentInChildren<TMP_Text>().text = "Six Line\nBet";
 
             if (n == 1)
             {
-                topL.GetComponentInChildren<Text>().text = "Basket\nBet";
-                topR.GetComponentInChildren<Text>().text = "Trio\nBet";
+                topL.GetComponentInChildren<TMP_Text>().text = "Basket\nBet";
+                topR.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
             }
 
             else
             {
-                topL.GetComponentInChildren<Text>().text = "Six Line\nBet";
+                topL.GetComponentInChildren<TMP_Text>().text = "Six Line\nBet";
             }
         }
 
         if (n == 3 || n == 2)
         {
-            topL.GetComponentInChildren<Text>().text = "Trio\nBet";
-            topR.GetComponentInChildren<Text>().text = "Trio\nBet";
+            topL.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
+            topR.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
         }
 
         //Bottom buttons on the bottom row cannot be played
