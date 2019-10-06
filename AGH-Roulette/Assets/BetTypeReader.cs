@@ -38,10 +38,11 @@ public class BetTypeReader : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
-        btn.Select();
+        
 
         if (!readType)
         {
+            btn.Select();
             BetType();
             readType = true;
         }

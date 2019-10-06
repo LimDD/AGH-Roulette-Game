@@ -246,6 +246,21 @@ public class GetButtonNum : MonoBehaviour
             midLNum.GetComponentInChildren<TMP_Text>().text = "";
             botLNum.GetComponent<Image>().color = Color.clear;
             botLNum.GetComponentInChildren<TMP_Text>().text = "";
+
+            if (chosenNum == 1)
+            {
+                topRNum.GetComponent<Image>().color = Color.clear;
+                topRNum.GetComponentInChildren<TMP_Text>().text = "";
+            }
+        }
+
+        if (chosenNum == 2 || chosenNum == 3)
+        {
+            topLNum.GetComponent<Image>().color = Color.clear;
+            topLNum.GetComponentInChildren<TMP_Text>().text = "";
+
+            topRNum.GetComponent<Image>().color = Color.clear;
+            topRNum.GetComponentInChildren<TMP_Text>().text = "";
         }
     }
 

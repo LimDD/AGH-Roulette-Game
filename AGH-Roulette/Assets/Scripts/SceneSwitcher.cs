@@ -5,14 +5,18 @@ using UnityEngine.SceneManagement;
 //Loads each scene
 public class SceneSwitcher : MonoBehaviour
 {
+    public bool menu;
+
     public void BoardScene()
     {
         SceneManager.LoadScene("Gamescene_Main");
+        menu = false;
     }
 
     public void MenuScene()
     {
         SceneManager.LoadScene("Gamescene_Menu");
+        menu = true;
     }
 
     public void WheelScene()
@@ -23,6 +27,7 @@ public class SceneSwitcher : MonoBehaviour
     public void TutorialScene()
     {
         SceneManager.LoadScene("GameScene_Tutorial");
+        menu = false;
     }
 
     //Used to create the files if the game is opening for the first time, since these files are read to first
