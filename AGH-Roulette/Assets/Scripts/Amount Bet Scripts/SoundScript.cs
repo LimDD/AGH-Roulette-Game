@@ -10,9 +10,11 @@ public class SoundScript : MonoBehaviour
     public AudioClip sound;
     AudioSource source;
     public Button btn;
+    ClickButton cB;
 
     void Start()
     {
+        cB = FindObjectOfType<ClickButton>();
         source = GetComponent<AudioSource>();
     }
 
@@ -23,6 +25,7 @@ public class SoundScript : MonoBehaviour
 
     public void SetPitch()
     {
+        cB.SetButton(btn);
         string btnName;
         float num = 0;
         btnName = btn.name;

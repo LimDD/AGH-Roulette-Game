@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class BoardGestureInput : MonoBehaviour
 {
     public GameObject panel;
+    Button btn;
     public bool first;
     BetPanelTimer bPT;
     BettingGestures bG;
     RouletteBoardGestures rBG;
     ZoomPanelGestures zPG;
     PlayAgainGestures pAG;
+    ClickButton cB;
 
     public void SetFirst()
     {
@@ -55,7 +58,29 @@ public class BoardGestureInput : MonoBehaviour
 
                 else if (panel.name == "Portrait_Roulette_Table")
                 {
-                    rBG.Gestures(type);
+                    string current = "";
+
+                    try
+                    {
+                        Debug.Log(EventSystem.current.currentSelectedGameObject.name);
+                        current = EventSystem.current.currentSelectedGameObject.name;
+                    }
+
+                    catch
+                    {
+
+                    }
+
+                    if (type == "Click" && current != "Board")
+                    {
+                        cB = FindObjectOfType<ClickButton>();
+                        cB.ButtonClicked();
+                    }
+
+                    else
+                    {
+                        rBG.Gestures(type);
+                    }
                 }
 
                 else if (panel.name == "AnotherBetPanel")
