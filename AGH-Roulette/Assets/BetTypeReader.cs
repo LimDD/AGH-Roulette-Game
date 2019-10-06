@@ -15,6 +15,7 @@ public class BetTypeReader : MonoBehaviour
     public AudioClip clip4;
     public Button btn;
     NumberReaderScript nRS;
+    ZoomPanelGestures zPG;
     ReadBetNums rBN;
     List<int> numbers;
     bool readType;
@@ -25,6 +26,7 @@ public class BetTypeReader : MonoBehaviour
     {
         nRS = FindObjectOfType<NumberReaderScript>();
         rBN = FindObjectOfType<ReadBetNums>();
+        zPG = FindObjectOfType<ZoomPanelGestures>();
     }
 
     public void CallTimer()
@@ -38,11 +40,10 @@ public class BetTypeReader : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
-        
-
         if (!readType)
         {
             btn.Select();
+            zPG.SetButton(btn);
             BetType();
             readType = true;
         }
