@@ -1922,7 +1922,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Bets of Roulette
+  m_text: 'Rules of Roulette
 
 '
   m_isRightToLeft: 0
@@ -1993,7 +1993,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 98979425}
-    characterCount: 17
+    characterCount: 18
     spriteCount: 0
     spaceCount: 3
     wordCount: 3
@@ -8276,7 +8276,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 389b1e705a4987c42ba2778b7c4956f7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -8405,7 +8405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 932717649}
-  hoverSound: {fileID: 8300000, guid: 389b1e705a4987c42ba2778b7c4956f7, type: 3}
+  hoverSound: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
 --- !u!1 &935795029
 GameObject:
   m_ObjectHideFlags: 0
@@ -16993,7 +16993,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 1845050740}
-  hoverSound: {fileID: 8300000, guid: 5bfb9757fdd02a04890fae629907f4d6, type: 3}
+  hoverSound: {fileID: 8300000, guid: 5fe35cda79883f644b283df6fb7802b7, type: 3}
 --- !u!82 &1845050740
 AudioSource:
   m_ObjectHideFlags: 0
