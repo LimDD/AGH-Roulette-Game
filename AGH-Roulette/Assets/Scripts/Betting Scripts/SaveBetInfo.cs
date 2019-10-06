@@ -1,5 +1,4 @@
-﻿using System.IO;
-using System.Text.RegularExpressions;
+﻿using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -12,16 +11,6 @@ public class SaveBetInfo : MonoBehaviour
     public List<string> betNums;
     public List<int> winNum;
     string btnName;
-
-    private void Start()
-    {
-        string path = "/winningNumbers.txt";
-
-        //Clears the file
-        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
-        writer.Flush();
-        writer.Close();
-    }
 
     private void Awake()
     {
@@ -216,8 +205,6 @@ public class SaveBetInfo : MonoBehaviour
                 }
             }
         }
-
-        WriteToFile(betType);
         SaveNums(betType);
     }
 
@@ -339,7 +326,6 @@ public class SaveBetInfo : MonoBehaviour
                 winNum.Add(i);
             }
         }
-        WriteToFile(betType);
         SaveNums(betType);
     }
 
@@ -356,20 +342,5 @@ public class SaveBetInfo : MonoBehaviour
     public List<string> GetSavedNums()
     {
         return betNums;
-    }
-
-    //Writes the winning numbers to the text file
-    public void WriteToFile(string betType)
-    {
-        string path = "/winningNumbers.txt";
-
-        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path, true);
-
-        writer.WriteLine(betType);
-        foreach (int i in winNum)
-        {
-            writer.WriteLine(i);
-        }
-        writer.Close();
     }
 }
