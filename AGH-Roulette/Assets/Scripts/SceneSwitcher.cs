@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour
 {
     public bool menu;
+    DontDestroy dD;
 
     public void BoardScene()
     {
@@ -15,7 +16,11 @@ public class SceneSwitcher : MonoBehaviour
 
     public void MenuScene()
     {
+        dD = FindObjectOfType<DontDestroy>();
+
+        dD.Destroy();
         SceneManager.LoadScene("Gamescene_Menu");
+
         menu = true;
     }
 
