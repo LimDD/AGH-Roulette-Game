@@ -50,7 +50,7 @@ public class WheelGestureInput : MonoBehaviour
 
                 else if (type == "Click")
                 {
-                    if (wheel.activeSelf)
+                    if (wheel.activeSelf && summary != null)
                     {
                         wheel.SetActive(false);
                         summary.SetActive(true);

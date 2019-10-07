@@ -40,11 +40,15 @@ public class BetPanelTimer : MonoBehaviour
             int num = int.Parse(amount.text);
             nRS.SetNumber(num);
 
-            while(narrator.isPlaying)
+            if (narrator.isPlaying)
             {
-                //wait
+                targetTime = 1f;
             }
-            nRS.ReadNumber();
+
+            else
+            {
+                nRS.ReadNumber();
+            }
         }
     }
 }

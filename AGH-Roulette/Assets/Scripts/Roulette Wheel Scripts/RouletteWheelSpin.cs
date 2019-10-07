@@ -29,12 +29,19 @@ public class RouletteWheelSpin : MonoBehaviour
     {
         sR = FindObjectOfType<SpinResult>();
 
-        winner = false;
         check = false;
 
         //Result after the wheel spins
-        //rouletteValue = 23;
-        rouletteValue = Random.Range(0, 36);
+
+        if (winner)
+        {
+            rouletteValue = 7;
+        }
+
+        else
+        {
+            rouletteValue = Random.Range(0, 36);
+        }
 
         //Wheel rotation values
         xAngle = 0;

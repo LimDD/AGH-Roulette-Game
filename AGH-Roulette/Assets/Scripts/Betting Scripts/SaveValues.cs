@@ -12,7 +12,7 @@ public class SaveValues : MonoBehaviour
     public GameObject table;
 
     //Saves the balance and the bet amounts into a text file
-    public void WriteToFile()
+    public void WriteToFile(bool tutorial)
     {
         string balance = bal.text;
         string bet = amount.text;
@@ -32,7 +32,7 @@ public class SaveValues : MonoBehaviour
         writer.WriteLine(bet);
         writer.Close();
 
-        if (balNum == 0)
+        if (balNum == 0 && !tutorial)
         {
             CheckBal(balNum);
         }
