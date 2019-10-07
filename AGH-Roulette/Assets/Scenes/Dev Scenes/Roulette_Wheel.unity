@@ -2838,8 +2838,14 @@ MonoBehaviour:
   source: {fileID: 1571980671}
   red: {fileID: 8300000, guid: 49c33c6ad9ccdcb479c8658ebe243e5f, type: 3}
   black: {fileID: 8300000, guid: 5ad20305a16b1ce48a1c8f1e6d364845, type: 3}
-  win: {fileID: 8300000, guid: eebe8af0602646c49a00db366ac51eed, type: 3}
-  lose: {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
+  win:
+  - {fileID: 8300000, guid: eebe8af0602646c49a00db366ac51eed, type: 3}
+  - {fileID: 8300000, guid: 0a1c7fe92d423464aa101292bf564458, type: 3}
+  - {fileID: 8300000, guid: 2546785b5229c6c4e95fabf033af56a8, type: 3}
+  lose:
+  - {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
+  - {fileID: 8300000, guid: 13533f95d22a94f489c387657e6ec556, type: 3}
+  - {fileID: 8300000, guid: 5d4a578602a3d284984e55f6d6f3839d, type: 3}
 --- !u!114 &1890441222
 MonoBehaviour:
   m_ObjectHideFlags: 0

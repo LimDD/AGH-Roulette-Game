@@ -22,8 +22,8 @@ public class SpinResult : MonoBehaviour
     public AudioSource source;
     public AudioClip red;
     public AudioClip black;
-    public AudioClip win;
-    public AudioClip lose;
+    public AudioClip[] win;
+    public AudioClip[] lose;
 
     bool winner;
 
@@ -183,14 +183,16 @@ public class SpinResult : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
+        int rand = Random.Range(0, 2);
+
         if (winner)
         {
-            source.PlayOneShot(win);
+            source.PlayOneShot(win[rand]);
         }
 
         else
         {
-            source.PlayOneShot(lose);
+            source.PlayOneShot(lose[rand]);
         }
     }
 
