@@ -41,7 +41,25 @@ public class SetBalance : MonoBehaviour
             coins.text = saveData[saveData.Count - 2];
         }
 
+        SetLastCoins();
+    }
 
+    public void FirstCoins()
+    {
+        saveData = new List<string>();
+        path = "/balandamount.txt";
+        string line;
+
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
+
+        line = reader.ReadLine();
+        saveData.Add(line);
+        reader.Close();
+
+        if (coins != null)
+        {
+            coins.text = saveData[0];
+        }
         SetLastCoins();
     }
 
@@ -49,6 +67,7 @@ public class SetBalance : MonoBehaviour
     private void SetLastCoins()
     {
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
+        writer.Flush();
 
         foreach (string s in saveData)
         {

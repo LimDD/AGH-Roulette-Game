@@ -13082,6 +13082,7 @@ GameObject:
   - component: {fileID: 1612733940}
   - component: {fileID: 1612733941}
   - component: {fileID: 1612733942}
+  - component: {fileID: 1612733943}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -13176,6 +13177,17 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 603986851}
         m_MethodName: BoardScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1612733943}
+        m_MethodName: FirstCoins
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13376,6 +13388,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31c4943fbb19c04a9012f3877ea439d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1612733943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612733934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503b02a18ba18a14192ac7ffbdca3e14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coins: {fileID: 0}
 --- !u!1 &1638217484
 GameObject:
   m_ObjectHideFlags: 0
