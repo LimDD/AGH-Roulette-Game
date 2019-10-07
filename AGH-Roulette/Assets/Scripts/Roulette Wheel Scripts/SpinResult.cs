@@ -146,7 +146,7 @@ public class SpinResult : MonoBehaviour
 
         if (winNum > 20)
         {
-            f = 1f;
+            f = 1.1f;
         }
 
         StartCoroutine(ColourPlay(colourRed, f));
