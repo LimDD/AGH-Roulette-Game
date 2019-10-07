@@ -26,16 +26,19 @@ public class PlayRandomWelcome : MonoBehaviour {
 
     private void Update()
     {
-        if (!_as.isPlaying)
+        if (!_as.isPlaying )
         {
-            if (sg.mute)
+            if (sg != null)
             {
-                sg.mute = false;
-                t.mute = false;
-                a.mute = false;
-                hs.mute = false;
-                ror.mute = false;
-                ps.mute = false;
+                if (sg.mute)
+                {
+                    sg.mute = false;
+                    t.mute = false;
+                    a.mute = false;
+                    hs.mute = false;
+                    ror.mute = false;
+                    ps.mute = false;
+                }
             }
         }
     }
