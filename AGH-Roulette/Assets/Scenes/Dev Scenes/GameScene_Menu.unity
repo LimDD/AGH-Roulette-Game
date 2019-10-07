@@ -980,7 +980,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -3808,8 +3808,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.1484375, y: -216}
-  m_SizeDelta: {x: -271.7, y: -595.5}
+  m_AnchoredPosition: {x: 0, y: -216}
+  m_SizeDelta: {x: 0, y: -595.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &603986851
 MonoBehaviour:
@@ -4229,7 +4229,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -6848,7 +6848,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -7517,6 +7517,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e48b9f50031201e429247491e77957d5, type: 3}
   - {fileID: 8300000, guid: c71a47972b9fdda428438e3fbbee5625, type: 3}
   - {fileID: 8300000, guid: 32145ba27fa84e74e8945c9fd3de70dc, type: 3}
+  sg: {fileID: 1612733939}
+  t: {fileID: 642121534}
+  a: {fileID: 1585967192}
+  hs: {fileID: 78181796}
+  ror: {fileID: 932717649}
+  ps: {fileID: 1845050740}
 --- !u!82 &995639691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12861,7 +12867,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -13233,7 +13239,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -14690,7 +14696,7 @@ AudioSource:
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 0
+  Mute: 1
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
