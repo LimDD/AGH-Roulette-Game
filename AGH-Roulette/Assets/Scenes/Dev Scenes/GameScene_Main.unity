@@ -2130,6 +2130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 40712007}
+  panel2: {fileID: 0}
   first: 0
 --- !u!82 &40712013
 AudioSource:
@@ -2710,6 +2711,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 78692584}
+  panel2: {fileID: 0}
   first: 0
 --- !u!114 &78692591
 MonoBehaviour:
@@ -17704,6 +17706,7 @@ GameObject:
   - component: {fileID: 863234864}
   - component: {fileID: 863234868}
   - component: {fileID: 863234866}
+  - component: {fileID: 863234869}
   m_Layer: 0
   m_Name: Portrait_Roulette_Table
   m_TagString: Untagged
@@ -17942,6 +17945,19 @@ MonoBehaviour:
   dec: {fileID: 0}
   playerCoinsText: {fileID: 1189270746}
   betText: {fileID: 228806702}
+--- !u!114 &863234869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863234860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menu: 0
 --- !u!1 &910187216
 GameObject:
   m_ObjectHideFlags: 0
@@ -28330,6 +28346,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1519994127}
+  panel2: {fileID: 0}
   first: 0
 --- !u!82 &1519994134
 AudioSource:
@@ -37038,6 +37055,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 863234860}
+  panel2: {fileID: 0}
   first: 0
 --- !u!114 &2040193796
 MonoBehaviour:
