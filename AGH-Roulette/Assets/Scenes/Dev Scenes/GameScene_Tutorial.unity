@@ -4339,7 +4339,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 294887270}
         m_MethodName: WriteToFile
-        m_Mode: 6
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -31919,7 +31919,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a01fb3423e07ca4f9795cfc0cfb9ea7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  yes: {fileID: 365015747}
+  yes: {fileID: 0}
   no: {fileID: 1271443037}
 --- !u!114 &2098654540
 MonoBehaviour:

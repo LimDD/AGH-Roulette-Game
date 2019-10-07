@@ -12,7 +12,10 @@ public class PlayAgainGestures : MonoBehaviour
     {
         if (type == "SwipeUp")
         {
-            yes.onClick.Invoke();
+            if (yes != null)
+            {
+                yes.onClick.Invoke();
+            }
         }
 
         else if (type == "SwipeDown")
