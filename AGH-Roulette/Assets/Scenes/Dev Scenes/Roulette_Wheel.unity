@@ -1530,6 +1530,7 @@ MonoBehaviour:
   text: {fileID: 1871382662}
   wheel: {fileID: 1571980667}
   summary: {fileID: 1103450580}
+  completed: {fileID: 0}
 --- !u!114 &1266093026
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2846,6 +2847,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
   - {fileID: 8300000, guid: 13533f95d22a94f489c387657e6ec556, type: 3}
   - {fileID: 8300000, guid: 5d4a578602a3d284984e55f6d6f3839d, type: 3}
+  tutorial: 0
 --- !u!114 &1890441222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,7 +3083,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1935289283}
   m_OnClick:
     m_PersistentCalls:
