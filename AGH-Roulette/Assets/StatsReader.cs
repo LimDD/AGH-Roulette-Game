@@ -30,6 +30,7 @@ public class StatsReader: MonoBehaviour
 
     public void CallTimer()
     {
+        numReader.mute = false;
         read = false;
         StartCoroutine(StartCountdown(1.2f));
     }
