@@ -17655,6 +17655,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7166c2a7e2b05fb44b7cacd0e5baac02, type: 3}
   - {fileID: 8300000, guid: 6f1e7bbd537bbc249a03a4952973551e, type: 3}
   - {fileID: 8300000, guid: 902bf8c0fb66bbb43bb2028268f169eb, type: 3}
+  sg: {fileID: 0}
+  t: {fileID: 0}
+  a: {fileID: 0}
+  hs: {fileID: 0}
+  ror: {fileID: 0}
+  ps: {fileID: 0}
 --- !u!1 &855363966
 GameObject:
   m_ObjectHideFlags: 0
@@ -18192,8 +18198,6 @@ MonoBehaviour:
   botMNum: {fileID: 915407015}
   botRNum: {fileID: 2000296558}
   num: 0
-  REDNUMBERS: 01000000030000000500000007000000090000000c0000000e0000001000000012000000130000001500000017000000190000001b0000001e000000200000002200000024000000
-  BLACKNUMBERS: 020000000400000006000000080000000a0000000b0000000d0000000f000000110000001400000016000000180000001a0000001c0000001d0000001f0000002100000023000000
 --- !u!114 &863234867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25518,7 +25522,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1283127539}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -25654,7 +25658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36e771368f3baf4e9b1e3e6b800913a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narration: {fileID: 0}
+  narration: {fileID: 853792152}
   sound: {fileID: 0}
   btnNum: {fileID: 551281552}
   btn: {fileID: 1258632477}

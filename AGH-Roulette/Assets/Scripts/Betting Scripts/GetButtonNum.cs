@@ -34,7 +34,7 @@ public class GetButtonNum : MonoBehaviour
 
     public int num;
 
-    public List<int> REDNUMBERS = new List<int>()
+    List<int> REDNUMBERS = new List<int>()
     {
         1,
         3,
@@ -55,7 +55,8 @@ public class GetButtonNum : MonoBehaviour
         34,
         36
     };
-    public List<int> BLACKNUMBERS = new List<int>()
+
+    List<int> BLACKNUMBERS = new List<int>()
     {
         2,
         4,
