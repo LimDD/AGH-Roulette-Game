@@ -25,6 +25,7 @@ public class SpinResult : MonoBehaviour
     public AudioClip[] win;
     public AudioClip[] lose;
 
+    public bool tutorial;
     bool winner;
 
     private void Start()
@@ -164,7 +165,12 @@ public class SpinResult : MonoBehaviour
             }
 
             rWS.Winner(winNum);
-            wP.ResetFile(balance);
+
+            if (!tutorial)
+            {
+                wP.ResetFile(balance);
+            }
+
             StartCoroutine(StartCountdown(f));
         }
 
@@ -172,7 +178,11 @@ public class SpinResult : MonoBehaviour
         else
         {
             rWS.Loser(winNum);
-            wP.ResetFile(balance);
+
+            if (!tutorial)
+            {
+                wP.ResetFile(balance);
+            }
             StartCoroutine(StartCountdown(f));
         }
 

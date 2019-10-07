@@ -1066,6 +1066,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
   - {fileID: 8300000, guid: 13533f95d22a94f489c387657e6ec556, type: 3}
   - {fileID: 8300000, guid: 5d4a578602a3d284984e55f6d6f3839d, type: 3}
+  tutorial: 1
 --- !u!114 &500657678
 MonoBehaviour:
   m_ObjectHideFlags: 0
