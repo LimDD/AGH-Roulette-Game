@@ -14,7 +14,6 @@ public class SaveValues : MonoBehaviour
     //Saves the balance and the bet amounts into a text file
     public void WriteToFile()
     {
-        sS = gameObject.GetComponent<SceneSwitcher>();
         string balance = bal.text;
         string bet = amount.text;
 
@@ -33,20 +32,21 @@ public class SaveValues : MonoBehaviour
         writer.WriteLine(bet);
         writer.Close();
 
-        CheckBal(balNum);
-    }
-
-    private void CheckBal(int balNum)
-    {
         if (balNum == 0)
         {
-            table.SetActive(false);
-            sS.WheelScene();
+            CheckBal(balNum);
         }
 
         else
         {
             panel.SetActive(true);
         }
+    }
+
+    private void CheckBal(int balNum)
+    {
+        sS = table.GetComponent<SceneSwitcher>();
+        table.SetActive(false);
+        sS.WheelScene();       
     }
 }
