@@ -171,6 +171,11 @@ public class SpinResult : MonoBehaviour
                 wP.ResetFile(balance);
             }
 
+            else
+            {
+                wP.SetBal(balance);
+            }
+
             StartCoroutine(StartCountdown(f));
         }
 
@@ -183,6 +188,12 @@ public class SpinResult : MonoBehaviour
             {
                 wP.ResetFile(balance);
             }
+
+            else
+            {
+                wP.SetBal(balance);
+            }
+
             StartCoroutine(StartCountdown(f));
         }
 

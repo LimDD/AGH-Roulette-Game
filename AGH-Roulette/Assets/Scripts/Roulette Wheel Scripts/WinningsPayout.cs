@@ -60,6 +60,11 @@ public class WinningsPayout : MonoBehaviour
         return balance;
     }
 
+    public void SetBal(int balance)
+    {
+        bal.text = "Coins: " + balance.ToString();
+    }
+
     //Resets the balandamount text file to only contain the latest balance
     public void ResetFile(int balance)
     {
