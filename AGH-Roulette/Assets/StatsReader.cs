@@ -39,6 +39,12 @@ public class StatsReader: MonoBehaviour
     public IEnumerator StartCountdown(float f)
     {
         int count = 0;
+
+        if (clips.Length == 4)
+        {
+            count++;
+        }
+
         yield return new WaitForSeconds(f);
         for (int i = 0; i < clips.Length * 2; i++)
         {
@@ -80,7 +86,15 @@ public class StatsReader: MonoBehaviour
 
                     else
                     {
-                        source.PlayOneShot(clips[count]);
+                        if (clips.Length == 4)
+                        {
+                            source.PlayOneShot(clips[count - 1]);
+                        }
+
+                        else
+                        {
+                            source.PlayOneShot(clips[count]);
+                        }
                     }
 
                     count++;

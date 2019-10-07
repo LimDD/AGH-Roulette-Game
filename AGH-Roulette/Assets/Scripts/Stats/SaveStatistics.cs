@@ -73,7 +73,6 @@ public class SaveStatistics : MonoBehaviour
             {
                 summary.Add(0);
             }
-
         }
 
         int amount = 0;
@@ -113,8 +112,8 @@ public class SaveStatistics : MonoBehaviour
             stats[2] += amount;
         }
 
-        summary[0] = bets;
-        summary[1] = amount;
+        summary[0] += bets;
+        summary[1] += amount;
 
         path = "/statsFile.txt";
         SaveToFile();
@@ -133,8 +132,8 @@ public class SaveStatistics : MonoBehaviour
         summary[1] -= amount;
 
         //Doesn't add the bet amount the player got back from the winnings
-        stats[3] = amount * (multi - 1);
-        summary[2] = amount * (multi - 1);
+        stats[3] += amount * (multi - 1);
+        summary[2] += amount * (multi - 1);
         SaveToFile();
     }
 
