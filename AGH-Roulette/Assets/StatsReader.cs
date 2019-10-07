@@ -31,7 +31,7 @@ public class StatsReader: MonoBehaviour
     public void CallTimer()
     {
         read = false;
-        StartCoroutine(StartCountdown(0.8f));
+        StartCoroutine(StartCountdown(1.2f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
@@ -118,12 +118,17 @@ public class StatsReader: MonoBehaviour
                     int n = int.Parse(num);
                     nRS.SetNumber(n);
                     nRS.ReadNumber();
+
+
+                    yield return new WaitForSeconds(0.4f);
+
                     read = false;
                 }
             }
 
             else
             {
+                yield return new WaitForSeconds(0.1f);
                 i--;
             }  
         }

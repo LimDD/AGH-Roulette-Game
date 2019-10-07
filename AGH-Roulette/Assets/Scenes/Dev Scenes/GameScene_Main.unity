@@ -5347,17 +5347,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1519994127}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 78692584}
         m_MethodName: SetActive
         m_Mode: 6
@@ -5445,6 +5434,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1519994127}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -25397,7 +25397,6 @@ GameObject:
   - component: {fileID: 1258632477}
   - component: {fileID: 1258632481}
   - component: {fileID: 1258632480}
-  - component: {fileID: 1258632482}
   - component: {fileID: 1258632485}
   - component: {fileID: 1258632487}
   - component: {fileID: 1258632484}
@@ -25519,7 +25518,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1258632482}
+      - m_Target: {fileID: 0}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -25643,20 +25642,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &1258632482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258632475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  betNums: []
-  winNum: 
 --- !u!114 &1258632483
 MonoBehaviour:
   m_ObjectHideFlags: 0
