@@ -55,14 +55,16 @@ public class BoardButtonTimer : MonoBehaviour
 
         else
         {
-            bool played = false;
-            while (!played)
+
+            if (!narration.isPlaying)
             {
-                if (!narration.isPlaying)
-                {
-                    audioSource.Play();
-                    played = true;
-                } 
+                audioSource.Play();
+
+            }
+                
+            else
+            {
+                StartCoroutine(StartCountdown(0.1f));
             }
         }
         sB.SaveButton(btn);

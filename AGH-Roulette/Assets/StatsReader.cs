@@ -11,71 +11,127 @@ public class StatsReader: MonoBehaviour
     public AudioSource narrator;
     public AudioSource numReader;
     public Text statName;
-    public Text stat;
-    public AudioClip clip1;
-    public AudioClip clip2;
+    Text stat;
+    public AudioClip[] clips;
+    public AudioClip clip;
     NumberReaderScript nRS;
 
     public float time;
     bool read;
-    private string btnName;
     private string num;
+    private string textName;
 
     private void Start()
     {
         nRS = FindObjectOfType<NumberReaderScript>();
+
+        CallTimer();
     }
 
     public void CallTimer()
     {
         read = false;
-        StartCoroutine(StartCountdown(0.2f));
+        StartCoroutine(StartCountdown(1.2f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
     public IEnumerator StartCountdown(float f)
     {
+        int count = 0;
         yield return new WaitForSeconds(f);
-
-        if (!narrator.isPlaying)
+        for (int i = 0; i < clips.Length * 2; i++)
         {
-            if (!read)
+            if (!numReader.isPlaying)
             {
-                read = true;
-
-                if (statName.text.Contains("Losses"))
+                if (!read)
                 {
-                    source.PlayOneShot(clip2);
+                    read = true;
+
+                    switch (count)
+                    {
+                        case 0:
+                            textName = "RoundsPlayed";
+                            break;
+
+                        case 1:
+                            textName = "BetsMade";
+                            break;
+
+                        case 2:
+                            textName = "AWon";
+                            break;
+
+                        case 3:
+                            textName = "ALost";
+                            break;
+
+                        case 4:
+                            textName = "Profit";
+                            break;
+                    }
+
+                    statName = GameObject.Find(textName).GetComponent<Text>();
+
+                    if (statName.text.Contains("Losses"))
+                    {
+                        source.PlayOneShot(clip);
+                    }
+
+                    else
+                    {
+                        source.PlayOneShot(clips[count]);
+                    }
+
+                    count++;
+                    yield return new WaitForSeconds(0.8f);
                 }
 
                 else
                 {
-                    source.PlayOneShot(clip1);
-                }
+                    switch (count)
+                    {
+                        case 1:
+                            textName = "RP";
+                            break;
 
-                ReadStat();
+                        case 2:
+                            textName = "BM";
+                            break;
+
+                        case 3:
+                            textName = "AW";
+                            break;
+
+                        case 4:
+                            textName = "AL";
+                            break;
+
+                        case 5:
+                            textName = "Pt";
+                            break;
+                    }
+
+                    stat = GameObject.Find(textName).GetComponent<Text>();
+                    num = stat.text;
+
+                    num = Regex.Replace(num, "[^0-9]", "");
+                    int n = int.Parse(num);
+                    nRS.SetNumber(n);
+                    nRS.ReadNumber();
+
+
+                    yield return new WaitForSeconds(0.4f);
+
+                    read = false;
+                }
             }
 
             else
             {
-                num = stat.text;
-
-                num = Regex.Replace(num, "[^0-9]", "");
-                int n = int.Parse(num);
-                nRS.SetNumber(n);
-                numReader.Stop();
-                numReader.mute = false;
-                nRS.ReadNumber();
-            }
+                yield return new WaitForSeconds(0.1f);
+                i--;
+            }  
         }
-    }
-
-    private void ReadStat()
-    {
-        time = 0.8f;
-        StartCoroutine(StartCountdown(time));
-    }
-
-    
+    }   
 }
 

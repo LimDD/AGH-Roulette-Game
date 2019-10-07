@@ -5347,17 +5347,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 1519994127}
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 78692584}
         m_MethodName: SetActive
         m_Mode: 6
@@ -5381,7 +5370,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1480642223}
-        m_MethodName: RemoveBet
+        m_MethodName: CheckPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5445,6 +5434,17 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1519994127}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -14945,7 +14945,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
@@ -15123,6 +15123,7 @@ GameObject:
   - component: {fileID: 697793730}
   - component: {fileID: 697793734}
   - component: {fileID: 697793729}
+  - component: {fileID: 697793733}
   m_Layer: 0
   m_Name: Zoomed Button
   m_TagString: Untagged
@@ -15162,7 +15163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: e4cdb66a670e58046b63ff3123803ae7, type: 3}
   clip2: {fileID: 0}
@@ -15306,6 +15307,102 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697793727}
   m_CullTransparentMesh: 0
+--- !u!82 &697793733
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697793727}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &697793734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16309,7 +16406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 8300000, guid: 8469d28b9cf3c684e887477d2e1114e9, type: 3}
@@ -17887,7 +17984,6 @@ GameObject:
   - component: {fileID: 863234865}
   - component: {fileID: 863234864}
   - component: {fileID: 863234868}
-  - component: {fileID: 863234869}
   - component: {fileID: 863234866}
   m_Layer: 0
   m_Name: Portrait_Roulette_Table
@@ -18129,20 +18225,6 @@ MonoBehaviour:
   dec: {fileID: 448481269}
   playerCoinsText: {fileID: 1189270746}
   betText: {fileID: 228806702}
---- !u!114 &863234869
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 863234860}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  betNums: []
-  winNum: 
 --- !u!1 &910187216
 GameObject:
   m_ObjectHideFlags: 0
@@ -18994,7 +19076,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 8300000, guid: 68cb95c8003cf6242b9f41fca92becfa, type: 3}
@@ -25315,7 +25397,6 @@ GameObject:
   - component: {fileID: 1258632477}
   - component: {fileID: 1258632481}
   - component: {fileID: 1258632480}
-  - component: {fileID: 1258632482}
   - component: {fileID: 1258632485}
   - component: {fileID: 1258632487}
   - component: {fileID: 1258632484}
@@ -25437,7 +25518,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1258632482}
+      - m_Target: {fileID: 0}
         m_MethodName: SaveBetType
         m_Mode: 1
         m_Arguments:
@@ -25561,20 +25642,6 @@ MonoBehaviour:
   coordy: 0
   coordz: 0
   playerToken: {fileID: 1135392838}
---- !u!114 &1258632482
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258632475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c7fd160f7c7fe34bb7303c0ecc5d286, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  betNums: []
-  winNum: 
 --- !u!114 &1258632483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30140,7 +30207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
@@ -31595,7 +31662,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 8300000, guid: 68cb95c8003cf6242b9f41fca92becfa, type: 3}
@@ -31791,7 +31858,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 0}
@@ -38131,7 +38198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: f77b24708e8781041a987668d1052cf3, type: 3}
   clip2: {fileID: 0}
@@ -40108,7 +40175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15694f307b7155847b33aa3efb0f886e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 2133633093}
+  source: {fileID: 697793733}
   nums: {fileID: 853792152}
   clip1: {fileID: 8300000, guid: 8c660ef8e85661c4f8f8bb921db74bb7, type: 3}
   clip2: {fileID: 0}
