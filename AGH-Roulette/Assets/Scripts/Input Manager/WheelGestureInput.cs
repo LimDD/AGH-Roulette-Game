@@ -9,6 +9,7 @@ public class WheelGestureInput : MonoBehaviour
     public Text text;
     public GameObject wheel;
     public GameObject summary;
+    public GameObject completed;
 
     SceneSwitcher sS;
     StatsReset sR;
@@ -32,14 +33,31 @@ public class WheelGestureInput : MonoBehaviour
                 if (type == "SwipeUp")
                 {
                     sR.ClearSummary();
-                    if (balance.text != "0")
+
+                    if (summary != null)
                     {
-                        sS.BoardScene();
+                        if (balance.text != "0")
+                        {
+                            sS.BoardScene();
+                        }
+
+                        else
+                        {
+                            sS.MenuScene();
+                        }
                     }
 
                     else
                     {
-                        sS.MenuScene();
+                        if (completed.activeSelf)
+                        {
+                            sS.MenuScene();
+                        }
+
+                        else
+                        {
+                            completed.SetActive(true);
+                        }
                     }
                 }
 
