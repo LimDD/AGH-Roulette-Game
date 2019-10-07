@@ -5,6 +5,7 @@ using UnityEngine.UI;
 public class BoardGestureInput : MonoBehaviour
 {
     public GameObject panel;
+    public GameObject panel2;
     Button btn;
     public bool first;
     BetPanelTimer bPT;
@@ -86,6 +87,17 @@ public class BoardGestureInput : MonoBehaviour
                 else if (panel.name == "AnotherBetPanel")
                 {
                     pAG.Gestures(type);
+                }
+
+                else
+                {
+                    if (type == "Click")
+                    {
+                        panel.SetActive(false);
+                        panel2.SetActive(true);
+
+
+                    }
                 }
             }
         }
