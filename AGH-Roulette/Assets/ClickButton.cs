@@ -17,7 +17,7 @@ public class ClickButton : MonoBehaviour
         if (button != null)
         {
             button.Select();
-            button.onClick.Invoke();
+            //button.onClick.Invoke();
         }
     }
 }

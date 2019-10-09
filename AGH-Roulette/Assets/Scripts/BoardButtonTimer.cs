@@ -41,6 +41,11 @@ public class BoardButtonTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
+        CountdownFinished(inside);
+    }
+
+    public void CountdownFinished(bool inside)
+    {
         audioSource.pitch = 1f;
         audioSource.panStereo = 0f;
 
@@ -55,17 +60,12 @@ public class BoardButtonTimer : MonoBehaviour
 
         else
         {
-
-            if (!narration.isPlaying)
+            if (narration.isPlaying)
             {
-                audioSource.Play();
+                narration.Stop();
+            }
 
-            }
-                
-            else
-            {
-                StartCoroutine(StartCountdown(0.1f));
-            }
+            audioSource.Play();
         }
         sB.SaveButton(btn);
     }
