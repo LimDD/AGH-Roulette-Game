@@ -2167,10 +2167,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Amazing! You Won!
-
-
-    Congratulations on completing the tutorial. Now you know the basics of Roulette.
+  m_text: 'Congratulations on completing the tutorial. Now you know the basics of
+    Roulette.
 
 
     Best of luck to you, high roller, and I hope you win big!'
