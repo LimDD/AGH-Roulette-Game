@@ -40,7 +40,7 @@ public class BoardButtonTimer : MonoBehaviour
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
-        Debug.Log("Hi");
+        CountdownFinished(inside);
 
     }
 
