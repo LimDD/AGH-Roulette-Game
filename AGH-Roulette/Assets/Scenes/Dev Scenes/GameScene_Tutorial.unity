@@ -1314,12 +1314,10 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Hey there high roller, and welcome to the Casino Royale. Before we get
-    you playing on your own, I''m going to teach you how to play Roulette in this
-    tutorial
+  m_text: 'Hey there high roller, and welcome to the Casino Royale.
 
 
-    So, lets start off with the basics.'
+    Before we get you playing on your own, I''m going to teach you how to play Roulette.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1388,12 +1386,12 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 64583173}
-    characterCount: 193
+    characterCount: 141
     spriteCount: 0
-    spaceCount: 37
-    wordCount: 37
+    spaceCount: 27
+    wordCount: 27
     linkCount: 0
-    lineCount: 7
+    lineCount: 6
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -7356,7 +7354,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 7
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -7385,7 +7383,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
@@ -30940,7 +30938,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -24, y: 754}
+  m_AnchoredPosition: {x: -24.000061, y: 754}
   m_SizeDelta: {x: -794.7, y: -1738.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1826177616
