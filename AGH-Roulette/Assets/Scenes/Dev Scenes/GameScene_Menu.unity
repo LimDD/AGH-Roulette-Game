@@ -7301,7 +7301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ebf251267798b64b9cd5305255fb574, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  easterEgg: {fileID: 0}
+  easterEgg: {fileID: 1450667889}
 --- !u!82 &995639691
 AudioSource:
   m_ObjectHideFlags: 0
