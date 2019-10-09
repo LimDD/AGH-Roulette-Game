@@ -2257,10 +2257,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d0824eb2f6352438c425c01b2db02f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  confirmationExcellent: {fileID: 8300000, guid: 00359d4e212dce9459ec2f0da74a0ae7,
+  confirmationExcellent: {fileID: 8300000, guid: f4bb069d4ca031b4d949d92217c69103,
     type: 3}
-  confirmationGreat: {fileID: 8300000, guid: 698396b3afb087244ba38d41aca213e7, type: 3}
-  confirmationPerfect: {fileID: 8300000, guid: aefe60c90a041a846b753e28e5567abb, type: 3}
+  confirmationGreat: {fileID: 8300000, guid: fa5acd9fc4e8c1648b98b9b9e61bbbaf, type: 3}
+  confirmationPerfect: {fileID: 8300000, guid: 078a34277c96c0f40a02108a6f0a3afc, type: 3}
   soundManager: {fileID: 40712013}
   stateActive: 0
   hasPlayed: 0
