@@ -24,6 +24,7 @@ public class SpinResult : MonoBehaviour
     public AudioClip black;
     public AudioClip[] win;
     public AudioClip[] lose;
+    public AudioClip controls;
 
     public bool tutorial;
     bool winner;
@@ -197,6 +198,8 @@ public class SpinResult : MonoBehaviour
             StartCoroutine(StartCountdown(f));
         }
 
+        f += 3;
+        StartCoroutine(ControlsPlay(f));
         dD.Destroy();
     }
 
@@ -215,6 +218,13 @@ public class SpinResult : MonoBehaviour
         {
             source.PlayOneShot(lose[rand]);
         }
+    }
+
+    public IEnumerator ControlsPlay(float f)
+    {
+        yield return new WaitForSeconds(f);
+
+        source.PlayOneShot(controls);
     }
 
     public IEnumerator ColourPlay(bool colourRed, float f)
