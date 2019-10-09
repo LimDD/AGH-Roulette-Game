@@ -8,10 +8,9 @@ public class BoardButtonTimer : MonoBehaviour
 {
     NumberReaderScript nRS;
     AudioSource audioSource;
+    public AudioClip[] outside;
     SelectButton sB;
-    public AudioSource narration;
-    public AudioClip sound;
-    public TMP_Text btnNum;
+    BoardGestureInput bGI;
     public Button btn;
     string num;
     bool inside;
@@ -21,12 +20,12 @@ public class BoardButtonTimer : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
         nRS = FindObjectOfType<NumberReaderScript>();
         sB = FindObjectOfType<SelectButton>();
+        bGI = FindObjectOfType<BoardGestureInput>();
     }
 
     public void CallTimer()
     {
         inside = true;
-        num = btnNum.text;
         StartCoroutine(StartCountdown(1f));
     }
 
@@ -40,12 +39,18 @@ public class BoardButtonTimer : MonoBehaviour
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
-        CountdownFinished(inside);
 
+        if (f != 0.1f)
+        {
+            btn.Select();
+            CountdownFinished(inside);
+        }
     }
 
     public void CountdownFinished(bool inside)
     {
+        btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+
         audioSource.pitch = 1f;
         audioSource.panStereo = 0f;
 
@@ -53,6 +58,7 @@ public class BoardButtonTimer : MonoBehaviour
 
         if (inside)
         {
+            num = btn.GetComponentInChildren<TMP_Text>().text;
             int i = int.Parse(num);
             nRS.SetNumber(i);
             nRS.ReadNumber();
@@ -60,13 +66,66 @@ public class BoardButtonTimer : MonoBehaviour
 
         else
         {
-            if (narration.isPlaying)
+            int count = 0;
+
+            switch (temp)
             {
-                narration.Stop();
+                case "1st_Column":
+                    count = 7;
+                    break;
+
+                case "2nd_Column":
+                    count = 8;
+                    break;
+
+                case "3rd_Column":
+                    count = 9;
+                    break;
+
+                case "1st_Third":
+                    count = 0;
+                    break;
+
+                case "2nd_Third":
+                    count = 1;
+                    break;
+
+                case "3rd_Third":
+                    count = 2;
+                    break;
+
+                case "Evens":
+                    count = 3;
+                    break;
+
+                case "Odds":
+                    count = 4;
+                    break;
+
+                case "Blacks":
+                    count = 5;
+                    break;
+
+                case "Reds":
+                    count = 6;
+                    break;
+
+                case "1_To_18":
+                    count = 10;
+                    break;
+
+                case "19_To_36":
+                    count = 11;
+                    break;
+
+                default:
+                    Debug.Log("naming error");
+                    break;
             }
 
-            audioSource.Play();
+
+            audioSource.PlayOneShot(outside[count]);
         }
         sB.SaveButton(btn);
-    }
+    }  
 }

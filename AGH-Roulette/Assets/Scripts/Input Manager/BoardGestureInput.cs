@@ -6,7 +6,6 @@ public class BoardGestureInput : MonoBehaviour
 {
     public GameObject panel;
     public GameObject panel2;
-    Button btn;
     public bool first;
     BetPanelTimer bPT;
     BettingGestures bG;
@@ -14,6 +13,7 @@ public class BoardGestureInput : MonoBehaviour
     ZoomPanelGestures zPG;
     PlayAgainGestures pAG;
     ClickButton cB;
+    public string type;
 
     public void SetFirst()
     {
@@ -42,7 +42,7 @@ public class BoardGestureInput : MonoBehaviour
 
         if (GestureInputManager.CurrentInput != InputAction.Null)
         {
-            string type = GestureInputManager.CurrentInput.ToString();
+            type = GestureInputManager.CurrentInput.ToString();
             Debug.Log(type);
 
             if (panel.activeSelf)
