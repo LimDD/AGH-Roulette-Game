@@ -294,7 +294,6 @@ GameObject:
   - component: {fileID: 18504153}
   - component: {fileID: 18504149}
   - component: {fileID: 18504154}
-  - component: {fileID: 18504152}
   m_Layer: 5
   m_Name: 2_Cell
   m_TagString: Untagged
@@ -608,18 +607,6 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &18504152
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 18504144}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &18504153
 AudioSource:
   m_ObjectHideFlags: 0
@@ -751,7 +738,6 @@ GameObject:
   - component: {fileID: 22643037}
   - component: {fileID: 22643033}
   - component: {fileID: 22643035}
-  - component: {fileID: 22643038}
   m_Layer: 5
   m_Name: Odds
   m_TagString: Untagged
@@ -1062,6 +1048,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 22643037}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &22643035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1186,18 +1189,6 @@ MonoBehaviour:
   sound: {fileID: 8300000, guid: 5633c6b21c2b9c341a740c2a8280bcfe, type: 3}
   btnNum: {fileID: 0}
   btn: {fileID: 22643028}
---- !u!114 &22643038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 22643026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1214,7 +1205,6 @@ GameObject:
   - component: {fileID: 28234595}
   - component: {fileID: 28234591}
   - component: {fileID: 28234596}
-  - component: {fileID: 28234592}
   m_Layer: 5
   m_Name: 10_Cell
   m_TagString: Untagged
@@ -1437,18 +1427,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 28234588}
---- !u!114 &28234592
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 28234586}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &28234593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1504,6 +1482,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 28234596}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -1635,7 +1630,6 @@ GameObject:
   - component: {fileID: 35355877}
   - component: {fileID: 35355873}
   - component: {fileID: 35355878}
-  - component: {fileID: 35355874}
   m_Layer: 5
   m_Name: 3_Cell
   m_TagString: Untagged
@@ -1858,18 +1852,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 35355870}
---- !u!114 &35355874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 35355868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &35355875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2899,7 +2881,6 @@ GameObject:
   - component: {fileID: 84177460}
   - component: {fileID: 84177456}
   - component: {fileID: 84177454}
-  - component: {fileID: 84177458}
   m_Layer: 5
   m_Name: 1st_Third
   m_TagString: Untagged
@@ -3208,18 +3189,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &84177458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 84177449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 84177460}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &84177459
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3738,7 +3724,6 @@ GameObject:
   - component: {fileID: 162625824}
   - component: {fileID: 162625821}
   - component: {fileID: 162625825}
-  - component: {fileID: 162625820}
   m_Layer: 5
   m_Name: 1_Cell
   m_TagString: Untagged
@@ -3947,18 +3932,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 162625815}
   m_CullTransparentMesh: 0
---- !u!114 &162625820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 162625815}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &162625821
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4767,7 +4740,6 @@ GameObject:
   - component: {fileID: 199731308}
   - component: {fileID: 199731304}
   - component: {fileID: 199731309}
-  - component: {fileID: 199731305}
   m_Layer: 5
   m_Name: 14_Cell
   m_TagString: Untagged
@@ -4990,18 +4962,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 199731301}
---- !u!114 &199731305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199731299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &199731306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5057,6 +5017,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 199731309}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -6119,7 +6096,6 @@ GameObject:
   - component: {fileID: 256244951}
   - component: {fileID: 256244947}
   - component: {fileID: 256244952}
-  - component: {fileID: 256244948}
   m_Layer: 5
   m_Name: 16_Cell
   m_TagString: Untagged
@@ -6342,18 +6318,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 256244944}
---- !u!114 &256244948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256244942}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &256244949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6409,6 +6373,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 256244952}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -7013,7 +6994,6 @@ GameObject:
   - component: {fileID: 301854775}
   - component: {fileID: 301854771}
   - component: {fileID: 301854776}
-  - component: {fileID: 301854772}
   m_Layer: 5
   m_Name: 12_Cell
   m_TagString: Untagged
@@ -7236,18 +7216,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 301854768}
---- !u!114 &301854772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 301854766}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &301854773
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7303,6 +7271,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 301854776}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -7916,7 +7901,6 @@ GameObject:
   - component: {fileID: 329475465}
   - component: {fileID: 329475461}
   - component: {fileID: 329475466}
-  - component: {fileID: 329475462}
   m_Layer: 5
   m_Name: 27_Cell
   m_TagString: Untagged
@@ -8139,18 +8123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 329475458}
---- !u!114 &329475462
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 329475456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &329475463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8197,15 +8169,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 329475466}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -8614,7 +8586,6 @@ GameObject:
   - component: {fileID: 458555059}
   - component: {fileID: 458555055}
   - component: {fileID: 458555060}
-  - component: {fileID: 458555056}
   m_Layer: 5
   m_Name: 18_Cell
   m_TagString: Untagged
@@ -8837,18 +8808,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 458555052}
---- !u!114 &458555056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458555050}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &458555057
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8904,6 +8863,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 458555060}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -9037,7 +9013,6 @@ GameObject:
   - component: {fileID: 469675284}
   - component: {fileID: 469675280}
   - component: {fileID: 469675278}
-  - component: {fileID: 469675282}
   m_Layer: 5
   m_Name: 2nd_Third
   m_TagString: Untagged
@@ -9346,18 +9321,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &469675282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 469675273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 469675284}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &469675283
 AudioSource:
   m_ObjectHideFlags: 0
@@ -10471,7 +10451,6 @@ GameObject:
   - component: {fileID: 550351223}
   - component: {fileID: 550351219}
   - component: {fileID: 550351224}
-  - component: {fileID: 550351220}
   m_Layer: 5
   m_Name: 20_Cell
   m_TagString: Untagged
@@ -10694,18 +10673,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 550351216}
---- !u!114 &550351220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550351214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &550351221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10761,6 +10728,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 550351224}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -11208,7 +11192,6 @@ GameObject:
   - component: {fileID: 561959467}
   - component: {fileID: 561959463}
   - component: {fileID: 561959461}
-  - component: {fileID: 561959465}
   m_Layer: 5
   m_Name: Reds
   m_TagString: Untagged
@@ -11517,18 +11500,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &561959465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 561959456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 561959467}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &561959466
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12007,7 +11995,6 @@ GameObject:
   - component: {fileID: 571273872}
   - component: {fileID: 571273868}
   - component: {fileID: 571273866}
-  - component: {fileID: 571273870}
   m_Layer: 5
   m_Name: Blacks
   m_TagString: Untagged
@@ -12316,18 +12303,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &571273870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 571273861}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 571273872}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &571273871
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12615,7 +12607,6 @@ GameObject:
   - component: {fileID: 595861952}
   - component: {fileID: 595861948}
   - component: {fileID: 595861946}
-  - component: {fileID: 595861950}
   m_Layer: 5
   m_Name: Evens
   m_TagString: Untagged
@@ -12924,18 +12915,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &595861950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 595861941}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 595861952}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &595861951
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13257,7 +13253,6 @@ GameObject:
   - component: {fileID: 616024479}
   - component: {fileID: 616024475}
   - component: {fileID: 616024473}
-  - component: {fileID: 616024477}
   m_Layer: 5
   m_Name: 2nd_Column
   m_TagString: Untagged
@@ -13566,18 +13561,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &616024477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 616024468}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 616024479}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &616024478
 AudioSource:
   m_ObjectHideFlags: 0
@@ -13953,7 +13953,6 @@ GameObject:
   - component: {fileID: 635001766}
   - component: {fileID: 635001762}
   - component: {fileID: 635001760}
-  - component: {fileID: 635001764}
   m_Layer: 5
   m_Name: 1_To_18
   m_TagString: Untagged
@@ -14262,18 +14261,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &635001764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 635001755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 635001766}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &635001765
 AudioSource:
   m_ObjectHideFlags: 0
@@ -16216,7 +16220,6 @@ GameObject:
   - component: {fileID: 825994019}
   - component: {fileID: 825994015}
   - component: {fileID: 825994020}
-  - component: {fileID: 825994016}
   m_Layer: 5
   m_Name: 8_Cell
   m_TagString: Untagged
@@ -16439,18 +16442,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 825994012}
---- !u!114 &825994016
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 825994010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &825994017
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16654,7 +16645,6 @@ GameObject:
   - component: {fileID: 836823910}
   - component: {fileID: 836823906}
   - component: {fileID: 836823911}
-  - component: {fileID: 836823907}
   m_Layer: 5
   m_Name: 17_Cell
   m_TagString: Untagged
@@ -16877,18 +16867,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 836823903}
---- !u!114 &836823907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836823901}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &836823908
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16944,6 +16922,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 836823911}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -19453,7 +19448,6 @@ GameObject:
   - component: {fileID: 958431356}
   - component: {fileID: 958431352}
   - component: {fileID: 958431350}
-  - component: {fileID: 958431354}
   m_Layer: 5
   m_Name: 19_To_36
   m_TagString: Untagged
@@ -19762,18 +19756,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &958431354
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 958431345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 958431356}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &958431355
 AudioSource:
   m_ObjectHideFlags: 0
@@ -19902,7 +19901,6 @@ GameObject:
   - component: {fileID: 960676973}
   - component: {fileID: 960676969}
   - component: {fileID: 960676974}
-  - component: {fileID: 960676970}
   m_Layer: 5
   m_Name: 13_Cell
   m_TagString: Untagged
@@ -20125,18 +20123,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 960676966}
---- !u!114 &960676970
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 960676964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &960676971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20192,6 +20178,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 960676974}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -20323,7 +20326,6 @@ GameObject:
   - component: {fileID: 1023385971}
   - component: {fileID: 1023385967}
   - component: {fileID: 1023385972}
-  - component: {fileID: 1023385968}
   m_Layer: 5
   m_Name: 33_Cell
   m_TagString: Untagged
@@ -20546,18 +20548,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1023385964}
---- !u!114 &1023385968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023385962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1023385969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20604,15 +20594,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1023385972}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -20744,7 +20734,6 @@ GameObject:
   - component: {fileID: 1036812363}
   - component: {fileID: 1036812359}
   - component: {fileID: 1036812364}
-  - component: {fileID: 1036812360}
   m_Layer: 5
   m_Name: 11_Cell
   m_TagString: Untagged
@@ -20967,18 +20956,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1036812356}
---- !u!114 &1036812360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1036812354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1036812361
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21034,6 +21011,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1036812364}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -21781,7 +21775,6 @@ GameObject:
   - component: {fileID: 1142114613}
   - component: {fileID: 1142114609}
   - component: {fileID: 1142114614}
-  - component: {fileID: 1142114610}
   m_Layer: 5
   m_Name: 6_Cell
   m_TagString: Untagged
@@ -22004,18 +21997,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1142114606}
---- !u!114 &1142114610
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1142114604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1142114611
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22219,7 +22200,6 @@ GameObject:
   - component: {fileID: 1157757731}
   - component: {fileID: 1157757727}
   - component: {fileID: 1157757732}
-  - component: {fileID: 1157757728}
   m_Layer: 5
   m_Name: 28_Cell
   m_TagString: Untagged
@@ -22442,18 +22422,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1157757724}
---- !u!114 &1157757728
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1157757722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1157757729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22500,15 +22468,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1157757732}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -22964,7 +22932,6 @@ GameObject:
   - component: {fileID: 1177302156}
   - component: {fileID: 1177302152}
   - component: {fileID: 1177302157}
-  - component: {fileID: 1177302153}
   m_Layer: 5
   m_Name: 5_Cell
   m_TagString: Untagged
@@ -23187,18 +23154,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1177302149}
---- !u!114 &1177302153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1177302147}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1177302154
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23730,7 +23685,6 @@ GameObject:
   - component: {fileID: 1205669526}
   - component: {fileID: 1205669522}
   - component: {fileID: 1205669527}
-  - component: {fileID: 1205669523}
   m_Layer: 5
   m_Name: 19_Cell
   m_TagString: Untagged
@@ -23953,18 +23907,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1205669519}
---- !u!114 &1205669523
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205669517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1205669524
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24020,6 +23962,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1205669527}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -24151,7 +24110,6 @@ GameObject:
   - component: {fileID: 1227263172}
   - component: {fileID: 1227263168}
   - component: {fileID: 1227263173}
-  - component: {fileID: 1227263169}
   m_Layer: 5
   m_Name: 9_Cell
   m_TagString: Untagged
@@ -24374,18 +24332,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1227263165}
---- !u!114 &1227263169
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227263163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1227263170
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24441,6 +24387,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1227263173}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -24572,7 +24535,6 @@ GameObject:
   - component: {fileID: 1246405279}
   - component: {fileID: 1246405275}
   - component: {fileID: 1246405280}
-  - component: {fileID: 1246405276}
   m_Layer: 5
   m_Name: 26_Cell
   m_TagString: Untagged
@@ -24795,18 +24757,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1246405272}
---- !u!114 &1246405276
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1246405270}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1246405277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24853,15 +24803,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1246405280}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -24997,7 +24947,6 @@ GameObject:
   - component: {fileID: 1258632483}
   - component: {fileID: 1258632486}
   - component: {fileID: 1258632489}
-  - component: {fileID: 1258632488}
   m_Layer: 0
   m_Name: 0_Cell
   m_TagString: Untagged
@@ -25460,18 +25409,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1258632488
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1258632475}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1258632489
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25564,7 +25501,6 @@ GameObject:
   - component: {fileID: 1323412635}
   - component: {fileID: 1323412631}
   - component: {fileID: 1323412636}
-  - component: {fileID: 1323412632}
   m_Layer: 5
   m_Name: 32_Cell
   m_TagString: Untagged
@@ -25787,18 +25723,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1323412628}
---- !u!114 &1323412632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1323412626}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1323412633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25845,15 +25769,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1323412636}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -25987,7 +25911,6 @@ GameObject:
   - component: {fileID: 1334521026}
   - component: {fileID: 1334521022}
   - component: {fileID: 1334521020}
-  - component: {fileID: 1334521024}
   m_Layer: 5
   m_Name: 3rd_Column
   m_TagString: Untagged
@@ -26296,18 +26219,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1334521024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1334521015}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1334521026}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1334521025
 AudioSource:
   m_ObjectHideFlags: 0
@@ -26595,7 +26523,6 @@ GameObject:
   - component: {fileID: 1359132695}
   - component: {fileID: 1359132691}
   - component: {fileID: 1359132696}
-  - component: {fileID: 1359132692}
   m_Layer: 5
   m_Name: 31_Cell
   m_TagString: Untagged
@@ -26818,18 +26745,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1359132688}
---- !u!114 &1359132692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1359132686}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1359132693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26876,15 +26791,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1359132696}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -27956,7 +27871,6 @@ GameObject:
   - component: {fileID: 1511159815}
   - component: {fileID: 1511159811}
   - component: {fileID: 1511159816}
-  - component: {fileID: 1511159812}
   m_Layer: 5
   m_Name: 25_Cell
   m_TagString: Untagged
@@ -28179,18 +28093,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1511159808}
---- !u!114 &1511159812
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1511159806}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1511159813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28237,15 +28139,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1511159816}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -29256,15 +29158,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1527291872}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -30021,7 +29923,6 @@ GameObject:
   - component: {fileID: 1610360095}
   - component: {fileID: 1610360091}
   - component: {fileID: 1610360089}
-  - component: {fileID: 1610360093}
   m_Layer: 5
   m_Name: 1st_Column
   m_TagString: Untagged
@@ -30330,18 +30231,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1610360093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610360084}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1610360095}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1610360094
 AudioSource:
   m_ObjectHideFlags: 0
@@ -30470,7 +30376,6 @@ GameObject:
   - component: {fileID: 1617909957}
   - component: {fileID: 1617909953}
   - component: {fileID: 1617909958}
-  - component: {fileID: 1617909954}
   m_Layer: 5
   m_Name: 35_Cell
   m_TagString: Untagged
@@ -30693,18 +30598,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1617909950}
---- !u!114 &1617909954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617909948}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1617909955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30751,15 +30644,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1617909958}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -32007,7 +31900,6 @@ GameObject:
   - component: {fileID: 1716691575}
   - component: {fileID: 1716691571}
   - component: {fileID: 1716691576}
-  - component: {fileID: 1716691572}
   m_Layer: 5
   m_Name: 30_Cell
   m_TagString: Untagged
@@ -32230,18 +32122,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1716691568}
---- !u!114 &1716691572
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1716691566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1716691573
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32288,15 +32168,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1716691576}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -32971,7 +32851,6 @@ GameObject:
   - component: {fileID: 1756720138}
   - component: {fileID: 1756720134}
   - component: {fileID: 1756720132}
-  - component: {fileID: 1756720136}
   m_Layer: 5
   m_Name: 3rd_Third
   m_TagString: Untagged
@@ -33280,18 +33159,23 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
---- !u!114 &1756720136
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1756720127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1756720138}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &1756720137
 AudioSource:
   m_ObjectHideFlags: 0
@@ -34084,7 +33968,6 @@ GameObject:
   - component: {fileID: 1835142232}
   - component: {fileID: 1835142228}
   - component: {fileID: 1835142233}
-  - component: {fileID: 1835142229}
   m_Layer: 5
   m_Name: 29_Cell
   m_TagString: Untagged
@@ -34307,18 +34190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1835142225}
---- !u!114 &1835142229
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835142223}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1835142230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34365,15 +34236,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1835142233}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -34819,7 +34690,6 @@ GameObject:
   - component: {fileID: 1916122773}
   - component: {fileID: 1916122769}
   - component: {fileID: 1916122774}
-  - component: {fileID: 1916122770}
   m_Layer: 5
   m_Name: 21_Cell
   m_TagString: Untagged
@@ -35042,18 +34912,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1916122766}
---- !u!114 &1916122770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916122764}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1916122771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35109,6 +34967,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1916122774}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -35240,7 +35115,6 @@ GameObject:
   - component: {fileID: 1928020091}
   - component: {fileID: 1928020087}
   - component: {fileID: 1928020092}
-  - component: {fileID: 1928020088}
   m_Layer: 5
   m_Name: 22_Cell
   m_TagString: Untagged
@@ -35463,18 +35337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 1928020084}
---- !u!114 &1928020088
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928020082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1928020089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35521,15 +35383,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1928020092}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -36325,7 +36187,6 @@ GameObject:
   - component: {fileID: 2012285375}
   - component: {fileID: 2012285371}
   - component: {fileID: 2012285376}
-  - component: {fileID: 2012285372}
   m_Layer: 5
   m_Name: 7_Cell
   m_TagString: Untagged
@@ -36548,18 +36409,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2012285368}
---- !u!114 &2012285372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2012285366}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2012285373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36763,7 +36612,6 @@ GameObject:
   - component: {fileID: 2033281534}
   - component: {fileID: 2033281530}
   - component: {fileID: 2033281535}
-  - component: {fileID: 2033281531}
   m_Layer: 5
   m_Name: 23_Cell
   m_TagString: Untagged
@@ -36986,18 +36834,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2033281527}
---- !u!114 &2033281531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2033281525}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2033281532
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -37044,15 +36880,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2033281535}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -37871,7 +37707,6 @@ GameObject:
   - component: {fileID: 2094731945}
   - component: {fileID: 2094731941}
   - component: {fileID: 2094731946}
-  - component: {fileID: 2094731942}
   m_Layer: 5
   m_Name: 34_Cell
   m_TagString: Untagged
@@ -38094,18 +37929,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2094731938}
---- !u!114 &2094731942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094731936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2094731943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38152,15 +37975,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2094731946}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -38292,7 +38115,6 @@ GameObject:
   - component: {fileID: 2096150382}
   - component: {fileID: 2096150378}
   - component: {fileID: 2096150383}
-  - component: {fileID: 2096150379}
   m_Layer: 5
   m_Name: 15_Cell
   m_TagString: Untagged
@@ -38515,18 +38337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2096150375}
---- !u!114 &2096150379
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2096150373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2096150380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38582,6 +38392,23 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 2096150383}
+          m_MethodName: CountdownFinished
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -38713,7 +38540,6 @@ GameObject:
   - component: {fileID: 2100022151}
   - component: {fileID: 2100022147}
   - component: {fileID: 2100022152}
-  - component: {fileID: 2100022148}
   m_Layer: 5
   m_Name: 4_Cell
   m_TagString: Untagged
@@ -38936,18 +38762,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2100022144}
---- !u!114 &2100022148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2100022142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2100022149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39151,7 +38965,6 @@ GameObject:
   - component: {fileID: 2128767691}
   - component: {fileID: 2128767687}
   - component: {fileID: 2128767692}
-  - component: {fileID: 2128767688}
   m_Layer: 5
   m_Name: 24_Cell
   m_TagString: Untagged
@@ -39374,18 +39187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sound: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   btn: {fileID: 2128767684}
---- !u!114 &2128767688
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2128767682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0a3f64642116ce343a8885e4f27d5b58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2128767689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39432,15 +39233,15 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 2128767692}
-          m_MethodName: StopAllCoroutines
-          m_Mode: 1
+          m_MethodName: CountdownFinished
+          m_Mode: 6
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
             m_StringArgument: 
-            m_BoolArgument: 0
+            m_BoolArgument: 1
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null

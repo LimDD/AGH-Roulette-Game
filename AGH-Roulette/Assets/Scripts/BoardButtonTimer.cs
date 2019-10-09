@@ -27,21 +27,21 @@ public class BoardButtonTimer : MonoBehaviour
     {
         inside = true;
         num = btnNum.text;
-        StartCoroutine(StartCountdown(0.8f));
+        StartCoroutine(StartCountdown(1f));
     }
 
     public void CallTimerOutside()
     {
         inside = false;
-        StartCoroutine(StartCountdown(0.8f));
+        StartCoroutine(StartCountdown(1f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
     public IEnumerator StartCountdown(float f)
     {
         yield return new WaitForSeconds(f);
+        Debug.Log("Hi");
 
-        CountdownFinished(inside);
     }
 
     public void CountdownFinished(bool inside)
