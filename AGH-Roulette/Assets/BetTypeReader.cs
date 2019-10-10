@@ -32,7 +32,7 @@ public class BetTypeReader : MonoBehaviour
     public void CallTimer()
     {
         readType = false;
-        StartCoroutine(StartCountdown(0.3f));
+        StartCoroutine(StartCountdown(0.7f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
