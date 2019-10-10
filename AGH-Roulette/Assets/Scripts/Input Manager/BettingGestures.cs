@@ -26,7 +26,12 @@ public class BettingGestures : MonoBehaviour
             }
         }
 
-        if (type.Contains("Swipe"))
+        else if (type == "Click")
+        {
+            balance.GetComponentInParent<Button>().onClick.Invoke();
+        }
+
+        else if (type.Contains("Swipe"))
         {
             if (bPT == null)
             {
