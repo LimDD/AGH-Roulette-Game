@@ -23,7 +23,6 @@ public class AudioSG : MonoBehaviour
 
     public void CallTimer()
     {
-        
         StartCoroutine(StartCountdown());
     }
 
@@ -34,5 +33,6 @@ public class AudioSG : MonoBehaviour
         source.Stop();
         HoverSound();
         sB.SaveButton(btn);
+        btn.Select();
     }
 }

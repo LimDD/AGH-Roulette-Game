@@ -23,10 +23,9 @@ public class MenuGestureInput : MonoBehaviour
             try
             {
                 sB = FindObjectOfType<SelectButton>();
-                btn = sB.GetButton();
+                btn = aSG.btn;
                 btn.Select();
                 aSG = btn.GetComponent<AudioSG>();
-
                 aSG.HoverSound();
             }
 
@@ -38,9 +37,9 @@ public class MenuGestureInput : MonoBehaviour
 
         else if (GestureInputManager.CurrentInput == InputAction.DoubleClick)
         {
-            sB = FindObjectOfType<SelectButton>();
-            btn = sB.GetButton();
 
+            btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
+   
             if (btn != null)
             {
                 btn.onClick.Invoke();

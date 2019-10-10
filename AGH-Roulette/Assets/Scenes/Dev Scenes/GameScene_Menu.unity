@@ -801,6 +801,7 @@ GameObject:
   - component: {fileID: 78181798}
   - component: {fileID: 78181797}
   - component: {fileID: 78181796}
+  - component: {fileID: 78181799}
   m_Layer: 5
   m_Name: HighScoresButton
   m_TagString: Untagged
@@ -1145,6 +1146,18 @@ MonoBehaviour:
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
   btn: {fileID: 78181793}
+--- !u!114 &78181799
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78181791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &98979423
 GameObject:
   m_ObjectHideFlags: 0
@@ -4144,6 +4157,7 @@ GameObject:
   - component: {fileID: 642121536}
   - component: {fileID: 642121535}
   - component: {fileID: 642121534}
+  - component: {fileID: 642121537}
   m_Layer: 5
   m_Name: TutorialButton
   m_TagString: Untagged
@@ -4444,6 +4458,18 @@ MonoBehaviour:
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
   btn: {fileID: 642121531}
+--- !u!114 &642121537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642121529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &677976410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6576,6 +6602,7 @@ GameObject:
   - component: {fileID: 932717651}
   - component: {fileID: 932717650}
   - component: {fileID: 932717649}
+  - component: {fileID: 932717652}
   m_Layer: 5
   m_Name: RulesOfRouletteButton
   m_TagString: Untagged
@@ -6920,6 +6947,18 @@ MonoBehaviour:
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
   btn: {fileID: 932717646}
+--- !u!114 &932717652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932717644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &935795029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7488,6 +7527,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easterEgg: {fileID: 1450667889}
+  clip:
+  - {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
+  - {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
+  - {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
+  - {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
+  - {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
+  - {fileID: 8300000, guid: 5fe35cda79883f644b283df6fb7802b7, type: 3}
 --- !u!114 &995639688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12650,6 +12696,7 @@ GameObject:
   - component: {fileID: 1585967194}
   - component: {fileID: 1585967193}
   - component: {fileID: 1585967192}
+  - component: {fileID: 1585967195}
   m_Layer: 5
   m_Name: AchievementsButton
   m_TagString: Untagged
@@ -12994,6 +13041,18 @@ MonoBehaviour:
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
   btn: {fileID: 1585967189}
+--- !u!114 &1585967195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585967187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1591166539
 GameObject:
   m_ObjectHideFlags: 0
@@ -13085,6 +13144,7 @@ GameObject:
   - component: {fileID: 1612733942}
   - component: {fileID: 1612733943}
   - component: {fileID: 1612733939}
+  - component: {fileID: 1612733944}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -13432,6 +13492,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: {fileID: 0}
+--- !u!114 &1612733944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612733934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1638217484
 GameObject:
   m_ObjectHideFlags: 0
@@ -14447,6 +14519,7 @@ GameObject:
   - component: {fileID: 1845050739}
   - component: {fileID: 1845050738}
   - component: {fileID: 1845050740}
+  - component: {fileID: 1845050744}
   m_Layer: 5
   m_Name: PlayerStatisticsButton
   m_TagString: Untagged
@@ -14791,6 +14864,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845050736}
   m_CullTransparentMesh: 0
+--- !u!114 &1845050744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845050736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1853369420
 GameObject:
   m_ObjectHideFlags: 0

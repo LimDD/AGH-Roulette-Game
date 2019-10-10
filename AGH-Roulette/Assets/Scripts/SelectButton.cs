@@ -6,6 +6,7 @@ using UnityEngine.UI;
 public class SelectButton : MonoBehaviour
 {
     Button btn;
+
     public void SaveButton(Button b)
     {
         Debug.Log("SaveButtonMethod");
