@@ -9,6 +9,7 @@ public class AudioSG : MonoBehaviour
     public AudioClip hoverSound;
     public Button btn;
     SelectButton sB;
+    MenuGestureInput mGI;
 
     private void Start()
     {
@@ -19,10 +20,13 @@ public class AudioSG : MonoBehaviour
     {
         btn.Select();
         source.PlayOneShot(hoverSound);
+        sB.SaveButton(btn);
     }
 
     public void CallTimer()
     {
+        mGI = FindObjectOfType<MenuGestureInput>();
+        mGI.SaveBtn(btn);
         StartCoroutine(StartCountdown());
     }
 
@@ -31,6 +35,6 @@ public class AudioSG : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         source.Stop();
         HoverSound();
-        sB.SaveButton(btn);
+
     }
 }

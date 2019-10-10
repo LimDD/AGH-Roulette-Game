@@ -11,6 +11,11 @@ public class MenuGestureInput : MonoBehaviour
     AudioSG aSG;
     SelectButton sB;
 
+    public void SaveBtn(Button b)
+    {
+        btn = b;
+    }
+
     void Update()
     {
         if (GestureInputManager.CurrentInput == InputAction.DoubleFingerDoubleTap)
@@ -22,7 +27,9 @@ public class MenuGestureInput : MonoBehaviour
         {
             try
             {
-                //Can not figure out how to select and read out button name on button click without interferring with double click anywhere
+                btn.Select();
+                aSG = btn.GetComponent<AudioSG>();
+                aSG.HoverSound();
             }
 
             catch
