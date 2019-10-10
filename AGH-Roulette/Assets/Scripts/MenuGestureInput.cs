@@ -49,6 +49,7 @@ public class MenuGestureInput : MonoBehaviour
                 {
                     btn.onClick.Invoke();
                     EventSystem.current.SetSelectedGameObject(null);
+                    btn = null;
                 }
             }
 
