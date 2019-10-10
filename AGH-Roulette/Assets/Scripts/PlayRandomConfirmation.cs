@@ -19,7 +19,6 @@ public class PlayRandomConfirmation : MonoBehaviour
     private void Awake()
     {
         PlayRandom();
-        Debug.Log("I'M AWAKE");
     }
 
     // Start is called before the first frame update

@@ -821,12 +821,12 @@ RectTransform:
   m_Children:
   - {fileID: 117689923}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -600}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78181793
 MonoBehaviour:
@@ -851,7 +851,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -952,7 +952,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1144,6 +1144,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
+  btn: {fileID: 78181793}
 --- !u!1 &98979423
 GameObject:
   m_ObjectHideFlags: 0
@@ -3760,13 +3761,13 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.3, y: 1.3, z: 1}
   m_Children:
+  - {fileID: 911355039}
   - {fileID: 1612733935}
   - {fileID: 642121530}
   - {fileID: 1585967188}
   - {fileID: 78181792}
   - {fileID: 932717645}
   - {fileID: 1845050737}
-  - {fileID: 911355039}
   m_Father: {fileID: 995639683}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4163,12 +4164,12 @@ RectTransform:
   m_Children:
   - {fileID: 1685055208}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642121531
 MonoBehaviour:
@@ -4193,7 +4194,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -4250,7 +4251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4442,6 +4443,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
+  btn: {fileID: 642121531}
 --- !u!1 &677976410
 GameObject:
   m_ObjectHideFlags: 0
@@ -6414,7 +6416,7 @@ GameObject:
   - component: {fileID: 911355041}
   - component: {fileID: 911355040}
   m_Layer: 5
-  m_Name: 'Text '
+  m_Name: Header
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6432,7 +6434,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 603986850}
-  m_RootOrder: 6
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -6594,12 +6596,12 @@ RectTransform:
   m_Children:
   - {fileID: 98979424}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -450}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932717646
 MonoBehaviour:
@@ -6624,7 +6626,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -6725,7 +6727,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6917,6 +6919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
+  btn: {fileID: 932717646}
 --- !u!1 &935795029
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,6 +7436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   hoverSound: {fileID: 0}
+  btn: {fileID: 0}
 --- !u!114 &995639685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8317,6 +8321,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1655279817}
   hoverSound: {fileID: 8300000, guid: fbacd058c26f1a0408efc9cf83d3bb7a, type: 3}
+  btn: {fileID: 0}
 --- !u!82 &1114518593
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8884,10 +8889,10 @@ RectTransform:
   m_Father: {fileID: 995639683}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -950}
-  m_SizeDelta: {x: 400, y: 1200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -562, y: -720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1172713100
 GameObject:
@@ -8934,10 +8939,10 @@ RectTransform:
   m_Father: {fileID: 995639683}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -950}
-  m_SizeDelta: {x: 400, y: 1200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -562, y: -720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!82 &1172713102
 AudioSource:
@@ -9621,10 +9626,10 @@ RectTransform:
   m_Father: {fileID: 995639683}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -950}
-  m_SizeDelta: {x: 400, y: 1200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -562, y: -720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1277732428
 GameObject:
@@ -10606,10 +10611,10 @@ RectTransform:
   m_Father: {fileID: 995639683}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -950}
-  m_SizeDelta: {x: 400, y: 1200}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 10}
+  m_SizeDelta: {x: -562, y: -720}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1350240200
 GameObject:
@@ -11479,6 +11484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1450667892}
   hoverSound: {fileID: 8300000, guid: 436d0b3fef7c3184e9191e9a16baf62e, type: 3}
+  btn: {fileID: 0}
 --- !u!1 &1457117301
 GameObject:
   m_ObjectHideFlags: 0
@@ -12651,12 +12657,12 @@ RectTransform:
   m_Children:
   - {fileID: 836908879}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -750}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1585967189
 MonoBehaviour:
@@ -12681,7 +12687,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -12782,7 +12788,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12974,6 +12980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
+  btn: {fileID: 1585967189}
 --- !u!1 &1591166539
 GameObject:
   m_ObjectHideFlags: 0
@@ -13085,12 +13092,12 @@ RectTransform:
   m_Children:
   - {fileID: 445121793}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612733936
 MonoBehaviour:
@@ -13115,7 +13122,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -13194,7 +13201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13328,6 +13335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
+  btn: {fileID: 1612733936}
 --- !u!114 &1612733941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13737,6 +13745,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1655279817}
   hoverSound: {fileID: 8300000, guid: ea6cb81280eba434b8e750808603e734, type: 3}
+  btn: {fileID: 0}
 --- !u!114 &1655279819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14445,12 +14454,12 @@ RectTransform:
   m_Children:
   - {fileID: 60750065}
   m_Father: {fileID: 603986850}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -900}
-  m_SizeDelta: {x: 808, y: 140}
+  m_SizeDelta: {x: -154, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845050738
 MonoBehaviour:
@@ -14524,6 +14533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 5fe35cda79883f644b283df6fb7802b7, type: 3}
+  btn: {fileID: 1845050741}
 --- !u!82 &1845050740
 AudioSource:
   m_ObjectHideFlags: 0
@@ -14643,7 +14653,7 @@ MonoBehaviour:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 0}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 0.11372549}
+    m_SelectedColor: {r: 1, g: 1, b: 1, a: 0.18039216}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -14744,7 +14754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
