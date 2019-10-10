@@ -10,7 +10,6 @@ public class PlayRandomConfirmation : MonoBehaviour
 
     public AudioSource soundManager;
 
-    public bool stateActive;
     public bool hasPlayed;
 
     public int audioNum;
@@ -21,42 +20,18 @@ public class PlayRandomConfirmation : MonoBehaviour
         PlayRandom();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
-        if(stateActive == true)
+        if(hasPlayed == false)
         {
-            if(hasPlayed == false)
-            {
-                PlayRandom();
-            }
+            PlayRandom();
         }
     }
 
-    public void SetHasPlayedTrue()
+    public void SetHasPlayed()
     {
-        hasPlayed = true;
-    }
-
-    public void SetHasPlayedFalse()
-    {
-        hasPlayed = false;
-    }
-
-    public void SetStateActiveTrue()
-    {
-        stateActive = true;
-    }
-
-    public void SetStateActiveFalse()
-    {
-        stateActive = false;
+        hasPlayed = !hasPlayed;
     }
 
     public void PlayRandom()
@@ -67,19 +42,19 @@ public class PlayRandomConfirmation : MonoBehaviour
         {
             soundManager.clip = confirmationExcellent;
             soundManager.Play();
-            SetHasPlayedTrue();
+            SetHasPlayed();
         }
         else if(audioNum == 1)
         {
             soundManager.clip = confirmationGreat;
             soundManager.Play();
-            SetHasPlayedTrue();
+            SetHasPlayed();
         }
         else if(audioNum == 2)
         {
             soundManager.clip = confirmationPerfect;
             soundManager.Play();
-            SetHasPlayedTrue();
+            SetHasPlayed();
         }
     }
 }
