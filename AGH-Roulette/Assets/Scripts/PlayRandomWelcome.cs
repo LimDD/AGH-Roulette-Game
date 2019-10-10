@@ -7,12 +7,7 @@ public class PlayRandomWelcome : MonoBehaviour {
     public AudioSource _as;
     public AudioClip[] audioClipArray;
 
-    public AudioSource sg;
-    public AudioSource t;
-    public AudioSource a;
-    public AudioSource hs;
-    public AudioSource ror;
-    public AudioSource ps;
+    public AudioSource buttonSource;
 
     private void Awake()
     {
@@ -28,16 +23,11 @@ public class PlayRandomWelcome : MonoBehaviour {
     {
         if (!_as.isPlaying )
         {
-            if (sg != null)
+            if (buttonSource != null)
             {
-                if (sg.mute)
+                if (buttonSource.mute)
                 {
-                    sg.mute = false;
-                    t.mute = false;
-                    a.mute = false;
-                    hs.mute = false;
-                    ror.mute = false;
-                    ps.mute = false;
+                    buttonSource.mute = false;
                 }
             }
         }

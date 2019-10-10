@@ -7357,7 +7357,6 @@ GameObject:
   - component: {fileID: 995639681}
   - component: {fileID: 995639686}
   - component: {fileID: 995639680}
-  - component: {fileID: 995639684}
   - component: {fileID: 995639691}
   - component: {fileID: 995639685}
   - component: {fileID: 995639687}
@@ -7462,21 +7461,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &995639684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 995639679}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  source: {fileID: 0}
-  hoverSound: {fileID: 0}
-  btn: {fileID: 0}
 --- !u!114 &995639685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7508,12 +7492,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e48b9f50031201e429247491e77957d5, type: 3}
   - {fileID: 8300000, guid: c71a47972b9fdda428438e3fbbee5625, type: 3}
   - {fileID: 8300000, guid: 32145ba27fa84e74e8945c9fd3de70dc, type: 3}
-  sg: {fileID: 0}
-  t: {fileID: 0}
-  a: {fileID: 0}
-  hs: {fileID: 0}
-  ror: {fileID: 0}
-  ps: {fileID: 0}
+  buttonSource: {fileID: 603986853}
 --- !u!114 &995639687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7527,13 +7506,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easterEgg: {fileID: 1450667889}
-  clip:
-  - {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
-  - {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
-  - {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
-  - {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
-  - {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
-  - {fileID: 8300000, guid: 5fe35cda79883f644b283df6fb7802b7, type: 3}
 --- !u!114 &995639688
 MonoBehaviour:
   m_ObjectHideFlags: 0

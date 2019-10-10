@@ -13,7 +13,7 @@ public class MenuGestureInput : MonoBehaviour
 
     void Update()
     {
-        if (GestureInputManager.CurrentInput == InputAction.FourFingerDoubleTap)
+        if (GestureInputManager.CurrentInput == InputAction.DoubleFingerDoubleTap)
         {
             easterEgg.onClick.Invoke();
         }
