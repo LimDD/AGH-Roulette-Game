@@ -2,12 +2,10 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 
-public class AudioSG : MonoBehaviour, IPointerExitHandler
+public class AudioSG : MonoBehaviour
 {
     public AudioSource source;
     public AudioClip hoverSound;
-    bool inFocus;
-
 
     public void HoverSound()
     {
@@ -16,28 +14,16 @@ public class AudioSG : MonoBehaviour, IPointerExitHandler
 
     public void CallTimer()
     {
-        inFocus = true;
         StartCoroutine(StartCountdown());
     }
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(0.4f);
 
-        //If the button is still in focus
-        if (inFocus)
-        {
-            source.PlayOneShot(hoverSound);
-        }
-    }
+        yield return new WaitForSeconds(0.7f);
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        //If a button currently has the pointer on it
-        if (inFocus)
-        {
-            source.Stop();
-            inFocus = false;
-        }
+        source.Stop();
+        source.PlayOneShot(hoverSound);
+
     }
 }

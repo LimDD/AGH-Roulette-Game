@@ -798,9 +798,9 @@ GameObject:
   - component: {fileID: 78181795}
   - component: {fileID: 78181794}
   - component: {fileID: 78181793}
-  - component: {fileID: 78181796}
   - component: {fileID: 78181798}
   - component: {fileID: 78181797}
+  - component: {fileID: 78181796}
   m_Layer: 5
   m_Name: HighScoresButton
   m_TagString: Untagged
@@ -826,7 +826,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -600}
-  m_SizeDelta: {x: 808, y: 130}
+  m_SizeDelta: {x: 808, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &78181793
 MonoBehaviour:
@@ -986,12 +986,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.4
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -1089,8 +1089,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 78181796}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.3
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 78181798}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 78181798}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1114,7 +1142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 78181796}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 6cbb57a58e0a9dd4b88775ae7796b307, type: 3}
 --- !u!1 &98979423
 GameObject:
@@ -3713,6 +3741,7 @@ GameObject:
   - component: {fileID: 603986850}
   - component: {fileID: 603986851}
   - component: {fileID: 603986852}
+  - component: {fileID: 603986853}
   m_Layer: 5
   m_Name: MainMenu
   m_TagString: Untagged
@@ -3771,6 +3800,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b31c4943fbb19c04a9012f3877ea439d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &603986853
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603986849}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &603989015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4015,9 +4140,9 @@ GameObject:
   - component: {fileID: 642121533}
   - component: {fileID: 642121532}
   - component: {fileID: 642121531}
-  - component: {fileID: 642121534}
   - component: {fileID: 642121536}
   - component: {fileID: 642121535}
+  - component: {fileID: 642121534}
   m_Layer: 5
   m_Name: TutorialButton
   m_TagString: Untagged
@@ -4043,7 +4168,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -300}
-  m_SizeDelta: {x: 808, y: 130}
+  m_SizeDelta: {x: 808, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &642121531
 MonoBehaviour:
@@ -4159,12 +4284,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -4262,8 +4387,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 642121534}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.1
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 642121536}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 642121536}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4287,7 +4440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 642121534}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7ea5448b5af11d24280e1562b36bfbdd, type: 3}
 --- !u!1 &677976410
 GameObject:
@@ -6283,7 +6436,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 8.3515625, y: 677.1}
+  m_AnchoredPosition: {x: 0, y: 677.1}
   m_SizeDelta: {x: -348.39996, y: -1254.1001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &911355040
@@ -6418,9 +6571,9 @@ GameObject:
   - component: {fileID: 932717648}
   - component: {fileID: 932717647}
   - component: {fileID: 932717646}
-  - component: {fileID: 932717649}
   - component: {fileID: 932717651}
   - component: {fileID: 932717650}
+  - component: {fileID: 932717649}
   m_Layer: 5
   m_Name: RulesOfRouletteButton
   m_TagString: Untagged
@@ -6446,7 +6599,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -450}
-  m_SizeDelta: {x: 808, y: 130}
+  m_SizeDelta: {x: 808, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &932717646
 MonoBehaviour:
@@ -6606,12 +6759,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.6
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -6709,8 +6862,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 932717649}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.4
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 932717651}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 932717651}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6734,7 +6915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 932717649}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
 --- !u!1 &935795029
 GameObject:
@@ -7283,12 +7464,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e48b9f50031201e429247491e77957d5, type: 3}
   - {fileID: 8300000, guid: c71a47972b9fdda428438e3fbbee5625, type: 3}
   - {fileID: 8300000, guid: 32145ba27fa84e74e8945c9fd3de70dc, type: 3}
-  sg: {fileID: 1612733939}
-  t: {fileID: 642121534}
-  a: {fileID: 1585967192}
-  hs: {fileID: 78181796}
-  ror: {fileID: 932717649}
-  ps: {fileID: 1845050740}
+  sg: {fileID: 0}
+  t: {fileID: 0}
+  a: {fileID: 0}
+  hs: {fileID: 0}
+  ror: {fileID: 0}
+  ps: {fileID: 0}
 --- !u!114 &995639687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12447,9 +12628,9 @@ GameObject:
   - component: {fileID: 1585967191}
   - component: {fileID: 1585967190}
   - component: {fileID: 1585967189}
-  - component: {fileID: 1585967192}
   - component: {fileID: 1585967194}
   - component: {fileID: 1585967193}
+  - component: {fileID: 1585967192}
   m_Layer: 5
   m_Name: AchievementsButton
   m_TagString: Untagged
@@ -12635,12 +12816,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.2
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -12738,8 +12919,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1585967192}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.2
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1585967194}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1585967194}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12763,7 +12972,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1585967192}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
 --- !u!1 &1591166539
 GameObject:
@@ -12851,11 +13060,11 @@ GameObject:
   - component: {fileID: 1612733938}
   - component: {fileID: 1612733937}
   - component: {fileID: 1612733936}
-  - component: {fileID: 1612733939}
   - component: {fileID: 1612733940}
   - component: {fileID: 1612733941}
   - component: {fileID: 1612733942}
   - component: {fileID: 1612733943}
+  - component: {fileID: 1612733939}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -12881,7 +13090,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -150}
-  m_SizeDelta: {x: 808, y: 130}
+  m_SizeDelta: {x: 808, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1612733936
 MonoBehaviour:
@@ -13019,12 +13228,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 0.8
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -13117,7 +13326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1612733939}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 6d58d51ace7e6984cb987031eb3dc286, type: 3}
 --- !u!114 &1612733941
 MonoBehaviour:
@@ -13136,8 +13345,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1612733939}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1612733940}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1612733940}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14185,9 +14422,9 @@ GameObject:
   - component: {fileID: 1845050743}
   - component: {fileID: 1845050742}
   - component: {fileID: 1845050741}
-  - component: {fileID: 1845050740}
   - component: {fileID: 1845050739}
   - component: {fileID: 1845050738}
+  - component: {fileID: 1845050740}
   m_Layer: 5
   m_Name: PlayerStatisticsButton
   m_TagString: Untagged
@@ -14213,7 +14450,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -900}
-  m_SizeDelta: {x: 808, y: 130}
+  m_SizeDelta: {x: 808, y: 140}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845050738
 MonoBehaviour:
@@ -14232,8 +14469,36 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
+        - m_Target: {fileID: 1845050740}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 1.5
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
         - m_Target: {fileID: 1845050739}
           m_MethodName: CallTimer
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1845050739}
+          m_MethodName: StopAllCoroutines
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14257,7 +14522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1845050740}
+  source: {fileID: 603986853}
   hoverSound: {fileID: 8300000, guid: 5fe35cda79883f644b283df6fb7802b7, type: 3}
 --- !u!82 &1845050740
 AudioSource:
@@ -14269,12 +14534,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 7a3ce3972ed9fee448a2e53737bb7d70, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.8
   Loop: 0
-  Mute: 1
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
