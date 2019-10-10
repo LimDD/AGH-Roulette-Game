@@ -22,11 +22,7 @@ public class MenuGestureInput : MonoBehaviour
         {
             try
             {
-                sB = FindObjectOfType<SelectButton>();
-                btn = aSG.btn;
-                btn.Select();
-                aSG = btn.GetComponent<AudioSG>();
-                aSG.HoverSound();
+                //Can not figure out how to select and read out button name on button click without interferring with double click anywhere
             }
 
             catch
@@ -37,14 +33,23 @@ public class MenuGestureInput : MonoBehaviour
 
         else if (GestureInputManager.CurrentInput == InputAction.DoubleClick)
         {
-
-            btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-   
-            if (btn != null)
+            try
             {
-                btn.onClick.Invoke();
-                EventSystem.current.SetSelectedGameObject(null);
+                sB = FindObjectOfType<SelectButton>();
+                btn = sB.GetButton();
+
+                if (btn != null)
+                {
+                    btn.onClick.Invoke();
+                    EventSystem.current.SetSelectedGameObject(null);
+                }
             }
+
+            catch
+            {
+
+            }
+
         }
     }
 }

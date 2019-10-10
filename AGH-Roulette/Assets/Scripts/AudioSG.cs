@@ -17,9 +17,9 @@ public class AudioSG : MonoBehaviour
 
     public void HoverSound()
     {
+        btn.Select();
         source.PlayOneShot(hoverSound);
     }
-
 
     public void CallTimer()
     {
@@ -29,10 +29,8 @@ public class AudioSG : MonoBehaviour
     public IEnumerator StartCountdown()
     {
         yield return new WaitForSeconds(0.7f);
-        btn.Select();
         source.Stop();
         HoverSound();
         sB.SaveButton(btn);
-        btn.Select();
     }
 }

@@ -5,23 +5,23 @@ using UnityEngine.SceneManagement;
 //Loads each scene
 public class SceneSwitcher : MonoBehaviour
 {
-    public bool menu;
     DontDestroy dD;
 
     public void BoardScene()
     {
         SceneManager.LoadScene("Gamescene_Main");
-        menu = false;
     }
 
     public void MenuScene()
     {
         dD = FindObjectOfType<DontDestroy>();
 
-        dD.Destroy();
-        SceneManager.LoadScene("Gamescene_Menu");
+        if (dD != null)
+        {
+            dD.Destroy();
+        }
 
-        menu = true;
+        SceneManager.LoadScene("Gamescene_Menu");
     }
 
     public void WheelScene()
@@ -32,7 +32,6 @@ public class SceneSwitcher : MonoBehaviour
     public void TutorialScene()
     {
         SceneManager.LoadScene("GameScene_Tutorial");
-        menu = false;
     }
 
     public void TutorialWheel()
