@@ -12,6 +12,7 @@ public class BettingGestures : MonoBehaviour
     BoardGestureInput bGI;
     public TMP_Text amount;
     public TMP_Text balance;
+    public AudioSource source;
     public Button confirm;
 
     public void Gestures(string type)
@@ -20,9 +21,27 @@ public class BettingGestures : MonoBehaviour
         {
             if (balance.text != "0")
             {
-                bGI = FindObjectOfType<BoardGestureInput>();
-                bGI.SetFirst();
-                confirm.onClick.Invoke();
+                if (source == null)
+                {
+                    bGI = FindObjectOfType<BoardGestureInput>();
+                    bGI.SetFirst();
+                    confirm.onClick.Invoke();
+                }
+
+                else
+                {
+                    if (amount.text == "100")
+                    {
+                        bGI = FindObjectOfType<BoardGestureInput>();
+                        bGI.SetFirst();
+                        confirm.onClick.Invoke();
+                    }
+
+                    else
+                    {
+                        source.Play();
+                    }
+                }
             }
         }
 
