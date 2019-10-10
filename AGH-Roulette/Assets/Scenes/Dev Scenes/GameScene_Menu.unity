@@ -866,7 +866,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 78181794}
   m_OnClick:
     m_PersistentCalls:
@@ -4209,7 +4209,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 642121532}
   m_OnClick:
     m_PersistentCalls:
@@ -6641,7 +6641,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 932717647}
   m_OnClick:
     m_PersistentCalls:
@@ -7322,6 +7322,7 @@ GameObject:
   - component: {fileID: 995639691}
   - component: {fileID: 995639685}
   - component: {fileID: 995639687}
+  - component: {fileID: 995639688}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -7487,6 +7488,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   easterEgg: {fileID: 1450667889}
+--- !u!114 &995639688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995639679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!82 &995639691
 AudioSource:
   m_ObjectHideFlags: 0
@@ -8208,7 +8221,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1114518590}
   m_OnClick:
     m_PersistentCalls:
@@ -8283,7 +8296,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8321,7 +8334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1655279817}
   hoverSound: {fileID: 8300000, guid: fbacd058c26f1a0408efc9cf83d3bb7a, type: 3}
-  btn: {fileID: 0}
+  btn: {fileID: 1114518589}
 --- !u!82 &1114518593
 AudioSource:
   m_ObjectHideFlags: 0
@@ -12702,7 +12715,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1585967190}
   m_OnClick:
     m_PersistentCalls:
@@ -13137,7 +13150,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1612733937}
   m_OnClick:
     m_PersistentCalls:
@@ -13536,7 +13549,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1655279815}
   m_OnClick:
     m_PersistentCalls:
@@ -13611,7 +13624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13745,7 +13758,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 1655279817}
   hoverSound: {fileID: 8300000, guid: ea6cb81280eba434b8e750808603e734, type: 3}
-  btn: {fileID: 0}
+  btn: {fileID: 1655279814}
 --- !u!114 &1655279819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14668,7 +14681,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1845050742}
   m_OnClick:
     m_PersistentCalls:
@@ -15966,7 +15979,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.023391724, y: -337.70007}
+  m_AnchoredPosition: {x: 0.0234375, y: -337.70007}
   m_SizeDelta: {x: 307.55005, y: -1143.7999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2054285125
@@ -16507,7 +16520,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.023391724, y: -37.724976}
+  m_AnchoredPosition: {x: 0.0234375, y: -37.724976}
   m_SizeDelta: {x: 307.6501, y: -1143.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2127828684

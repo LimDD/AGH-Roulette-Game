@@ -8,6 +8,12 @@ public class AudioSG : MonoBehaviour
     public AudioSource source;
     public AudioClip hoverSound;
     public Button btn;
+    SelectButton sB;
+
+    private void Start()
+    {
+        sB = FindObjectOfType<SelectButton>();
+    }
 
     public void HoverSound()
     {
@@ -17,16 +23,16 @@ public class AudioSG : MonoBehaviour
 
     public void CallTimer()
     {
+        
         StartCoroutine(StartCountdown());
     }
 
     public IEnumerator StartCountdown()
     {
-
         yield return new WaitForSeconds(0.7f);
-
+        btn.Select();
         source.Stop();
-        source.PlayOneShot(hoverSound);
-
+        HoverSound();
+        sB.SaveButton(btn);
     }
 }
