@@ -6,15 +6,27 @@ public class WaitUntilFinish : MonoBehaviour
 {
     public AudioSource source;
     public AudioSource betReader;
+    SceneSwitcher sS;
+
     void Update()
     {
         if (!source.isPlaying)
         {
-            if (betReader.mute)
+            if (betReader != null)
             {
-                betReader.Stop();
-                betReader.mute = false;
+                if (betReader.mute)
+                {
+                    betReader.Stop();
+                    betReader.mute = false;
+                }
             }
+
+            else
+            {
+                sS = FindObjectOfType<SceneSwitcher>();
+                sS.MenuScene();
+            }
+
         }
     }
 }
