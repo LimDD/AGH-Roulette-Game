@@ -56,7 +56,7 @@ public class BoardButtonTimer : MonoBehaviour
 
         string temp = btn.name;
 
-        if (inside)
+        if (inside && audioSource.isActiveAndEnabled)
         {
             num = btn.GetComponentInChildren<TMP_Text>().text;
             int i = int.Parse(num);
@@ -64,7 +64,7 @@ public class BoardButtonTimer : MonoBehaviour
             nRS.ReadNumber();
         }
 
-        else
+        else if (audioSource.isActiveAndEnabled)
         {
             int count = 0;
 
