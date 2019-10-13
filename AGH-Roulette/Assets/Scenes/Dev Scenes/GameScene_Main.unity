@@ -2235,7 +2235,6 @@ MonoBehaviour:
   confirmationGreat: {fileID: 8300000, guid: fa5acd9fc4e8c1648b98b9b9e61bbbaf, type: 3}
   confirmationPerfect: {fileID: 8300000, guid: 078a34277c96c0f40a02108a6f0a3afc, type: 3}
   soundManager: {fileID: 40712013}
-  stateActive: 0
   hasPlayed: 0
   audioNum: 0
 --- !u!1 &55040738
@@ -15237,7 +15236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 78692592}
   nums: {fileID: 853792152}
-  clip1: {fileID: 8300000, guid: e4cdb66a670e58046b63ff3123803ae7, type: 3}
+  clip1: {fileID: 8300000, guid: f6f98dace17207540b4086dddd081278, type: 3}
   clip2: {fileID: 0}
   clip3: {fileID: 0}
   clip4: {fileID: 0}
@@ -17818,12 +17817,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7166c2a7e2b05fb44b7cacd0e5baac02, type: 3}
   - {fileID: 8300000, guid: 6f1e7bbd537bbc249a03a4952973551e, type: 3}
   - {fileID: 8300000, guid: 902bf8c0fb66bbb43bb2028268f169eb, type: 3}
-  sg: {fileID: 0}
-  t: {fileID: 0}
-  a: {fileID: 0}
-  hs: {fileID: 0}
-  ror: {fileID: 0}
-  ps: {fileID: 0}
+  buttonSource: {fileID: 0}
 --- !u!1 &855363966
 GameObject:
   m_ObjectHideFlags: 0
@@ -18405,7 +18399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!1 &910187216
 GameObject:
   m_ObjectHideFlags: 0
@@ -19419,7 +19412,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!1 &945958810
 GameObject:
   m_ObjectHideFlags: 0
@@ -28807,6 +28799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   amount: {fileID: 228806702}
   balance: {fileID: 1189270746}
+  source: {fileID: 0}
   confirm: {fileID: 1523562245}
 --- !u!114 &1519994133
 MonoBehaviour:
@@ -32148,7 +32141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!114 &1704068090
 MonoBehaviour:
   m_ObjectHideFlags: 0
