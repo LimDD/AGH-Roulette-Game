@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class PlayRandomWelcome : MonoBehaviour {
 
@@ -15,13 +16,22 @@ public class PlayRandomWelcome : MonoBehaviour {
     }
     void Start()
     {
-        _as.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
-        _as.PlayOneShot(_as.clip);
+
+        if (!SplashScreen.isFinished)
+        {
+            StartCoroutine(Wait(0.1f));
+        }
+
+        else
+        {
+            _as.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
+            _as.PlayOneShot(_as.clip);
+        }
     }
 
     private void Update()
     {
-        if (!_as.isPlaying )
+        if (!_as.isPlaying && SplashScreen.isFinished)
         {
             if (buttonSource != null)
             {
@@ -31,6 +41,12 @@ public class PlayRandomWelcome : MonoBehaviour {
                 }
             }
         }
+    }
+
+    public IEnumerator Wait(float f)
+    {
+        yield return new WaitForSeconds(f);
+        Start();
     }
 
 }
