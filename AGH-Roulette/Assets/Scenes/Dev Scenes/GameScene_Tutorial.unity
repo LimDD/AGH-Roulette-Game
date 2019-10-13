@@ -6077,8 +6077,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 23.35, y: 535}
-  m_SizeDelta: {x: 988.6, y: 349.2}
+  m_AnchoredPosition: {x: 47.7, y: 535}
+  m_SizeDelta: {x: 958.1, y: 349.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &412859665
 MonoBehaviour:
@@ -6128,8 +6128,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 110
-  m_fontSizeBase: 110
+  m_fontSize: 100
+  m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -16910,7 +16910,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!222 &986648229
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20197,7 +20196,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!114 &1184233204
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22215,7 +22213,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!114 &1271443040
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30086,8 +30083,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.8984375, y: 2.6323242}
-  m_SizeDelta: {x: 89.2, y: 74.735}
+  m_AnchoredPosition: {x: 24.9, y: 2.6323242}
+  m_SizeDelta: {x: 131.2, y: 74.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1716055147
 MonoBehaviour:
@@ -34954,8 +34951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -27.632812, y: 0}
-  m_SizeDelta: {x: 55.258, y: 0}
+  m_AnchoredPosition: {x: -46.002, y: 0}
+  m_SizeDelta: {x: 91.996, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2099840329
 GameObject:
