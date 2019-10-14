@@ -46,6 +46,7 @@ public class ZoomPanelGestures : MonoBehaviour
         {
             Debug.Log(clickBtn.name);
             clickBtn.Select();
+            btn = clickBtn;
             bTR.readType = true;
             bTR.BetType(clickBtn);
         }
