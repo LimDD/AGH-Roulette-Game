@@ -184,17 +184,7 @@ public class SpinResult : MonoBehaviour
         else
         {
             rWS.Loser(winNum);
-
-            if (!tutorial)
-            {
-                wP.ResetFile(balance);
-            }
-
-            else
-            {
-                wP.SetBal(balance);
-            }
-
+            wP.SetBal(balance);
             StartCoroutine(StartCountdown(f));
         }
 

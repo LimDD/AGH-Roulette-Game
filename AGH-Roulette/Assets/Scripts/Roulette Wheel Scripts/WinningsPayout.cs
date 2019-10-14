@@ -2,6 +2,7 @@
 using System.IO;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinningsPayout : MonoBehaviour
 {
@@ -58,7 +59,11 @@ public class WinningsPayout : MonoBehaviour
 
         SaveStatistics stats = FindObjectOfType<SaveStatistics>();
 
-        stats.SaveWinnings(amount, multi);
+        //Doesnt save stats in tutorial
+        if (!SceneManager.GetActiveScene().name.Contains("Tutorial"))
+        {
+            stats.SaveWinnings(amount, multi);
+        }
 
         return balance;
     }
@@ -66,7 +71,16 @@ public class WinningsPayout : MonoBehaviour
     //Resets coins back to original balance for main game
     public void SetBal(int balance)
     {
-        bal.text = "Coins: " + balance.ToString();
+
+        if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
+        {
+            bal.text = "Coins: 900";
+        }
+
+        else
+        {
+            bal.text = "Coins: " + balance.ToString();
+        }
 
         string path = "/balandamount.txt";
         StreamReader reader = new StreamReader(Application.persistentDataPath + path);
@@ -80,13 +94,22 @@ public class WinningsPayout : MonoBehaviour
 
         reader.Close();
 
-        balData.RemoveAt(balData.Count - 1);
-        balData.RemoveAt(balData.Count - 1);
+        string coins = "";
+        int count = 0;
+
+        foreach(string s in balData)
+        {
+            if (s.Contains("Coins:") && count + 2 < balData.Count)
+            {
+                coins = s;
+            }
+            count++;
+        }
 
 
 
         StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
-        writer.WriteLine(balData[balData.Count - 1]);
+        writer.WriteLine(coins);
 
         writer.Close();
     }
