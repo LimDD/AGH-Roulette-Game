@@ -20,7 +20,10 @@ public class SoundScript : MonoBehaviour
 
     public void Play()
     {
-        source.PlayOneShot(sound);
+        if (GestureInputManager.CurrentInput != InputAction.DoubleClick)
+        {
+            source.PlayOneShot(sound);
+        }
     }
 
     public void SetPitch()

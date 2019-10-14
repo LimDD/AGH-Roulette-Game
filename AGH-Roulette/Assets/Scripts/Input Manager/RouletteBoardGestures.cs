@@ -16,6 +16,7 @@ public class RouletteBoardGestures : MonoBehaviour
         sB = FindObjectOfType<SelectButton>();
         bGI = FindObjectOfType<BoardGestureInput>();
         btn = null;
+        selected = true;
     }
 
     public void Gestures(string type)
@@ -34,7 +35,6 @@ public class RouletteBoardGestures : MonoBehaviour
             {
                 EventSystem.current.SetSelectedGameObject(btn.gameObject);
                 btn.onClick.Invoke();
-                btn = null;
             }
         }
     }
