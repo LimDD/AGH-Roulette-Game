@@ -7,6 +7,8 @@ public class PlayAgainGestures : MonoBehaviour
 {
     public Button yes;
     public Button no;
+    public Button balance;
+    public AudioSource narrator;
     PlayRandomConfirmation pRC;
 
     public void Gestures(string type)
@@ -25,6 +27,14 @@ public class PlayAgainGestures : MonoBehaviour
         else if (type == "SwipeDown")
         {
             no.onClick.Invoke();
+        }
+
+        else if (type == "Click")
+        {
+            if (!narrator.isPlaying || narrator == null)
+            {
+                balance.GetComponentInParent<Button>().onClick.Invoke();
+            }
         }
     }
 }

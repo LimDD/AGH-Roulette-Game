@@ -33,6 +33,10 @@ public class EnableAudio : MonoBehaviour
                 foreach (AudioSource s in sources)
                 {
                     s.enabled = true;
+                    if (s.isPlaying)
+                    {
+                        s.Stop();
+                    }
                 }
                 enabled = true;
             }

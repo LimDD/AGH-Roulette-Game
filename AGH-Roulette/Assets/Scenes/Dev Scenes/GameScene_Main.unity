@@ -2106,6 +2106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   yes: {fileID: 1720359097}
   no: {fileID: 1704068086}
+  balance: {fileID: 323273189}
 --- !u!114 &40712012
 MonoBehaviour:
   m_ObjectHideFlags: 0

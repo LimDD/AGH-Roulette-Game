@@ -51,7 +51,10 @@ public class BettingGestures : MonoBehaviour
 
         else if (type == "Click")
         {
-            balance.GetComponentInParent<Button>().onClick.Invoke();
+            if (!narrator.isPlaying)
+            {
+                balance.GetComponentInParent<Button>().onClick.Invoke();
+            }
         }
 
         else if (type.Contains("Swipe"))
