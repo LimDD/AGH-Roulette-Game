@@ -47,11 +47,6 @@ public class ReadBetNums : MonoBehaviour
 
     private void IterateClipList(List<AudioClip> clips)
     {
-        if (currentClip == 0)
-        {
-            audioSource.mute = false;
-        }
-
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
         {
             Debug.Log("Playing clip " + (currentClip + 1) + " of " + lastClip + " which is " + clips[currentClip].name);

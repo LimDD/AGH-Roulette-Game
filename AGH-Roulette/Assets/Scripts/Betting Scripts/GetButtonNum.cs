@@ -14,14 +14,14 @@ public class GetButtonNum : MonoBehaviour
     Vector4 RED = new Vector4(1.0f, 0.0f, 0.0f, 1.0f);
     Vector4 BLACK = new Vector4(0.0f, 0.0f, 0.0f, 1.0f);
 
-    public Button topL;
-    public Button topM;
-    public Button topR;
-    public Button midL;
-    public Button midR;
-    public Button botL;
-    public Button botM;
-    public Button botR;
+    public TMP_Text topL;
+    public TMP_Text topM;
+    public TMP_Text topR;
+    public TMP_Text midL;
+    public TMP_Text midR;
+    public TMP_Text botL;
+    public TMP_Text botM;
+    public TMP_Text botR;
 
     public Button topLNum;
     public Button topMNum;
@@ -125,15 +125,6 @@ public class GetButtonNum : MonoBehaviour
     public void BetType(int n)
     {
         //Sets all buttons back to interactable if they werent already
-        topL.gameObject.SetActive(true);
-        topM.gameObject.SetActive(true);
-        topR.gameObject.SetActive(true);
-        midL.gameObject.SetActive(true);
-        midR.gameObject.SetActive(true);
-        botL.gameObject.SetActive(true);
-        botM.gameObject.SetActive(true);
-        botR.gameObject.SetActive(true);
-
         topLNum.gameObject.SetActive(true);
         topMNum.gameObject.SetActive(true);
         topRNum.gameObject.SetActive(true);
@@ -144,11 +135,11 @@ public class GetButtonNum : MonoBehaviour
         botRNum.gameObject.SetActive(true);
 
         //Sets the button text back to default
-        topL.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
-        topR.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
-        midL.GetComponentInChildren<TMP_Text>().text = "Split\nBet";
-        botL.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
-        botR.GetComponentInChildren<TMP_Text>().text = "Corner\nBet";
+        topL.text = "Corner\nBet";
+        topR.text = "Corner\nBet";
+        midL.text = "Split\nBet";
+        botL.text = "Corner\nBet";
+        botR.text = "Corner\nBet";
 
         //Makes far right column inside bets unable to place a bet on the right side buttons
         if (n % 3 == 0)
@@ -166,25 +157,25 @@ public class GetButtonNum : MonoBehaviour
         //Makes left column left buttons names change for due to the different bets that can be made
         if (n % 3 == 1)
         {
-            midL.GetComponentInChildren<TMP_Text>().text = "Street\nBet";
-            botL.GetComponentInChildren<TMP_Text>().text = "Six Line\nBet";
+            midL.text = "Street\nBet";
+            botL.text = "Six Line\nBet";
 
             if (n == 1)
             {
-                topL.GetComponentInChildren<TMP_Text>().text = "Basket\nBet";
-                topR.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
+                topL.text = "Basket\nBet";
+                topR.text = "Trio\nBet";
             }
 
             else
             {
-                topL.GetComponentInChildren<TMP_Text>().text = "Six Line\nBet";
+                topL.text = "Six Line\nBet";
             }
         }
 
         if (n == 3 || n == 2)
         {
-            topL.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
-            topR.GetComponentInChildren<TMP_Text>().text = "Trio\nBet";
+            topL.text = "Trio\nBet";
+            topR.text = "Trio\nBet";
         }
 
         //Bottom buttons on the bottom row cannot be played

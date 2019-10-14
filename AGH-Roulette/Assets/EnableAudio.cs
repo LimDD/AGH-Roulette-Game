@@ -8,6 +8,7 @@ public class EnableAudio : MonoBehaviour
     AudioSource[] sources;
 
     public GameObject panel;
+    string lastPanel;
     bool enabled;
 
 
@@ -37,5 +38,4 @@ public class EnableAudio : MonoBehaviour
             }
         }
     }
-
 }

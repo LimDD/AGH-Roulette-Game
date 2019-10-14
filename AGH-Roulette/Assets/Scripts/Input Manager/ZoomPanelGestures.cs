@@ -12,16 +12,21 @@ public class ZoomPanelGestures : MonoBehaviour
     BetTypeReader bTR;
 
     Button btn;
+    Button clickBtn;
 
 
     private void Start()
     {
-        height = Screen.height;
         bGI = FindObjectOfType<BoardGestureInput>();
         bTR = FindObjectOfType<BetTypeReader>();
     }
 
     public void SetButton(Button b)
+    {
+        clickBtn = b;
+    }
+
+    public void HoldSetButton(Button b)
     {
         btn = b;
     }
@@ -35,6 +40,14 @@ public class ZoomPanelGestures : MonoBehaviour
                 btn.Select();
                 btn.onClick.Invoke();
             }
+        }
+
+        if (type == "Click")
+        {
+            Debug.Log(clickBtn.name);
+            clickBtn.Select();
+            bTR.readType = true;
+            bTR.BetType(clickBtn);
         }
     }
 }
