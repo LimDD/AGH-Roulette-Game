@@ -26,16 +26,12 @@ public class SaveBetInfo : MonoBehaviour
 
         Button btn = GameObject.Find(btnName).GetComponent<Button>();
 
-        //Gets the text/tmp component of the button and saves it to a string
-        try
-        {
-            str = btn.GetComponentInChildren<TMP_Text>().text;
-        }
+        //Gets the texttmp component of the button and saves it to a string
 
-        catch
-        {
-            str = btn.GetComponentInChildren<Text>().text;
-        }
+        TMP_Text[] text = btn.GetComponentsInChildren<TMP_Text>();
+
+        //The first child is a number and the last is the bet type
+        str = text[text.Length - 1].text;
 
         //Remove New Lines in the string
         string type = Regex.Replace(str,"\n"," ");
@@ -85,7 +81,7 @@ public class SaveBetInfo : MonoBehaviour
         {
             switch (btnName)
             {
-                case "TopMiddleButton":
+                case "Top Middle Number":
                     if (num < 3)
                     {
                         winNum.Add(0);
@@ -97,14 +93,14 @@ public class SaveBetInfo : MonoBehaviour
                     }
                     break;
 
-                case "MiddleLeftButton":
+                case "Middle Left Number":
                     winNum.Add(num - 1);
                     break;
 
-                case "MiddleRightButton":
+                case "Middle Right Number":
                     winNum.Add(num + 1);
                     break;
-                case "BottomMiddleButton":
+                case "Bottom Middle Number":
                     winNum.Add(num + 3);
                     break;
             }
@@ -114,24 +110,24 @@ public class SaveBetInfo : MonoBehaviour
         {
             switch (btnName)
             {
-                case "TopLeftButton":
+                case "Top Left Number":
                     winNum.Add(num - 1);
                     winNum.Add(num - 4);
                     winNum.Add(num - 3);
                     break;
 
-                case "TopRightButton":
+                case "Top Right Number":
                     winNum.Add(num - 3);
                     winNum.Add(num - 2);
                     winNum.Add(num + 1);
                     break;
 
-                case "BottomLeftButton":
+                case "Bottom Left Number":
                     winNum.Add(num + 2);
                     winNum.Add(num + 3);
                     winNum.Add(num - 1);
                     break;
-                case "BottomRightButton":
+                case "Bottom Right Number":
                     winNum.Add(num + 1);
                     winNum.Add(num + 3);
                     winNum.Add(num + 4);
@@ -155,7 +151,7 @@ public class SaveBetInfo : MonoBehaviour
 
             if (num == 2)
             {
-                if (btnName == "TopLeftButton")
+                if (btnName == "Top Left Number")
                 {
                     winNum.Add(0);
                     winNum.Add(1);
@@ -177,7 +173,7 @@ public class SaveBetInfo : MonoBehaviour
 
         else if (betType == "Six Line Bet")
         {
-            if (btnName == "BottomLeftButton")
+            if (btnName == "Bottom Left Number")
             {
                 for (int i = 1; i < 6; i++)
                 {

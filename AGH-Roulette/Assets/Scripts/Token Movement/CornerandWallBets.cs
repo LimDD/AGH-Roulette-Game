@@ -28,13 +28,13 @@ public class CornerandWallBets : MonoBehaviour
         //If a trio bet between 2 and zero, then the coin should be placed between 0, 1, 2 or 0, 2, 3
         if (num == 2)
         {
-            if (name == "TopRightButton")
+            if (name == "Top Right Number")
             {
                 num = 3;
                 isTwo = true;
             }
 
-            else if (name == "TopLeftButton")
+            else if (name == "Top Left Number")
             {
                 num = 1;
                 isTwo = true;
@@ -45,7 +45,7 @@ public class CornerandWallBets : MonoBehaviour
         btn = SetButton();
 
         //If a first column number was picked, check if it was a street bet
-        if (num % 3 == 1 && name.Contains("LeftButton") && !isTwo)
+        if (num % 3 == 1 && name.Contains("Left Number") && !isTwo)
         {
             btn2 = GameObject.Find("StreetCalc").GetComponent<Button>();
 
@@ -76,13 +76,13 @@ public class CornerandWallBets : MonoBehaviour
             //For most numbers this gets the second number the coin will be between
             switch (name)
             {
-                case "TopLeftButton":
+                case "Top Left Number":
                     num -= 4;
                     break;
-                case "TopMiddleButton":
+                case "Top Middle Number":
                     num -= 3;
                     break;
-                case "TopRightButton":
+                case "Top Right Number":
                     if (isTwo)
                     {
                         num = 0;
@@ -93,19 +93,19 @@ public class CornerandWallBets : MonoBehaviour
                         num -= 2;
                     }
                     break;
-                case "MiddleLeftButton":
+                case "Middle Left Number":
                     num--;
                     break;
-                case "MiddleRightButton":
+                case "Middle Right Number":
                     num++;
                     break;
-                case "BottomLeftButton":
+                case "Bottom Left Number":
                     num += 2;
                     break;
-                case "BottomMiddleButton":
+                case "Bottom Middle Number":
                     num += 3;
                     break;
-                case "BottomRightButton":
+                case "Bottom Right Number":
                     num += 4;
                     break;
             }
@@ -116,7 +116,7 @@ public class CornerandWallBets : MonoBehaviour
         {
             num = 0;
             //Don't need to calculate x for split bets containing zero, just use the first buttons x value
-            if (name == "TopMiddleButton")
+            if (name == "Top Middle Number")
             {
                 x = btn.transform.position.x;
             }
