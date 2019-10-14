@@ -188,8 +188,11 @@ public class SpinResult : MonoBehaviour
             StartCoroutine(StartCountdown(f));
         }
 
-        f += 3;
-        StartCoroutine(ControlsPlay(f));
+        if (controls != null)
+        {
+            f += 3;
+            StartCoroutine(ControlsPlay(f));
+        }
         dD.Destroy();
     }
 
