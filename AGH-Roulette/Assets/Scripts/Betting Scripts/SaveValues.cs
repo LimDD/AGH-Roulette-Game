@@ -43,9 +43,10 @@ public class SaveValues : MonoBehaviour
         }
     }
 
+    //Skips asking if they would like to make another bet and takes them straight to the wheel
     private void CheckBal(int balNum)
     {
-        sS = table.GetComponent<SceneSwitcher>();
+        sS = table.GetComponent<SceneSwitcher>(); 
         table.SetActive(false);
         sS.WheelScene();       
     }

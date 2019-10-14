@@ -13,6 +13,7 @@ public class BettingGestures : MonoBehaviour
     public TMP_Text amount;
     public TMP_Text balance;
     public AudioSource source;
+    public AudioSource narrator;
     public Button confirm;
 
     public void Gestures(string type)
@@ -39,7 +40,10 @@ public class BettingGestures : MonoBehaviour
 
                     else
                     {
-                        source.Play();
+                        if (!narrator.isPlaying)
+                        {
+                            source.Play();
+                        }
                     }
                 }
             }

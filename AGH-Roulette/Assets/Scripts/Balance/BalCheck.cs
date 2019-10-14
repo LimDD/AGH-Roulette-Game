@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class BalCheck : MonoBehaviour
 {
     public Button confirm;
-    public Button inc;
-    public Button dec;
     public TMP_Text playerCoinsText;
     public TMP_Text betText;
 
@@ -21,8 +19,6 @@ public class BalCheck : MonoBehaviour
         if (!confirm.IsInteractable())
         {
             confirm.interactable = true;
-            inc.interactable = true;
-            dec.interactable = true;
         }
 
         string path = "/balandamount.txt";
@@ -54,13 +50,6 @@ public class BalCheck : MonoBehaviour
         {
             amount = balance;
             betText.text = amount.ToString();
-        }
-
-        //If the balance is less than or equal to 10 then only a bet of 10 can be played
-        if (balance <= 10)
-        {
-            inc.interactable = false;
-            dec.interactable = false;
         }
 
         //THe confirm button cannot be clicked as the player has no money

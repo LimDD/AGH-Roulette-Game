@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System.Collections.Generic;
+using System.IO;
 using TMPro;
 using UnityEngine;
 
@@ -9,6 +10,8 @@ public class WinningsPayout : MonoBehaviour
     //Finds out the winnings owed due to the bet type and the amount and adds it to the balance
     public int GetWinnings(string bet, int balance, int amount)
     {
+        Debug.Log("Amount: " + amount);
+
         int multi = 0;
 
         if (bet == "Trio Bet" || bet == "Street Bet")
@@ -60,9 +63,32 @@ public class WinningsPayout : MonoBehaviour
         return balance;
     }
 
+    //Resets coins back to original balance for main game
     public void SetBal(int balance)
     {
         bal.text = "Coins: " + balance.ToString();
+
+        string path = "/balandamount.txt";
+        StreamReader reader = new StreamReader(Application.persistentDataPath + path);
+
+        List<string> balData = new List<string>(); 
+
+        while (!reader.EndOfStream)
+        {
+            balData.Add(reader.ReadLine());
+        }
+
+        reader.Close();
+
+        balData.RemoveAt(balData.Count - 1);
+        balData.RemoveAt(balData.Count - 1);
+
+
+
+        StreamWriter writer = new StreamWriter(Application.persistentDataPath + path);
+        writer.WriteLine(balData[balData.Count - 1]);
+
+        writer.Close();
     }
 
     //Resets the balandamount text file to only contain the latest balance

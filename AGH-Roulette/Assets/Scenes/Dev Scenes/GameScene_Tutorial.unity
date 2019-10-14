@@ -1825,7 +1825,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1184233202}
+      - m_Target: {fileID: 1052691115}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -18493,7 +18493,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 257261239}
+      - m_Target: {fileID: 1184233206}
         m_MethodName: Stop
         m_Mode: 1
         m_Arguments:
@@ -33372,6 +33372,7 @@ MonoBehaviour:
   amount: {fileID: 474320141}
   balance: {fileID: 479378822}
   source: {fileID: 251389781}
+  narrator: {fileID: 1942779422}
   confirm: {fileID: 294887269}
 --- !u!114 &1942779425
 MonoBehaviour:

@@ -30,8 +30,11 @@ public class ZoomPanelGestures : MonoBehaviour
     {
         if (type == "DoubleClick")
         {
-            btn.Select();
-            btn.onClick.Invoke();
+            if (btn != null)
+            {
+                btn.Select();
+                btn.onClick.Invoke();
+            }
         }
     }
 }
