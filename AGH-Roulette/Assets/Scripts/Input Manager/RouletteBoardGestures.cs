@@ -34,6 +34,7 @@ public class RouletteBoardGestures : MonoBehaviour
             {
                 EventSystem.current.SetSelectedGameObject(btn.gameObject);
                 btn.onClick.Invoke();
+                btn = null;
             }
         }
     }

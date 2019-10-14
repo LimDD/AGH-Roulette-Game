@@ -171,7 +171,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67ee5f9f40b8e6a4591b6982fded7309, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  menu: 0
 --- !u!114 &19986460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2621,6 +2620,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
   - {fileID: 8300000, guid: 13533f95d22a94f489c387657e6ec556, type: 3}
   - {fileID: 8300000, guid: 5d4a578602a3d284984e55f6d6f3839d, type: 3}
+  controls: {fileID: 8300000, guid: f0b9a282b46203a4885ac8124e4186e3, type: 3}
   tutorial: 0
 --- !u!114 &1890441222
 MonoBehaviour:
