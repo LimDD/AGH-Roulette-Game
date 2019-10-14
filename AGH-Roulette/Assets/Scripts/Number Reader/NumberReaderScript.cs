@@ -32,11 +32,25 @@ public class NumberReaderScript : MonoBehaviour
     {
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
         {
+            if (audioSource.mute && currentClip == 0)
+            {
+                audioSource.mute = false;
+            }
+
             Debug.Log("Playing clip" + currentClip + " of " + lastClip + " which is " + clips[currentClip].name);
             audioSource.clip = clips[currentClip];
             audioSource.Play();
 
             currentClip++;
+
+            if (currentClip == lastClip)
+            {
+                if (audioSource.mute)
+                {
+                    audioSource.mute = false;
+                    audioSource.Stop();
+                }
+            }
         }
     }
 

@@ -134,6 +134,15 @@ public class GetButtonNum : MonoBehaviour
         botMNum.gameObject.SetActive(true);
         botRNum.gameObject.SetActive(true);
 
+        topL.gameObject.SetActive(true);
+        topM.gameObject.SetActive(true);
+        topR.gameObject.SetActive(true);
+        midL.gameObject.SetActive(true);
+        midR.gameObject.SetActive(true);
+        botL.gameObject.SetActive(true);
+        botM.gameObject.SetActive(true);
+        botR.gameObject.SetActive(true);
+
         //Sets the button text back to default
         topL.text = "Corner\nBet";
         topR.text = "Corner\nBet";
