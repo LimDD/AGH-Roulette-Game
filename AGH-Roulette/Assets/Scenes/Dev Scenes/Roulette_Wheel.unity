@@ -2620,7 +2620,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 8dcdbda5fe7016d4a9e5f7909ab5505f, type: 3}
   - {fileID: 8300000, guid: 13533f95d22a94f489c387657e6ec556, type: 3}
   - {fileID: 8300000, guid: 5d4a578602a3d284984e55f6d6f3839d, type: 3}
-  controls: {fileID: 8300000, guid: f0b9a282b46203a4885ac8124e4186e3, type: 3}
+  controls: {fileID: 8300000, guid: be2e4280d434cf7459e75c0380a246b0, type: 3}
   tutorial: 0
 --- !u!114 &1890441222
 MonoBehaviour:
@@ -3028,7 +3028,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0

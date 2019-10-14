@@ -56,6 +56,7 @@ public class WheelGestureInput : MonoBehaviour
 
                         else
                         {
+                            wheel.SetActive(false);
                             completed.SetActive(true);
                         }
                     }

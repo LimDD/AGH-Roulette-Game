@@ -18394,8 +18394,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   confirm: {fileID: 1523562245}
-  inc: {fileID: 0}
-  dec: {fileID: 0}
   playerCoinsText: {fileID: 1189270746}
   betText: {fileID: 228806702}
 --- !u!114 &863234869
@@ -23857,7 +23855,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 0
+  m_fontStyle: 16
   m_textAlignment: 514
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -28811,6 +28809,7 @@ MonoBehaviour:
   amount: {fileID: 228806702}
   balance: {fileID: 1189270746}
   source: {fileID: 0}
+  narrator: {fileID: 0}
   confirm: {fileID: 1523562245}
 --- !u!114 &1519994133
 MonoBehaviour:
