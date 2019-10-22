@@ -9,7 +9,7 @@ public class EnableAudio : MonoBehaviour
 
     public GameObject panel;
     string lastPanel;
-    bool isEnabled;
+    bool enabled;
 
 
     // Start is called before the first frame update
@@ -21,7 +21,7 @@ public class EnableAudio : MonoBehaviour
 
     void Update()
     {
-        if (!isEnabled)
+        if (!enabled)
         {
             if (narrator.isPlaying)
             {
@@ -38,7 +38,7 @@ public class EnableAudio : MonoBehaviour
                         s.Stop();
                     }
                 }
-                isEnabled = true;
+                enabled = true;
             }
         }
     }
