@@ -19,7 +19,12 @@ public class AudioSG : MonoBehaviour
     public void HoverSound()
     {
         btn.Select();
-        source.PlayOneShot(hoverSound);
+
+        if (source.isActiveAndEnabled)
+        {
+            source.PlayOneShot(hoverSound);
+        }
+
         sB.SaveButton(btn);
     }
 
