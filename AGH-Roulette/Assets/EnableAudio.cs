@@ -16,7 +16,7 @@ public class EnableAudio : MonoBehaviour
     private void Start()
     {
         sources = panel.GetComponentsInChildren<AudioSource>();
-        enabled = false;
+        isEnabled = false;
     }
 
     void Update()

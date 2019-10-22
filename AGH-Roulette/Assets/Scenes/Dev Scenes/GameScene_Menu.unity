@@ -802,6 +802,7 @@ GameObject:
   - component: {fileID: 78181797}
   - component: {fileID: 78181796}
   - component: {fileID: 78181799}
+  - component: {fileID: 78181800}
   m_Layer: 5
   m_Name: HighScoresButton
   m_TagString: Untagged
@@ -1090,7 +1091,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 78181796}
+        - m_Target: {fileID: 78181800}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -1156,6 +1157,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &78181800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78181791}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &98979423
@@ -4345,6 +4358,7 @@ GameObject:
   - component: {fileID: 642121535}
   - component: {fileID: 642121534}
   - component: {fileID: 642121537}
+  - component: {fileID: 642121538}
   m_Layer: 5
   m_Name: TutorialButton
   m_TagString: Untagged
@@ -4589,7 +4603,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 642121534}
+        - m_Target: {fileID: 642121538}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -4655,6 +4669,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &642121538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 642121529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &677976410
@@ -6884,6 +6910,7 @@ GameObject:
   - component: {fileID: 932717650}
   - component: {fileID: 932717649}
   - component: {fileID: 932717652}
+  - component: {fileID: 932717653}
   m_Layer: 5
   m_Name: RulesOfRouletteButton
   m_TagString: Untagged
@@ -7172,7 +7199,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 932717649}
+        - m_Target: {fileID: 932717653}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -7238,6 +7265,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &932717653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 932717644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &935795029
@@ -8579,6 +8618,7 @@ GameObject:
   - component: {fileID: 1114518593}
   - component: {fileID: 1114518592}
   - component: {fileID: 1114518594}
+  - component: {fileID: 1114518595}
   m_Layer: 5
   m_Name: OutsideBetButton
   m_TagString: Untagged
@@ -8755,7 +8795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1655279817}
+  source: {fileID: 1515681422}
   hoverSound: {fileID: 8300000, guid: fbacd058c26f1a0408efc9cf83d3bb7a, type: 3}
   btn: {fileID: 1114518589}
 --- !u!82 &1114518593
@@ -8768,10 +8808,10 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fbacd058c26f1a0408efc9cf83d3bb7a, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
-  m_Pitch: 1
+  m_Pitch: 1.2
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -8882,8 +8922,48 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1114518595}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1114518592}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1114518595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1114518587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1117104115
 GameObject:
   m_ObjectHideFlags: 0
@@ -13056,7 +13136,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d17d81a026670d640bf83581248580ef, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -13486,6 +13566,7 @@ GameObject:
   - component: {fileID: 1585967193}
   - component: {fileID: 1585967192}
   - component: {fileID: 1585967195}
+  - component: {fileID: 1585967196}
   m_Layer: 5
   m_Name: AchievementsButton
   m_TagString: Untagged
@@ -13774,7 +13855,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1585967192}
+        - m_Target: {fileID: 1585967196}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -13840,6 +13921,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1585967196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585967187}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1591166539
@@ -13934,6 +14027,7 @@ GameObject:
   - component: {fileID: 1612733943}
   - component: {fileID: 1612733939}
   - component: {fileID: 1612733944}
+  - component: {fileID: 1612733945}
   m_Layer: 5
   m_Name: StartGameButton
   m_TagString: Untagged
@@ -14215,7 +14309,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1612733939}
+        - m_Target: {fileID: 1612733945}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -14293,6 +14387,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1612733945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1612733934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1638217484
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,6 +14451,7 @@ GameObject:
   - component: {fileID: 1655279818}
   - component: {fileID: 1655279817}
   - component: {fileID: 1655279819}
+  - component: {fileID: 1655279820}
   m_Layer: 5
   m_Name: InsideBetButton
   m_TagString: Untagged
@@ -14519,7 +14626,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: e363693c6f9bbe44e83adae08c1812d7, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -14617,7 +14724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0730345253583b439d0644c8fd3facd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  source: {fileID: 1655279817}
+  source: {fileID: 1515681422}
   hoverSound: {fileID: 8300000, guid: ea6cb81280eba434b8e750808603e734, type: 3}
   btn: {fileID: 1655279814}
 --- !u!114 &1655279819
@@ -14648,8 +14755,48 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1655279820}
+          m_MethodName: Play
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1655279818}
+          m_MethodName: StopAllCoroutines
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &1655279820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655279812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1683471231
 GameObject:
   m_ObjectHideFlags: 0
@@ -15403,6 +15550,7 @@ GameObject:
   - component: {fileID: 1845050738}
   - component: {fileID: 1845050740}
   - component: {fileID: 1845050744}
+  - component: {fileID: 1845050745}
   m_Layer: 5
   m_Name: PlayerStatisticsButton
   m_TagString: Untagged
@@ -15447,7 +15595,7 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1845050740}
+        - m_Target: {fileID: 1845050745}
           m_MethodName: Play
           m_Mode: 1
           m_Arguments:
@@ -15757,6 +15905,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc99b798b8718374c9db59d184d07b43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1845050745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845050736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebdcc0140c3823442b5a13f74ae5bca5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1853369420
