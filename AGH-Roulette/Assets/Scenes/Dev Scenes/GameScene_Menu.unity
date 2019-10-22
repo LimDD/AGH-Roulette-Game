@@ -14745,7 +14745,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1655279818}
-          m_MethodName: HoverSound
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
