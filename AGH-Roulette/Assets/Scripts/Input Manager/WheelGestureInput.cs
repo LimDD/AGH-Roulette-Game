@@ -5,11 +5,12 @@ using UnityEngine.UI;
 public class WheelGestureInput : MonoBehaviour
 {
     public TMP_Text balance;
-    public Button newBet;
     public Text text;
     public GameObject wheel;
     public GameObject summary;
     public GameObject completed;
+    public AudioSource source;
+    public AudioSource nums;
 
     SceneSwitcher sS;
     StatsReset sR;
@@ -67,13 +68,18 @@ public class WheelGestureInput : MonoBehaviour
                     sS.MenuScene();
                 }
 
-                else if (type == "Click")
+                else if (type == "DoubleClick")
                 {
                     if (wheel.activeSelf && summary != null)
                     {
                         wheel.SetActive(false);
                         summary.SetActive(true);
                     }
+                }
+
+                else if (type == "Click" && wheel.activeSelf && !source.isPlaying && nums.isPlaying)
+                {
+                    balance.GetComponentInParent<Button>().onClick.Invoke();
                 }
             }
 
