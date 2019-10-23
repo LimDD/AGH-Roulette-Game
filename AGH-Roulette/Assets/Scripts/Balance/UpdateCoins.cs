@@ -2,6 +2,7 @@
 using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UpdateCoins : MonoBehaviour
 {
@@ -42,6 +43,8 @@ public class UpdateCoins : MonoBehaviour
         string temp = playerCoins.text;
 
         temp = Regex.Replace(temp, "Coins: ", "");
+
+        playerCoins.GetComponentInParent<Button>().Select();
 
         int i = int.Parse(temp);
 

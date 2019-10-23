@@ -7692,7 +7692,7 @@ GameObject:
   - component: {fileID: 323273190}
   - component: {fileID: 323273189}
   m_Layer: 0
-  m_Name: Button
+  m_Name: BalBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17732,6 +17732,7 @@ MonoBehaviour:
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
   NumToRead: 0
+  coins: {fileID: 8300000, guid: 9523ca05146e0f64687cc37872a2b9f2, type: 3}
   currentClip: 0
   lastClip: 0
 --- !u!114 &853792154
@@ -23725,6 +23726,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCoins: {fileID: 1189270746}
+  tutorial: 0
 --- !u!1 &1203901639
 GameObject:
   m_ObjectHideFlags: 0

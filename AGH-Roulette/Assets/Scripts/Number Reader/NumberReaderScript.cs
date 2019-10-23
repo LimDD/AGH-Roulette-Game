@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class NumberReaderScript : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class NumberReaderScript : MonoBehaviour
 
     AudioSource audioSource;
     AudioClip[] clips;
+    public AudioClip coins;
     public int currentClip;
     public int lastClip;
 
@@ -30,6 +32,15 @@ public class NumberReaderScript : MonoBehaviour
     //Iterates through clips in queue and plays them one by one
     private void IterateClips()
     {
+        if (EventSystem.current.currentSelectedGameObject != null)
+        {
+            if (EventSystem.current.currentSelectedGameObject.name == "BalBtn")
+            {
+                audioSource.PlayOneShot(coins);
+                EventSystem.current.SetSelectedGameObject(null);
+            }
+        }
+
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
         {
             if (audioSource.mute && currentClip == 0)
@@ -37,7 +48,7 @@ public class NumberReaderScript : MonoBehaviour
                 audioSource.mute = false;
             }
 
-            Debug.Log("Playing clip" + currentClip + " of " + lastClip + " which is " + clips[currentClip].name);
+            Debug.Log("Playing clip " + currentClip + " of " + lastClip + " which is " + clips[currentClip].name);
             audioSource.clip = clips[currentClip];
             audioSource.Play();
 

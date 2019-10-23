@@ -91,12 +91,11 @@ public class BoardGestureInput : MonoBehaviour
 
                 else
                 {
+                    //For tutorial
                     if (type == "Click")
                     {
                         panel.SetActive(false);
                         panel2.SetActive(true);
-
-
                     }
                 }
             }

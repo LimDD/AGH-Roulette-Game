@@ -1,5 +1,6 @@
 ﻿using TMPro;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BetPanelTimer : MonoBehaviour
 {
@@ -27,28 +28,28 @@ public class BetPanelTimer : MonoBehaviour
 
         if (targetTime <= 0.0f && targetTime > -1f && !finished)
         {
-            TimerEnded();
-            finished = true;
-        }
+            if (!narrator.isPlaying)
+            {
+                TimerEnded();
+                finished = true;
+            }
 
+            else
+            {
+                targetTime = 1f;
+            }
+        }
     }
 
     void TimerEnded()
     {
         if (amount.isActiveAndEnabled)
         {
+            Debug.Log("Timer Finished");
             int num = int.Parse(amount.text);
+
             nRS.SetNumber(num);
-
-            if (narrator.isPlaying)
-            {
-                targetTime = 1f;
-            }
-
-            else
-            {
-                nRS.ReadNumber();
-            }
+            nRS.ReadNumber();
         }
     }
 }
