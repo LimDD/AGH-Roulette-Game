@@ -394,7 +394,6 @@ public class GestureInputManager : MonoBehaviour {
 			float horizontalAngleRange = 60f;
 			oneFinger.ResetTap();
 
-            Debug.Log("AngleH: " + angle);
             //Reset the tap info because its a swipe, not a tap.
 
             if (angle < horizontalAngleRange && angle < 20) {
@@ -412,7 +411,6 @@ public class GestureInputManager : MonoBehaviour {
             angle = Vector2.Dot(vector, yAxis);
 			angle = Mathf.Acos(angle) * Mathf.Rad2Deg;
 
-            Debug.Log("Angle: " + angle);
 
             if (angle < angleRange) {
 				//Swiped Top

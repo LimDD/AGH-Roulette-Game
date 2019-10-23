@@ -755,8 +755,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: -254}
-  m_SizeDelta: {x: 400, y: 298.2}
+  m_AnchoredPosition: {x: -428.5, y: -252}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &22643028
 MonoBehaviour:
@@ -1001,7 +1001,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 22643037}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3279,7 +3279,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 84177460}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3634,7 +3634,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.8984375, y: 2.6323242}
+  m_AnchoredPosition: {x: 3.8999023, y: 0}
   m_SizeDelta: {x: 89.2, y: 74.735}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132745757
@@ -9562,7 +9562,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 469675284}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -11483,8 +11483,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: 195.99995}
-  m_SizeDelta: {x: 400, y: 298.2}
+  m_AnchoredPosition: {x: -428.5, y: 198.5}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &561959458
 MonoBehaviour:
@@ -11727,7 +11727,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 561959467}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -12440,8 +12440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: -29.030052}
-  m_SizeDelta: {x: 400, y: 298.2}
+  m_AnchoredPosition: {x: -428.5, y: -27}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571273863
 MonoBehaviour:
@@ -12684,7 +12684,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 571273872}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -13045,8 +13045,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: 421}
-  m_SizeDelta: {x: 400, y: 298.2}
+  m_AnchoredPosition: {x: -428.5, y: 423}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &595861943
 MonoBehaviour:
@@ -13289,7 +13289,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 595861952}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14089,7 +14089,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 616024479}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14538,8 +14538,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: 646.5}
-  m_SizeDelta: {x: 401.4, y: 298.2}
+  m_AnchoredPosition: {x: -428, y: 647.5}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &635001757
 MonoBehaviour:
@@ -14782,7 +14782,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 635001766}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -19726,8 +19726,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -428.5, y: -477.5}
-  m_SizeDelta: {x: 394.4, y: 298.2}
+  m_AnchoredPosition: {x: -428.5, y: -476.5}
+  m_SizeDelta: {x: 399, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958431347
 MonoBehaviour:
@@ -19970,7 +19970,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 958431356}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -26393,7 +26393,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1334521026}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -30238,7 +30238,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1610360095}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -32639,7 +32639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260.7, y: -365}
+  m_AnchoredPosition: {x: -260.8, y: -365}
   m_SizeDelta: {x: 800, y: 298.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756720129
@@ -32883,7 +32883,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1756720138}
-          m_MethodName: CallTimerOutside
+          m_MethodName: CallTimer
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

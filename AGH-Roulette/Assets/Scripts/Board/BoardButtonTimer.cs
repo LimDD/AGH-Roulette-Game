@@ -25,14 +25,17 @@ public class BoardButtonTimer : MonoBehaviour
 
     public void CallTimer()
     {
-        inside = true;
-        StartCoroutine(StartCountdown(1f));
-    }
+        if (btn.name.Contains("_Cell"))
+        {
+            inside = true;
+        }
 
-    public void CallTimerOutside()
-    {
-        inside = false;
-        StartCoroutine(StartCountdown(1f));
+        else
+        {
+            inside = false;
+        }
+
+        StartCoroutine(StartCountdown(0.5f));
     }
 
     //Starts a countdown to check if the button is still in focus to determine whether the sound is played or not
