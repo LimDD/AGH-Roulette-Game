@@ -11986,7 +11986,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1450667887}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 436d0b3fef7c3184e9191e9a16baf62e, type: 3}
@@ -12528,6 +12528,7 @@ MonoBehaviour:
   numberReader: {fileID: 1715329027112062910, guid: a3b7a72d93f61f3449090e160f2b1ddd,
     type: 3}
   NumToRead: 0
+  coins: {fileID: 0}
   currentClip: 0
   lastClip: 0
 --- !u!82 &1502399766
