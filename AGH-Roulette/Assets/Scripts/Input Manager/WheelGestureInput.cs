@@ -77,7 +77,7 @@ public class WheelGestureInput : MonoBehaviour
                     }
                 }
 
-                else if (type == "Click" && wheel.activeSelf && !source.isPlaying && nums.isPlaying)
+                else if (type == "Click" && wheel.activeSelf && !source.isPlaying && !nums.isPlaying)
                 {
                     balance.GetComponentInParent<Button>().onClick.Invoke();
                 }

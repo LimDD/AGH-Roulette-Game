@@ -20,14 +20,17 @@ public class SpinResult : MonoBehaviour
     SaveBetInfo sBI;
     DontDestroy dD;
     public AudioSource source;
+    public AudioSource nums;
     public AudioClip red;
     public AudioClip black;
     public AudioClip[] win;
     public AudioClip[] lose;
     public AudioClip controls;
 
+    bool colourRed;
     public bool tutorial;
     bool winner;
+    public int soundCount;
 
     private void Start()
     {
@@ -37,8 +40,57 @@ public class SpinResult : MonoBehaviour
         sBI = FindObjectOfType<SaveBetInfo>();
         dD = FindObjectOfType<DontDestroy>();
         winner = false;
+        soundCount = 3;
     }
 
+    private void Update()
+    {
+        if (!nums.isPlaying)
+        {
+            while (soundCount < 3 && !source.isPlaying)
+            {
+                switch (soundCount)
+                {
+                    case 0:
+                        if (colourRed)
+                        {
+                            source.PlayOneShot(red);
+                        }
+
+                        else
+                        {
+                            source.PlayOneShot(black);
+                        }
+                        StartCoroutine(Delay());
+                        break;
+
+                    case 1:
+
+                        int rand = Random.Range(0, 2);
+
+                        if (winner)
+                        {
+                            source.PlayOneShot(win[rand]);
+                        }
+
+                        else
+                        {
+                            source.PlayOneShot(lose[rand]);
+                        }
+                        break;
+
+                    case 2:
+                        if (controls != null)
+                        {
+                            source.PlayOneShot(controls);
+                        }
+                        break;
+                }
+
+                soundCount++;
+            }
+        } 
+    }
     //Checks if the result is the same
     public void CheckWinner()
     {
@@ -143,17 +195,7 @@ public class SpinResult : MonoBehaviour
         nRS.SetNumber(winNum);
         nRS.ReadNumber();
 
-        bool colourRed = nRS.SetColour(winNum);
-        float f = 0.7f;
-
-        if (winNum > 20)
-        {
-            f = 1.1f;
-        }
-
-        StartCoroutine(ColourPlay(colourRed, f));
-
-        f += 1;
+        colourRed = nRS.SetColour(winNum);
 
         //If the player won
         if (winner)
@@ -176,8 +218,6 @@ public class SpinResult : MonoBehaviour
             {
                 wP.SetBal(balance);
             }
-
-            StartCoroutine(StartCountdown(f));
         }
 
         //If they lost
@@ -185,56 +225,16 @@ public class SpinResult : MonoBehaviour
         {
             rWS.Loser(winNum);
             wP.SetBal(balance);
-            StartCoroutine(StartCountdown(f));
         }
 
-        if (controls != null)
-        {
-            f += 3;
-            StartCoroutine(ControlsPlay(f));
-        }
         dD.Destroy();
+
+        soundCount = 0;
     }
 
-    public IEnumerator StartCountdown(float f)
+    private IEnumerator Delay()
     {
-        yield return new WaitForSeconds(f);
-
-        int rand = Random.Range(0, 2);
-
-        if (winner)
-        {
-            source.PlayOneShot(win[rand]);
-        }
-
-        else
-        {
-            source.PlayOneShot(lose[rand]);
-        }
+        yield return new WaitForSeconds(0.1f);
     }
-
-    public IEnumerator ControlsPlay(float f)
-    {
-        yield return new WaitForSeconds(f);
-
-        source.PlayOneShot(controls);
-    }
-
-    public IEnumerator ColourPlay(bool colourRed, float f)
-    {
-        yield return new WaitForSeconds(f);
-
-
-        if (colourRed)
-        {
-            source.PlayOneShot(red);
-        }
-
-        else
-        {
-            source.PlayOneShot(black);
-        }
-    }
-
 
 }
