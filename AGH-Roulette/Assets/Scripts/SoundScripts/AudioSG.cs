@@ -36,7 +36,7 @@ public class AudioSG : MonoBehaviour
 
     public IEnumerator StartCountdown()
     {
-        yield return new WaitForSeconds(0.7f);
+        yield return new WaitForSeconds(0.5f);
         source.Stop();
         HoverSound();
     }

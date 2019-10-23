@@ -8,6 +8,7 @@ public class BoardButtonTimer : MonoBehaviour
 {
     NumberReaderScript nRS;
     AudioSource audioSource;
+    public AudioSource nums;
     public AudioClip[] outside;
     SelectButton sB;
     BoardGestureInput bGI;
@@ -43,92 +44,101 @@ public class BoardButtonTimer : MonoBehaviour
     {
         yield return new WaitForSeconds(f);
 
-        if (f != 0.1f)
-        {
-            btn.Select();
-            CountdownFinished(inside);
-        }
+        btn.Select();
+        CountdownFinished(inside);
+
     }
 
     public void CountdownFinished(bool inside)
     {
-        btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
-
-        audioSource.pitch = 1f;
-        audioSource.panStereo = 0f;
-
-        string temp = btn.name;
-
-        if (inside && audioSource.isActiveAndEnabled)
+        if (audioSource.isPlaying || nums.isPlaying)
         {
-            num = btn.GetComponentInChildren<TMP_Text>().text;
-            int i = int.Parse(num);
-            nRS.SetNumber(i);
-            nRS.ReadNumber();
+            Debug.Log(audioSource.isPlaying);
+            StartCoroutine(StartCountdown(0.1f));
         }
 
-        else if (audioSource.isActiveAndEnabled)
+        else 
         {
-            int count = 0;
+            btn = EventSystem.current.currentSelectedGameObject.GetComponent<Button>();
 
-            switch (temp)
+            audioSource.pitch = 1f;
+            audioSource.panStereo = 0f;
+
+            string temp = btn.name;
+
+            if (inside && audioSource.isActiveAndEnabled)
             {
-                case "1st_Column":
-                    count = 7;
-                    break;
+                num = btn.GetComponentInChildren<TMP_Text>().text;
+                int i = int.Parse(num);
+                nRS.SetNumber(i);
 
-                case "2nd_Column":
-                    count = 8;
-                    break;
-
-                case "3rd_Column":
-                    count = 9;
-                    break;
-
-                case "1st_Third":
-                    count = 0;
-                    break;
-
-                case "2nd_Third":
-                    count = 1;
-                    break;
-
-                case "3rd_Third":
-                    count = 2;
-                    break;
-
-                case "Evens":
-                    count = 3;
-                    break;
-
-                case "Odds":
-                    count = 4;
-                    break;
-
-                case "Blacks":
-                    count = 5;
-                    break;
-
-                case "Reds":
-                    count = 6;
-                    break;
-
-                case "1_To_18":
-                    count = 10;
-                    break;
-
-                case "19_To_36":
-                    count = 11;
-                    break;
-
-                default:
-                    Debug.Log("naming error");
-                    break;
+                nRS.ReadNumber();
             }
 
+            else if (audioSource.isActiveAndEnabled)
+            {
+                int count = 0;
 
-            audioSource.PlayOneShot(outside[count]);
+                switch (temp)
+                {
+                    case "1st_Column":
+                        count = 7;
+                        break;
+
+                    case "2nd_Column":
+                        count = 8;
+                        break;
+
+                    case "3rd_Column":
+                        count = 9;
+                        break;
+
+                    case "1st_Third":
+                        count = 0;
+                        break;
+
+                    case "2nd_Third":
+                        count = 1;
+                        break;
+
+                    case "3rd_Third":
+                        count = 2;
+                        break;
+
+                    case "Evens":
+                        count = 3;
+                        break;
+
+                    case "Odds":
+                        count = 4;
+                        break;
+
+                    case "Blacks":
+                        count = 5;
+                        break;
+
+                    case "Reds":
+                        count = 6;
+                        break;
+
+                    case "1_To_18":
+                        count = 10;
+                        break;
+
+                    case "19_To_36":
+                        count = 11;
+                        break;
+
+                    default:
+                        Debug.Log("naming error");
+                        break;
+                }
+
+
+                audioSource.PlayOneShot(outside[count]);
+            }
+            sB.SaveButton(btn);
         }
-        sB.SaveButton(btn);
+        
     }  
 }
