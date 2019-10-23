@@ -9,6 +9,7 @@ public class AudioSG : MonoBehaviour
     public Button btn;
     SelectButton sB;
     MenuGestureInput mGI;
+    bool updated;
 
     private void Start()
     {
@@ -17,18 +18,23 @@ public class AudioSG : MonoBehaviour
 
     public void HoverSound()
     {
-        btn.Select();
-
-        if (source.isActiveAndEnabled)
+        if (updated)
         {
-            source.PlayOneShot(hoverSound);
-        }
+            btn.Select();
 
-        sB.SaveButton(btn);
+            if (source.isActiveAndEnabled)
+            {
+                source.PlayOneShot(hoverSound);
+            }
+
+            sB.SaveButton(btn);
+        }
+        updated = false;
     }
 
     public void CallTimer()
     {
+        updated = true;
         mGI = FindObjectOfType<MenuGestureInput>();
         mGI.SaveBtn(btn);
         StartCoroutine(StartCountdown());
