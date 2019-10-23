@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class AudioSG : MonoBehaviour
@@ -40,6 +39,5 @@ public class AudioSG : MonoBehaviour
         yield return new WaitForSeconds(0.7f);
         source.Stop();
         HoverSound();
-
     }
 }

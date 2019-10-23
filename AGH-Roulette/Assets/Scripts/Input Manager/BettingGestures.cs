@@ -13,6 +13,7 @@ public class BettingGestures : MonoBehaviour
     public TMP_Text amount;
     public TMP_Text balance;
     public AudioSource source;
+    public AudioSource amountReader;
     public AudioSource narrator;
     public Button confirm;
 
@@ -51,7 +52,7 @@ public class BettingGestures : MonoBehaviour
 
         else if (type == "Click")
         {
-            if (!narrator.isPlaying)
+            if (!narrator.isPlaying && !amountReader.isPlaying)
             {
                 balance.GetComponentInParent<Button>().onClick.Invoke();
             }

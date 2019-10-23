@@ -8,10 +8,12 @@ public class ReadBetNums : MonoBehaviour
     public int NumToRead;
 
     AudioSource audioSource;
+    public AudioSource betType;
     AudioClip[] clips;
     List<AudioClip> clipList;
     public int currentClip;
     public int lastClip;
+    public bool reading;
 
     private void Awake()
     {
@@ -20,6 +22,12 @@ public class ReadBetNums : MonoBehaviour
 
     private void Update()
     {
+        //Used in tutorial when narrating
+        if (!audioSource.isPlaying && reading)
+        {
+            reading = false;
+        }
+
         if (lastClip > 0)
         {
             IterateClipList(clipList);
@@ -28,32 +36,43 @@ public class ReadBetNums : MonoBehaviour
 
     public void SetNumberList(List<int> num)
     {
-        clipList = new List<AudioClip>();
-
-        foreach (int i in num)
+        if (!reading)
         {
-            clips = numberReader.GetNumberAudio(i);
-            clipList.Add(clips[0]);
+            clipList = new List<AudioClip>();
 
-            if (i > 20)
+            foreach (int i in num)
             {
-                clipList.Add(clips[1]);
-            }
-        }
+                clips = numberReader.GetNumberAudio(i);
+                clipList.Add(clips[0]);
 
-        lastClip = clipList.Count;
-        currentClip = 0;
+                if (i > 20)
+                {
+                    clipList.Add(clips[1]);
+                }
+            }
+
+            lastClip = clipList.Count;
+            currentClip = 0;
+        }
     }
 
     private void IterateClipList(List<AudioClip> clips)
     {
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
         {
-            Debug.Log("Playing clip " + (currentClip + 1) + " of " + lastClip + " which is " + clips[currentClip].name);
-            audioSource.clip = clips[currentClip];
-            audioSource.Play();
+            if (!betType.isPlaying)
+            {
+                Debug.Log("Playing clip " + (currentClip + 1) + " of " + lastClip + " which is " + clips[currentClip].name);
+                audioSource.clip = clips[currentClip];
+                audioSource.Play();
 
-            currentClip++;
+                currentClip++;
+            }
+
+            else if (currentClip > 0)
+            {
+                lastClip = 0;
+            }
         }
     }
 }

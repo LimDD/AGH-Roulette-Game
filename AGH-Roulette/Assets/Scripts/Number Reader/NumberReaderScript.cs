@@ -102,9 +102,12 @@ public class NumberReaderScript : MonoBehaviour
     //Sets currentClip to 0, initiating reading of the currently set number
     public void ReadNumber()
     {
-        clips = numberReader.GetNumberAudio(NumToRead);
-        lastClip = clips.Length;
-        currentClip = 0;
+        if (lastClip == currentClip)
+        {
+            clips = numberReader.GetNumberAudio(NumToRead);
+            lastClip = clips.Length;
+            currentClip = 0;
+        }
     }
 
     public bool SetColour(int winNum)

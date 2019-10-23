@@ -10,7 +10,6 @@ public class BetTypeReader : MonoBehaviour, IPointerExitHandler
 {
     public AudioSource source;
     public AudioSource narrator;
-    public AudioSource nums;
     public AudioClip[] clips;
     public Button btn;
     NumberReaderScript nRS;
@@ -157,19 +156,18 @@ public class BetTypeReader : MonoBehaviour, IPointerExitHandler
 
         bool playing = true;
 
-        if (nums.isPlaying)
+        if (source.isActiveAndEnabled)
         {
-            nums.Stop();
-        }
-
-        while (playing)
-        {
-            if (!source.isPlaying)
+            while (playing)
             {
-                source.Play();
-                playing = false;
+                if (!source.isPlaying)
+                {
+                    source.Play();
+                    playing = false;
+                }
             }
         }
+
         StartCoroutine(StartCountdown(time));
     }
 
