@@ -27,7 +27,11 @@ public class SoundScript : MonoBehaviour
 
     public void SetPitch()
     {
-        cB.SetButton(btn);
+        if (source.isActiveAndEnabled)
+        {
+            cB.SetButton(btn);
+        }
+
         string btnName;
         float num = 0;
         btnName = btn.name;

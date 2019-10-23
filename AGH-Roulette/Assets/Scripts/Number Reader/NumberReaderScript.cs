@@ -28,6 +28,11 @@ public class NumberReaderScript : MonoBehaviour
         IterateClips();
     }
 
+    public void StopReading()
+    {
+        currentClip = lastClip;
+    }
+
     //IterateClips
     //Iterates through clips in queue and plays them one by one
     private void IterateClips()
