@@ -10,6 +10,7 @@ public class MenuGestureInput : MonoBehaviour
     Button btn;
     AudioSG aSG;
     SelectButton sB;
+    public AudioSource source;
 
     public void SaveBtn(Button b)
     {
@@ -18,9 +19,12 @@ public class MenuGestureInput : MonoBehaviour
 
     void Update()
     {
-        if (GestureInputManager.CurrentInput == InputAction.DoubleFingerDoubleTap)
+        if (GestureInputManager.CurrentInput == InputAction.TrippleFingerDoubleTap)
         {
-            easterEgg.onClick.Invoke();
+            if (!source.isPlaying && source.isActiveAndEnabled)
+            {
+                easterEgg.onClick.Invoke();
+            }
         }
 
         else if (GestureInputManager.CurrentInput == InputAction.Click)
