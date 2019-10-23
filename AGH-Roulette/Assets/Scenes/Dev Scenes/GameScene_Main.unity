@@ -588,17 +588,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2040193801}
-          m_MethodName: ClearButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &18504153
@@ -724,7 +713,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 18504146}
-  inside: 0
 --- !u!1 &22643026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1177,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 22643028}
-  inside: 0
 --- !u!1 &28234586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1609,7 +1596,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 28234588}
-  inside: 0
 --- !u!1 &35355868
 GameObject:
   m_ObjectHideFlags: 0
@@ -1904,17 +1890,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2040193801}
-          m_MethodName: ClearButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &35355877
@@ -2040,7 +2015,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 35355870}
-  inside: 0
 --- !u!1 &40712007
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3446,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 84177451}
-  inside: 0
 --- !u!1 &97601915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4157,17 +4130,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 2040193801}
-          m_MethodName: ClearButton
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!82 &162625824
@@ -4293,7 +4255,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 162625817}
-  inside: 0
 --- !u!1 &163105537
 GameObject:
   m_ObjectHideFlags: 0
@@ -5304,7 +5265,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 199731301}
-  inside: 0
 --- !u!1 &201331711
 GameObject:
   m_ObjectHideFlags: 0
@@ -6677,7 +6637,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 256244944}
-  inside: 0
 --- !u!1 &272479950
 GameObject:
   m_ObjectHideFlags: 0
@@ -7570,7 +7529,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 301854768}
-  inside: 0
 --- !u!1 &313070598
 GameObject:
   m_ObjectHideFlags: 0
@@ -8633,7 +8591,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 329475458}
-  inside: 0
 --- !u!1 &396104701
 GameObject:
   m_ObjectHideFlags: 0
@@ -9330,7 +9287,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 458555052}
-  inside: 0
 --- !u!1 &469675273
 GameObject:
   m_ObjectHideFlags: 0
@@ -9780,7 +9736,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 469675275}
-  inside: 0
 --- !u!1 &513992966
 GameObject:
   m_ObjectHideFlags: 0
@@ -11185,7 +11140,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 550351216}
-  inside: 0
 --- !u!1 &551281550
 GameObject:
   m_ObjectHideFlags: 0
@@ -11949,7 +11903,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 561959458}
-  inside: 0
 --- !u!1 &563829114
 GameObject:
   m_ObjectHideFlags: 0
@@ -12908,7 +12861,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 571273863}
-  inside: 0
 --- !u!1 &584579353
 GameObject:
   m_ObjectHideFlags: 0
@@ -13515,7 +13467,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 595861943}
-  inside: 0
 --- !u!1 &604232372
 GameObject:
   m_ObjectHideFlags: 0
@@ -14317,7 +14268,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 616024470}
-  inside: 0
 --- !u!1 &626435985
 GameObject:
   m_ObjectHideFlags: 0
@@ -15012,7 +14962,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 635001757}
-  inside: 0
 --- !u!1 &648230563
 GameObject:
   m_ObjectHideFlags: 0
@@ -17003,7 +16952,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 825994012}
-  inside: 0
 --- !u!1 &836823901
 GameObject:
   m_ObjectHideFlags: 0
@@ -17423,7 +17371,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 836823903}
-  inside: 0
 --- !u!1 &843211966
 GameObject:
   m_ObjectHideFlags: 0
@@ -20206,7 +20153,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 958431347}
-  inside: 0
 --- !u!1 &960676964
 GameObject:
   m_ObjectHideFlags: 0
@@ -20626,7 +20572,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 960676966}
-  inside: 0
 --- !u!1 &1023385962
 GameObject:
   m_ObjectHideFlags: 0
@@ -21046,7 +20991,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1023385964}
-  inside: 0
 --- !u!1 &1036812354
 GameObject:
   m_ObjectHideFlags: 0
@@ -21466,7 +21410,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1036812356}
-  inside: 0
 --- !u!1 &1062282965
 GameObject:
   m_ObjectHideFlags: 0
@@ -22502,7 +22445,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1142114606}
-  inside: 0
 --- !u!1 &1157757722
 GameObject:
   m_ObjectHideFlags: 0
@@ -22922,7 +22864,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1157757724}
-  inside: 0
 --- !u!1 &1161824144
 GameObject:
   m_ObjectHideFlags: 0
@@ -23641,7 +23582,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1177302149}
-  inside: 0
 --- !u!1 &1189270744
 GameObject:
   m_ObjectHideFlags: 0
@@ -24390,7 +24330,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1205669519}
-  inside: 0
 --- !u!1 &1227263163
 GameObject:
   m_ObjectHideFlags: 0
@@ -24810,7 +24749,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1227263165}
-  inside: 0
 --- !u!1 &1246405270
 GameObject:
   m_ObjectHideFlags: 0
@@ -25230,7 +25168,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1246405272}
-  inside: 0
 --- !u!1 &1258632475
 GameObject:
   m_ObjectHideFlags: 0
@@ -25527,7 +25464,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1258632477}
-  inside: 0
 --- !u!114 &1258632484
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25589,17 +25525,6 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1258632483}
           m_MethodName: StopAllCoroutines
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 2040193801}
-          m_MethodName: ClearButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -26214,7 +26139,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1323412628}
-  inside: 0
 --- !u!1 &1334521015
 GameObject:
   m_ObjectHideFlags: 0
@@ -26664,7 +26588,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1334521017}
-  inside: 0
 --- !u!1 &1355835433
 GameObject:
   m_ObjectHideFlags: 0
@@ -27243,7 +27166,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1359132688}
-  inside: 0
 --- !u!1 &1368922823
 GameObject:
   m_ObjectHideFlags: 0
@@ -28603,7 +28525,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1511159808}
-  inside: 0
 --- !u!1 &1519994127
 GameObject:
   m_ObjectHideFlags: 0
@@ -29625,7 +29546,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1527291864}
-  inside: 0
 --- !u!1 &1534680677
 GameObject:
   m_ObjectHideFlags: 0
@@ -30517,7 +30437,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1610360086}
-  inside: 0
 --- !u!1 &1617909948
 GameObject:
   m_ObjectHideFlags: 0
@@ -30937,7 +30856,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1617909950}
-  inside: 0
 --- !u!1 &1655330608
 GameObject:
   m_ObjectHideFlags: 0
@@ -32177,7 +32095,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1716691568}
-  inside: 0
 --- !u!1 &1720359095
 GameObject:
   m_ObjectHideFlags: 0
@@ -33168,7 +33085,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1756720129}
-  inside: 0
 --- !u!1 &1785434554
 GameObject:
   m_ObjectHideFlags: 0
@@ -34413,7 +34329,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1835142225}
-  inside: 0
 --- !u!1 &1857630197
 GameObject:
   m_ObjectHideFlags: 0
@@ -35147,7 +35062,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1916122766}
-  inside: 0
 --- !u!1 &1928020082
 GameObject:
   m_ObjectHideFlags: 0
@@ -35567,7 +35481,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 1928020084}
-  inside: 0
 --- !u!1 &1933396131
 GameObject:
   m_ObjectHideFlags: 0
@@ -36812,7 +36725,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2012285368}
-  inside: 0
 --- !u!1 &2033281525
 GameObject:
   m_ObjectHideFlags: 0
@@ -37232,7 +37144,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2033281527}
-  inside: 0
 --- !u!1 &2040193793
 GameObject:
   m_ObjectHideFlags: 0
@@ -38144,7 +38055,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2094731938}
-  inside: 0
 --- !u!1 &2096150373
 GameObject:
   m_ObjectHideFlags: 0
@@ -38564,7 +38474,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2096150375}
-  inside: 0
 --- !u!1 &2100022142
 GameObject:
   m_ObjectHideFlags: 0
@@ -38984,7 +38893,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2100022144}
-  inside: 0
 --- !u!1 &2128767682
 GameObject:
   m_ObjectHideFlags: 0
@@ -39404,7 +39312,6 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 0e3860c453e27784f9cfe1e42ad6e924, type: 3}
   - {fileID: 8300000, guid: 82fc4b0019201ed4caddad5eafc51fdf, type: 3}
   btn: {fileID: 2128767684}
-  inside: 0
 --- !u!1 &2139356508
 GameObject:
   m_ObjectHideFlags: 0

@@ -20,7 +20,7 @@ public class ClickButton : MonoBehaviour
         bBT = FindObjectOfType<BoardButtonTimer>();
 
         //Won't play the sound again if you tap in blank space
-        if (button != null && changed) 
+        if (button != null && changed)  
         {
             bool inside = false;
 
@@ -31,9 +31,7 @@ public class ClickButton : MonoBehaviour
                 inside = true;
             }
 
-            bBT.inside = inside;
-
-            bBT.CountdownFinished();
+            bBT.CountdownFinished(inside);
             changed = false;
         }
     }

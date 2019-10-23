@@ -14,7 +14,7 @@ public class BoardButtonTimer : MonoBehaviour
     BoardGestureInput bGI;
     public Button btn;
     string num;
-    public bool inside;
+    bool inside;
 
     private void Start()
     {
@@ -45,11 +45,11 @@ public class BoardButtonTimer : MonoBehaviour
         yield return new WaitForSeconds(f);
 
         btn.Select();
-        CountdownFinished();
+        CountdownFinished(inside);
 
     }
 
-    public void CountdownFinished()
+    public void CountdownFinished(bool inside)
     {
         if (audioSource.isPlaying || nums.isPlaying)
         {
