@@ -44,11 +44,15 @@ public class ZoomPanelGestures : MonoBehaviour
 
         if (type == "Click")
         {
-            Debug.Log(clickBtn.name);
-            clickBtn.Select();
-            btn = clickBtn;
-            bTR.readType = true;
-            bTR.BetType(clickBtn);
+            if (clickBtn != null)
+            {
+                Debug.Log("Zoom panel" + clickBtn.name);
+                clickBtn.Select();
+                btn = clickBtn;
+                bTR.readType = true;
+                bTR.BetType(clickBtn);
+
+            }
         }
     }
 }

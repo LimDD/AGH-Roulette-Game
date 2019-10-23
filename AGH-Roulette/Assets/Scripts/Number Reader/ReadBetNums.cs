@@ -47,7 +47,10 @@ public class ReadBetNums : MonoBehaviour
 
                 if (i > 20)
                 {
-                    clipList.Add(clips[1]);
+                    if (i != 30)
+                    {
+                        clipList.Add(clips[1]);
+                    }
                 }
             }
 
@@ -74,5 +77,10 @@ public class ReadBetNums : MonoBehaviour
                 lastClip = 0;
             }
         }
+    }
+
+    public void StopReading()
+    {
+        currentClip = lastClip;
     }
 }

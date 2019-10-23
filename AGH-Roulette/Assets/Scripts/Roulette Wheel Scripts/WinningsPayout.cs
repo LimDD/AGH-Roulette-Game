@@ -11,7 +11,7 @@ public class WinningsPayout : MonoBehaviour
     //Finds out the winnings owed due to the bet type and the amount and adds it to the balance
     public int GetWinnings(string bet, int balance, int amount)
     {
-        Debug.Log("Amount: " + amount);
+        Debug.Log("Old bal" + balance);
 
         int multi = 0;
 
@@ -56,6 +56,8 @@ public class WinningsPayout : MonoBehaviour
         }
 
         balance += amount * multi;
+
+        Debug.Log("New bal" + balance);
 
         SaveStatistics stats = FindObjectOfType<SaveStatistics>();
 
