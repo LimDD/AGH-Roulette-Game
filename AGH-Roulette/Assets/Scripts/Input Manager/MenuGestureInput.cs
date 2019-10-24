@@ -19,7 +19,7 @@ public class MenuGestureInput : MonoBehaviour
 
     void Update()
     {
-        if (GestureInputManager.CurrentInput == InputAction.TrippleFingerDoubleTap)
+        if (GestureInputManager.CurrentInput == InputAction.TrippleFingerDoubleTap || GestureInputManager.CurrentInput == InputAction.TrippleFingerPressed)
         {
             if (!source.isPlaying && source.isActiveAndEnabled)
             {
