@@ -73,10 +73,12 @@ public class WinningsPayout : MonoBehaviour
     //Resets coins back to original balance for main game
     public void SetBal(int balance)
     {
+        bool tutorial = false;
 
         if (SceneManager.GetActiveScene().name.Contains("Tutorial"))
         {
             bal.text = "Coins: 900";
+            tutorial = true;
         }
 
         else
@@ -101,9 +103,21 @@ public class WinningsPayout : MonoBehaviour
 
         foreach(string s in balData)
         {
-            if (s.Contains("Coins:") && count + 2 < balData.Count)
+            if (s.Contains("Coins:"))
             {
-                coins = s;
+                if (tutorial)
+                {
+                    if (count + 2 < balData.Count)
+                    {
+                        coins = s;
+                    }
+                }
+
+                else
+                {
+                    coins = s;
+                }
+
             }
             count++;
         }

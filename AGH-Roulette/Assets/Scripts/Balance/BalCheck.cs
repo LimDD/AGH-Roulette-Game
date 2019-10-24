@@ -52,10 +52,9 @@ public class BalCheck : MonoBehaviour
             betText.text = amount.ToString();
         }
 
-        //THe confirm button cannot be clicked as the player has no money
+        //The player cannot bet anything
         if (balance == 0)
         {
-            confirm.interactable = false;
             betText.text = "0";
         }
     }
