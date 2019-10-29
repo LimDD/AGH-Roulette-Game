@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class BalCheck : MonoBehaviour
 {
-    public Button confirm;
     public TMP_Text playerCoinsText;
     public TMP_Text betText;
 
@@ -15,12 +14,6 @@ public class BalCheck : MonoBehaviour
 
     public void CheckBal()
     {
-        //If the confirm button isn't interactable then set all buttons back to interactable
-        if (!confirm.IsInteractable())
-        {
-            confirm.interactable = true;
-        }
-
         string path = "/balandamount.txt";
         string temp;
 

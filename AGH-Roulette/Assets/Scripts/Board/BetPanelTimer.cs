@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
+//Starts a timer to read out the amount the user is wanting to bet
 public class BetPanelTimer : MonoBehaviour
 {
     public TMP_Text amount;
@@ -41,6 +42,7 @@ public class BetPanelTimer : MonoBehaviour
         }
     }
 
+    //If the user stays on the number long enough without changing
     void TimerEnded()
     {
         if (amount.isActiveAndEnabled)

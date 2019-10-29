@@ -200,6 +200,7 @@ public class GetButtonNum : MonoBehaviour
         }
     }
 
+    //Sets the surrounding button numbers in the zoom panel
     public void SetSurroundingNum(int chosenNum)
     {
         Button btn = null;
@@ -240,6 +241,7 @@ public class GetButtonNum : MonoBehaviour
             }
         }
 
+        //Hides left side buttons but still makes them active 
         if (chosenNum % 3 == 1)
         {
             topLNum.GetComponent<Image>().color = Color.clear;
@@ -266,9 +268,9 @@ public class GetButtonNum : MonoBehaviour
         }
     }
 
+    //Sets colour of buttons in zoom panel
     public void SetColor(Button button)
     {
-
         if (button.GetComponentInChildren<TMP_Text>().text != "")
         {
             int buttonNumber = System.Convert.ToInt32(button.GetComponentInChildren<TMP_Text>().text);

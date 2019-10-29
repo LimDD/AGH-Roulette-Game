@@ -24,6 +24,7 @@ public class BoardButtonTimer : MonoBehaviour
         bGI = FindObjectOfType<BoardGestureInput>();
     }
 
+    //Sets boolean inside to true or false if bet is inside or outside
     public void CallTimer()
     {
         if (btn.name.Contains("_Cell"))
@@ -49,8 +50,10 @@ public class BoardButtonTimer : MonoBehaviour
 
     }
 
+    //Plays the sound for the number or outside bet selected
     public void CountdownFinished()
     {
+        //Wait until other audio has finished
         if (audioSource.isPlaying || nums.isPlaying)
         {
             Debug.Log(audioSource.isPlaying);
@@ -66,6 +69,7 @@ public class BoardButtonTimer : MonoBehaviour
 
             string temp = btn.name;
 
+            //Plays a number
             if (inside && audioSource.isActiveAndEnabled)
             {
                 num = btn.GetComponentInChildren<TMP_Text>().text;
@@ -75,6 +79,7 @@ public class BoardButtonTimer : MonoBehaviour
                 nRS.ReadNumber();
             }
 
+            //Plays an outside bet name
             else if (audioSource.isActiveAndEnabled)
             {
                 int count = 0;
@@ -137,6 +142,7 @@ public class BoardButtonTimer : MonoBehaviour
 
                 audioSource.PlayOneShot(outside[count]);
             }
+            //Saves the button to be accessed on double tap
             sB.SaveButton(btn);
         }
         

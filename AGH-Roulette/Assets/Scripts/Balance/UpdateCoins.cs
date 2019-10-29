@@ -37,6 +37,7 @@ public class UpdateCoins : MonoBehaviour
         }
     }
 
+    //Gets the int to be read out to the user
     public void ReadBalance()
     {
         nRS = FindObjectOfType<NumberReaderScript>();

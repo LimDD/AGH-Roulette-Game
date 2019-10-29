@@ -11,6 +11,7 @@ public class PlayAgainGestures : MonoBehaviour
     public AudioSource narrator;
     PlayRandomConfirmation pRC;
 
+    //Invokes buttons for swiping up and down on the AnotherBetPanel
     public void Gestures(string type)
     {
         pRC = FindObjectOfType<PlayRandomConfirmation>();

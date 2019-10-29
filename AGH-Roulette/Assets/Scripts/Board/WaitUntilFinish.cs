@@ -10,10 +10,12 @@ public class WaitUntilFinish : MonoBehaviour
 
     void Update()
     {
+        //Once the sound has stopped
         if (!source.isPlaying)
         {
             if (betReader != null)
             {
+                //Now betReader can be unmuted
                 if (betReader.mute)
                 {
                     betReader.Stop();

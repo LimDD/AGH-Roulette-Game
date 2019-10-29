@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Lets gameobject go between main/tutorial and roulette wheel scenes
 public class DontDestroy : MonoBehaviour
 {
     SceneSwitcher sS;
@@ -14,6 +15,7 @@ public class DontDestroy : MonoBehaviour
         DontDestroyOnLoad(this);
     }
 
+    //Called after the wheel has spun so it is not duplicated
     public void Destroy()
     {
         Destroy(gObject);

@@ -11,6 +11,7 @@ public class RemoveBetNum : MonoBehaviour
         sBI = FindObjectOfType<SaveBetInfo>();
     }
 
+    //Makes sure zoom panel is not active
     public void CheckPanel()
     {
         if (panel.activeSelf)
@@ -19,6 +20,7 @@ public class RemoveBetNum : MonoBehaviour
         }
     }
 
+    //Removes bet made when back clicked after the zoom panel or outside bet
     public void RemoveBet()
     {
         List<string> bets = sBI.GetSavedNums();

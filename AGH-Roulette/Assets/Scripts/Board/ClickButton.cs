@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Skips the timer to play the sound of the button clicked
 public class ClickButton : MonoBehaviour
 {
     Button button;
     BoardButtonTimer bBT;
     bool changed;
 
+    //Saves the button on pointer enter
     public void SetButton(Button btn)
     {
         button = btn;
         changed = true;
     }
 
+    //Skips straight to the method called after the countdown has finished if clicked
     public void ButtonClicked()
     {
         bBT = FindObjectOfType<BoardButtonTimer>();

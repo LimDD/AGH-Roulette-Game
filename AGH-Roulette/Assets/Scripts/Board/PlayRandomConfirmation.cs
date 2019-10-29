@@ -29,11 +29,13 @@ public class PlayRandomConfirmation : MonoBehaviour
         }
     }
 
+    //Change boolean state
     public void SetHasPlayed()
     {
         hasPlayed = !hasPlayed;
     }
 
+    //Generates an int between 0 and 2 to choose what sound is played
     public void PlayRandom()
     {
         audioNum = Random.Range(0, 2);
