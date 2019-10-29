@@ -34,6 +34,7 @@ public class ReadBetNums : MonoBehaviour
         }
     }
 
+    //Sets the clips to be read
     public void SetNumberList(List<int> num)
     {
         if (!reading)
@@ -45,6 +46,7 @@ public class ReadBetNums : MonoBehaviour
                 clips = numberReader.GetNumberAudio(i);
                 clipList.Add(clips[0]);
 
+                //If number is over 20 there will be 2 clips
                 if (i > 20)
                 {
                     if (i != 30)
@@ -59,6 +61,7 @@ public class ReadBetNums : MonoBehaviour
         }
     }
 
+    //Reads through the number list
     private void IterateClipList(List<AudioClip> clips)
     {
         while ((currentClip < lastClip) && (!audioSource.isPlaying))
@@ -79,6 +82,7 @@ public class ReadBetNums : MonoBehaviour
         }
     }
 
+    //Stops the number reader from playing
     public void StopReading()
     {
         currentClip = lastClip;

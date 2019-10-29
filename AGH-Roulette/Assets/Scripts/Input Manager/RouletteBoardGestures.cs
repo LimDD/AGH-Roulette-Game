@@ -21,16 +21,19 @@ public class RouletteBoardGestures : MonoBehaviour
 
     public void Gestures(string type)
     {
+        //Selects the button when clicked
         if (type != "Click" && type != "back")
         {
             btn = sB.GetButton();
             selected = false;
         }
 
+
         if (btn != null && !selected)
         {
             selected = true;
-
+            
+            //Access button onClick on double click
             if (type == "DoubleClick")
             {
                 EventSystem.current.SetSelectedGameObject(btn.gameObject);

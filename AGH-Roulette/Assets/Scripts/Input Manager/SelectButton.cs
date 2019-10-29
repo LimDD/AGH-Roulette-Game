@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//Saves the button to be used
 public class SelectButton : MonoBehaviour
 {
     Button btn;

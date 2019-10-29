@@ -16,12 +16,13 @@ public class PlayRandomWelcome : MonoBehaviour {
     }
     void Start()
     {
-
+        //If splash screen is still active
         if (!SplashScreen.isFinished)
         {
             StartCoroutine(Wait(0.1f));
         }
 
+        //Plays welcome message once splash screen disappears
         else
         {
             _as.clip = audioClipArray[Random.Range(0, audioClipArray.Length)];
@@ -31,6 +32,7 @@ public class PlayRandomWelcome : MonoBehaviour {
 
     private void Update()
     {
+        //Unmutes all audio sources once welcome message has finished
         if (!_as.isPlaying && SplashScreen.isFinished)
         {
             if (buttonSource != null)

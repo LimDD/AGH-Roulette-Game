@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Plays sounds on user tap
 public class AchievementsSoundManager : MonoBehaviour
 {
     public AudioSource soundManager;
@@ -47,17 +48,5 @@ public class AchievementsSoundManager : MonoBehaviour
     {
         soundManager.clip = rouletteGeek;
         soundManager.Play();
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

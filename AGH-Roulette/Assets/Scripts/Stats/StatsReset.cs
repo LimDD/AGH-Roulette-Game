@@ -7,6 +7,7 @@ public class StatsReset : MonoBehaviour
 {
     private List<string> stats;
 
+    //Clears the summary values
     public void ClearSummary()
     {
         stats = new List<string>();

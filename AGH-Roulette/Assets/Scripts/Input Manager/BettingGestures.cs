@@ -16,8 +16,10 @@ public class BettingGestures : MonoBehaviour
     public AudioSource narrator;
     public Button confirm;
 
+    //All the gestures for the betting panel
     public void Gestures(string type)
     {
+        //Confirms bet
         if (type == "DoubleClick")
         {
             if (balance.text != "0")
@@ -49,6 +51,7 @@ public class BettingGestures : MonoBehaviour
             }
         }
 
+        //Plays balance
         else if (type == "Click")
         {
             if (!narrator.isPlaying && !amountReader.isPlaying)
@@ -57,6 +60,7 @@ public class BettingGestures : MonoBehaviour
             }
         }
 
+        //Changes amount
         else if (type.Contains("Swipe"))
         {
             if (bPT == null)

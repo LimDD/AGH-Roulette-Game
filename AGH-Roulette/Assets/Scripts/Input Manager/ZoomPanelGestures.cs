@@ -6,14 +6,11 @@ using UnityEngine.UI;
 
 public class ZoomPanelGestures : MonoBehaviour
 {
-    float height;
-
     BoardGestureInput bGI;
     BetTypeReader bTR;
 
     Button btn;
     Button clickBtn;
-
 
     private void Start()
     {
@@ -21,11 +18,13 @@ public class ZoomPanelGestures : MonoBehaviour
         bTR = FindObjectOfType<BetTypeReader>();
     }
 
+    //Saves button for when button clicked
     public void SetButton(Button b)
     {
         clickBtn = b;
     }
 
+    //Saves button when hovered for the time limit
     public void HoldSetButton(Button b)
     {
         btn = b;
@@ -33,6 +32,7 @@ public class ZoomPanelGestures : MonoBehaviour
 
     public void Gestures(string type)
     {
+        //Access Button
         if (type == "DoubleClick")
         {
             if (btn != null)
@@ -42,6 +42,7 @@ public class ZoomPanelGestures : MonoBehaviour
             }
         }
 
+        //Selects button
         if (type == "Click")
         {
             if (clickBtn != null)
@@ -51,7 +52,6 @@ public class ZoomPanelGestures : MonoBehaviour
                 btn = clickBtn;
                 bTR.readType = true;
                 bTR.BetType(clickBtn);
-
             }
         }
     }

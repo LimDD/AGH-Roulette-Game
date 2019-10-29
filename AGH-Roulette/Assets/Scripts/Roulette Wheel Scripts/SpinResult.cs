@@ -43,6 +43,7 @@ public class SpinResult : MonoBehaviour
         soundCount = 3;
     }
 
+    //Plays the winning/losing messages
     private void Update()
     {
         if (!nums.isPlaying)

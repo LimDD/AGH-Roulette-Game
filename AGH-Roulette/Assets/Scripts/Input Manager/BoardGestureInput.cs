@@ -30,6 +30,7 @@ public class BoardGestureInput : MonoBehaviour
 
     void Update()
     {
+        //Plays the value of the bet amount on open if the value isnt changed
         if (!first && panel.activeSelf)
         {
             if (panel.name == "Betting Coins Panel")
@@ -45,6 +46,7 @@ public class BoardGestureInput : MonoBehaviour
             type = GestureInputManager.CurrentInput.ToString();
             Debug.Log(type);
 
+            //Finds out what panel the user is on to access the right gestures
             if (panel.activeSelf)
             {
                 if (panel.name == "Betting Coins Panel")

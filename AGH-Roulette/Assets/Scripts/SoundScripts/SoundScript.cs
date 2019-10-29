@@ -25,6 +25,7 @@ public class SoundScript : MonoBehaviour
         }
     }
 
+    //Sets pitch and stereo using board button selected
     public void SetPitch()
     {
         if (source.isActiveAndEnabled)

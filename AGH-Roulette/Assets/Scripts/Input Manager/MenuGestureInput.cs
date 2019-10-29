@@ -19,6 +19,7 @@ public class MenuGestureInput : MonoBehaviour
 
     void Update()
     {
+        //Plays the easter egg sound
         if (GestureInputManager.CurrentInput == InputAction.TrippleFingerDoubleTap || GestureInputManager.CurrentInput == InputAction.TrippleFingerPressed)
         {
             if (!source.isPlaying && source.isActiveAndEnabled)
@@ -27,6 +28,7 @@ public class MenuGestureInput : MonoBehaviour
             }
         }
 
+        //Selects and plays the button name
         else if (GestureInputManager.CurrentInput == InputAction.Click)
         {
             try
@@ -42,6 +44,7 @@ public class MenuGestureInput : MonoBehaviour
             }
         }
 
+        //Access the selected buttons on click method
         else if (GestureInputManager.CurrentInput == InputAction.DoubleClick)
         {
             try
@@ -59,7 +62,7 @@ public class MenuGestureInput : MonoBehaviour
 
             catch
             {
-
+                Debug.Log("Error");
             }
 
         }

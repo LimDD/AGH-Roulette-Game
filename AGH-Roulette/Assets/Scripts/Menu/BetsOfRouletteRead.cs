@@ -19,6 +19,7 @@ public class BetsOfRouletteRead : MonoBehaviour
         ReadInfo();
     }
 
+    //Reads all data in bets of roulette
     public void ReadInfo()
     {
         if (source.isPlaying)

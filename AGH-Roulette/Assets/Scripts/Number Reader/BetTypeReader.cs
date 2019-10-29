@@ -85,6 +85,7 @@ public class BetTypeReader : MonoBehaviour, IPointerExitHandler
 
         time = 0.8f;
 
+        //Gets the last child in the buttons name which is the bet type
         try
         {
             type = b.GetComponentsInChildren<TMP_Text>();
@@ -171,6 +172,7 @@ public class BetTypeReader : MonoBehaviour, IPointerExitHandler
         StartCoroutine(StartCountdown(time));
     }
 
+    //Adds the numbers to be read according to the bet type
     private List<int> ReadNums(int num)
     {
         List<int> betNums = new List<int>();

@@ -21,6 +21,7 @@ public class WheelGestureInput : MonoBehaviour
         sR = FindObjectOfType<StatsReset>();
     }
 
+    //Input for the wheel scene
     void Update()
     {
         if (GestureInputManager.CurrentInput != InputAction.Null)
@@ -29,12 +30,14 @@ public class WheelGestureInput : MonoBehaviour
 
             Debug.Log(type);
 
+            //Waits until the result text has been changed
             if (text.text != "")
             {
                 if (type == "SwipeUp")
                 {
                     sR.ClearSummary();
 
+                    //If summary isn't null the player is not in the tutorial
                     if (summary != null)
                     {
                         if (balance.text != "0")
@@ -68,6 +71,7 @@ public class WheelGestureInput : MonoBehaviour
                     sS.MenuScene();
                 }
 
+                //Show the round summary
                 else if (type == "DoubleClick")
                 {
                     if (wheel.activeSelf && summary != null)
@@ -77,6 +81,7 @@ public class WheelGestureInput : MonoBehaviour
                     }
                 }
 
+                //Play the balance
                 else if (type == "Click" && wheel.activeSelf && !source.isPlaying && !nums.isPlaying)
                 {
                     balance.GetComponentInParent<Button>().onClick.Invoke();

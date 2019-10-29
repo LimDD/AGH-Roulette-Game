@@ -108,6 +108,7 @@ public class RouletteWheelSpin : MonoBehaviour
         }
     }
 
+    //Sets start position of the roulette ball
     public int SetBallPosition()
     {
         int startRotation = 0;

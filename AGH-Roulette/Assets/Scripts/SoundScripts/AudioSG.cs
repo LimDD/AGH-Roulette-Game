@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine.UI;
 
+//Used for the menu sounds
 public class AudioSG : MonoBehaviour
 {
     public AudioSource source;
@@ -9,7 +10,7 @@ public class AudioSG : MonoBehaviour
     public Button btn;
     SelectButton sB;
     MenuGestureInput mGI;
-    bool updated;
+    bool updated;       //Used to check if a new button is selected to not replay old sound
 
     private void Start()
     {
