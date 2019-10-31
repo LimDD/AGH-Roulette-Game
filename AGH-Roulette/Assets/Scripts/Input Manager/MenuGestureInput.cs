@@ -40,7 +40,7 @@ public class MenuGestureInput : MonoBehaviour
 
             catch
             {
-                Debug.Log("Error or back clicked");
+                Debug.Log("no btn selected");
             }
         }
 
